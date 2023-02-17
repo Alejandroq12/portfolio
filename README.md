@@ -1,7 +1,7 @@
 <a name="readme-top">My porfolio</a>
 
 <div align="center">
-  <img src="./assets/images/logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./assets/images/logo4.png" alt="logo" width="300"  height="auto" />
   <br/>
 
   <h3><b>My porfolio</b></h3>
@@ -39,6 +39,7 @@
 **[Welcome to my portfolio, where you can explore my projects, get to know me, and find a way to contact me. Take a look at my various projects and discover the range of my technical skills. Whether you are interested in web development, software engineering, or data science, you'll find a variety of projects here to pique your interest. So feel free to browse, learn more about me and my work, and get in touch if you have any questions or opportunities to collaborate.]** 
 
 ## 🛠 Built With <a name="built-with">HTML and CSS</a>
+> This project was built using HTML and CSS.
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -54,7 +55,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[I am using this project showcase m work]**
+- **[A responsive website for my portfolio, built with HTML and CSS. Features include a responsive navigation bar, custom images and icons.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,34 +74,19 @@
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-
-In order to run this project you need:
+In order to run this project you just need:
 
 ```
 A web browser 
-A code editor
-Node.js
-npm
+
 ```
 
 ### Usage
 
-
-Run the following commands:
-
 ```
-npm init -y
-npm install --save-dev hint@7.x
+1. Clone the repository to your local machine.
+2. Open the index.html file with your browser.
 ```
-
-To test errors: 
-
-```
-npx hint .
-
-```
-
-To open the webpage you just need to open the index.html file on the browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
