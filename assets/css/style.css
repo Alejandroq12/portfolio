@@ -181,6 +181,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    list-style: none;
   }
 
   .my-icons-list li {
@@ -239,6 +240,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 1rem;
+    list-style: none;
   }
 
   .my-icons-list li {
@@ -246,14 +248,6 @@ body {
     text-align: left;
     padding: 5px;
   }
-
-  /* .my-icons-list li:nth-child(2) {
-    order: 2;
-  }
-
-  .my-icons-list li:nth-child(3) {
-    order: 3;
-  } */
 }
 
 /* This styles are for screens smaller than 375px */
@@ -296,6 +290,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    list-style: none;
   }
 
   .my-icons-list li {
