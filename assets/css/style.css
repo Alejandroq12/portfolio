@@ -28,7 +28,6 @@ body {
 }
 
 .hamburgerMenu {
-  order: 4;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -63,7 +62,6 @@ button:hover {
 }
 
 .hamburger-icon {
-  order: 4;
   display: none;
   background-color: transparent;
   border: none;
@@ -101,10 +99,6 @@ button:hover {
   margin-top: 4rem;
 }
 
-.salute {
-  order: 1;
-}
-
 .main-header {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
@@ -135,7 +129,6 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  order: 2;
 }
 
 .iconMedia:hover {
@@ -148,28 +141,18 @@ button:hover {
     display: none;
   }
 
-  .logo {
-    order: 1;
-  }
-
-  .hamburgerMenu {
-    order: 1;
-  }
-
   .hamburger-icon {
     display: block;
   }
 
   .main-area {
     flex-direction: column;
-    order: 1;
     padding: 2rem;
     background-size: 70%;
     background-position: 205% 90%;
   }
 
   .socialMediaIcons {
-    order: 2;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -259,24 +242,18 @@ button:hover {
     display: none;
   }
 
-  .hamburgerMenu {
-    order: 1;
-  }
-
   .hamburger-icon {
     display: block;
   }
 
   .main-area {
     flex-direction: column;
-    order: 1;
     padding: 2rem;
     background-size: 70%;
     background-position: 205% 90%;
   }
 
   .socialMediaIcons {
-    order: 2;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
