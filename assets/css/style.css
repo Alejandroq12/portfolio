@@ -61,8 +61,10 @@ body {
   color: #ffffff;
 }
 
-.list-item a:hover {
-  color: #555;
+.list-item a:hover,
+button:hover {
+  transform: translate(4px, 2px);
+  box-shadow: #FF6B00;
 }
 
 .hamburger-icon {
@@ -141,6 +143,10 @@ body {
   order: 2;
 }
 
+.iconMedia:hover {
+  transform: translate(2px, 2px);
+}
+
 /* This styles are for screens smaller than 767px */
 @media screen and (max-width: 767px) {
 
@@ -203,6 +209,12 @@ body {
 
   .nav-items {
     padding-right: 0;
+  }
+
+  .list-item:hover,
+  button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: #FF6B00;
   }
 
   .main-area {
