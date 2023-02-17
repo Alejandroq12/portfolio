@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
@@ -39,15 +39,15 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   padding-right: 30%;
 }
 
 .list-item {
   list-style: none;
-  margin: 0;
-  padding: 0 25px;
+  margin: 0px;
+  padding: 0px 25px;
 }
 
 .list-item a {
@@ -168,7 +168,7 @@ button:hover {
   }
 
   .my-icons-list li {
-    flex: 0 0 11%;
+    flex: 0% 0% 11%;
     text-align: center;
     padding: 5px;
   }
@@ -178,7 +178,7 @@ button:hover {
 @media (min-width: 768px) {
   .nav-items {
     display: flex;
-    padding-right: 0;
+    padding-right: 0px;
   }
 
   .hamburger-icon {
@@ -230,7 +230,7 @@ button:hover {
   }
 
   .my-icons-list li {
-    flex: 0 0 100%;
+    flex: 0% 0% 100%;
     text-align: left;
     padding: 5px;
   }
@@ -269,7 +269,7 @@ button:hover {
   }
 
   .my-icons-list li {
-    flex: 0 0 11%;
+    flex: 0% 0% 11%;
     text-align: center;
     padding: 5px;
   }
