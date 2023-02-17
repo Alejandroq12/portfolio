@@ -15,20 +15,15 @@ body {
 }
 
 .header-container {
-  background-color: #3E3C3C;
-}
-
-.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px;
-  background-color: #3E3C3C;
+  background-color: #3e3c3c;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  order: 1;
   margin-left: 3%;
 }
 
@@ -58,13 +53,13 @@ body {
 
 .list-item a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .list-item a:hover,
 button:hover {
   transform: translate(4px, 2px);
-  box-shadow: #FF6B00;
+  box-shadow: #ff6b00;
 }
 
 .hamburger-icon {
@@ -81,7 +76,7 @@ button:hover {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   border-radius: 2px;
 }
 
@@ -112,14 +107,14 @@ button:hover {
 
 .main-header {
   font-family: 'Crete Round', serif;
-  color: #FF6B00;
+  color: #ff6b00;
   font-size: 33px;
   margin-bottom: 1rem;
 }
 
 .second-header {
   font-family: 'Roboto', serif;
-  color: #FFF5E1;
+  color: #fff5e1;
   margin-bottom: 1rem;
   font-size: 25px;
 }
@@ -131,7 +126,7 @@ button:hover {
 
 .main-description {
   font-family: 'Roboto', serif;
-  color: #FFF5E1;
+  color: #fff5e1;
   font-size: 20px;
   margin-top: 0.6rem;
 }
@@ -149,7 +144,6 @@ button:hover {
 
 /* This styles are for screens smaller than 767px */
 @media screen and (max-width: 767px) {
-
   .nav-items {
     display: none;
   }
@@ -201,20 +195,17 @@ button:hover {
 @media (min-width: 768px) {
   .nav-items {
     display: flex;
+    padding-right: 0;
   }
 
   .hamburger-icon {
     display: none;
   }
 
-  .nav-items {
-    padding-right: 0;
-  }
-
   .list-item:hover,
   button:hover {
     transform: translate(2px, 2px);
-    box-shadow: #FF6B00;
+    box-shadow: #ff6b00;
   }
 
   .main-area {
@@ -264,13 +255,8 @@ button:hover {
 
 /* This styles are for screens smaller than 375px */
 @media screen and (max-width: 375px) {
-
   .nav-items {
     display: none;
-  }
-
-  .logo {
-    order: 1;
   }
 
   .hamburgerMenu {
