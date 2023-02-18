@@ -375,7 +375,6 @@ button:hover {
   color: #fff;
 }
 
-
 .about-me-main-container {
   width: 375px;
   background-color: #1c1a19;
@@ -518,6 +517,7 @@ button:hover {
   font-weight: 400;
   line-height: 32px;
 }
+
 /* This styles are for screens larger than 768px */
 @media (min-width: 768px) {
   .nav-items {
@@ -669,9 +669,7 @@ button:hover {
   }
 }
 
-/* Media queries*/
 @media screen and (min-width: 768px) {
-/* Change grid layout to 3 columns */
   .works-container {
     grid-template-columns: repeat(3, 1fr);
   }
