@@ -332,14 +332,6 @@ button:hover {
   margin-bottom: 13px;
 }
 
-.work-card ul {
-  display: flex;
-  justify-content: left;
-  list-style: none;
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
 /* List items */
 .work-card li {
   margin: 0 6px;
@@ -356,6 +348,14 @@ button:hover {
   color: #fff;
   margin-right: 10px;
   background-position: center left;
+}
+
+.work-card ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 /* Button at the bottom of the card */
