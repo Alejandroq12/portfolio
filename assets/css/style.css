@@ -162,175 +162,6 @@ button:hover {
   transform: translate(2px, 2px);
 }
 
-/* This styles are for screens larger than 768px */
-@media (min-width: 768px) {
-  .nav-items {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: block;
-  }
-
-  /* .nav-items {
-    display: flex;
-    padding-right: 0;
-    width: 375px;
-  } */
-
-  /* .hamburger-icon {
-    display: none;
-  } */
-
-  .list-item:hover,
-  button:hover {
-    transform: translate(2px, 2px);
-    box-shadow: #ff6b00;
-  }
-
-  .main-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background-size: 70%;
-    background-position: 180% 90%;
-    width: 100%;
-    width: 375px;
-    height: 768px;
-  }
-
-  .main-description {
-    max-width: 60%;
-    line-height: 1.5;
-    margin-top: 1rem;
-  }
-
-  .main-description,
-  .main-header,
-  .second-header {
-    margin-left: 50px;
-  }
-
-
-
-  .socialMediaIcons {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: absolute;
-    margin-left: 0;
-    margin-top: 9.5rem;
-    left: 1rem;
-    top: 2rem;
-  }
-
-  .my-icons-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    list-style: none;
-  }
-
-  .my-icons-list li {
-    flex: 0 0 100%;
-    text-align: left;
-    padding: 5px;
-  }
-}
-
-/* This styles are for screens smaller than 767px */
-@media screen and (max-width: 767px) {
-  .nav-items {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: block;
-  }
-
-  .main-area {
-    flex-direction: column;
-    padding: 1.2rem;
-    background-size: 70%;
-    background-position: 204% 118%;
-    width: 375px;
-    height: 768px;
-  }
-
-  .socialMediaIcons {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.2rem;
-  }
-
-  .my-icons-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style: none;
-  }
-
-  .my-icons-list li {
-    flex: 0 0 11%;
-    text-align: center;
-    padding: 5px;
-  }
-}
-
-/* This styles are for screens smaller than 375px */
-@media screen and (max-width: 375px) {
-  .nav-items {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: block;
-  }
-
-  .main-area {
-    flex-direction: column;
-    padding: 1rem;
-    background-size: 70%;
-    background-position: 205% 115%;
-    width: 375px;
-    height: 590px;
-  }
-
-  .socialMediaIcons {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.2rem;
-  }
-
-  .my-icons-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style: none;
-  }
-
-  .my-icons-list li {
-    flex: 0 0 11%;
-    text-align: center;
-    padding: 5px;
-  }
-}
-
-
-
-
-
-
-
 .work-section {
   margin-top: 140px;
   width: 375px;
@@ -451,110 +282,6 @@ button:hover {
   background: #FF6b00;
 }
 
-/* Main container CSS Grid */
-.works-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 110px;
-
-}
-
-/* Individual card with Flexbox */
-.work-card {
-  background: linear-gradient(160.45deg, rgba(38, 38, 38, 0) 75.75%, rgba(38, 38, 38, 0.9) 99.94%), url(../images/cardImages/projectCard.png);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  width: 327px;
-  height: 386px;
-}
-
-.work-cards-title {
-  width: 295px;
-  height: 81px;
-  font-family: 'Crete Round';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  margin-top: 84px;
-  margin-left: 29px;
-  margin-bottom: 14px;
-}
-
-.work-cards-description {
-  width: 295px;
-  height: 87px;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  margin-left: 29px;
-  margin-bottom: 13px;
-}
-
-.work-card ul {
-  display: flex;
-  justify-content: left;
-  list-style: none;
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
-/* List items */
-.work-card li {
-  margin: 0 6px;
-  padding: 10px 14px;
-  width: 105px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid transparent;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #fff;
-  margin-right: 10px;
-  background-position: center left;
-}
-
-/* Button at the bottom of the card */
-.button-card {
-  width: 327px;
-  height: 48px;
-  left: 0px;
-  top: 0px;
-  background: #ff6b00;
-  border: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-}
-
-/* Media queries*/
-@media screen and (min-width: 768px) {
-
-  /* Change grid layout to 3 columns */
-  .works-container {
-    grid-template-columns: repeat(3, 1fr);
-
-  }
-}
 
 .about-me-main-container {
   width: 375px;
@@ -588,7 +315,6 @@ button:hover {
   margin-top: 80px;
   margin-left: 20px;
 }
-
 
 .description-me-section {
   margin-top: 5px;
@@ -691,12 +417,12 @@ button:hover {
 }
 
 .li-list-me-section {
-font-family: 'Inter', serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 43px;
-color: #fff;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 43px;
+  color: #fff;
 
 }
 
@@ -705,4 +431,271 @@ color: #fff;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
+}
+
+
+/* Main container CSS Grid */
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 110px;
+
+}
+
+/* Individual card with Flexbox */
+.work-card {
+  background: linear-gradient(160.45deg, rgba(38, 38, 38, 0) 75.75%, rgba(38, 38, 38, 0.9) 99.94%), url(../images/cardImages/projectCard.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 327px;
+  height: 386px;
+}
+
+.work-cards-title {
+  width: 295px;
+  height: 81px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-top: 84px;
+  margin-left: 29px;
+  margin-bottom: 14px;
+}
+
+.work-cards-description {
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 29px;
+  margin-bottom: 13px;
+}
+
+.work-card ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* List items */
+.work-card li {
+  margin: 0 6px;
+  padding: 10px 14px;
+  width: 105px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid transparent;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 10px;
+  background-position: center left;
+}
+
+/* Button at the bottom of the card */
+.button-card {
+  width: 327px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  background: #ff6b00;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+/* This styles are for screens larger than 768px */
+@media (min-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  /* .nav-items {
+    display: flex;
+    padding-right: 0;
+    width: 375px;
+  } */
+
+  /* .hamburger-icon {
+    display: none;
+  } */
+
+  .list-item:hover,
+  button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: #ff6b00;
+  }
+
+  .main-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-size: 70%;
+    background-position: 180% 90%;
+    width: 100%;
+    width: 375px;
+    height: 768px;
+  }
+
+  .main-description {
+    max-width: 60%;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  .main-description,
+  .main-header,
+  .second-header {
+    margin-left: 50px;
+  }
+
+  .socialMediaIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 9.5rem;
+    left: 1rem;
+    top: 2rem;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    list-style: none;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 100%;
+    text-align: left;
+    padding: 5px;
+  }
+}
+
+/* This styles are for screens smaller than 767px */
+@media screen and (max-width: 767px) {
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .main-area {
+    flex-direction: column;
+    padding: 1.2rem;
+    background-size: 70%;
+    background-position: 204% 118%;
+    width: 375px;
+    height: 768px;
+  }
+
+  .socialMediaIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.2rem;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 11%;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+/* This styles are for screens smaller than 375px */
+@media screen and (max-width: 375px) {
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .main-area {
+    flex-direction: column;
+    padding: 1rem;
+    background-size: 70%;
+    background-position: 205% 115%;
+    width: 375px;
+    height: 590px;
+  }
+
+  .socialMediaIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.2rem;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 11%;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+/* Media queries*/
+@media screen and (min-width: 768px) {
+
+  /* Change grid layout to 3 columns */
+  .works-container {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 }
