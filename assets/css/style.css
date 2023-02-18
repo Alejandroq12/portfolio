@@ -15,10 +15,6 @@ html {
   font-size: calc(20px + 0.390625vw);
 }
 
-body {
-  background-color: #1c1a19;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -26,6 +22,7 @@ body {
   padding: 18px;
   background-color: #3e3c3c;
   box-shadow: 1px 2px 10px black;
+  width: 375px;
 }
 
 .main-logo {
@@ -105,6 +102,7 @@ button:hover {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  background-color: #1c1a19;
 }
 
 .main-section {
@@ -166,13 +164,22 @@ button:hover {
 /* This styles are for screens larger than 768px */
 @media (min-width: 768px) {
   .nav-items {
-    display: flex;
-    padding-right: 0;
+    display: none;
   }
 
   .hamburger-icon {
-    display: none;
+    display: block;
   }
+
+  /* .nav-items {
+    display: flex;
+    padding-right: 0;
+    width: 375px;
+  } */
+
+  /* .hamburger-icon {
+    display: none;
+  } */
 
   .list-item:hover,
   button:hover {
@@ -187,8 +194,10 @@ button:hover {
     justify-content: center;
     padding: 1rem;
     background-size: 70%;
-    background-position: 205% 25%;
+    background-position: 180% 90%;
     width: 100%;
+    width: 375px;
+    height: 768px;
   }
 
   .main-description {
@@ -196,6 +205,14 @@ button:hover {
     line-height: 1.5;
     margin-top: 1rem;
   }
+
+  .main-description,
+  .main-header,
+  .second-header {
+    margin-left: 50px;
+  }
+
+
 
   .socialMediaIcons {
     display: flex;
@@ -241,7 +258,7 @@ button:hover {
     background-size: 70%;
     background-position: 204% 118%;
     width: 375px;
-    height: 590px;
+    height: 768px;
   }
 
   .socialMediaIcons {
@@ -304,5 +321,234 @@ button:hover {
     flex: 0 0 11%;
     text-align: center;
     padding: 5px;
+  }
+}
+
+
+
+
+
+
+
+.work-section {
+  margin-top: 140px;
+  width: 375px;
+}
+
+.second-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #1c1a19;
+  Width: 327px;
+  Height: 83px;
+  margin: 0 auto 4%;
+  text-align: center;
+}
+
+.line_below_title {
+  width: 327px;
+  height: 0px;
+  border: 0.4px solid #212121;
+  margin: 0 auto 8%;
+  margin-bottom: 100px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  margin-bottom: 60px;
+}
+
+.main_card {
+  background-color: white;
+  width: 400px;
+  text-align: left;
+  width: 375px;
+  height: 568px;
+  padding: 0px 24px;
+  gap: 24px;
+}
+
+.image_from_main_card {
+  width: 327px;
+  height: 237px;
+  margin: 0 auto 8%;
+}
+
+.main-card-title {
+  width: 327px;
+  height: 36px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091E42;
+}
+
+.main-card-description {
+  width: 327px;
+  height: 147px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin: 16px 0;
+}
+
+.main_card ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main_card ul li {
+  padding: 10px 8px;
+  margin-right: 15px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.main_card button {
+  display: block;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.button-from-main-card {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  gap: 10px;
+  width: 129px;
+  height: 48px;
+  background: #FF6b00;
+}
+
+/* Main container CSS Grid */
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Individual card with Flexbox */
+.work-card {
+  background: linear-gradient(160.45deg, rgba(38, 38, 38, 0) 75.75%, rgba(38, 38, 38, 0.9) 99.94%), url(../images/cardImages/projectCard.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 327px;
+  height: 386px;
+}
+
+.work-cards-title {
+  width: 295px;
+  height: 81px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-top: 84px;
+  margin-left: 29px;
+  margin-bottom: 14px;
+}
+
+.work-cards-description {
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 29px;
+  margin-bottom: 13px;
+}
+
+.work-card ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* List items */
+.work-card li {
+  margin: 0 6px;
+  padding: 10px 14px;
+  width: 105px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid transparent;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 10px;
+  background-position: center left;
+}
+
+/* Button at the bottom of the card */
+.button-card {
+  width: 327px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  background: #ff6b00;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+/* Media queries*/
+@media screen and (min-width: 768px) {
+
+  /* Change grid layout to 3 columns */
+  .works-container {
+    grid-template-columns: repeat(3, 1fr);
+
   }
 }
