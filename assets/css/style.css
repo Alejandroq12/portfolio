@@ -539,16 +539,6 @@ button:hover {
     display: block;
   }
 
-  /* .nav-items {
-    display: flex;
-    padding-right: 0;
-    width: 375px;
-  } */
-
-  /* .hamburger-icon {
-    display: none;
-  } */
-
   .list-item:hover,
   button:hover {
     transform: translate(2px, 2px);
