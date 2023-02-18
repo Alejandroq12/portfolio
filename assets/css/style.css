@@ -246,19 +246,6 @@ button:hover {
   list-style: none;
 }
 
-.main_card ul li {
-  padding: 10px 8px;
-  margin-right: 15px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-}
-
 .main_card button {
   display: block;
   margin-top: 20px;
@@ -348,6 +335,19 @@ button:hover {
   color: #fff;
   margin-right: 10px;
   background-position: center left;
+}
+
+.main_card ul li {
+  padding: 10px 8px;
+  margin-right: 15px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
 }
 
 .work-card ul {
