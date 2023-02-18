@@ -668,9 +668,3 @@ button:hover {
     padding: 5px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .works-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
