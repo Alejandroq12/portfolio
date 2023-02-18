@@ -175,15 +175,15 @@ button:hover {
   line-height: 52px;
   align-items: center;
   color: #1c1a19;
-  Width: 327px;
-  Height: 83px;
+  width: 327px;
+  height: 83px;
   margin: 0 auto 4%;
   text-align: center;
 }
 
 .line_below_title {
   width: 327px;
-  height: 0px;
+  height: 0;
   border: 0.4px solid #212121;
   margin: 0 auto 8%;
   margin-bottom: 100px;
@@ -199,11 +199,10 @@ button:hover {
 
 .main_card {
   background-color: white;
-  width: 400px;
   text-align: left;
   width: 375px;
   height: 568px;
-  padding: 0px 24px;
+  padding: 0 24px;
   gap: 24px;
 }
 
@@ -223,7 +222,7 @@ button:hover {
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #091E42;
+  color: #091e42;
 }
 
 .main-card-description {
@@ -252,7 +251,7 @@ button:hover {
   margin-right: 15px;
   background: #fff;
   border: 1px solid #8993a4;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -273,15 +272,14 @@ button:hover {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   padding: 12px;
   gap: 10px;
   width: 129px;
   height: 48px;
-  background: #FF6b00;
+  background: #ff6b00;
 }
-
 
 .about-me-main-container {
   width: 375px;
@@ -294,7 +292,6 @@ button:hover {
   gap: 1rem;
   background-image: url("../images/frame.png");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   background-size: 40%;
   background-position: 100% 23%;
@@ -323,7 +320,7 @@ button:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -335,10 +332,9 @@ button:hover {
   width: 161px;
   height: 48px;
   background: #ff6b00;
-  color: #F4F5F7;
+  color: #f4f5f7;
   border: none;
   border-radius: 0.25rem;
-  font-size: 16px;
   cursor: pointer;
   font-weight: 700;
   font-size: 17px;
@@ -360,14 +356,9 @@ button:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   text-align: center;
   margin-top: 100px;
-}
-
-.li-list-me-section {
-  margin: 1rem 0;
-  list-style: none;
 }
 
 .list-titles-one::before {
@@ -417,13 +408,14 @@ button:hover {
 }
 
 .li-list-me-section {
+  margin: 1rem 0;
+  list-style: none;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
   line-height: 43px;
   color: #fff;
-
 }
 
 .about-me-section {
@@ -432,7 +424,6 @@ button:hover {
   font-weight: 400;
   line-height: 32px;
 }
-
 
 /* Main container CSS Grid */
 .works-container {
@@ -462,7 +453,7 @@ button:hover {
 .work-cards-title {
   width: 295px;
   height: 81px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -516,17 +507,17 @@ button:hover {
 .button-card {
   width: 327px;
   height: 48px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   background: #ff6b00;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* This styles are for screens larger than 768px */
@@ -682,10 +673,8 @@ button:hover {
 
 /* Media queries*/
 @media screen and (min-width: 768px) {
-
   /* Change grid layout to 3 columns */
   .works-container {
     grid-template-columns: repeat(3, 1fr);
-
   }
 }
