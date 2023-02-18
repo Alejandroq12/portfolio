@@ -272,157 +272,13 @@ button:hover {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   border: none;
   padding: 12px;
   gap: 10px;
   width: 129px;
   height: 48px;
   background: #ff6b00;
-}
-
-.about-me-main-container {
-  width: 375px;
-  background-color: #1c1a19;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-image: url("../images/frame.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40%;
-  background-position: 100% 23%;
-}
-
-.about-me-title {
-  width: 327px;
-  height: 79px;
-  font-family: 'Crete Round', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  justify-self: center;
-  align-self: center;
-  margin-top: 80px;
-  margin-left: 20px;
-}
-
-.description-me-section {
-  margin-top: 5px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.button-me-section {
-  margin-top: 28px;
-  padding: 12px;
-  gap: 10px;
-  width: 161px;
-  height: 48px;
-  background: #ff6b00;
-  color: #f4f5f7;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.line-from-about-me {
-  width: 328px;
-  height: 0;
-  border: 1px solid gray;
-  margin-top: 200px;
-  margin-left: 23px;
-}
-
-.ul-list-me-section {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.list-titles-one::before {
-  content: "\25C6";
-  color: #ff6b00;
-  font-size: 36px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.list-titles-two::before {
-  content: "\25A0";
-  color: #ff6b00;
-  font-size: 38px;
-  margin-right: 23px;
-  vertical-align: 10%;
-}
-
-.list-titles-three::before {
-  content: "\25CF";
-  color: #ff6b00;
-  font-size: 38px;
-  margin-right: 12px;
-}
-
-.list-titles-one {
-  margin-right: 25px;
-  margin-left: -14px;
-  font-family: 'InaiMathi', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-}
-
-.list-titles-two,
-.list-titles-three {
-  margin-right: 28px;
-  margin-left: -14px;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-}
-
-.li-list-me-section {
-  margin: 1rem 0;
-  list-style: none;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 43px;
-  color: #fff;
-}
-
-.about-me-section {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
 }
 
 /* Main container CSS Grid */
@@ -433,7 +289,6 @@ button:hover {
   justify-items: center;
   align-items: center;
   margin-bottom: 110px;
-
 }
 
 /* Individual card with Flexbox */
@@ -517,9 +372,152 @@ button:hover {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
 }
 
+
+.about-me-main-container {
+  width: 375px;
+  background-color: #1c1a19;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image: url("../images/frame.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100% 21%;
+}
+
+.about-me-title {
+  width: 327px;
+  height: 79px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  justify-self: center;
+  align-self: center;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.description-me-section {
+  margin-top: 5px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.button-me-section {
+  margin-top: 28px;
+  padding: 12px;
+  gap: 10px;
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  color: #f4f5f7;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.line-from-about-me {
+  width: 320px;
+  height: 0;
+  border: 1px solid gray;
+  margin-top: 160px;
+  margin-left: 23px;
+}
+
+.ul-list-me-section {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.list-titles-one::before {
+  content: "\25C6";
+  color: #ff6b00;
+  font-size: 36px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.list-titles-two::before {
+  content: "\25A0";
+  color: #ff6b00;
+  font-size: 38px;
+  margin-right: 23px;
+  vertical-align: 10%;
+}
+
+.list-titles-three::before {
+  content: "\25CF";
+  color: #ff6b00;
+  font-size: 38px;
+  margin-right: 12px;
+}
+
+.list-titles-one {
+  margin-right: 25px;
+  margin-left: -14px;
+  font-family: 'InaiMathi', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.list-titles-two,
+.list-titles-three {
+  margin-right: 28px;
+  margin-left: -14px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.li-list-me-section {
+  margin: 1rem 0;
+  list-style: none;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 43px;
+  color: #fff;
+}
+
+.about-me-section {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
 /* This styles are for screens larger than 768px */
 @media (min-width: 768px) {
   .nav-items {
@@ -644,7 +642,7 @@ button:hover {
     flex-direction: column;
     padding: 1rem;
     background-size: 70%;
-    background-position: 205% 115%;
+    background-position: 205% 130%;
     width: 375px;
     height: 590px;
   }
@@ -673,7 +671,7 @@ button:hover {
 
 /* Media queries*/
 @media screen and (min-width: 768px) {
-  /* Change grid layout to 3 columns */
+/* Change grid layout to 3 columns */
   .works-container {
     grid-template-columns: repeat(3, 1fr);
   }
