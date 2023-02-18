@@ -1,3 +1,308 @@
-.makeHeaderRed {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(20px + 0.390625vw);
+}
+
+body {
+  background-color: #1c1a19;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  background-color: #3e3c3c;
+  box-shadow: 1px 2px 10px black;
+}
+
+.main-logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.logo {
+  margin-left: 3%;
+}
+
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  padding-right: 30%;
+}
+
+.list-item {
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.list-item a:hover,
+button:hover {
+  transform: translate(4px, 2px);
+  box-shadow: #ff6b00;
+}
+
+.hamburger-icon {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger-icon .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+}
+
+.main-area {
+  background-image: url("../images/Illustration-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+  margin-top: 3rem;
+  letter-spacing: 0.37px;
+}
+
+.main-header {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ff6b00;
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.37px;
+}
+
+.second-header {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  margin-bottom: 0.6rem;
+}
+
+.subtitle {
+  display: block;
+  margin-bottom: 0%;
+}
+
+.main-description {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 0.6rem;
+}
+
+.socialMediaIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.iconMedia:hover {
+  transform: translate(2px, 2px);
+}
+
+/* This styles are for screens larger than 768px */
+@media (min-width: 768px) {
+  .nav-items {
+    display: flex;
+    padding-right: 0;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .list-item:hover,
+  button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: #ff6b00;
+  }
+
+  .main-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-size: 70%;
+    background-position: 205% 25%;
+    width: 100%;
+  }
+
+  .main-description {
+    max-width: 60%;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  .socialMediaIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 9.5rem;
+    left: 1rem;
+    top: 2rem;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    list-style: none;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 100%;
+    text-align: left;
+    padding: 5px;
+  }
+}
+
+/* This styles are for screens smaller than 767px */
+@media screen and (max-width: 767px) {
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .main-area {
+    flex-direction: column;
+    padding: 1.2rem;
+    background-size: 70%;
+    background-position: 204% 118%;
+    width: 375px;
+    height: 590px;
+  }
+
+  .socialMediaIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.2rem;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 11%;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+/* This styles are for screens smaller than 375px */
+@media screen and (max-width: 375px) {
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .main-area {
+    flex-direction: column;
+    padding: 1rem;
+    background-size: 70%;
+    background-position: 205% 115%;
+    width: 375px;
+    height: 590px;
+  }
+
+  .socialMediaIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.2rem;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 11%;
+    text-align: center;
+    padding: 5px;
+  }
 }
