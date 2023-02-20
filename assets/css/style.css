@@ -95,7 +95,7 @@ button:hover {
 }
 
 .main-area {
-  background-image: url("../images/Illustration-header.png");
+  background-image: url("../images/main_section/Illustration-header.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -384,7 +384,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url("../images/frame.png");
+  background-image: url("../images/me_section/Frame.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: 100% 21%;

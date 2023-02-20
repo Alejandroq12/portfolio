@@ -1,7 +1,7 @@
 <a name="readme-top">My porfolio</a>
 
 <div align="center">
-  <img src="./assets/images/logo4.png" alt="logo" width="300"  height="auto" />
+  <img src="./assets/images/logo/logo4.png" alt="logo" width="300"  height="auto" />
   <br/>
 
   <h3><b>My porfolio</b></h3>
