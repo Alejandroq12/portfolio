@@ -95,7 +95,7 @@ button:hover {
 }
 
 .main-area {
-  background-image: url("../images/main_section/Illustration-header.png");
+  background-image: url('../images/main_section/Illustration-header.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -280,7 +280,12 @@ button:hover {
 
 /* Individual card with Flexbox */
 .work-card {
-  background: linear-gradient(160.45deg, rgba(38, 38, 38, 0) 75.75%, rgba(38, 38, 38, 0.9) 99.94%), url(../images/cardImages/projectCard.png);
+  background: linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 75.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
+    ),
+    url(../images/cardImages/projectCard.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -384,7 +389,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url("../images/me_section/Frame.png");
+  background-image: url('../images/me_section/Frame.png');
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: 100% 21%;
@@ -455,7 +460,7 @@ button:hover {
 }
 
 .list-titles-one::before {
-  content: "\25C6";
+  content: '\25C6';
   color: #ff6b00;
   font-size: 36px;
   margin-right: 10px;
@@ -463,7 +468,7 @@ button:hover {
 }
 
 .list-titles-two::before {
-  content: "\25A0";
+  content: '\25A0';
   color: #ff6b00;
   font-size: 38px;
   margin-right: 23px;
@@ -471,7 +476,7 @@ button:hover {
 }
 
 .list-titles-three::before {
-  content: "\25CF";
+  content: '\25CF';
   color: #ff6b00;
   font-size: 38px;
   margin-right: 12px;
@@ -669,3 +674,24 @@ button:hover {
   }
 }
 
+/* Form section */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: auto 24px; */
+  width: 375px;
+  padding: 24px;
+  text-align: center;
+  border: 1px yellow solid;
+}
+
+.contact-form__heading {
+  font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
