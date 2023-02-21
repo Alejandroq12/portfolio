@@ -280,11 +280,9 @@ button:hover {
 
 /* Individual card with Flexbox */
 .work-card {
-  background: linear-gradient(
-      160.45deg,
+  background: linear-gradient(160.45deg,
       rgba(38, 38, 38, 0) 75.75%,
-      rgba(38, 38, 38, 0.9) 99.94%
-    ),
+      rgba(38, 38, 38, 0.9) 99.94%),
     url(../images/cardImages/projectCard.png);
   display: flex;
   flex-direction: column;
@@ -675,46 +673,92 @@ button:hover {
 }
 
 /* Form section */
-
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: auto 24px; */
-  width: 375px;
-  padding: 24px;
-  text-align: center;
-  border: 1px yellow solid;
+  margin-top: 120px;
 }
 
 .contact-form__heading {
-  font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+  width: 327px;
+  height: 216px;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  text-align: center;
+  color: #172B4D;
+  margin-bottom: 73px;
 }
 
-.contact-form__input {
-  margin: auto 40px;
-}
-
-.contact-form__group > *::placeholder {
-  font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
-}
-
-.contact-form__input,
-.contact-form__label,
-.contact-form__textarea {
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
   border: none;
+  border-radius: 10px;
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form__group:nth-child(2),
+.contact-form__group:nth-child(3) {
+  margin-top: 20px;
+}
+
+.contact-form__label {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .contact-form__input,
-.contact-form__label {
-  border-bottom: 1px solid #dbd8d7;
+.contact-form__textarea {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  width: 100%;
+  font-size: 16px;
 }
 
 .contact-form__textarea {
+  border-bottom: none;
   background-color: #fbf8f7;
+}
+
+.contact-form__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+  background: #FF6B00;
+  margin-bottom: 124px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 24px;
+}
+
+.contact-form__button:hover {
+  background-color: #3e8ee0;
 }
