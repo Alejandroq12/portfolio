@@ -742,6 +742,11 @@ button:hover {
 
 }
 
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  outline: solid 1px #6fb4fe;
+}
+
 .contact-form__button {
   display: flex;
   flex-direction: row;
