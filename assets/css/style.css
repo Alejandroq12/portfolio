@@ -695,3 +695,26 @@ button:hover {
   line-height: 44px;
   color: #172b4d;
 }
+
+.contact-form__input {
+  margin: auto 40px;
+}
+
+.contact-form__group > *::placeholder {
+  font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.contact-form__input,
+.contact-form__label,
+.contact-form__textarea {
+  border: none;
+}
+
+.contact-form__input,
+.contact-form__label {
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.contact-form__textarea {
+  background-color: #fbf8f7;
+}
