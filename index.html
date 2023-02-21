@@ -23,7 +23,8 @@
                     <li class="list-item"><a href="#">Porfolio</a></li>
                     <li class="list-item"><a href="#">About</a></li>
                     <li class="list-item"><a href="#">Contact</a></li>
-                    <li class="list-item"><a href="#"><img src="./assets/images/main_section/mail.png" alt="mail logo"></a></li>
+                    <li class="list-item"><a href="#"><img src="./assets/images/main_section/mail.png"
+                                alt="mail logo"></a></li>
                 </ul>
             </div>
             <button type="button" class="hamburger-icon">
@@ -154,6 +155,7 @@
             </div>
         </div>
     </section>
+
     <section class="about-me-main-container">
         <header>
             <h2 class="about-me-title">About me</h2>
@@ -197,8 +199,29 @@
             </li>
         </ul>
     </section>
+    <!-- Form section -->
+    <section class="contact-form">
+        <h2 class="contact-form__heading">I'm always interested in hearing about new projects, so if you'd like to chat
+            please get in touch.</h2>
+        <form class="contact-form__form" action="" method="POST">
+            <input type="hidden" name="_subject" value="New Form Submission!">
+            <input type="text" name="_gotcha" style="display:none">
 
-
+            <div class="contact-form__group">
+                <input class="contact-form__input" type="text" id="name" name="name" placeholder="Full name"
+                    maxlength="30" required>
+            </div>
+            <div class="contact-form__group">
+                <input class="contact-form__label" type="email" id="email" name="email" placeholder="Email Address"
+                    required>
+            </div>
+            <div class="contact-form__group">
+                <textarea class="contact-form__textarea" id="message" name="message" placeholder="Enter text here"
+                    maxlength="500" rows="5" required></textarea>
+            </div>
+            <button class="contact-form__button" type="submit">Get in touch</button>
+        </form>
+    </section>
 </body>
 
 </html>
