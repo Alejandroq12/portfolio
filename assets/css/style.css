@@ -735,6 +735,13 @@ button:hover {
   background-color: #fbf8f7;
 }
 
+.contact-form__input:hover,
+.contact-form__textarea:hover {
+  outline: solid 1px #6fb4fe;
+  border: none;
+
+}
+
 .contact-form__button {
   display: flex;
   flex-direction: row;
