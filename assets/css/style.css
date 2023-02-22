@@ -299,7 +299,6 @@ button:hover {
   height: 386px;
 }
 
-
 .work-cards-title {
   width: 295px;
   height: 81px;
@@ -636,7 +635,7 @@ button:hover {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   border: none;
   margin-top: 24px;
 }
