@@ -561,6 +561,10 @@ button:hover {
   width: 100%;
 }
 
+.hide_input {
+  display: none;
+}
+
 .contact-form__group:nth-child(2),
 .contact-form__group:nth-child(3) {
   margin-top: 20px;
@@ -621,7 +625,7 @@ button:hover {
   width: 131px;
   height: 48px;
   background: #FF6B00;
-  margin-bottom: 124px;
+  margin-bottom: 112px;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
@@ -670,6 +674,43 @@ button:hover {
   letter-spacing: 0.03em;
   color: #5b5957;
   border: none;
+}
+
+/* footer section */
+footer {
+  padding: 2px;
+}
+
+.footer_top_line {
+  width: 100%;
+  height: 1px;
+  border-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+  margin-bottom: 13px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.logo-container img {
+  width: 20px;
+  margin: 10px;
+}
+
+
+.footer_bottom_line {
+  width: 155px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #333;
+  margin-top: 13px;
+  margin-bottom: 8px;
 }
 
 /* This styles are for screens larger than 768px */
