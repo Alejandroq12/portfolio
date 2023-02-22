@@ -281,9 +281,12 @@ button:hover {
 
 /* Individual card with Flexbox */
 .work-card {
-  background: linear-gradient(160.45deg,
+  background:
+    linear-gradient(
+      160.45deg,
       rgba(38, 38, 38, 0) 75.75%,
-      rgba(38, 38, 38, 0.9) 99.94%),
+      rgba(38, 38, 38, 0.9) 99.94%
+    ),
     url(../images/cardImages/projectCard.png);
   display: flex;
   flex-direction: column;
@@ -295,6 +298,7 @@ button:hover {
   width: 327px;
   height: 386px;
 }
+
 
 .work-cards-title {
   width: 295px;
@@ -540,7 +544,7 @@ button:hover {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin-bottom: 38px;
 }
 
@@ -581,11 +585,11 @@ button:hover {
   height: 18px;
   left: 16px;
   right: 16px;
-  top: calc(26% - 18px/2);
+  top: calc(26% - 18px / 2);
 }
 
 .contact-form__textarea::placeholder {
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .contact-form__input,
@@ -600,7 +604,7 @@ button:hover {
 }
 
 .contact-form__textarea {
-  background-color: #fBf8f7;
+  background-color: #fbf8f7;
   height: 114px;
 }
 
@@ -608,7 +612,6 @@ button:hover {
 .contact-form__textarea:hover {
   outline: solid 1px #6fb4fe;
   border: none;
-
 }
 
 .contact-form__input:focus,
@@ -624,18 +627,16 @@ button:hover {
   gap: 10px;
   width: 131px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   margin-bottom: 112px;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   margin-top: 24px;
 }
@@ -643,10 +644,9 @@ button:hover {
 .contact-form__button:hover {
   background-color: #fff5e1;
   box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
   cursor: pointer;
   border: solid 1px #f55800;
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -702,7 +702,6 @@ footer {
   width: 20px;
   margin: 10px;
 }
-
 
 .footer_bottom_line {
   width: 155px;
