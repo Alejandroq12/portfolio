@@ -56,9 +56,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[A fully functional contact form.]**
-- **[Mobile first porfolio.]**
-- **[Only using semantic HTML.]**
+- **A fully functional contact form.**
+- **Mobile first porfolio.**
+- **Only using semantic HTML.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +88,10 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-1. Clone it using your terminal: git clone https://github.com/Alejandroq12/portfolio.git
+1. Clone it using your terminal:
+```
+git clone https://github.com/Alejandroq12/portfolio.git
+```
 
 2. If the previous method does not work you may also download the repo as a .zip file and once you decompress the .zip file you are ready to use it.
 
@@ -120,9 +123,10 @@ npm install --save-dev hint@7.x
 
 3. If you run npm install do not forget to create a .gitignore file to prevent the node_modules to be uploaded to GitHub:
 
+```
 .gitignore
-
 node_modules/
+```
 
 ### Usage
 
@@ -179,9 +183,9 @@ You can deploy this project using GitHub pages:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[I will add the desktop version]**
-- [ ] **[I will add media queries to make responsive]**
-- [ ] **[I will use JavaScript to add interactivity]**
+- [ ] **I will add the desktop version**
+- [ ] **I will add media queries to make it responsive**
+- [ ] **I will use JavaScript to add interactivity**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -216,13 +220,13 @@ I would like to thank Wes Bos because I learned how to implement flexbox with hi
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Are you goin to use React in the future?]**
+- **Are you goin to use React in the future?**
 
-  - [Yes! I will transform this portfolio into a React App.]
+  - Yes! I will transform this portfolio into a React App.
 
-- **[Did you create this porfolio from scratch?]**
+- **Did you create this porfolio from scratch?**
 
-  - [Yes! From zero, and I will improve it a lot.]
+  - Yes! From zero, and I will improve it a lot.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
