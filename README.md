@@ -37,7 +37,7 @@
 
 # 📖 My Portfolio <a name="about-project"></a>
 
-**[Welcome to My Porfolio]** where you can explore my projects, get to know me, and find a way to contact me. Take a look at my various projects and discover the range of my technical skills. Whether you are interested in web development, software engineering, or data science, you'll find a variety of projects here to pique your interest. So feel free to browse, learn more about me and my work, and get in touch if you have any questions or opportunities to collaborate.
+- **Welcome to My Porfolio where you can explore my projects, get to know me, and find a way to contact me. Take a look at my various projects and discover the range of my technical skills. Whether you are interested in web development, software engineering, or data science, you'll find a variety of projects here to pique your interest. So feel free to browse, learn more about me and my work, and get in touch if you have any questions or opportunities to collaborate.**
 
 ## 🛠 Built With <a name="built-with"></a>
 
