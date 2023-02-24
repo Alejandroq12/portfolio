@@ -735,7 +735,7 @@ footer {
 
 
 
-
+/* Media query for extra small screens */
 @media only screen and (max-width: 600px) {
   /* header and nav bar*/
   .header-container {
@@ -1135,6 +1135,11 @@ footer {
   }
 }
 
+/* Media query for small screens */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  ...
 }
+
+/* Media query for medium screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
