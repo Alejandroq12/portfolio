@@ -756,5 +756,36 @@ footer {
     margin-left: 4vw;
     margin-bottom: 2vw;
   }
+  .hamburgerMenu {
+    align-items: flex-start;
+    margin-right: 4vw;
+  }
+  
+  .nav-items {
+    display: none;
+  }
+  
+  .list-item {
+    font-size: 5vw;
+    line-height: 6vw;
+    padding: 2vw 0;
+  }
+  
+  .list-item a:hover,
+  button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .hamburger-icon {
+    display: block;
+    font-size: 5em;
+  }
+  
+  .hamburger-icon .bar {
+    height: 0.6vw;
+    width: 6vw;
+  }
+  
   
   }
