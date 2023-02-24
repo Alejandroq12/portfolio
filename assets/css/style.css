@@ -916,5 +916,16 @@ footer {
         padding: 3vw;
         height: auto;
       }
+          /* Main container CSS Grid */
+          .works-container {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-bottom: 60px;
+          }
+        
+          /* Individual card with Flexbox */
+          .work-card {
+            width: 91vw;
+            height: 100vw;
+          }
   
   }
