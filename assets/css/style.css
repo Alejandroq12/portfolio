@@ -1103,4 +1103,10 @@ footer {
         line-height: 4.5vw;
         letter-spacing: 0.03em;
         }
+        .contact-form__button:disabled {
+          font-weight: 4vw;
+          font-size: 4vw;
+          line-height: 4.5vw;
+          letter-spacing: 0.03em;
+          }
   }
