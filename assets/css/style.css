@@ -1054,4 +1054,23 @@ footer {
         font-size: 4vw;
         line-height: 6vw;
       }
+      .contact-form {
+        margin-top: 20vw;
+      }
+    
+      .contact-form__heading {
+        width: 92vw;
+        font-size: 8vw;
+        line-height: 9.5vw;
+        margin-bottom: 25vw;
+      }
+    
+      .contact-form__input::placeholder,
+      .contact-form__textarea::placeholder {
+        font-size: 3vw;
+        line-height: 4vw;
+        height: 4vw;
+        top: 15%;
+      }
+    
   }
