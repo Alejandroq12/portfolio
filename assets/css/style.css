@@ -739,7 +739,13 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
-
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5vw 0;
+  }
     
   
   }
