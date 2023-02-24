@@ -1025,4 +1025,28 @@ footer {
         font-size: 5vw;
         line-height: 6vw;
       }
+      .list-titles-two,
+      .list-titles-three {
+        font-size: 5vw;
+        line-height: 6vw;
+      }
+    
+      .li-list-me-section {
+        margin-top: 4vw;
+        margin-right: 6vw;
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+      }
+      .list-titles-two,
+      .list-titles-three {
+        font-size: 5vw;
+        line-height: 6vw;
+      }
+    
+      .li-list-me-section {
+        margin-top: 4vw;
+        margin-right: 6vw;
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+      }
   }
