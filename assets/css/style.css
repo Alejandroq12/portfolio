@@ -800,5 +800,28 @@ footer {
       background-size: 43%;
       background-position: 98% 112%;
       }
+
+      .main-section {
+        align-items: center;
+        text-align: center;
+        margin-top: 6vw;
+    
+      }
+    
+      .main-header {
+        font-size: 15vw;
+        line-height: 18vw;
+        margin-top: 19vw;
+        text-align: start;
+        padding: 0 6vw;
+      }
+    
+      .second-header {
+        font-size: 6.5vw;
+        line-height: 12vw;
+        text-align: start;
+        padding: 0 6vw;
+    
+      }
   
   }
