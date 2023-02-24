@@ -970,4 +970,27 @@ footer {
         background-size: 40%;
         background-position: 100% 26%;
       }
+
+      .about-me-title {
+        font-size: 17vw;
+        line-height: 12vw;
+        margin-top: 22vw;
+        margin-left: 0.5vw;
+      }
+    
+      .description-me-section {
+        font-size: 3.9vw;
+        line-height: 6.4vw;
+        margin-left: 0.5vw;
+        margin-top: 6vw;
+      }
+    
+      .button-me-section {
+        margin-top: 5vw;
+        padding: 4vw;
+        width: 42vw;
+        height: 11vw;
+        font-size: 4.3vw;
+        line-height: 4vw;
+      }
   }
