@@ -1072,5 +1072,35 @@ footer {
         height: 4vw;
         top: 15%;
       }
+        
+      .contact-form__input,
+      .contact-form__textarea {
+        font-size: 3vw;
+        height: 12vw;
+        margin: 5vw 0;
+      }
     
+      .contact-form__textarea {
+        height: 30vw;
+      }
+    
+      .contact-form__button {
+        width: 33vw;
+        height: 11vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
+        margin-bottom: 10vw;
+        margin-top: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 22vw;
+      }
+    
+      .contact-form__button:hover {
+        font-weight: 2vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
+        letter-spacing: 0.03em;
+        }
   }
