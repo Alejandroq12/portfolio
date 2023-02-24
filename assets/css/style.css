@@ -786,6 +786,19 @@ footer {
     height: 0.6vw;
     width: 6vw;
   }
-  
+     /* main section */
+     .main-area {
+      background-image: url('../images/main_section/illustration-mobile.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 85vh;
+      background-color: #1c1a19;
+      background-size: 43%;
+      background-position: 98% 112%;
+      }
   
   }
