@@ -875,6 +875,32 @@ footer {
         justify-content: center;
         margin-bottom: 40px;
       }
+       
+      .main_card {
+        height: auto;
+        padding: 24px auto;
+        gap: 16px;
+      }
     
+      .main-card-title {
+        font-size: 8.5vw;
+        line-height: 32px;
+        height: auto;
+      }
+    
+      .main-card-description {
+        font-size: 3.6vw;
+        line-height: 6vw;
+        height: auto;
+      }
+    
+      .main-card-list-ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
   
   }
