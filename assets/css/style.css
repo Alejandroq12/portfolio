@@ -962,5 +962,12 @@ footer {
         height: 100%;
         margin-top: 5vw;
       }
-  
+      
+      /* About me section */
+      .about-me-main-container {
+        background-image: url('../images/me_section/Frame.png');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: 100% 26%;
+      }
   }
