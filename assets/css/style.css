@@ -1109,4 +1109,28 @@ footer {
           line-height: 4.5vw;
           letter-spacing: 0.03em;
           }
+          footer {
+            padding: 1rem;
+          }
+        
+          .footer_top_line {
+            margin-bottom: 5vw;
+            width: 100vw;
+          }
+        
+          .logo-container {
+            max-width: 100%;
+          }
+        
+          .logo-container img {
+            width: 5vw;
+            margin: 0.5rem;
+          }
+        
+          .footer_bottom_line {
+            width: 40vw;
+            height: 0.3rem;
+            margin-top: 3.5vw;
+            margin-bottom: 0.1vw;
+          }
   }
