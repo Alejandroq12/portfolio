@@ -993,4 +993,36 @@ footer {
         font-size: 4.3vw;
         line-height: 4vw;
       }
+      .line-from-about-me {
+        margin-top: 40vw;
+        margin-left: 10%;
+        width: 80vw;
+      }
+    
+      .ul-list-me-section {
+        font-size: 4vw;
+        line-height: 6vw;
+        margin-top: 18vw;
+        list-style: none;
+      }
+    
+      .list-titles-one::before {
+        font-size: 5vw;
+        margin-right: 2vw;
+      }
+    
+      .list-titles-two::before {
+        font-size: 5.4vw;
+        margin-right: 2vw;
+      }
+    
+      .list-titles-three::before {
+        font-size: 6vw;
+        margin-right: 2vw;
+      }
+    
+      .list-titles-one {
+        font-size: 5vw;
+        line-height: 6vw;
+      }
   }
