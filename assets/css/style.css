@@ -823,5 +823,22 @@ footer {
         padding: 0 6vw;
     
       }
+
+      .main-description {
+        font-size: 4.2vw;
+        line-height: 7vw;
+        text-align: start;
+        padding: 0 6vw;
+    
+      }
+    
+      .socialMediaIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3vw;
+        margin-left: -30vw;
+      }
+    
   
   }
