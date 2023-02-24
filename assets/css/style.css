@@ -839,6 +839,19 @@ footer {
         margin-top: 3vw;
         margin-left: -30vw;
       }
+      .my-icons-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        list-style: none;
+        justify-content: flex-start;
+      }
     
+      .my-icons-list li {
+        flex: 0 0 11%;
+        margin: 0 1vw;
+        text-align: center;
+        padding: 5px;
+      }
   
   }
