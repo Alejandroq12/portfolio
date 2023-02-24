@@ -1049,4 +1049,9 @@ footer {
         font-size: 3.5vw;
         line-height: 4.5vw;
       }
+      
+      .about-me-section {
+        font-size: 4vw;
+        line-height: 6vw;
+      }
   }
