@@ -440,7 +440,6 @@ button:hover {
   background: #ff6b00;
   color: #f4f5f7;
   border: none;
-  border-radius: 0.25rem;
   cursor: pointer;
   font-weight: 700;
   font-size: 1.5vw;
@@ -916,10 +915,13 @@ footer {
 
   .button-from-main-card {
     margin-top: 3vw;
-    font-size: 4.9vw;
+    font-size: 4.5vw;
     line-height: 7vw;
     padding: 3vw;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Main container CSS Grid */
@@ -999,6 +1001,7 @@ footer {
     height: 11vw;
     font-size: 4.3vw;
     line-height: 4vw;
+    border-radius: none;
   }
 
   .line-from-about-me {
@@ -1011,6 +1014,7 @@ footer {
     font-size: 4vw;
     line-height: 6vw;
     margin-top: 18vw;
+    margin-bottom: 16vw;
     list-style: none;
   }
 
