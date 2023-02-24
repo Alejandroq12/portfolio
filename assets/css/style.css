@@ -746,6 +746,15 @@ footer {
     align-items: center;
     padding: 3.5vw 0;
   }
-    
+  
+  .main-logo {
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+  
+  .logo {
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+  }
   
   }
