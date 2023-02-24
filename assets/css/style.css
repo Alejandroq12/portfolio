@@ -736,9 +736,9 @@ footer {
 
 
 
-
-
 @media only screen and (max-width: 600px) {
+
+  /* header and nav bar*/
   .header-container {
     display: flex;
     flex-direction: row;
@@ -746,391 +746,392 @@ footer {
     align-items: center;
     padding: 3.5vw 0;
   }
-  
+
   .main-logo {
     font-size: 4.5vw;
     line-height: 6vw;
   }
-  
+
   .logo {
     margin-left: 4vw;
     margin-bottom: 2vw;
   }
+
   .hamburgerMenu {
     align-items: flex-start;
     margin-right: 4vw;
   }
-  
+
   .nav-items {
     display: none;
   }
-  
+
   .list-item {
     font-size: 5vw;
     line-height: 6vw;
     padding: 2vw 0;
   }
-  
+
   .list-item a:hover,
   button:hover {
     transform: none;
     box-shadow: none;
   }
-  
+
   .hamburger-icon {
     display: block;
     font-size: 5em;
   }
-  
+
   .hamburger-icon .bar {
     height: 0.6vw;
     width: 6vw;
   }
-     /* main section */
-     .main-area {
-      background-image: url('../images/main_section/illustration-mobile.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      min-height: 85vh;
-      background-color: #1c1a19;
-      background-size: 43%;
-      background-position: 98% 112%;
-      }
 
-      .main-section {
-        align-items: center;
-        text-align: center;
-        margin-top: 6vw;
-    
-      }
-    
-      .main-header {
-        font-size: 15vw;
-        line-height: 18vw;
-        margin-top: 19vw;
-        text-align: start;
-        padding: 0 6vw;
-      }
-    
-      .second-header {
-        font-size: 6.5vw;
-        line-height: 12vw;
-        text-align: start;
-        padding: 0 6vw;
-    
-      }
-
-      .main-description {
-        font-size: 4.2vw;
-        line-height: 7vw;
-        text-align: start;
-        padding: 0 6vw;
-    
-      }
-    
-      .socialMediaIcons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3vw;
-        margin-left: -30vw;
-      }
-      .my-icons-list {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        list-style: none;
-        justify-content: flex-start;
-      }
-    
-      .my-icons-list li {
-        flex: 0 0 11%;
-        margin: 0 1vw;
-        text-align: center;
-        padding: 5px;
-      }
-      .work-section {
-        margin-top: 18vh;
-      }
-    
-      .second-title {
-        font-size: 11.5vw;
-        line-height: 12vw;
-        height: auto;
-        text-align: center;
-        margin-bottom: 8vw;
-      }
-    
-      .line_below_title {
-        margin-bottom: 19vw;
-      }
-    
-      .card-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 40px;
-      }
-       
-      .main_card {
-        height: auto;
-        padding: 24px auto;
-        gap: 16px;
-      }
-    
-      .main-card-title {
-        font-size: 8.5vw;
-        line-height: 32px;
-        height: auto;
-      }
-    
-      .main-card-description {
-        font-size: 3.6vw;
-        line-height: 6vw;
-        height: auto;
-      }
-    
-      .main-card-list-ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      .main_card ul.main-card-list-ul li.main-card-list-ul-li {
-        padding: 2vw 3vw;
-        font-size: 3.7vw;
-        line-height: 3vw;
-        cursor: pointer;
-      }
-    
-      .button-from-main-card {
-        margin-top: 3vw;
-        font-size: 4.9vw;
-        line-height: 7vw;
-        padding: 3vw;
-        height: auto;
-      }
-          /* Main container CSS Grid */
-          .works-container {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            margin-bottom: 60px;
-          }
-        
-          /* Individual card with Flexbox */
-          .work-card {
-            width: 91vw;
-            height: 100vw;
-          }
-          .work-cards-title {
-            font-size: 8vw;
-            line-height: 10vw;
-            text-align: start;
-            margin-left: 3.5vw;
-          }
-        
-          .work-cards-description {
-            font-size: 4vw;
-            line-height: 6vw;
-            text-align: start;
-            margin-left: 3.5vw;
-          }
-              
-      /* List items */
-      .work-card li {
-        padding: 2.5vw 3.5vw;
-        width: auto;
-        height: auto;
-        font-size: 3.5vw;
-        line-height: 5vw;
-        margin-left: 3.5vw;
-      }
-    
-      .work-card ul {
-        padding: 0;
-        margin-bottom: 2vw;
-      }
-    
-      /* Button at the bottom of the card */
-      .button-card {
-        width: 100%;
-        height: 100%;
-        margin-top: 5vw;
-      }
-      
-      /* About me section */
-      .about-me-main-container {
-        background-image: url('../images/me_section/Frame.png');
-        background-repeat: no-repeat;
-        background-size: 40%;
-        background-position: 100% 26%;
-      }
-
-      .about-me-title {
-        font-size: 17vw;
-        line-height: 12vw;
-        margin-top: 22vw;
-        margin-left: 0.5vw;
-      }
-    
-      .description-me-section {
-        font-size: 3.9vw;
-        line-height: 6.4vw;
-        margin-left: 0.5vw;
-        margin-top: 6vw;
-      }
-    
-      .button-me-section {
-        margin-top: 5vw;
-        padding: 4vw;
-        width: 42vw;
-        height: 11vw;
-        font-size: 4.3vw;
-        line-height: 4vw;
-      }
-      .line-from-about-me {
-        margin-top: 40vw;
-        margin-left: 10%;
-        width: 80vw;
-      }
-    
-      .ul-list-me-section {
-        font-size: 4vw;
-        line-height: 6vw;
-        margin-top: 18vw;
-        list-style: none;
-      }
-    
-      .list-titles-one::before {
-        font-size: 5vw;
-        margin-right: 2vw;
-      }
-    
-      .list-titles-two::before {
-        font-size: 5.4vw;
-        margin-right: 2vw;
-      }
-    
-      .list-titles-three::before {
-        font-size: 6vw;
-        margin-right: 2vw;
-      }
-    
-      .list-titles-one {
-        font-size: 5vw;
-        line-height: 6vw;
-      }
-      .list-titles-two,
-      .list-titles-three {
-        font-size: 5vw;
-        line-height: 6vw;
-      }
-    
-      .li-list-me-section {
-        margin-top: 4vw;
-        margin-right: 6vw;
-        font-size: 3.5vw;
-        line-height: 4.5vw;
-      }
-      .list-titles-two,
-      .list-titles-three {
-        font-size: 5vw;
-        line-height: 6vw;
-      }
-    
-      .li-list-me-section {
-        margin-top: 4vw;
-        margin-right: 6vw;
-        font-size: 3.5vw;
-        line-height: 4.5vw;
-      }
-      
-      .about-me-section {
-        font-size: 4vw;
-        line-height: 6vw;
-      }
-      .contact-form {
-        margin-top: 20vw;
-      }
-    
-      .contact-form__heading {
-        width: 92vw;
-        font-size: 8vw;
-        line-height: 9.5vw;
-        margin-bottom: 25vw;
-      }
-    
-      .contact-form__input::placeholder,
-      .contact-form__textarea::placeholder {
-        font-size: 3vw;
-        line-height: 4vw;
-        height: 4vw;
-        top: 15%;
-      }
-        
-      .contact-form__input,
-      .contact-form__textarea {
-        font-size: 3vw;
-        height: 12vw;
-        margin: 5vw 0;
-      }
-    
-      .contact-form__textarea {
-        height: 30vw;
-      }
-    
-      .contact-form__button {
-        width: 33vw;
-        height: 11vw;
-        font-size: 4vw;
-        line-height: 4.5vw;
-        margin-bottom: 10vw;
-        margin-top: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 22vw;
-      }
-    
-      .contact-form__button:hover {
-        font-weight: 2vw;
-        font-size: 4vw;
-        line-height: 4.5vw;
-        letter-spacing: 0.03em;
-        }
-        .contact-form__button:disabled {
-          font-weight: 4vw;
-          font-size: 4vw;
-          line-height: 4.5vw;
-          letter-spacing: 0.03em;
-          }
-          footer {
-            padding: 1rem;
-          }
-        
-          .footer_top_line {
-            margin-bottom: 5vw;
-            width: 100vw;
-          }
-        
-          .logo-container {
-            max-width: 100%;
-          }
-        
-          .logo-container img {
-            width: 5vw;
-            margin: 0.5rem;
-          }
-        
-          .footer_bottom_line {
-            width: 40vw;
-            height: 0.3rem;
-            margin-top: 3.5vw;
-            margin-bottom: 0.1vw;
-          }
+  /* main section */
+  .main-area {
+    background-image: url('../images/main_section/illustration-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 85vh;
+    background-color: #1c1a19;
+    background-size: 43%;
+    background-position: 98% 112%;
   }
+
+  .main-section {
+    align-items: center;
+    text-align: center;
+    margin-top: 6vw;
+
+  }
+
+  .main-header {
+    font-size: 15vw;
+    line-height: 18vw;
+    margin-top: 19vw;
+    text-align: start;
+    padding: 0 6vw;
+  }
+
+  .second-header {
+    font-size: 6.5vw;
+    line-height: 12vw;
+    text-align: start;
+    padding: 0 6vw;
+
+  }
+
+  .main-description {
+    font-size: 4.2vw;
+    line-height: 7vw;
+    text-align: start;
+    padding: 0 6vw;
+
+  }
+
+  .socialMediaIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-left: -30vw;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    justify-content: flex-start;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 11%;
+    margin: 0 1vw;
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* My works section */
+  .work-section {
+    margin-top: 18vh;
+  }
+
+  .second-title {
+    font-size: 11.5vw;
+    line-height: 12vw;
+    height: auto;
+    text-align: center;
+    margin-bottom: 8vw;
+  }
+
+  .line_below_title {
+    margin-bottom: 19vw;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .main_card {
+    height: auto;
+    padding: 24px auto;
+    gap: 16px;
+  }
+
+  .main-card-title {
+    font-size: 8.5vw;
+    line-height: 32px;
+    height: auto;
+  }
+
+  .main-card-description {
+    font-size: 3.6vw;
+    line-height: 6vw;
+    height: auto;
+  }
+
+  .main-card-list-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main_card ul.main-card-list-ul li.main-card-list-ul-li {
+    padding: 2vw 3vw;
+    font-size: 3.7vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
+
+  .button-from-main-card {
+    margin-top: 3vw;
+    font-size: 4.9vw;
+    line-height: 7vw;
+    padding: 3vw;
+    height: auto;
+  }
+
+  /* Main container CSS Grid */
+  .works-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 60px;
+  }
+
+  /* Individual card with Flexbox */
+  .work-card {
+    width: 91vw;
+    height: 100vw;
+  }
+
+  .work-cards-title {
+    font-size: 8vw;
+    line-height: 10vw;
+    text-align: start;
+    margin-left: 3.5vw;
+  }
+
+  .work-cards-description {
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: start;
+    margin-left: 3.5vw;
+  }
+
+  /* List items */
+  .work-card li {
+    padding: 2.5vw 3.5vw;
+    width: auto;
+    height: auto;
+    font-size: 3.5vw;
+    line-height: 5vw;
+    margin-left: 3.5vw;
+  }
+
+  .work-card ul {
+    padding: 0;
+    margin-bottom: 2vw;
+  }
+
+  /* Button at the bottom of the card */
+  .button-card {
+    width: 100%;
+    height: 100%;
+    margin-top: 5vw;
+  }
+
+  /* About me section */
+  .about-me-main-container {
+    background-image: url('../images/me_section/Frame.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 26%;
+  }
+
+  .about-me-title {
+    font-size: 17vw;
+    line-height: 12vw;
+    margin-top: 22vw;
+    margin-left: 0.5vw;
+  }
+
+  .description-me-section {
+    font-size: 3.9vw;
+    line-height: 6.4vw;
+    margin-left: 0.5vw;
+    margin-top: 6vw;
+  }
+
+  .button-me-section {
+    margin-top: 5vw;
+    padding: 4vw;
+    width: 42vw;
+    height: 11vw;
+    font-size: 4.3vw;
+    line-height: 4vw;
+  }
+
+  .line-from-about-me {
+    margin-top: 40vw;
+    margin-left: 10%;
+    width: 80vw;
+  }
+
+  .ul-list-me-section {
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-top: 18vw;
+    list-style: none;
+  }
+
+  .list-titles-one::before {
+    font-size: 5vw;
+    margin-right: 2vw;
+  }
+
+  .list-titles-two::before {
+    font-size: 5.4vw;
+    margin-right: 2vw;
+  }
+
+  .list-titles-three::before {
+    font-size: 6vw;
+    margin-right: 2vw;
+  }
+
+  .list-titles-one {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
+  .list-titles-two,
+  .list-titles-three {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
+  .li-list-me-section {
+    margin-top: 4vw;
+    margin-right: 6vw;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+  }
+
+  .about-me-section {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+
+  .contact-form {
+    margin-top: 20vw;
+  }
+
+  .contact-form__heading {
+    width: 92vw;
+    font-size: 8vw;
+    line-height: 9.5vw;
+    margin-bottom: 25vw;
+  }
+
+  .contact-form__input::placeholder,
+  .contact-form__textarea::placeholder {
+    font-size: 3vw;
+    line-height: 4vw;
+    height: 4vw;
+    top: 15%;
+  }
+
+  .contact-form__input,
+  .contact-form__textarea {
+    font-size: 3vw;
+    height: 12vw;
+    margin: 5vw 0;
+  }
+
+  .contact-form__textarea {
+    height: 30vw;
+  }
+
+  .contact-form__button {
+    width: 33vw;
+    height: 11vw;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    margin-bottom: 10vw;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22vw;
+  }
+
+  .contact-form__button:hover {
+    font-weight: 2vw;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    letter-spacing: 0.03em;
+  }
+
+  .contact-form__button:disabled {
+    font-weight: 4vw;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    letter-spacing: 0.03em;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  .footer_top_line {
+    margin-bottom: 5vw;
+    width: 100vw;
+  }
+
+  .logo-container {
+    max-width: 100%;
+  }
+
+  .logo-container img {
+    width: 5vw;
+    margin: 0.5rem;
+  }
+
+  .footer_bottom_line {
+    width: 40vw;
+    height: 0.3rem;
+    margin-top: 3.5vw;
+    margin-bottom: 0.1vw;
+  }
+}
