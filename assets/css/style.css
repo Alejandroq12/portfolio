@@ -16,7 +16,7 @@ html {
   font-size: calc(20px + 0.390625vw);
 }
 
-/* header and nav bar*/
+/* header and nav bar */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -180,7 +180,7 @@ button:hover {
 .line_below_title {
   margin: 0 auto 8%;
   width: 90%;
-  height: 0vw;
+  height: 0;
   border-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2vw;
 }
@@ -271,9 +271,12 @@ button:hover {
 /* Individual card with Flexbox */
 .work-card {
   background:
-    linear-gradient(160.45deg,
-      rgba(38, 38, 38, 0) 75.75%,
-      rgba(38, 38, 38, 0.9) 99.94%),
+      linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0)
+      75.75%,
+      rgba(38, 38, 38, 0.9)
+      99.94%),
     url(../images/cardImages/projectCard.png);
   display: flex;
   flex-direction: column;
@@ -702,18 +705,6 @@ footer {
   margin-bottom: 0.8vw;
 }
 
-/* common button style */
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ff6b00;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  color: #fff;
-  border: none;
-}
-
 button:hover {
   background-color: #fff5e1;
   box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
@@ -742,6 +733,18 @@ button:disabled {
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: #5b5957;
+  border: none;
+}
+
+/* common button style */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff6b00;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  color: #fff;
   border: none;
 }
 
