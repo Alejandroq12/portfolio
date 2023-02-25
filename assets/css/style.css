@@ -1168,6 +1168,23 @@ button:disabled {
     text-align: center;
     padding: 5px;
   }
+
+  /* My works section */
+  .work-section {
+    margin-top: 15vh;
+  }
+  
+  .second-title {
+    font-size: 10.6vw;
+    line-height: 23vw;
+    height: auto;
+    margin-bottom: 3vw;
+  }
+  
+  .line_below_title {
+    margin-bottom: 6vw;
+  }
+  
 }
 
 
