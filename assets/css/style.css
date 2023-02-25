@@ -1145,7 +1145,29 @@ button:disabled {
     text-align: start;
     padding: 0 6vw;
   }
+      
+  .socialMediaIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-right: 54vw;
+  }
   
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    justify-content: flex-start;
+  }
+  
+  .my-icons-list li {
+    flex: 0 0 11%;
+    margin: 0 1vw;
+    text-align: center;
+    padding: 5px;
+  }
 }
 
 
