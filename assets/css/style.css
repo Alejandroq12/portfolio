@@ -2022,3 +2022,29 @@ button:disabled {
     padding: 0 7vw;
     width: 58%;
   }
+  .socialMediaIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    margin: 11vw 0.2vw;
+  }
+
+  .my-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    justify-content: flex-start;
+  }
+
+  .my-icons-list li {
+    flex: 0 0 50%;
+    margin: 0 0.1vw;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5vw;
+    transform: scale(1);
+  }
