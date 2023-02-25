@@ -1239,6 +1239,14 @@ button:disabled {
     justify-content: center;
     align-items: center;
   }
+    
+    /* Main container with Flexbox */
+    .works-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 17vw;
+    }
 }
 
 
