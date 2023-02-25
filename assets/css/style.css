@@ -2218,3 +2218,18 @@ button:disabled {
     line-height: 3vw;
     cursor: pointer;
   }
+
+    /* About me section */
+    .about-me-main-container {
+      background-image: url('../images/me_section/desktop-frame.png');
+      background-repeat: no-repeat;
+      background-size: 39%;
+      background-position: 100% 8%;
+    }
+  
+    .about-me-title {
+      margin-top: 5.5vw;
+      margin-bottom: -3vw;
+      font-size: 5.2vw;
+      line-height: 7vw;
+    }
