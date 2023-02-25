@@ -737,7 +737,7 @@ button:disabled {
 
 /* Media query for extra small screens */
 @media only screen and (max-width: 600px) {
-  /* header and nav bar*/
+  /* header and nav bar */
   .header-container {
     display: flex;
     flex-direction: row;
@@ -791,12 +791,10 @@ button:disabled {
   .main-area {
     background-image: url('../images/main_section/illustration-mobile.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 105vh;
+    min-height: 66vh;
     background-size: 33%;
     background-position: 98% 115%;
   }
@@ -805,7 +803,6 @@ button:disabled {
     align-items: center;
     text-align: center;
     margin-top: 3vw;
-
   }
 
   .main-header {
@@ -829,7 +826,6 @@ button:disabled {
     line-height: 7vw;
     text-align: start;
     padding: 0 6vw;
-
   }
 
   .socialMediaIcons {
@@ -974,7 +970,6 @@ button:disabled {
     height: 11vw;
     font-size: 4vw;
     line-height: 4.5vw;
-    margin-bottom: 10vw;
     margin-top: 2vw;
     display: flex;
     justify-content: center;
@@ -1009,19 +1004,19 @@ button:disabled {
     align-items: center;
     height: 100%;
   }
-  
+
   .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
   }
-  
+
   .logo-container img {
     width: 3.5vw;
     margin: 1.5vw;
   }
-  
+
   .footer_bottom_line {
     width: 24vw;
     height: 1vw;
@@ -1031,7 +1026,6 @@ button:disabled {
 
 /* Media query for small screens */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  /* header and nav bar */
   .header-container {
     display: flex;
     flex-direction: row;
@@ -1078,8 +1072,6 @@ button:disabled {
   .main-area {
     background-image: url('../images/main_section/illustration-mobile.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1092,7 +1084,6 @@ button:disabled {
     align-items: center;
     text-align: center;
     margin-top: 10vw;
-
   }
 
   .main-header {
@@ -1222,7 +1213,7 @@ button:disabled {
     align-items: center;
   }
 
-/* Main container with Flexbox */
+  /* Main container with Flexbox */
   .works-container {
     display: flex;
     flex-wrap: wrap;
@@ -1230,58 +1221,58 @@ button:disabled {
     margin-bottom: 17vw;
   }
 
-/* Individual card with CSS Grid */
-.work-card {
-  display: grid;
-  grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
-  width: 327px;
-  height: 386px;
-  margin: 1vw 1.5vw 1vw 1.5vw;
-}
+  /* Individual card with CSS Grid */
+  .work-card {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
+    width: 327px;
+    height: 386px;
+    margin: 1vw 1.5vw 1vw 1.5vw;
+  }
 
-.work-cards-title {
-  font-size: 4.5vw;
-  line-height: 5vw;
-  text-align: start;
-  margin-left: 20px;
-  margin-top: 85px;
-  width: 75%;
-}
+  .work-cards-title {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 85px;
+    width: 75%;
+  }
 
-.work-cards-description {
-  font-size: 68%;
-  line-height: 3vw;
-  text-align: start;
-  margin-left: 20px;
-  width: 90%;
-  margin-bottom: 5px;
-}
+  .work-cards-description {
+    font-size: 68%;
+    line-height: 3vw;
+    text-align: start;
+    margin-left: 20px;
+    width: 90%;
+    margin-bottom: 5px;
+  }
 
-/* List items */
-.work-card li {
-  font-size: 50%;
-  line-height: 1vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-}
+  /* List items */
+  .work-card li {
+    font-size: 50%;
+    line-height: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
 
-.work-card ul {
-  padding: 0;
-  margin-top: 1px;
-  margin-bottom: 6px;
-  margin-left: 14px;
-}
+  .work-card ul {
+    padding: 0;
+    margin-top: 1px;
+    margin-bottom: 6px;
+    margin-left: 14px;
+  }
 
-/* Button at the bottom of the card */
-.button-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-}
+  /* Button at the bottom of the card */
+  .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
 
 .button-card button {
   font-size: 2vw;
