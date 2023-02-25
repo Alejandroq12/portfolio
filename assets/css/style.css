@@ -1341,7 +1341,37 @@ button:disabled {
       margin-bottom: 16vw;
       list-style: none;
     }
+  
+    .list-titles-one::before {
+      font-size: 8vw;
+      margin-right: 1vw;
+    }
     
+    .list-titles-two::before {
+      font-size: 10vw;
+      margin-right: 3vw;
+    }
+    
+    .list-titles-three::before {
+      font-size: 10vw;
+      margin-right: 1.5vw;
+    }
+    
+    .list-titles-one {
+      font-size: 10vw;
+      margin: 0 6vw 0 0;
+    }
+    
+    .list-titles-two,
+    .list-titles-three {
+      font-size: 10vw;
+      margin: 0 6vw 0 0;
+    }
+    
+    .li-list-me-section {
+      font-size: 4vw;
+      line-height: 7vw;
+    }
 }
 
 
