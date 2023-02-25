@@ -2411,4 +2411,36 @@ button:disabled {
   .contact-form__button :disabled {
     font-size: 1.5vw;
 
+    footer {
+      padding: 1.5vw 0.5vw;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
+  
+    .logo-container img {
+      width: 1.5vw;
+      margin: 1.5vw;
+    }
+  
+    .footer_bottom_line {
+      width: 22vw;
+      height: 1vw;
+      margin-top: 2vw;
+      display: none;
+    }
   }
