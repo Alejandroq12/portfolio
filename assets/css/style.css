@@ -1783,6 +1783,50 @@ button:disabled {
       width: 86vw;
   
     }
+    .ul-list-me-section {
+      margin-top: 7vw;
+      margin-bottom: 12vw;
+      list-style: none;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .container>div {
+      flex-basis: 20%;
+      display: flex;
+      /* Added to enable flex layout */
+      flex-direction: column;
+      /* Added to stack the list items */
+      align-items: flex-start;
+      /* Added to align the content at the top */
+    }
+  
+    .container>div h2 {
+      margin-top: 0;
+    }
+  
+  
+    .container>div:nth-child(1) h2 {
+      font-size: 2.5vw;
+      margin-left: 2vw;
+    }
+  
+    .container>div:nth-child(1) ul {
+      margin-left: 2.5vw;
+      padding: 10;
+    }
+  
+    .container>div:nth-child(1) ul li {
+      font-size: 2vw;
+      line-height: 2vw;
+      display: flex;
+      /* Added to enable flex layout */
+      align-items: center;
+      /* Added to center the text vertically */
+    }
 }
 
 
