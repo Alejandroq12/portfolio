@@ -1091,6 +1091,11 @@ button:disabled {
         align-items: flex-start;
         margin-right: 4vw;
       }
+      .list-item {
+        font-size: 2.2vw;
+        line-height: 3vw;
+        padding: 0 1.5vw;
+        }
 }
 
 
