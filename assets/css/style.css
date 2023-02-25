@@ -2233,3 +2233,18 @@ button:disabled {
       font-size: 5.2vw;
       line-height: 7vw;
     }
+
+    .description-me-section {
+      font-size: 1.3vw;
+      line-height: 3.1vw;
+      width: 42vw;
+    }
+  
+    .button-me-section {
+      margin-top: 2.5vw;
+      padding: 0.1vw;
+      font-size: 1vw;
+      line-height: 2vw;
+      height: 3.2vw;
+      width: 11vw;
+    }
