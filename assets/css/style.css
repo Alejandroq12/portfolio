@@ -1499,6 +1499,30 @@ button:disabled {
     margin-left: 9vw;
     margin-bottom: 1vw;
   }
+  /* main section */
+  .main-area {
+    background-image: url('../images/main_section/Illustration-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 52vh;
+    background-color: #1c1a19;
+    background-size: 40%;
+    background-position: 100% 50%;
+    position: relative;
+    /* Add position relative to the parent element */
+  }
+
+  .main-section {
+    align-items: center;
+    text-align: center;
+    margin-top: 4vw;
+    padding-left: 2%;
+    /* Add padding-left to push the content to the right of the .socialMediaIcons */
+  }
 }
 
 
