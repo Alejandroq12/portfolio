@@ -1318,7 +1318,10 @@ button:disabled {
       font-size: 15vw;
       line-height: 8vw;
     }
-    
+    .description-me-section {
+      font-size: 3.8vw;
+      line-height: 5.5vw;
+    }
 }
 
 
