@@ -1975,3 +1975,8 @@ button:disabled {
     margin-left: 9vw;
     margin-bottom: 1vw;
   }
+  .list-item {
+    font-size: 1.2vw;
+    line-height: 3vw;
+    padding: 0 1.5vw;
+  }
