@@ -2054,3 +2054,18 @@ button:disabled {
       margin-left: 2vw;
       margin-right: 2vw;
     }
+    .section-title-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.1vw;
+      width: 90%;
+      margin-left: 6vw;
+    }
+  
+    .second-title {
+      font-size: 3.5vw;
+      line-height: 23vw;
+      height: auto;
+      margin-right: 2vw;
+      /* margin-left: 2vw; */
+    }
