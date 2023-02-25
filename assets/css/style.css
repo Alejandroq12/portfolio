@@ -273,8 +273,8 @@ button:hover {
   background:
     linear-gradient(
       160.45deg,
-    rgba(38, 38, 38, 0) 75.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
+      rgba(38, 38, 38, 0) 75.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
     ),
     url(../images/cardImages/projectCard.png);
   display: flex;
