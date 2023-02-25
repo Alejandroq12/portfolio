@@ -1190,6 +1190,12 @@ button:disabled {
     justify-content: center;
     margin-bottom: 10vw;
   }
+  .main_card {
+    height: auto;
+    padding: 24px auto;
+    gap: 16px;
+  }
+  
 }
 
 
