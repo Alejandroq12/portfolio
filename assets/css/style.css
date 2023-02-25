@@ -2093,3 +2093,13 @@ button:disabled {
       gap: 20px;
       margin-bottom: -19vw;
     }
+    
+  .image-container {
+    display: block;
+    flex-direction: column;
+  }
+
+  .image_from_main_card {
+    width: 44vw;
+    margin: 0;
+  }
