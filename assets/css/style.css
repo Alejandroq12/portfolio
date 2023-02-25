@@ -1229,6 +1229,16 @@ button:disabled {
     line-height: 3vw;
     cursor: pointer;
   }
+      
+  .button-from-main-card {
+    font-size: 4vw;
+    line-height: 0.5vw;
+    padding: 4.5vw;
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
