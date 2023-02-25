@@ -1954,6 +1954,3 @@ button:disabled {
     display: none;
   }
 }
-
-/* Media query for large screens */
-@media only screen and (min-width: 1025px) {
