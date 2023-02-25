@@ -1070,43 +1070,52 @@ button:disabled {
 
 /* Media query for small screens */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    /* header and nav bar */
-    .header-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3.5vw 0;
-    }
-    .main-logo {
-      font-size: 3vw;
-      line-height: 3.6vw;
-      }
-      
-      .logo {
-        margin-left: 4vw;
-        margin-bottom: 1vw;
-      }
-      .hamburgerMenu {
-        align-items: flex-start;
-        margin-right: 4vw;
-      }
-      .list-item {
-        font-size: 2.2vw;
-        line-height: 3vw;
-        padding: 0 1.5vw;
-        }
-        .hamburger-icon {
-          display: block;
-          }
-          
-          .hamburger-icon .bar {
-            height: 0.6vw;
-            width: 4.5vw;
-          }
 
-   /* main section */
-   .main-area {
+  /* header and nav bar */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5vw 0;
+  }
+
+  .main-logo {
+    font-size: 3vw;
+    line-height: 3.6vw;
+  }
+
+  .logo {
+    margin-left: 4vw;
+    margin-bottom: 1vw;
+  }
+
+  .hamburgerMenu {
+    align-items: flex-start;
+    margin-right: 4vw;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .list-item {
+    font-size: 2.2vw;
+    line-height: 3vw;
+    padding: 0 1.5vw;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .hamburger-icon .bar {
+    height: 0.6vw;
+    width: 4.5vw;
+  }
+
+  /* main section */
+  .main-area {
     background-image: url('../images/main_section/illustration-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1119,33 +1128,35 @@ button:disabled {
     background-size: 24%;
     background-position: 100% 115%;
   }
-  
+
   .main-section {
     align-items: center;
     text-align: center;
     margin-top: 10vw;
-  
+
   }
+
   .main-header {
     font-size: 15vw;
     line-height: 18vw;
     text-align: start;
     padding: 0 6vw;
   }
+
   .second-header {
     font-size: 6vw;
     line-height: 12vw;
     text-align: start;
     padding: 0 6vw;
   }
-      
+
   .main-description {
     font-size: 4vw;
     line-height: 7vw;
     text-align: start;
     padding: 0 6vw;
   }
-      
+
   .socialMediaIcons {
     display: flex;
     align-items: center;
@@ -1153,7 +1164,7 @@ button:disabled {
     margin-top: 2vw;
     margin-right: 54vw;
   }
-  
+
   .my-icons-list {
     display: flex;
     flex-wrap: wrap;
@@ -1161,7 +1172,7 @@ button:disabled {
     list-style: none;
     justify-content: flex-start;
   }
-  
+
   .my-icons-list li {
     flex: 0 0 11%;
     margin: 0 1vw;
@@ -1173,41 +1184,52 @@ button:disabled {
   .work-section {
     margin-top: 15vh;
   }
-  
+
   .second-title {
     font-size: 10.6vw;
     line-height: 23vw;
     height: auto;
     margin-bottom: 3vw;
   }
-  
+
   .line_below_title {
     margin-bottom: 6vw;
   }
+
   .card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 10vw;
   }
+
   .main_card {
     height: auto;
     padding: 24px auto;
     gap: 16px;
   }
+
+  .image_from_main_card {
+    width: 93vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 4vw;
+  }
+
   .main-card-title {
     font-size: 8.5vw;
     line-height: 9vw;
     height: auto;
   }
-  
+
   .main-card-description {
     height: auto;
     font-size: 3.6vw;
     line-height: 7vw;
     margin: 2vw 0;
   }
-  
+
   .main-card-list-ul {
     display: flex;
     flex-direction: row;
@@ -1216,20 +1238,23 @@ button:disabled {
     padding: 0;
     list-style: none;
   }
+
   .main_card li {
     margin-bottom: 1.5vw;
     margin-right: 0;
     padding: 1vw;
     width: auto;
   }
-  
+
   .main_card ul.main-card-list-ul li.main-card-list-ul-li {
     padding: 2vw 3vw;
     font-size: 3.5vw;
     line-height: 3vw;
     cursor: pointer;
   }
-      
+
+
+
   .button-from-main-card {
     font-size: 4vw;
     line-height: 0.5vw;
@@ -1239,208 +1264,219 @@ button:disabled {
     justify-content: center;
     align-items: center;
   }
-    
-    /* Main container with Flexbox */
-    .works-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 17vw;
-    }
-      
-    /* Individual card with CSS Grid */
-    .work-card {
-      display: grid;
-      grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
-      width: 92vw;
-      max-width: 60vw;
-      margin: 1vw 1.5vw 1vw 1.5vw;
-    }
-    .work-cards-title {
-      font-size: 5.5vw;
-      line-height: 7vw;
-      text-align: start;
-      margin-left: 2vw;
-      margin-top: 13.5vw;
-      width: 50vw;
-    
-    }
-    .work-cards-description {
-      font-size: 2.5vw;
-      line-height: 4.5vw;
-      text-align: start;
-      margin-left: 2vw;
-      width: 50vw;
-    }
-      /* List items */
-      .work-card li {
-        font-size: 2.3vw;
-        line-height: 1vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 13vw;
-      }
-      
-      .work-card ul {
-        padding: 0;
-        margin-top: 0.1vw;
-        margin-bottom: 1vw;
-        margin-left: 1vw;
-      
-      }
 
-    
-    /* Button at the bottom of the card */
-    .button-card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2vw;
-      width: 60vw;
-    }
-    
-    .button-card button {
-      font-size: 2vw;
-      line-height: 3vw;
-      cursor: pointer;
-    }
-    /* About me section */
-    .about-me-main-container {
-      background-image: url('../images/me_section/Frame.png');
-      background-repeat: no-repeat;
-      background-size: 30%;
-      background-position: 100% 20%;
-    }
-    .about-me-title {
-      margin-top: 18vw;
-      margin-bottom: 2vw;
-      font-size: 15vw;
-      line-height: 8vw;
-    }
-    .description-me-section {
-      font-size: 3.8vw;
-      line-height: 5.5vw;
-    }
-    .button-me-section {
-      margin-top: 6vw;
-      padding: 1vw;
-      font-size: 2.8vw;
-      line-height: 3vw;
-    }
-    
-    .line-from-about-me {
-      margin-top: 33vw;
-      width: 86vw;
-    
-    }
-    .ul-list-me-section {
-      font-size: 1vw;
-      line-height: 3vw;
-      margin-top: 15vw;
-      margin-bottom: 16vw;
-      list-style: none;
-    }
-  
-    .list-titles-one::before {
-      font-size: 8vw;
-      margin-right: 1vw;
-    }
-    
-    .list-titles-two::before {
-      font-size: 10vw;
-      margin-right: 3vw;
-    }
-    
-    .list-titles-three::before {
-      font-size: 10vw;
-      margin-right: 1.5vw;
-    }
-    
-    .list-titles-one {
-      font-size: 10vw;
-      margin: 0 6vw 0 0;
-    }
-    
-    .list-titles-two,
-    .list-titles-three {
-      font-size: 10vw;
-      margin: 0 6vw 0 0;
-    }
-    
-    .li-list-me-section {
-      font-size: 4vw;
-      line-height: 7vw;
-    }
-    
-    .about-me-section {
-      font-size: 2rem;
-      line-height: 1.8rem;
-    }
-    .contact-form__heading {
-      width: 87vw;
-      font-size: 7vw;
-      line-height: 9vw;
-      margin-top: 20vw;
-      margin-bottom: 28vw;
-    }
-    .contact-form__input::placeholder {
-      font-size: 1.5vw;
-      line-height: 2vw;
-      height: 2vw;
-      top: calc(26% - 2vw / 2);
-    }
-    
-    .contact-form__input,
-    .contact-form__textarea {
-      font-size: 4vw;
-      height: 10vw;
-      margin: 5vw 0;
-    }
-    
-    .contact-form__textarea {
-      height: 15vw;
-    }
-    .contact-form__button {
-      width: 26vw;
-      height: 9.5vw;
-      padding: 1vw;
-      font-size: 3.2vw;
-      line-height: 3vw;
-      margin-bottom: 21vw;
-    }
-    footer {
-      padding: 1.5vw 0.5vw;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      height: 100%;
-    }
-    
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 100%;
-    }
-    
-    .logo-container img {
-      width: 3.5vw;
-      margin: 1.5vw;
-    }
-    
-    .footer_bottom_line {
-      width: 22vw;
-      height: 1vw;
-      margin-top: 2vw;
-    } 
-    }
+  /* Main container with Flexbox */
+  .works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 17vw;
+  }
+
+  /* Individual card with CSS Grid */
+  .work-card {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
+    width: 92vw;
+    max-width: 60vw;
+    margin: 1vw 1.5vw 1vw 1.5vw;
+  }
+
+  .work-cards-title {
+    font-size: 5.5vw;
+    line-height: 7vw;
+    text-align: start;
+    margin-left: 2vw;
+    margin-top: 13.5vw;
+    width: 50vw;
+
+  }
+
+  .work-cards-description {
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+    text-align: start;
+    margin-left: 2vw;
+    width: 50vw;
+  }
+
+  /* List items */
+  .work-card li {
+    font-size: 2.3vw;
+    line-height: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vw;
+  }
+
+  .work-card ul {
+    padding: 0;
+    margin-top: 0.1vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+
+  }
+
+  /* Button at the bottom of the card */
+  .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    width: 60vw;
+  }
+
+  .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
+
+  /* About me section */
+  .about-me-main-container {
+    background-image: url('../images/me_section/Frame.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 100% 20%;
+  }
+
+  .about-me-title {
+    margin-top: 18vw;
+    margin-bottom: 2vw;
+    font-size: 15vw;
+    line-height: 8vw;
+  }
+
+  .description-me-section {
+    font-size: 3.8vw;
+    line-height: 5.5vw;
+  }
+
+  .button-me-section {
+    margin-top: 6vw;
+    padding: 1vw;
+    font-size: 2.8vw;
+    line-height: 3vw;
+  }
+
+  .line-from-about-me {
+    margin-top: 33vw;
+    width: 86vw;
+
+  }
+
+  .ul-list-me-section {
+    font-size: 1vw;
+    line-height: 3vw;
+    margin-top: 15vw;
+    margin-bottom: 16vw;
+    list-style: none;
+  }
+
+  .list-titles-one::before {
+    font-size: 8vw;
+    margin-right: 1vw;
+  }
+
+  .list-titles-two::before {
+    font-size: 10vw;
+    margin-right: 3vw;
+  }
+
+  .list-titles-three::before {
+    font-size: 10vw;
+    margin-right: 1.5vw;
+  }
+
+  .list-titles-one {
+    font-size: 10vw;
+    margin: 0 6vw 0 0;
+  }
+
+  .list-titles-two,
+  .list-titles-three {
+    font-size: 10vw;
+    margin: 0 6vw 0 0;
+  }
+
+  .li-list-me-section {
+    font-size: 4vw;
+    line-height: 7vw;
+  }
+
+  .about-me-section {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .contact-form__heading {
+    width: 87vw;
+    font-size: 7vw;
+    line-height: 9vw;
+    margin-top: 20vw;
+    margin-bottom: 28vw;
+  }
+
+  .contact-form__input::placeholder {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    height: 2vw;
+    top: calc(26% - 2vw / 2);
+  }
+
+  .contact-form__input,
+  .contact-form__textarea {
+    font-size: 4vw;
+    height: 10vw;
+    margin: 5vw 0;
+  }
+
+  .contact-form__textarea {
+    height: 15vw;
+  }
+
+  .contact-form__button {
+    width: 26vw;
+    height: 9.5vw;
+    padding: 1vw;
+    font-size: 3.2vw;
+    line-height: 3vw;
+    margin-bottom: 21vw;
+  }
+
+  footer {
+    padding: 1.5vw 0.5vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .logo-container img {
+    width: 3.5vw;
+    margin: 1.5vw;
+  }
+
+  .footer_bottom_line {
+    width: 22vw;
+    height: 1vw;
+    margin-top: 2vw;
+  }
+}
 
 
 
