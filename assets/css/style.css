@@ -1256,6 +1256,15 @@ button:disabled {
       max-width: 60vw;
       margin: 1vw 1.5vw 1vw 1.5vw;
     }
+    .work-cards-title {
+      font-size: 5.5vw;
+      line-height: 7vw;
+      text-align: start;
+      margin-left: 2vw;
+      margin-top: 13.5vw;
+      width: 50vw;
+    
+    }
 }
 
 
