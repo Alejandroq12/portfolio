@@ -2077,3 +2077,19 @@ button:disabled {
       margin-right: 2vw;
       transform: translateY(-1rem);
     }
+    .card-container {
+      margin-top: -7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3vw;
+      margin-bottom: 1vw;
+    }
+  
+    .main_card {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: -19vw;
+    }
