@@ -1682,7 +1682,30 @@ button:disabled {
       height: 3.8vw;
       width: 8.9vw;
     }
+    /* Main container with Flexbox */
+    .works-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 17vw;
+    }
   
+    /* Individual card with CSS Grid */
+    .work-card {
+      display: grid;
+      grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+      width: 29vw;
+      max-width: 29vw;
+      margin: 0.1vw 0.1vw;
+    }
+  
+    .work-cards-title {
+      font-size: 3vw;
+      line-height: 3.7vw;
+      text-align: start;
+      margin-left: 4vw;
+      margin-top: 13.5vw;
+    }
 }
 
 
