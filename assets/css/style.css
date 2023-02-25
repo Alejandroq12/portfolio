@@ -2444,3 +2444,17 @@ button:disabled {
       display: none;
     }
   }
+  /* Media query for large screens */
+@media only screen and (min-width: 1215px) {
+  .card-container {
+
+    margin-bottom: 4rem;
+  }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 1366px) {
+  .card-container {
+    margin-bottom: 8rem;
+  }
+}
