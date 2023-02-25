@@ -1637,7 +1637,7 @@ button:disabled {
     margin-left: 2vw;
     margin-right: 2vw;
   }
-  
+
   .work-card {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
