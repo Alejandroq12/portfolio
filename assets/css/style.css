@@ -1126,6 +1126,13 @@ button:disabled {
     margin-top: 10vw;
   
   }
+  .main-header {
+    font-size: 15vw;
+    line-height: 18vw;
+    text-align: start;
+    padding: 0 6vw;
+  }
+  
 }
 
 
