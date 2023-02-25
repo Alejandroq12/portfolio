@@ -1384,6 +1384,23 @@ button:disabled {
       margin-top: 20vw;
       margin-bottom: 28vw;
     }
+    .contact-form__input::placeholder {
+      font-size: 1.5vw;
+      line-height: 2vw;
+      height: 2vw;
+      top: calc(26% - 2vw / 2);
+    }
+    
+    .contact-form__input,
+    .contact-form__textarea {
+      font-size: 4vw;
+      height: 10vw;
+      margin: 5vw 0;
+    }
+    
+    .contact-form__textarea {
+      height: 15vw;
+    }
 }
 
 
