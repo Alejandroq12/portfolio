@@ -2001,3 +2001,17 @@ button:disabled {
     margin-top: 4vw;
     padding-left: 2%;
   }
+  .main-header {
+    font-size: 4.6vw;
+    line-height: 5.5vw;
+    text-align: start;
+    padding: 0 7vw;
+    margin-top: 4vw;
+  }
+
+  .second-header {
+    font-size: 2.1vw;
+    line-height: 4vw;
+    text-align: start;
+    padding: 0 7vw;
+  }
