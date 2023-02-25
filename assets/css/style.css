@@ -2357,3 +2357,32 @@ button:disabled {
     margin-bottom: 1vw;
     margin-left: 2vw;
   }
+  .contact-form__heading {
+    font-size: 2.9vw;
+    line-height: 3.5vw;
+    margin-top: 6vw;
+    text-align: left;
+  }
+
+  .contact-form__form {
+    flex: 0 0 56%;
+  }
+
+  .contact-form__group {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .contact-form__input,
+  .contact-form__textarea {
+    width: 100%;
+    margin-top: 3vw;
+  }
+
+  .contact-form__input::placeholder,
+  .contact-form__textarea::placeholder {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    height: 4vw;
+  }
