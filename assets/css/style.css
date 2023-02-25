@@ -1762,6 +1762,27 @@ button:disabled {
       font-size: 6vw;
       line-height: 7vw;
     }
+  
+    .description-me-section {
+      font-size: 1.8vw;
+      line-height: 3.3vw;
+      width: 46vw;
+    }
+  
+    .button-me-section {
+      margin-top: 2.5vw;
+      padding: 0.1vw;
+      font-size: 1.5vw;
+      line-height: 2vw;
+      height: 5vw;
+      width: 14vw;
+    }
+  
+    .line-from-about-me {
+      margin-top: 12vw;
+      width: 86vw;
+  
+    }
 }
 
 
