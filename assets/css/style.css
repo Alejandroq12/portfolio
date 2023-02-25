@@ -272,12 +272,11 @@ button:hover {
 .work-card {
   background:
       linear-gradient(
-      160.45deg,
-      rgba(38, 38, 38, 0)
-      75.75%,
-      rgba(38, 38, 38, 0.9)
-      99.94%),
-    url(../images/cardImages/projectCard.png);
+          160.45deg,
+        rgba(38, 38, 38, 0) 75.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/cardImages/projectCard.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -705,6 +704,18 @@ footer {
   margin-bottom: 0.8vw;
 }
 
+/* common button style */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff6b00;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  color: #fff;
+  border: none;
+}
+
 button:hover {
   background-color: #fff5e1;
   box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
@@ -736,17 +747,21 @@ button:disabled {
   border: none;
 }
 
-/* common button style */
-button {
+/* common button style for main card */
+.main_card button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff6b00;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  color: #fff;
-  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
 }
+
 
 /* Media query for extra small screens */
 @media only screen and (max-width: 600px) {
