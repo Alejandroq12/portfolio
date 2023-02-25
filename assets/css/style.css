@@ -1888,6 +1888,27 @@ button:disabled {
       top: -0.4vw;
     }
   
+    .contact-form {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      margin-top: 10vw;
+      margin-bottom: 1vw;
+  
+    }
+  
+    .contact-form__heading {
+      font-size: 2.9vw;
+      line-height: 3.5vw;
+      margin-top: 6vw;
+      text-align: left;
+  
+    }
+  
+    .contact-form__form {
+      flex: 0 0 56%;
+    }
 }
 
 
