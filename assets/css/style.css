@@ -1668,6 +1668,21 @@ button:disabled {
       padding: 1vw;
       width: auto;
     }
+    .main_card ul.main-card-list-ul li.main-card-list-ul-li {
+      padding: 0.6vw 0.7vw;
+      font-size: 1vw;
+      line-height: 1vw;
+      cursor: pointer;
+    }
+  
+    .button-from-main-card {
+      font-size: 1.3vw;
+      line-height: 0.3vw;
+      padding: 0.1vw 0.4vw;
+      height: 3.8vw;
+      width: 8.9vw;
+    }
+  
 }
 
 
