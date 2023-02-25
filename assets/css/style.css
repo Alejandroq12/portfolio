@@ -1132,7 +1132,12 @@ button:disabled {
     text-align: start;
     padding: 0 6vw;
   }
-  
+  .second-header {
+    font-size: 6vw;
+    line-height: 12vw;
+    text-align: start;
+    padding: 0 6vw;
+  }
 }
 
 
