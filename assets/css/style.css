@@ -1087,6 +1087,10 @@ button:disabled {
         margin-left: 4vw;
         margin-bottom: 1vw;
       }
+      .hamburgerMenu {
+        align-items: flex-start;
+        margin-right: 4vw;
+      }
 }
 
 
