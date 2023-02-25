@@ -2103,3 +2103,30 @@ button:disabled {
     width: 44vw;
     margin: 0;
   }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .main-card-title {
+    font-size: 3.5vw;
+    margin: 0;
+  }
+
+  .main-card-description {
+    margin-top: 0.8vw;
+    height: auto;
+    font-size: 1.7vw;
+    line-height: 2.8vw;
+  }
+
+  .main-card-list-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
