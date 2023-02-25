@@ -1247,6 +1247,15 @@ button:disabled {
       justify-content: center;
       margin-bottom: 17vw;
     }
+      
+    /* Individual card with CSS Grid */
+    .work-card {
+      display: grid;
+      grid-template-rows: 2fr 1fr 2fr 2fr 1fr;
+      width: 92vw;
+      max-width: 60vw;
+      margin: 1vw 1.5vw 1vw 1.5vw;
+    }
 }
 
 
