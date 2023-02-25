@@ -1423,10 +1423,24 @@ button:disabled {
       height: 100%;
     }
     
-}
-
-
-
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
+    
+    .logo-container img {
+      width: 3.5vw;
+      margin: 1.5vw;
+    }
+    
+    .footer_bottom_line {
+      width: 22vw;
+      height: 1vw;
+      margin-top: 2vw;
+    } 
+    }
 
 
 
