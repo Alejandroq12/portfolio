@@ -2348,3 +2348,12 @@ button:disabled {
     position: relative;
     top: -0.4vw;
   }
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+  }
