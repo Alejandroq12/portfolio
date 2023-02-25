@@ -1216,6 +1216,19 @@ button:disabled {
     padding: 0;
     list-style: none;
   }
+  .main_card li {
+    margin-bottom: 1.5vw;
+    margin-right: 0;
+    padding: 1vw;
+    width: auto;
+  }
+  
+  .main_card ul.main-card-list-ul li.main-card-list-ul-li {
+    padding: 2vw 3vw;
+    font-size: 3.5vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
 }
 
 
