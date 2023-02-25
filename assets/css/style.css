@@ -1490,6 +1490,15 @@ button:disabled {
     padding: 3.5vw 0;
     height: 6vw;
   }
+  .main-logo {
+    font-size: 2vw;
+    line-height: 3.6vw;
+  }
+
+  .logo {
+    margin-left: 9vw;
+    margin-bottom: 1vw;
+  }
 }
 
 
