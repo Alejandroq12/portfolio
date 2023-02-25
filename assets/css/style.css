@@ -1096,6 +1096,14 @@ button:disabled {
         line-height: 3vw;
         padding: 0 1.5vw;
         }
+        .hamburger-icon {
+          display: block;
+          }
+          
+          .hamburger-icon .bar {
+            height: 0.6vw;
+            width: 4.5vw;
+          }
 }
 
 
