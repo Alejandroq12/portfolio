@@ -1523,6 +1523,27 @@ button:disabled {
     padding-left: 2%;
     /* Add padding-left to push the content to the right of the .socialMediaIcons */
   }
+  .main-header {
+    font-size: 4.6vw;
+    line-height: 5.5vw;
+    text-align: start;
+    padding: 0 7vw;
+  }
+
+  .second-header {
+    font-size: 2.1vw;
+    line-height: 4vw;
+    text-align: start;
+    padding: 0 7vw;
+  }
+
+  .main-description {
+    font-size: 1.9vw;
+    line-height: 3vw;
+    text-align: start;
+    padding: 0 7vw;
+    width: 58%;
+  }
 }
 
 
