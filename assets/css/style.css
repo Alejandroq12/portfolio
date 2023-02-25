@@ -613,7 +613,7 @@ button:hover {
 
 .contact-form__button {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 0.9375vw;
   gap: 0.625vw;
@@ -704,18 +704,6 @@ footer {
   margin-bottom: 0.8vw;
 }
 
-/* common button style */
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ff6b00;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  color: #fff;
-  border: none;
-}
-
 button:hover {
   background-color: #fff5e1;
   box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
@@ -746,14 +734,6 @@ button:disabled {
   color: #5b5957;
   border: none;
 }
-
-/* common button style for main card */
-.main_card button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 /* Media query for extra small screens */
 @media only screen and (max-width: 600px) {
