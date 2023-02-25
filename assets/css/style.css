@@ -1312,6 +1312,13 @@ button:disabled {
       background-size: 30%;
       background-position: 100% 20%;
     }
+    .about-me-title {
+      margin-top: 18vw;
+      margin-bottom: 2vw;
+      font-size: 15vw;
+      line-height: 8vw;
+    }
+    
 }
 
 
