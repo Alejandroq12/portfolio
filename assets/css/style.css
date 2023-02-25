@@ -1995,3 +1995,9 @@ button:disabled {
     background-position: 100% 80%;
     position: relative;
   }
+  .main-section {
+    align-items: center;
+    text-align: center;
+    margin-top: 4vw;
+    padding-left: 2%;
+  }
