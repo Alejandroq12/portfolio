@@ -2386,3 +2386,29 @@ button:disabled {
     line-height: 2.5vw;
     height: 4vw;
   }
+  .contact-form__textarea {
+    height: 15vw;
+  }
+
+  .contact-form__button {
+    align-self: flex-start;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    width: 13vw;
+    font-size: 1.5vw;
+    margin-left: 2.5vw;
+  }
+
+  .contact-form__button:hover {
+    font-size: 1.5vw;
+  }
+
+  .contact-form__button:active {
+    font-size: 1.5vw;
+
+  }
+
+  .contact-form__button :disabled {
+    font-size: 1.5vw;
+
+  }
