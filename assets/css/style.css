@@ -1732,6 +1732,22 @@ button:disabled {
       width: 7.5vw;
   
     }
+    
+  /* Button at the bottom of the card */
+  .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    width: 60vw;
+    display: none;
+  }
+
+  .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
 }
 
 
