@@ -1602,6 +1602,28 @@ button:disabled {
       transform: translateY(-0.5rem);
       /* move the line to the center of the title */
     }
+    .card-container {
+      margin-top: -7vw;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 2vw;
+      padding: 3vw;
+    }
+  
+    .main_card {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: -20vw;
+    }
+  
+    .image-container {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 
