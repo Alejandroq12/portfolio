@@ -1980,3 +1980,18 @@ button:disabled {
     line-height: 3vw;
     padding: 0 1.5vw;
   }
+  /* main section */
+  .main-area {
+    background-image: url('../images/main_section/Illustration-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 115vh;
+    background-color: #1c1a19;
+    background-size: 46%;
+    background-position: 100% 80%;
+    position: relative;
+  }
