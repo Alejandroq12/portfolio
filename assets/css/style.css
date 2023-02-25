@@ -1574,6 +1574,34 @@ button:disabled {
     font-size: 1.5vw;
     transform: scale(0.9);
   }
+    /* My works section */
+    .work-section {
+      margin-top: 0.7vh;
+    }
+  
+    .section-title-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.1vw;
+      width: 90%;
+      margin-left: 6vw;
+    }
+  
+    .second-title {
+      font-size: 4vw;
+      line-height: 23vw;
+      height: auto;
+      margin-right: 2vw;
+    }
+  
+    .line_below_title {
+      flex: 1;
+      height: 1px;
+      background-color: #000;
+      margin: 0;
+      transform: translateY(-0.5rem);
+      /* move the line to the center of the title */
+    }
 }
 
 
