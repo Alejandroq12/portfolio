@@ -818,7 +818,6 @@ button:disabled {
     line-height: 12vw;
     text-align: start;
     padding: 0 6vw;
-
   }
 
   .main-description {
@@ -996,7 +995,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
   }
-  
+
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -1021,7 +1020,8 @@ button:disabled {
     width: 24vw;
     height: 1vw;
     margin-top: 2vw;
-  } 
+  }
+
 }
 
 /* Media query for small screens */
