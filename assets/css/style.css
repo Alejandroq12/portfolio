@@ -1478,24 +1478,26 @@ button:disabled {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media query for medium screens */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media query for large screens */
 @media only screen and (min-width: 1025px) {
