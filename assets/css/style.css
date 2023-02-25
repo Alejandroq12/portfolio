@@ -1021,7 +1021,6 @@ button:disabled {
     height: 1vw;
     margin-top: 2vw;
   }
-
 }
 
 /* Media query for small screens */
@@ -1274,13 +1273,13 @@ button:disabled {
     width: 100%;
   }
 
-.button-card button {
-  font-size: 2vw;
-  line-height: 3vw;
-  cursor: pointer;
-}
+  .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
 
-/* About me section */
+  /* About me section */
   .about-me-main-container {
     background-image: url('../images/me_section/Frame.png');
     background-repeat: no-repeat;
@@ -1310,7 +1309,6 @@ button:disabled {
   .line-from-about-me {
     margin-top: 33vw;
     width: 86vw;
-
   }
 
   .ul-list-me-section {
@@ -1457,8 +1455,6 @@ button:disabled {
   .main-area {
     background-image: url('../images/main_section/Illustration-header.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1657,7 +1653,7 @@ button:disabled {
     margin-top: 160px;
     width: 75%;
   }
-  
+
   .work-cards-description {
     font-size: 60%;
     line-height: 3vw;
@@ -1686,7 +1682,6 @@ button:disabled {
 
   /* Button at the bottom of the card */
   .button-card {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -1747,62 +1742,62 @@ button:disabled {
     margin-left: -40px;
   }
 
-  .container>div {
+  .container > div {
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .container>div h2 {
+  .container > div h2 {
     margin-top: 0;
   }
 
-  .container>div:nth-child(1) h2 {
+  .container > div:nth-child(1) h2 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
 
-  .container>div:nth-child(1) ul {
+  .container > div:nth-child(1) ul {
     margin-left: 2.5vw;
     padding: 10;
   }
 
-  .container>div:nth-child(1) ul li {
+  .container > div:nth-child(1) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
     align-items: center;
   }
 
-  .container>div:nth-child(2) h2 {
+  .container > div:nth-child(2) h2 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
 
-  .container>div:nth-child(2) ul {
+  .container > div:nth-child(2) ul {
     margin: 0;
     padding: 0;
   }
 
-  .container>div:nth-child(2) ul li {
+  .container > div:nth-child(2) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
     align-items: center;
   }
 
-  .container>div:nth-child(3) h2 {
+  .container > div:nth-child(3) h2 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
 
-  .container>div:nth-child(3) ul {
+  .container > div:nth-child(3) ul {
     margin: 0;
     padding: 0;
   }
 
-  .container>div:nth-child(3) ul li {
+  .container > div:nth-child(3) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -1890,12 +1885,10 @@ button:disabled {
 
   .contact-form__button:active {
     font-size: 1.5vw;
-
   }
 
   .contact-form__button :disabled {
     font-size: 1.5vw;
-
   }
 
   footer {
@@ -1964,8 +1957,6 @@ button:disabled {
   .main-area {
     background-image: url('../images/main_section/Illustration-header.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -2053,7 +2044,6 @@ button:disabled {
     line-height: 23vw;
     height: auto;
     margin-right: 2vw;
-    /* margin-left: 2vw; */
   }
 
   .line_below_title {
@@ -2143,7 +2133,6 @@ button:disabled {
 
   .works-container {
     margin-bottom: 5vw;
-    /* Increase space between sections */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -2195,7 +2184,6 @@ button:disabled {
 
   /* Button at the bottom of the card */
   .button-card {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -2256,62 +2244,62 @@ button:disabled {
     margin-left: -40px;
   }
 
-  .container>div {
+  .container > div {
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .container>div h2 {
+  .container > div h2 {
     margin-top: 0;
   }
 
-  .container>div:nth-child(1) h2 {
+  .container > div:nth-child(1) h2 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
 
-  .container>div:nth-child(1) ul {
+  .container > div:nth-child(1) ul {
     margin-left: 2.5vw;
     padding: 10;
   }
 
-  .container>div:nth-child(1) ul li {
+  .container > div:nth-child(1) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
     align-items: center;
   }
 
-  .container>div:nth-child(2) h2 {
+  .container > div:nth-child(2) h2 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
 
-  .container>div:nth-child(2) ul {
+  .container > div:nth-child(2) ul {
     margin: 0;
     padding: 0;
   }
 
-  .container>div:nth-child(2) ul li {
+  .container > div:nth-child(2) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
     align-items: center;
   }
 
-  .container>div:nth-child(3) h2 {
+  .container > div:nth-child(3) h2 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
 
-  .container>div:nth-child(3) ul {
+  .container > div:nth-child(3) ul {
     margin: 0;
     padding: 0;
   }
 
-  .container>div:nth-child(3) ul li {
+  .container > div:nth-child(3) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -2399,12 +2387,10 @@ button:disabled {
 
   .contact-form__button:active {
     font-size: 1.5vw;
-
   }
 
   .contact-form__button :disabled {
     font-size: 1.5vw;
-
   }
 
   footer {
@@ -2444,7 +2430,6 @@ button:disabled {
 /* Media query for large screens */
 @media only screen and (min-width: 1215px) {
   .card-container {
-
     margin-bottom: 4rem;
   }
 }
