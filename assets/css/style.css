@@ -2048,3 +2048,9 @@ button:disabled {
     font-size: 1.5vw;
     transform: scale(1);
   }
+    /* My works section */
+    .work-section {
+      margin-top: 0.7vh;
+      margin-left: 2vw;
+      margin-right: 2vw;
+    }
