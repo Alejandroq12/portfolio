@@ -2015,3 +2015,10 @@ button:disabled {
     text-align: start;
     padding: 0 7vw;
   }
+  .main-description {
+    font-size: 1.9vw;
+    line-height: 3vw;
+    text-align: start;
+    padding: 0 7vw;
+    width: 58%;
+  }
