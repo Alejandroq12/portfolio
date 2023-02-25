@@ -2069,3 +2069,11 @@ button:disabled {
       margin-right: 2vw;
       /* margin-left: 2vw; */
     }
+    .line_below_title {
+      flex: 1;
+      height: 1px;
+      background-color: #000;
+      margin: 0;
+      margin-right: 2vw;
+      transform: translateY(-1rem);
+    }
