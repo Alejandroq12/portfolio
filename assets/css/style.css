@@ -1401,6 +1401,14 @@ button:disabled {
     .contact-form__textarea {
       height: 15vw;
     }
+    .contact-form__button {
+      width: 26vw;
+      height: 9.5vw;
+      padding: 1vw;
+      font-size: 3.2vw;
+      line-height: 3vw;
+      margin-bottom: 21vw;
+    }
 }
 
 
