@@ -2130,3 +2130,16 @@ button:disabled {
     padding: 0;
     list-style: none;
   }
+  .main_card li {
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 1vw;
+    width: auto;
+  }
+
+  .main_card ul.main-card-list-ul li.main-card-list-ul-li {
+    padding: 0.6vw 0.7vw;
+    font-size: 1vw;
+    line-height: 1vw;
+    cursor: pointer;
+  }
