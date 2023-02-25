@@ -1372,6 +1372,18 @@ button:disabled {
       font-size: 4vw;
       line-height: 7vw;
     }
+    
+    .about-me-section {
+      font-size: 2rem;
+      line-height: 1.8rem;
+    }
+    .contact-form__heading {
+      width: 87vw;
+      font-size: 7vw;
+      line-height: 9vw;
+      margin-top: 20vw;
+      margin-bottom: 28vw;
+    }
 }
 
 
