@@ -1334,6 +1334,14 @@ button:disabled {
       width: 86vw;
     
     }
+    .ul-list-me-section {
+      font-size: 1vw;
+      line-height: 3vw;
+      margin-top: 15vw;
+      margin-bottom: 16vw;
+      list-style: none;
+    }
+    
 }
 
 
