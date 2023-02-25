@@ -1409,6 +1409,20 @@ button:disabled {
       line-height: 3vw;
       margin-bottom: 21vw;
     }
+    footer {
+      padding: 1.5vw 0.5vw;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    
 }
 
 
