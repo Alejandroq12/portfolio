@@ -1909,6 +1909,53 @@ button:disabled {
     .contact-form__form {
       flex: 0 0 56%;
     }
+    .contact-form__group {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .contact-form__input,
+    .contact-form__textarea {
+      width: 100%;
+      margin-top: 3vw;
+    }
+  
+    .contact-form__input::placeholder,
+    .contact-form__textarea::placeholder {
+      font-size: 1.5vw;
+      line-height: 2.5vw;
+      height: 4vw;
+    }
+  
+    .contact-form__textarea {
+      height: 15vw;
+    }
+  
+  
+    .contact-form__button {
+      align-self: flex-start;
+      margin-top: 2vw;
+      margin-bottom: 10vw;
+      width: 14vw;
+      font-size: 1.8vw;
+      margin-left: 2.5vw;
+    }
+  
+    .contact-form__button:hover {
+      font-size: 1.5vw;
+    }
+  
+  
+    .contact-form__button:active {
+      font-size: 1.5vw;
+  
+    }
+  
+    .contact-form__button :disabled {
+      font-size: 1.5vw;
+  
+    }
 }
 
 
