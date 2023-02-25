@@ -1706,6 +1706,32 @@ button:disabled {
       margin-left: 4vw;
       margin-top: 13.5vw;
     }
+    .work-cards-description {
+      font-size: 1.5vw;
+      line-height: 2vw;
+      text-align: start;
+      margin-left: 4vw;
+      width: 84%;
+    }
+  
+    /* List items */
+    .work-card li {
+      font-size: 1vw;
+      line-height: 1vw;
+      display: flex;
+      justify-content: center;
+      padding: 1vw 1vw;
+      align-items: center;
+    }
+  
+    .work-card ul {
+      padding: 0;
+      margin-top: 0.1vw;
+      margin-bottom: 1vw;
+      margin-left: 3.5vw;
+      width: 7.5vw;
+  
+    }
 }
 
 
