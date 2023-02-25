@@ -2248,3 +2248,40 @@ button:disabled {
       height: 3.2vw;
       width: 11vw;
     }
+    .line-from-about-me {
+      margin-top: 7vw;
+      width: 86vw;
+    }
+  
+    .ul-list-me-section {
+      margin-top: 7vw;
+      margin-bottom: 12vw;
+      list-style: none;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin-left: -40px;
+    }
+  
+    .container>div {
+      flex-basis: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .container>div h2 {
+      margin-top: 0;
+    }
+  
+    .container>div:nth-child(1) h2 {
+      font-size: 2.8vw;
+      margin-left: 2vw;
+    }
+  
+    .container>div:nth-child(1) ul {
+      margin-left: 2.5vw;
+      padding: 10;
+    }
