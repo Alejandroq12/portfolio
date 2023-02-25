@@ -1138,6 +1138,14 @@ button:disabled {
     text-align: start;
     padding: 0 6vw;
   }
+      
+  .main-description {
+    font-size: 4vw;
+    line-height: 7vw;
+    text-align: start;
+    padding: 0 6vw;
+  }
+  
 }
 
 
