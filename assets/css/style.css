@@ -2151,3 +2151,12 @@ button:disabled {
     height: 3.8vw;
     width: 8.2vw;
   }
+  .works-container {
+    margin-bottom: 5vw;
+    /* Increase space between sections */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
