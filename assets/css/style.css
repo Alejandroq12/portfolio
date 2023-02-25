@@ -2160,3 +2160,61 @@ button:disabled {
     margin-left: 2vw;
     margin-right: 2vw;
   }
+
+  .work-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 327px;
+    margin: 0;
+  }
+
+  .work-cards-title {
+    font-size: 80%;
+    line-height: 2vw;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 160px;
+    width: 75%;
+  }
+
+  .work-cards-description {
+    font-size: 55%;
+    line-height: 2vw;
+    text-align: start;
+    margin-left: 20px;
+    width: 88%;
+    margin-top: -22px;
+    margin-bottom: 2px;
+  }
+
+  /* List items */
+  .work-card li {
+    font-size: 40%;
+    line-height: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+  }
+
+  .work-card ul {
+    margin-left: 11px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  /* Button at the bottom of the card */
+  .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
