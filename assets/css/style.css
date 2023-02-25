@@ -1305,6 +1305,13 @@ button:disabled {
       line-height: 3vw;
       cursor: pointer;
     }
+    /* About me section */
+    .about-me-main-container {
+      background-image: url('../images/me_section/Frame.png');
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: 100% 20%;
+    }
 }
 
 
