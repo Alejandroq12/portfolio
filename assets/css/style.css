@@ -1693,6 +1693,44 @@ button:disabled {
     font-size: 2vw;
     line-height: 3vw;
     cursor: pointer;
+       justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .work-card:hover .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    padding: 100px 60px;
+    cursor: pointer;
+  }
+
+  .work-card:hover .button-card {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    transform: translateY(662%);
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .work-card:hover .work-cards-title,
+  .work-card:hover .work-cards-description,
+  .work-card:hover ul {
+    display: none;
+    cursor: pointer;
+  }
+
+  .work-card:hover {
+    background-image: url('../images/cardImages/Placeholder.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
   }
 
   /* About me section */
@@ -2197,6 +2235,37 @@ button:disabled {
     cursor: pointer;
   }
 
+  .work-card:hover .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    padding: 100px 60px;
+  }
+
+  .work-card:hover .button-card {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    transform: translateY(662%);
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .work-card:hover .work-cards-title,
+  .work-card:hover .work-cards-description,
+  .work-card:hover ul {
+    display: none;
+    cursor: pointer;
+  }
+
+  .work-card:hover {
+    background-image: url('../images/cardImages/Placeholder.png');
+    background-size: cover;
+    cursor: pointer;
+  }
+
   /* About me section */
   .about-me-main-container {
     background-image: url('../images/me_section/desktop-frame.png');
@@ -2437,6 +2506,76 @@ button:disabled {
 /* Media query for large screens */
 @media only screen and (min-width: 1366px) {
   .card-container {
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
+  }
+  .work-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 327px;
+    margin: 0;
+  }
+
+  .work-cards-title {
+    font-size: 80%;
+    line-height: 2vw;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 150px;
+    width: 75%;
+  }
+
+  .work-cards-description {
+    font-size: 50%;
+    line-height: 1vw;
+    text-align: start;
+    margin-left: 20px;
+    width: 88%;
+    margin-top: -22px;
+    margin-bottom: 2px;
+  }
+
+  /* List items */
+  .work-card li {
+    font-size: 40%;
+    line-height: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+  }
+
+  .work-card ul {
+    margin-left: 11px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  /* Button at the bottom of the card */
+  .button-card {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 1600px) {
+  .card-container {
+    margin-bottom: 12rem;
+  }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 1850px) {
+  .card-container {
+    margin-bottom: 15rem;
   }
 }
