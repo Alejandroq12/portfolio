@@ -1693,7 +1693,7 @@ button:disabled {
     font-size: 2vw;
     line-height: 3vw;
     cursor: pointer;
-       justify-content: center;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
     width: 100%;
@@ -1703,13 +1703,11 @@ button:disabled {
   .work-card:hover .button-card button {
     font-size: 2vw;
     line-height: 3vw;
-    cursor: pointer;
     padding: 100px 60px;
     cursor: pointer;
   }
 
   .work-card:hover .button-card {
-    display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2244,7 +2242,6 @@ button:disabled {
 
   .work-card:hover .button-card {
     display: flex;
-    display: flex;
     justify-content: center;
     align-items: center;
     bottom: 20px;
@@ -2264,6 +2261,7 @@ button:disabled {
     background-image: url('../images/cardImages/Placeholder.png');
     background-size: cover;
     cursor: pointer;
+    border: solid 1px #000;
   }
 
   /* About me section */
@@ -2501,6 +2499,37 @@ button:disabled {
   .card-container {
     margin-bottom: 4rem;
   }
+
+  .work-card:hover .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    padding: 100px 60px;
+  }
+
+  .work-card:hover .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    transform: translateY(662%);
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .work-card:hover .work-cards-title,
+  .work-card:hover .work-cards-description,
+  .work-card:hover ul {
+    display: none;
+    cursor: pointer;
+  }
+
+  .work-card:hover {
+    background-image: url('../images/cardImages/Placeholder.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
 }
 
 /* Media query for large screens */
@@ -2508,6 +2537,7 @@ button:disabled {
   .card-container {
     margin-bottom: 12rem;
   }
+
   .work-card {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -2564,6 +2594,37 @@ button:disabled {
     line-height: 3vw;
     cursor: pointer;
   }
+
+  .work-card:hover .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    padding: 100px 60px;
+  }
+
+  .work-card:hover .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    transform: translateY(662%);
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .work-card:hover .work-cards-title,
+  .work-card:hover .work-cards-description,
+  .work-card:hover ul {
+    display: none;
+    cursor: pointer;
+  }
+
+  .work-card:hover {
+    background-image: url('../images/cardImages/Placeholder.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
 }
 
 /* Media query for large screens */
@@ -2571,11 +2632,72 @@ button:disabled {
   .card-container {
     margin-bottom: 12rem;
   }
+
+  .work-card:hover .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    padding: 100px 60px;
+  }
+
+  .work-card:hover .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    transform: translateY(662%);
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .work-card:hover .work-cards-title,
+  .work-card:hover .work-cards-description,
+  .work-card:hover ul {
+    display: none;
+    cursor: pointer;
+  }
+
+  .work-card:hover {
+    background-image: url('../images/cardImages/Placeholder.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
 }
 
 /* Media query for large screens */
 @media only screen and (min-width: 1850px) {
   .card-container {
     margin-bottom: 15rem;
+  }
+  .work-card:hover .button-card button {
+    font-size: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    padding: 100px 60px;
+  }
+
+  .work-card:hover .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    transform: translateY(662%);
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .work-card:hover .work-cards-title,
+  .work-card:hover .work-cards-description,
+  .work-card:hover ul {
+    display: none;
+    cursor: pointer;
+  }
+
+  .work-card:hover {
+    background-image: url('../images/cardImages/Placeholder.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
   }
 }
