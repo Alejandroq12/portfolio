@@ -2546,17 +2546,17 @@ button:disabled {
   }
 
   .work-cards-title {
-    font-size: 80%;
+    font-size: 90%;
     line-height: 2vw;
     text-align: start;
     margin-left: 20px;
-    margin-top: 150px;
+    margin-top: 140px;
     width: 75%;
   }
 
   .work-cards-description {
-    font-size: 50%;
-    line-height: 1vw;
+    font-size: 68%;
+    line-height: 2vw;
     text-align: start;
     margin-left: 20px;
     width: 88%;
@@ -2577,7 +2577,7 @@ button:disabled {
   .work-card ul {
     margin-left: 11px;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 27px;
   }
 
   /* Button at the bottom of the card */
@@ -2662,6 +2662,21 @@ button:disabled {
     background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
+  }
+
+  .work-cards-title {
+    font-size: 90%;
+    line-height: 2vw;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 110px;
+    width: 75%;
+  }
+
+  .work-card ul {
+    margin-left: 11px;
+    padding: 0;
+    margin-top: 50px;
   }
 }
 
