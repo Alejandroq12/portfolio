@@ -2633,6 +2633,21 @@ button:disabled {
     margin-bottom: 12rem;
   }
 
+  .work-cards-title {
+    font-size: 90%;
+    line-height: 2vw;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 110px;
+    width: 75%;
+  }
+
+  .work-card ul {
+    margin-left: 11px;
+    padding: 0;
+    margin-top: 50px;
+  }
+
   .work-card:hover .button-card button {
     font-size: 2vw;
     line-height: 3vw;
@@ -2663,21 +2678,6 @@ button:disabled {
     cursor: pointer;
     border: solid 1px #000;
   }
-
-  .work-cards-title {
-    font-size: 90%;
-    line-height: 2vw;
-    text-align: start;
-    margin-left: 20px;
-    margin-top: 110px;
-    width: 75%;
-  }
-
-  .work-card ul {
-    margin-left: 11px;
-    padding: 0;
-    margin-top: 50px;
-  }
 }
 
 /* Media query for large screens */
@@ -2685,6 +2685,22 @@ button:disabled {
   .card-container {
     margin-bottom: 15rem;
   }
+
+  .work-cards-title {
+    font-size: 90%;
+    line-height: 2vw;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 75%;
+  }
+
+  .work-card ul {
+    margin-left: 11px;
+    padding: 0;
+    margin-top: 70px;
+  }
+
   .work-card:hover .button-card button {
     font-size: 2vw;
     line-height: 3vw;
