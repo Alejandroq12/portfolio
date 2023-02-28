@@ -256,7 +256,7 @@ button:hover {
   width: 129px;
   height: 48px;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0 , 0, 0.5);
 }
 
 /* Main container CSS Grid */
@@ -362,7 +362,7 @@ button:hover {
   left: 0;
   top: 0;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -429,7 +429,7 @@ button:hover {
   max-width: 200px;
   height: 8vw;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   color: #f4f5f7;
   border: none;
   cursor: pointer;
@@ -623,7 +623,7 @@ button:hover {
   width: 16.3541667vw;
   height: 4.6875vw;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
   font-style: normal;
