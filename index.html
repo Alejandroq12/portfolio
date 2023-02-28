@@ -18,7 +18,7 @@
       <p class="main-logo">Julio Quezada</p>
     </div>
     <nav class="navigation-bar">
-      <div class="hamburgerMenu">
+      <div class="hamburgerMenu" aria-label="Navigation links">
         <ul class="nav-items">
           <li class="list-item"><a href="#">Porfolio</a></li>
           <li class="list-item"><a href="#">About</a></li>
@@ -28,7 +28,7 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="hamburger-icon">
+      <button type="button" class="hamburger-icon" aria-label="Open menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -255,21 +255,21 @@
       chat please get in touch.
     </h2>
     <form class="contact-form__form" action="https://formspree.io/f/mgebknyd" method="POST">
-      <input type="hidden" name="_subject" value="New Form Submission!" />
-      <input class="hide_input" type="text" name="_gotcha" />
+      <input type="hidden" name="_subject" value="New Form Submission!" aria-label="Hidden input to receive normal emails"/>
+      <input class="hide_input" type="text" name="_gotcha" aria-label="Hidden input to catch spam"/>
       <div class="contact-form__group">
-        <input class="contact-form__input" type="text" id="name" name="name" placeholder="Full name" maxlength="30"
+        <input class="contact-form__input" type="text" id="name" aria-label="name input" name="name" placeholder="Full name" maxlength="30"
           required />
       </div>
       <div class="contact-form__group">
-        <input class="contact-form__input" type="email" id="email" name="email" placeholder="Email Address" required />
+        <input class="contact-form__input" type="email" aria-label="email input" id="email" name="email" placeholder="Email Address" required />
       </div>
       <div class="contact-form__group">
         <textarea class="contact-form__input contact-form__textarea" id="message" name="message"
-          placeholder="Hello Julio. I would like to get in touch with you..." maxlength="500" rows="5"
+          placeholder="Hello Julio. I would like to get in touch with you..." maxlength="500" rows="5" aria-label="message input"
           required></textarea>
       </div>
-      <button class="contact-form__button" type="submit">Get in touch</button>
+      <button class="contact-form__button" aria-label="submit button" type="submit">Get in touch</button>
     </form>
   </section>
 
