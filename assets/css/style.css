@@ -1811,11 +1811,11 @@ button:disabled {
     align-items: flex-start;
   }
 
-  .container > div h3 {
+  .container > div h4 {
     margin-top: 0;
   }
 
-  .container > div:nth-child(1) h3 {
+  .container > div:nth-child(1) h4 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
@@ -1832,7 +1832,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(2) h3 {
+  .container > div:nth-child(2) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -1849,7 +1849,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(3) h3 {
+  .container > div:nth-child(3) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -2344,11 +2344,11 @@ button:disabled {
     align-items: flex-start;
   }
 
-  .container > div h3 {
+  .container > div h4 {
     margin-top: 0;
   }
 
-  .container > div:nth-child(1) h3 {
+  .container > div:nth-child(1) h4 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
@@ -2365,7 +2365,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(2) h3 {
+  .container > div:nth-child(2) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -2382,7 +2382,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(3) h3 {
+  .container > div:nth-child(3) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
