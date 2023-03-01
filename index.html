@@ -13,18 +13,19 @@
 </head>
 
 <body>
-  <header class="header-container">
+  <header class="header-container" role="banner" aria-label="Site header">
     <div class="logo" tabindex="1">
       <p class="main-logo">Julio Quezada</p>
     </div>
-    <nav class="navigation-bar">
+    <nav class="navigation-bar" role="navigation">
       <div class="hamburgerMenu" aria-label="Navigation links">
         <ul class="nav-items">
-          <li class="list-item" tabindex="2"><a href="#Portfolio">Porfolio</a></li>
+          <li class="list-item" tabindex="2"><a href="#Portfolio" aria-current="page">Portfolio</a></li>
           <li class="list-item" tabindex="3"><a href="#About">About</a></li>
           <li class="list-item" tabindex="4"><a href="#Contact">Contact</a></li>
           <li class="list-item" tabindex="5">
-            <a href="#Contact"><img src="./assets/images/main_section/mail.png" alt="mail logo" /></a>
+            <a href="#Contact" title="Contact me"><img src="./assets/images/main_section/mail.png"
+                alt="mail logo" /></a>
           </li>
         </ul>
       </div>
@@ -35,6 +36,7 @@
       </button>
     </nav>
   </header>
+
 
   <main class="main-area">
     <section class="main-section">
@@ -50,7 +52,7 @@
         </p>
       </div>
 
-      <div class="socialMediaIcons left-column">
+      <div class="socialMediaIcons left-column" aria-label="Social media icons">
         <ul class="my-icons-list">
           <li class="icon-item1 iconMedia" tabindex="9">
             <a href="https://github.com/Alejandroq12"><img src="./assets/images/main_section/github.png"
@@ -78,7 +80,7 @@
     </section>
   </main>
   <!-- My works area -->
-  <section class="work-section" id="Portfolio">
+  <section class="work-section" id="Portfolio" aria-label="Portfolio section">
     <div class="section-title-container">
       <h3 class="second-title" tabindex="14">My recent Works</h3>
       <hr class="line_below_title" />
@@ -102,14 +104,14 @@
               <li class="main-card-list-ul-li" tabindex="20">bootstrap</li>
               <li class="main-card-list-ul-li" tabindex="21">Ruby</li>
             </ul>
-            <button class="button-from-main-card" type="button" aria-label="submit button" tabindex="22">
+            <button class="button-from-main-card" type="submit" aria-label="See project button" tabindex="22">
               See project
             </button>
           </div>
         </div>
       </div>
-      <div class="works-container">
-        <div class="work-card" tabindex="23">
+      <div class="works-container" aria-label="Works container">
+        <div class="work-card" tabindex="23" aria-label="Projects card 1">
           <h4 class="work-cards-title" tabindex="24">Profesional Art Printing Data</h4>
           <p class="work-cards-description" tabindex="25">
             A daily selection of privately personalized reads; no accounts or
@@ -120,10 +122,10 @@
             <li tabindex="27">Bootstrap</li>
             <li tabindex="28">Ruby</li>
           </ul>
-          <button class="button-card" type="button" aria-label="see project button" tabindex="29">See Project</button>
+          <button class="button-card" type="submit" aria-label="see project button" tabindex="29">See Project</button>
         </div>
-        <div class="work-card" tabindex="30">
-          <h4 class="work-cards-title" tabindex="31">Profesional Art Printing Data</h4>
+        <div class="work-card" tabindex="30" aria-label="Projects card 2>
+          <h4 class=" work-cards-title" tabindex="31">Profesional Art Printing Data</h4>
           <p class="work-cards-description" tabindex="33">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
@@ -133,9 +135,9 @@
             <li tabindex="34">Bootstrap</li>
             <li tabindex="34">Ruby</li>
           </ul>
-          <button class="button-card" type="button" aria-label="see project button" tabindex="36">See Project</button>
+          <button class="button-card" type="submit" aria-label="see project button" tabindex="36">See Project</button>
         </div>
-        <div class="work-card" tabindex="37">
+        <div class="work-card" tabindex="37" aria-label="Projects card 3">
           <h4 class="work-cards-title" tabindex="38">Profesional Art Printing Data</h4>
           <p class="work-cards-description" tabindex="39">
             A daily selection of privately personalized reads; no accounts or
@@ -146,9 +148,9 @@
             <li tabindex="41">Bootstrap</li>
             <li tabindex="42">Ruby</li>
           </ul>
-          <button class="button-card" type="button" aria-label="see project button" tabindex="43">See Project</button>
+          <button class="button-card" type="submit" aria-label="see project button" tabindex="43">See Project</button>
         </div>
-        <div class="work-card" tabindex="44">
+        <div class="work-card" tabindex="44" aria-label="Projects card 4">
           <h4 class="work-cards-title" tabindex="45">Profesional Art Printing Data</h4>
           <p class="work-cards-description" tabindex="46">
             A daily selection of privately personalized reads; no accounts or
@@ -159,9 +161,9 @@
             <li tabindex="48">Bootstrap</li>
             <li tabindex="49">Ruby</li>
           </ul>
-          <button class="button-card" type="button" aria-label="see project button" tabindex="50">See Project</button>
+          <button class="button-card" type="submit" aria-label="see project button" tabindex="50">See Project</button>
         </div>
-        <div class="work-card" tabindex="51">
+        <div class="work-card" tabindex="51" aria-label="Projects card 5">
           <h4 class="work-cards-title" tabindex="52">Profesional Art Printing Data</h4>
           <p class="work-cards-description" tabindex="53">
             A daily selection of privately personalized reads; no accounts or
@@ -172,9 +174,9 @@
             <li tabindex="55">Bootstrap</li>
             <li tabindex="56">Ruby</li>
           </ul>
-          <button class="button-card" type="button" aria-label="see project button" tabindex="57">See Project</button>
+          <button class="button-card" type="submit" aria-label="see project button" tabindex="57">See Project</button>
         </div>
-        <div class="work-card" tabindex="58">
+        <div class="work-card" tabindex="58" aria-label="Projects card 6">
           <h4 class="work-cards-title" tabindex="59">Profesional Art Printing Data</h4>
           <p class="work-cards-description" tabindex="60">
             A daily selection of privately personalized reads; no accounts or
@@ -185,17 +187,17 @@
             <li tabindex="62">Bootstrap</li>
             <li tabindex="63">Ruby</li>
           </ul>
-          <button class="button-card" type="button" aria-label="see project button" tabindex="64">See Project</button>
+          <button class="button-card" type="submit" aria-label="see project button" tabindex="64">See Project</button>
         </div>
       </div>
     </div>
   </section>
   <!-- About me section -->
-  <section class="about-me-main-container" id="About">
+  <section class="about-me-main-container" id="About" aria-label="About me section">
     <header>
       <h2 class="about-me-title" tabindex="65">About me</h2>
     </header>
-    <div class="description-me-section">
+    <div class="description-me-section" aria-label="About me description">
       <p tabindex="66">
         Hello I'm a software developer! I can help you build a product ,
         feature or website Look through some of my work and experience! If you
@@ -212,10 +214,10 @@
           <div class="main-li-list-me-section">
             <h3 class="list-titles-one" tabindex="68">Language</h3>
             <ul>
-              <li class="li-list-me-section" tabindex="69">Javascript</li>
-              <li class="li-list-me-section" tabindex="70">Ruby</li>
-              <li class="li-list-me-section" tabindex="71">HTML</li>
-              <li class="li-list-me-section" tabindex="72">CSS</li>
+              <li class="li-list-me-section" tabindex="69" aria-label="Javascript">Javascript</li>
+              <li class="li-list-me-section" tabindex="70" aria-label="Ruby">Ruby</li>
+              <li class="li-list-me-section" tabindex="71" aria-label="HTML">HTML</li>
+              <li class="li-list-me-section" tabindex="72" aria-label="CSS">CSS</li>
             </ul>
           </div>
         </div>
@@ -224,11 +226,11 @@
           <div>
             <h3 class="list-titles-two" tabindex="73">Frameworks</h3>
             <ul>
-              <li class="li-list-me-section" tabindex="74">Bootstrap</li>
-              <li class="li-list-me-section" tabindex="75">Ruby on Rails</li>
-              <li class="li-list-me-section" tabindex="76">RSpec</li>
-              <li class="li-list-me-section" tabindex="77">CapyBara</li>
-              <li class="li-list-me-section" tabindex="78">Selenium</li>
+              <li class="li-list-me-section" tabindex="74" aria-label="Bootstrap">Bootstrap</li>
+              <li class="li-list-me-section" tabindex="75" aria-label="Ruby on Rails">Ruby on Rails</li>
+              <li class="li-list-me-section" tabindex="76" aria-label="RSpec">RSpec</li>
+              <li class="li-list-me-section" tabindex="77" aria-label="CapyBara">CapyBara</li>
+              <li class="li-list-me-section" tabindex="78" aria-label="Selenium">Selenium</li>
             </ul>
           </div>
         </div>
@@ -237,11 +239,11 @@
           <div>
             <h3 class="list-titles-three" tabindex="79">Skills</h3>
             <ul>
-              <li class="li-list-me-section" tabindex="80">Codekit</li>
-              <li class="li-list-me-section" tabindex="81">Github</li>
-              <li class="li-list-me-section" tabindex="82">Codepen</li>
-              <li class="li-list-me-section" tabindex="83">Gitlab</li>
-              <li class="li-list-me-section" tabindex="84">Terminal</li>
+              <li class="li-list-me-section" tabindex="80" aria-label="Codekit">Codekit</li>
+              <li class="li-list-me-section" tabindex="81" aria-label="GitHub">Github</li>
+              <li class="li-list-me-section" tabindex="82" aria-label="Codepen">Codepen</li>
+              <li class="li-list-me-section" tabindex="83" aria-label="Gitlab">Gitlab</li>
+              <li class="li-list-me-section" tabindex="84" aria-label="Terminal">Terminal</li>
             </ul>
           </div>
         </div>
@@ -250,24 +252,24 @@
   </section>
 
   <!-- Form section -->
-  <section class="contact-form" id="Contact">
-    <h2 class="contact-form__heading" tabindex="85">
+  <section class="contact-form" id="Contact" aria-label="Contact form section">
+    <h2 class="contact-form__heading" tabindex="85" aria-label="Contact form heading">
       I'm always interested in hearing about new projects, so if you'd like to
       chat please get in touch.
     </h2>
-    <form class="contact-form__form" action="https://formspree.io/f/mgebknyd" method="POST">
+    <form class="contact-form__form" action="https://formspree.io/f/mgebknyd" method="POST" aria-label="Contact form">
       <input type="hidden" name="_subject" value="New Form Submission!"
         aria-label="Hidden input to receive normal emails" />
       <input class="hide_input" type="text" name="_gotcha" aria-label="Hidden input to catch spam" />
-      <div class="contact-form__group">
+      <div class="contact-form__group" aria-label="Contact form name group">
         <input class="contact-form__input" type="text" id="name" aria-label="name input" name="name"
           placeholder="Full name" maxlength="30" required tabindex="86" />
       </div>
-      <div class="contact-form__group">
+      <div class="contact-form__group" aria-label="email input" id="email">
         <input class="contact-form__input" type="email" aria-label="email input" id="email" name="email"
           placeholder="Email Address" required tabindex="87" />
       </div>
-      <div class="contact-form__group">
+      <div class="contact-form__group" aria-label="Contact form message group">
         <textarea class="contact-form__input contact-form__textarea" id="message" name="message"
           placeholder="Hello Julio. I would like to get in touch with you..." maxlength="500" rows="5"
           aria-label="message input" required tabindex="88"></textarea>
@@ -278,18 +280,18 @@
 
   <hr class="footer_top_line">
   <footer>
-    <div class="footer-container">
-      <div class="logo-container">
-        <a href="https://github.com/Alejandroq12"></a><img src="./assets/images/footer/github.png"
-          alt="Julio Github account" tabindex="90"></a>
-        <a href="https://www.linkedin.com/in/quezadajulio/"><img src="./assets/images/footer/linkedin.png"
-            alt=" Julio LinkedIn acount" tabindex="91"></a>
-        <a href="https://angel.co/u/julio-alejandro-quezada-rodriguez"><img src="./assets/images/footer/angelist.png"
-            alt="Julio Angelist acount" tabindex="92"></a>
-        <a href="https://twitter.com/JulioAle54"><img src="./assets/images/footer/twitter.png"
-            alt="Julio Twitter account" tabindex="93"></a>
-        <a href="https://medium.com/@julio.quezada"><img src="./assets/images/footer/medium.png"
-            alt="Julio Medium account" tabindex="94"></a>
+    <div class="footer-container" aria-label="Footer container">
+      <div class="logo-container" aria-label="Social media links">
+        <a href="https://github.com/Alejandroq12" aria-label="Julio Github account"></a><img
+          src="./assets/images/footer/github.png" alt="Julio Github account" tabindex="90"></a>
+        <a href="https://www.linkedin.com/in/quezadajulio/" aria-label="Julio LinkedIn account"><img
+            src="./assets/images/footer/linkedin.png" alt=" Julio LinkedIn acount" tabindex="91"></a>
+        <a href="https://angel.co/u/julio-alejandro-quezada-rodriguez" aria-label="Julio Angelist account"><img
+            src="./assets/images/footer/angelist.png" alt="Julio Angelist acount" tabindex="92"></a>
+        <a href="https://twitter.com/JulioAle54" aria-label="Julio Twitter account"><img
+            src="./assets/images/footer/twitter.png" alt="Julio Twitter account" tabindex="93"></a>
+        <a href="https://medium.com/@julio.quezada" aria-label="Julio Medium account"><img
+            src="./assets/images/footer/medium.png" alt="Julio Medium account" tabindex="94"></a>
       </div>
       <hr class="footer_bottom_line">
     </div>
