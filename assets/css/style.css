@@ -255,7 +255,7 @@ button:hover {
   gap: 10px;
   width: 129px;
   height: 48px;
-  background: #f46f2e;
+  background: #d14900;
   text-shadow: 1px 1px 2px #000;
 }
 
@@ -361,7 +361,7 @@ button:hover {
   height: 48px;
   left: 0;
   top: 0;
-  background: #f46f2e;
+  background: #d14900;
   text-shadow: 1px 1px 2px #000;
   border: none;
   font-family: 'Inter', serif;
@@ -428,7 +428,7 @@ button:hover {
   width: 42%;
   max-width: 200px;
   height: 8vw;
-  background: #f46f2e;
+  background: #d14900;
   text-shadow: 1px 1px 2px #000;
   color: #f4f5f7;
   border: none;
@@ -622,7 +622,7 @@ button:hover {
   gap: 0.625vw;
   width: 16.3541667vw;
   height: 4.6875vw;
-  background: #f46f2e;
+  background: #d14900;
   text-shadow: 1px 1px 2px #000;
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
@@ -638,7 +638,7 @@ button:hover {
 }
 
 .contact-form__button:hover {
-  background-color: #fff5e1;
+  background-color: #fff;
   text-shadow: 1px 1px 2px #000;
   cursor: pointer;
   border: solid 0.063rem #f55800;
@@ -711,7 +711,7 @@ footer {
 }
 
 button:hover {
-  background-color: #fff5e1;
+  background-color: #fff;
   text-shadow: 1px 1px 2px #000;
   cursor: pointer;
   border: solid 0.063rem #f55800;
