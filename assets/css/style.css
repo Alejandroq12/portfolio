@@ -267,7 +267,6 @@ button:focus {
   width: 129px;
   height: 48px;
   background: #d14900;
-  text-shadow: 1px 1px 2px #000;
 }
 
 /* Main container CSS Grid */
@@ -1800,11 +1799,11 @@ button:disabled {
     align-items: flex-start;
   }
 
-  .container > div h2 {
+  .container > div h3 {
     margin-top: 0;
   }
 
-  .container > div:nth-child(1) h2 {
+  .container > div:nth-child(1) h3 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
@@ -1821,7 +1820,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(2) h2 {
+  .container > div:nth-child(2) h3 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -1838,7 +1837,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(3) h2 {
+  .container > div:nth-child(3) h3 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -2333,11 +2332,11 @@ button:disabled {
     align-items: flex-start;
   }
 
-  .container > div h2 {
+  .container > div h3 {
     margin-top: 0;
   }
 
-  .container > div:nth-child(1) h2 {
+  .container > div:nth-child(1) h3 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
@@ -2354,7 +2353,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(2) h2 {
+  .container > div:nth-child(2) h3 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -2371,7 +2370,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(3) h2 {
+  .container > div:nth-child(3) h3 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
