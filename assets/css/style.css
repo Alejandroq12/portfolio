@@ -240,13 +240,12 @@ button:hover {
 .main_card button {
   display: block;
   margin-top: 20px;
-  text-align: left;
 }
 
 .button-from-main-card {
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -367,7 +366,7 @@ button:hover {
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -434,7 +433,7 @@ button:hover {
   color: #f4f5f7;
   border: none;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1.5vw;
   line-height: 2.25vw;
   letter-spacing: 0.03em;
@@ -628,7 +627,7 @@ button:hover {
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1.5625vw;
   line-height: 2.1875vw;
   text-align: center;
@@ -640,12 +639,12 @@ button:hover {
 
 .contact-form__button:hover {
   background-color: #fff5e1;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  text-shadow: 1px 1px 2px #000;
   cursor: pointer;
   border: solid 0.063rem #f55800;
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
@@ -654,9 +653,10 @@ button:hover {
 
 .contact-form__button:active {
   background-color: #e05304;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  text-shadow: 1px 1px 2px #000;
   color: #fff;
   cursor: pointer;
+  font-weight: 1000;
 }
 
 .contact-form__button:disabled {
@@ -665,12 +665,13 @@ button:hover {
   width: 8.203125rem;
   height: 3rem;
   background: #f4f1f0;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: #5b5957;
   border: none;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /* footer section */
@@ -711,7 +712,7 @@ footer {
 
 button:hover {
   background-color: #fff5e1;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  text-shadow: 1px 1px 2px #000;
   cursor: pointer;
   border: solid 0.063rem #f55800;
   font-family: 'Inter', serif;
@@ -721,7 +722,7 @@ button:hover {
 
 button:active {
   background-color: #e05304;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  text-shadow: 1px 1px 2px #000;
   color: #fff;
   cursor: pointer;
 }
@@ -732,12 +733,13 @@ button:disabled {
   width: 8.203125rem;
   height: 3rem;
   background: #f4f1f0;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: #5b5957;
   border: none;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /* Media query for extra small screens */
@@ -880,8 +882,8 @@ button:disabled {
   .button-me-section {
     margin-top: 5vw;
     padding: 4vw;
-    width: 42vw;
-    height: 11vw;
+    width: 46vw;
+    height: 14vw;
     font-size: 4vw;
     line-height: 4vw;
     border-radius: none;
@@ -1627,6 +1629,9 @@ button:disabled {
   }
 
   .button-from-main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.2vw;
     line-height: 0.3vw;
     padding: 0.1vw 0.4vw;
