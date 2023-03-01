@@ -73,6 +73,7 @@ html {
 .list-item:hover,
 button:hover {
   transform: translate(0.1vw, 0.1vw);
+  outline: none;
 }
 
 .list-item a:focus {
