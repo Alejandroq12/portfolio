@@ -268,7 +268,7 @@ button:hover {
 }
 
 .button-from-main-card:focus {
-  outline: solid 1px #943400;
+  outline: solid 1px #000;
 }
 
 /* Main container CSS Grid */
@@ -669,7 +669,7 @@ button:hover {
 }
 
 .contact-form__button:focus {
-  outline: solid 1px #943400;
+  outline: solid 1px #000;
 }
 
 .contact-form__button:disabled {
