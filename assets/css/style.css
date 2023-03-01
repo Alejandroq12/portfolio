@@ -75,6 +75,10 @@ button:hover {
   transform: translate(0.1vw, 0.1vw);
 }
 
+.list-item:focus {
+  outline: 2px solid #fff;
+}
+
 .nav-items > li.list-item:focus {
   outline: 2px solid #fff;
 }
