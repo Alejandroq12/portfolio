@@ -70,11 +70,19 @@ html {
   color: #fff;
 }
 
-.list-item a:hover,
+.list-item:hover,
 button:hover {
-  transform: translate(0.4vw, 0.2vw);
-  box-shadow: 0 0 1vw #ff6b00;
-  text-shadow: 1px 1px 2px #000;
+  transform: translate(0.1vw, 0.1vw);
+}
+
+.list-item a:focus {
+  background: #3e3c3c;
+  color: #fff;
+}
+
+button:focus {
+  background: #d14900;
+  color: #fff;
 }
 
 .hamburger-icon {
