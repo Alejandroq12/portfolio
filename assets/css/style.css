@@ -76,7 +76,7 @@ button:hover {
   outline: #fff;
 }
 
-ul.list-item:focus {
+.list-item:focus {
   background: #3e3c3c;
   color: #fff;
   outline: #fff;
@@ -373,7 +373,6 @@ button:focus {
   left: 0;
   top: 0;
   background: #d14900;
-  text-shadow: 1px 1px 2px #000;
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -440,7 +439,6 @@ button:focus {
   max-width: 200px;
   height: 8vw;
   background: #d14900;
-  text-shadow: 1px 1px 2px #000;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -634,7 +632,6 @@ button:focus {
   width: 16.3541667vw;
   height: 4.6875vw;
   background: #d14900;
-  text-shadow: 1px 1px 2px #000;
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -650,7 +647,6 @@ button:focus {
 
 .contact-form__button:hover {
   background-color: #fff;
-  text-shadow: 1px 1px 2px #000;
   cursor: pointer;
   border: solid 0.063rem #f55800;
   font-family: 'Inter', serif;
@@ -663,7 +659,7 @@ button:focus {
 }
 
 .contact-form__button:active {
-  background-color: #e05304;
+  background-color: #bd4500;
   text-shadow: 1px 1px 2px #000;
   color: #fff;
   cursor: pointer;
@@ -723,17 +719,15 @@ footer {
 
 button:hover {
   background-color: #fff;
-  text-shadow: 1px 1px 2px #000;
   cursor: pointer;
   border: solid 0.063rem #f55800;
   font-family: 'Inter', serif;
   font-style: normal;
-  color: #f55800;
+  color: #c44d00;
 }
 
 button:active {
-  background-color: #e05304;
-  text-shadow: 1px 1px 2px #000;
+  background-color: #bd4500;
   color: #fff;
   cursor: pointer;
 }
