@@ -75,10 +75,8 @@ button:hover {
   transform: translate(0.1vw, 0.1vw);
 }
 
-.list-item li a:focus {
-  background: #3e3c3c;
-  color: #fff;
-  outline: 2px solid #000;
+.hamburgerMenu:focus-within > .nav-items > li.list-item:focus {
+  outline: 2px solid #fff;
 }
 
 .hamburger-icon {
