@@ -76,7 +76,7 @@ button:hover {
   outline: #fff;
 }
 
-.list-item:focus {
+ul.list-item:focus {
   background: #3e3c3c;
   color: #fff;
   outline: #fff;
@@ -441,7 +441,7 @@ button:focus {
   height: 8vw;
   background: #d14900;
   text-shadow: 1px 1px 2px #000;
-  color: #f4f5f7;
+  color: #fff;
   border: none;
   cursor: pointer;
   font-weight: 1000;
@@ -659,7 +659,7 @@ button:focus {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
-  color: #f55800;
+  color: #d14900;
 }
 
 .contact-form__button:active {
