@@ -75,7 +75,11 @@ button:hover {
   transform: translate(0.1vw, 0.1vw);
 }
 
-.hamburgerMenu:focus-within > .nav-items > li.list-item:focus {
+.nav-items > li.list-item:focus {
+  outline: 2px solid #fff;
+}
+
+.list-item:focus {
   outline: 2px solid #fff;
 }
 
@@ -656,6 +660,10 @@ button:hover {
   font-weight: 1000;
 }
 
+.contact-form__button:focus {
+  outline: solid 2px #000;
+}
+
 .contact-form__button:disabled {
   padding: 0.75rem;
   gap: 0.625rem;
@@ -710,14 +718,14 @@ footer {
 button:hover {
   background-color: #fff;
   cursor: pointer;
-  border: solid 0.063rem #f55800;
+  border: solid 0.063rem #a23b00;
   font-family: 'Inter', serif;
   font-style: normal;
-  color: #c44d00;
+  color: #bb4b00;
 }
 
 button:active {
-  background-color: #bd4500;
+  background-color: #a23b00;
   color: #fff;
   cursor: pointer;
 }
