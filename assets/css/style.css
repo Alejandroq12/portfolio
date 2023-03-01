@@ -79,8 +79,8 @@ button:hover {
   outline: 2px solid #fff;
 }
 
-.list-item:focus {
-  outline: 2px solid #fff;
+.list-item:focus a {
+  outline: none;
 }
 
 .hamburger-icon {
@@ -264,6 +264,10 @@ button:hover {
   background: #d14900;
 }
 
+.button-from-main-card:focus {
+  outline: solid 2px #000;
+}
+
 /* Main container CSS Grid */
 .works-container {
   display: grid;
@@ -440,6 +444,10 @@ button:hover {
   font-size: 1.5vw;
   line-height: 2.25vw;
   letter-spacing: 0.03em;
+}
+
+.button-me-section:focus {
+  outline: solid 2px #fff;
 }
 
 .line-from-about-me {
@@ -642,7 +650,7 @@ button:hover {
 .contact-form__button:hover {
   background-color: #fff;
   cursor: pointer;
-  border: solid 0.063rem #f55800;
+  border: solid 0.063rem #d14900;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 1000;
