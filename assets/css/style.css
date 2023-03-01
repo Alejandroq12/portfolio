@@ -112,7 +112,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #262626;
+  background-color: #000;
 }
 
 .main-section {
@@ -264,11 +264,11 @@ button:hover {
   gap: 10px;
   width: 129px;
   height: 48px;
-  background: #d14900;
+  background: #943400;
 }
 
 .button-from-main-card:focus {
-  outline: solid 2px #000;
+  outline: solid 1px #943400;
 }
 
 /* Main container CSS Grid */
@@ -286,7 +286,7 @@ button:hover {
   background:
     linear-gradient(
       160.45deg,
-      rgba(38, 38, 38, 0) 75.75%,
+      rgba(38, 38, 38, 0.7) 75.75%,
       rgba(38, 38, 38, 0.9) 99.94%
     ),
     url(../images/cardImages/projectCard.png);
@@ -373,7 +373,7 @@ button:hover {
   height: 48px;
   left: 0;
   top: 0;
-  background: #d14900;
+  background: #943400;
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -387,7 +387,7 @@ button:hover {
 /* About me section */
 .about-me-main-container {
   width: 100%;
-  background-color: #262626;
+  background-color: #000;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -437,9 +437,9 @@ button:hover {
   padding: 1.5vw;
   gap: 1vw;
   width: 42%;
-  max-width: 200px;
+  max-width: 270px;
   height: 8vw;
-  background: #d14900;
+  background: #943400;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -447,6 +447,11 @@ button:hover {
   font-size: 1.5vw;
   line-height: 2.25vw;
   letter-spacing: 0.03em;
+  border: 2px solid #fff;
+}
+
+.button-me-section:hover {
+  border: solid 2px #fff;
 }
 
 .button-me-section:focus {
@@ -636,7 +641,7 @@ button:hover {
   gap: 0.625vw;
   width: 16.3541667vw;
   height: 4.6875vw;
-  background: #d14900;
+  background: #943400;
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -651,28 +656,21 @@ button:hover {
 }
 
 .contact-form__button:hover {
-  background-color: #fff;
   cursor: pointer;
-  border: solid 0.063rem #d14900;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
-  color: #d14900;
 }
 
 .contact-form__button:active {
-  background-color: #bd4500;
-  text-shadow: 1px 1px 2px #000;
-  color: #fff;
-  cursor: pointer;
   font-weight: 1000;
 }
 
 .contact-form__button:focus {
-  outline: solid 2px #000;
+  outline: solid 1px #943400;
 }
 
 .contact-form__button:disabled {
@@ -729,16 +727,17 @@ footer {
 button:hover {
   background-color: #fff;
   cursor: pointer;
-  border: solid 0.063rem #a23b00;
+  border: solid 0.063rem #943b00;
   font-family: 'Inter', serif;
   font-style: normal;
-  color: #bb4b00;
+  color: #943b00;
 }
 
 button:active {
-  background-color: #a23b00;
+  background-color: #7a2d00;
   color: #fff;
   cursor: pointer;
+  text-shadow: 1px 1px 2px #000;
 }
 
 button:disabled {
@@ -815,7 +814,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 66vh;
+    min-height: 88vh;
     background-size: 33%;
     background-position: 98% 115%;
   }
@@ -896,7 +895,7 @@ button:disabled {
   .button-me-section {
     margin-top: 5vw;
     padding: 4vw;
-    width: 46vw;
+    width: 45vw;
     height: 14vw;
     font-size: 4vw;
     line-height: 4vw;
@@ -1479,8 +1478,8 @@ button:disabled {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 84vh;
-    background-color: #1c1a19;
+    min-height: 110vh;
+    background-color: #000;
     background-size: 45%;
     background-position: 101% 80%;
     position: relative;
@@ -2021,7 +2020,7 @@ button:disabled {
     flex-direction: column;
     width: 100%;
     min-height: 115vh;
-    background-color: #1c1a19;
+    background-color: #000;
     background-size: 46%;
     background-position: 100% 80%;
     position: relative;
