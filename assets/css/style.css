@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inai+Mathi&display=swap');
 
 *,
 *::before,
@@ -24,6 +23,10 @@ html {
   padding: 1.8vw;
   background-color: #3e3c3c;
   box-shadow: 0.3vw 0.5vw 2.5vw black;
+}
+
+.logo a {
+  text-decoration: none;
 }
 
 .main-logo {
@@ -70,10 +73,21 @@ html {
   color: #fff;
 }
 
-.list-item a:hover,
+.list-item:hover,
 button:hover {
-  transform: translate(0.4vw, 0.2vw);
-  box-shadow: 0 0 1vw #ff6b00;
+  transform: translate(0.1vw, 0.1vw);
+}
+
+.list-item:focus {
+  outline: 2px solid #fff;
+}
+
+.nav-items > li.list-item:focus {
+  outline: 2px solid #fff;
+}
+
+.list-item:focus a {
+  outline: none;
 }
 
 .hamburger-icon {
@@ -102,7 +116,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #262626;
+  background-color: #000;
 }
 
 .main-section {
@@ -239,13 +253,12 @@ button:hover {
 .main_card button {
   display: block;
   margin-top: 20px;
-  text-align: left;
 }
 
 .button-from-main-card {
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -255,7 +268,11 @@ button:hover {
   gap: 10px;
   width: 129px;
   height: 48px;
-  background: #ff6b00;
+  background: #943400;
+}
+
+.button-from-main-card:focus {
+  outline: solid 1px #000;
 }
 
 /* Main container CSS Grid */
@@ -273,7 +290,7 @@ button:hover {
   background:
     linear-gradient(
       160.45deg,
-      rgba(38, 38, 38, 0) 75.75%,
+      rgba(38, 38, 38, 0.7) 75.75%,
       rgba(38, 38, 38, 0.9) 99.94%
     ),
     url(../images/cardImages/projectCard.png);
@@ -360,11 +377,11 @@ button:hover {
   height: 48px;
   left: 0;
   top: 0;
-  background: #ff6b00;
+  background: #943400;
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -374,7 +391,7 @@ button:hover {
 /* About me section */
 .about-me-main-container {
   width: 100%;
-  background-color: #262626;
+  background-color: #000;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -424,16 +441,24 @@ button:hover {
   padding: 1.5vw;
   gap: 1vw;
   width: 42%;
-  max-width: 200px;
+  max-width: 270px;
   height: 8vw;
-  background: #ff6b00;
-  color: #f4f5f7;
-  border: none;
+  background: #943400;
+  color: #fff;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1.5vw;
   line-height: 2.25vw;
   letter-spacing: 0.03em;
+  border: 2px solid #fff;
+}
+
+.button-me-section:hover {
+  border: solid 2px #fff;
+}
+
+.button-me-section:focus {
+  outline: solid 2px #fff;
 }
 
 .line-from-about-me {
@@ -481,7 +506,7 @@ button:hover {
 .list-titles-one {
   margin-right: 1.389em;
   margin-left: -0.778em;
-  font-family: 'InaiMathi', serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.667rem;
@@ -619,11 +644,11 @@ button:hover {
   gap: 0.625vw;
   width: 16.3541667vw;
   height: 4.6875vw;
-  background: #ff6b00;
+  background: #943400;
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1.5625vw;
   line-height: 2.1875vw;
   text-align: center;
@@ -634,24 +659,21 @@ button:hover {
 }
 
 .contact-form__button:hover {
-  background-color: #fff5e1;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
   cursor: pointer;
-  border: solid 0.063rem #f55800;
   font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
-  color: #f55800;
 }
 
 .contact-form__button:active {
-  background-color: #e05304;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
-  color: #fff;
-  cursor: pointer;
+  font-weight: 1000;
+}
+
+.contact-form__button:focus {
+  outline: solid 1px #000;
 }
 
 .contact-form__button:disabled {
@@ -660,12 +682,13 @@ button:hover {
   width: 8.203125rem;
   height: 3rem;
   background: #f4f1f0;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: #5b5957;
   border: none;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /* footer section */
@@ -705,20 +728,19 @@ footer {
 }
 
 button:hover {
-  background-color: #fff5e1;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  background-color: #fff;
   cursor: pointer;
-  border: solid 0.063rem #f55800;
+  border: solid 0.063rem #943b00;
   font-family: 'Inter', serif;
   font-style: normal;
-  color: #f55800;
+  color: #943b00;
 }
 
 button:active {
-  background-color: #e05304;
-  box-shadow: 0.063rem 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  background-color: #7a2d00;
   color: #fff;
   cursor: pointer;
+  text-shadow: 1px 1px 2px #000;
 }
 
 button:disabled {
@@ -727,12 +749,13 @@ button:disabled {
   width: 8.203125rem;
   height: 3rem;
   background: #f4f1f0;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: #5b5957;
   border: none;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /* Media query for extra small screens */
@@ -794,7 +817,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 66vh;
+    min-height: 88vh;
     background-size: 33%;
     background-position: 98% 115%;
   }
@@ -859,7 +882,7 @@ button:disabled {
   }
 
   .about-me-title {
-    font-size: 17vw;
+    font-size: 15vw;
     line-height: 12vw;
     margin-top: 22vw;
     margin-left: 0.5vw;
@@ -875,8 +898,8 @@ button:disabled {
   .button-me-section {
     margin-top: 5vw;
     padding: 4vw;
-    width: 42vw;
-    height: 11vw;
+    width: 45vw;
+    height: 14vw;
     font-size: 4vw;
     line-height: 4vw;
     border-radius: none;
@@ -1458,8 +1481,8 @@ button:disabled {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 84vh;
-    background-color: #1c1a19;
+    min-height: 110vh;
+    background-color: #000;
     background-size: 45%;
     background-position: 101% 80%;
     position: relative;
@@ -1622,6 +1645,9 @@ button:disabled {
   }
 
   .button-from-main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.2vw;
     line-height: 0.3vw;
     padding: 0.1vw 0.4vw;
@@ -1785,11 +1811,11 @@ button:disabled {
     align-items: flex-start;
   }
 
-  .container > div h2 {
+  .container > div h4 {
     margin-top: 0;
   }
 
-  .container > div:nth-child(1) h2 {
+  .container > div:nth-child(1) h4 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
@@ -1806,7 +1832,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(2) h2 {
+  .container > div:nth-child(2) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -1823,7 +1849,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(3) h2 {
+  .container > div:nth-child(3) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -1997,7 +2023,7 @@ button:disabled {
     flex-direction: column;
     width: 100%;
     min-height: 115vh;
-    background-color: #1c1a19;
+    background-color: #000;
     background-size: 46%;
     background-position: 100% 80%;
     position: relative;
@@ -2318,11 +2344,11 @@ button:disabled {
     align-items: flex-start;
   }
 
-  .container > div h2 {
+  .container > div h4 {
     margin-top: 0;
   }
 
-  .container > div:nth-child(1) h2 {
+  .container > div:nth-child(1) h4 {
     font-size: 2.8vw;
     margin-left: 2vw;
   }
@@ -2339,7 +2365,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(2) h2 {
+  .container > div:nth-child(2) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }
@@ -2356,7 +2382,7 @@ button:disabled {
     align-items: center;
   }
 
-  .container > div:nth-child(3) h2 {
+  .container > div:nth-child(3) h4 {
     font-size: 2.5vw;
     margin-left: 0.1vw;
   }

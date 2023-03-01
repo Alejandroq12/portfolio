@@ -7,28 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="This a portfolio of a full stack web developer" />
   <meta name="keywords" content="porfotlio, software developer, web developer" />
+  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon.ico" />
   <meta name="author" content="Julio Quezada" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Julio Quezada | Full Stack Web Developer Portfolio</title>
 </head>
 
 <body>
-  <header class="header-container">
+  <header class="header-container" role="banner" aria-label="Site header">
     <div class="logo">
-      <p class="main-logo">Julio Quezada.</p>
+      <a href="#About" title="Julio logo" tabindex="0">
+        <h1 class="main-logo" alt="Julio Quezada logo" aria-label="Julio Quezada logo">Julio Quezada</h1>
+      </a>
     </div>
-    <nav class="navigation-bar">
+    <nav class="navigation-bar" role="navigation">
       <div class="hamburgerMenu">
-        <ul class="nav-items">
-          <li class="list-item"><a href="#">Porfolio</a></li>
-          <li class="list-item"><a href="#">About</a></li>
-          <li class="list-item"><a href="#">Contact</a></li>
-          <li class="list-item">
-            <a href="#"><img src="./assets/images/main_section/mail.png" alt="mail logo" /></a>
-          </li>
-        </ul>
+        <nav class="navigation-bar" role="navigation">
+          <ul class="nav-items">
+            <li class="list-item"><a href="#Portfolio" aria-current="page" tabindex="0">Portfolio</a></li>
+            <li class="list-item"><a href="#About" tabindex="0">About</a></li>
+            <li class="list-item"><a href="#Contact" tabindex="0">Contact</a></li>
+            <li class="list-item">
+              <a href="#Contact" title="Contact me" tabindex="0"><img src="./assets/images/main_section/mail.png"
+                  alt="mail logo" /></a>
+            </li>
+          </ul>
       </div>
-      <button type="button" class="hamburger-icon">
+      <button type="button" class="hamburger-icon" aria-label="Open menu" name="hamburguer menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -36,41 +41,42 @@
     </nav>
   </header>
 
+
   <main class="main-area">
     <section class="main-section">
       <div class="salute">
-        <h1 class="main-header">
+        <h2 class="main-header" tabindex="0">
           Hey There.<span class="subtitle">I'm Julio</span>
-        </h1>
-        <h2 class="second-header">I'm a Software Developer</h2>
-        <p class="main-description">
+        </h2>
+        <h3 class="second-header" tabindex="0">I'm a Software Developer</h3>
+        <p class="main-description" tabindex="0">
           I can help you build a product , feature or website Look through
           some of my work and experience! If you like what you see and have a
           project you need coded, don't hestiate to contact me.
         </p>
       </div>
 
-      <div class="socialMediaIcons left-column">
+      <div class="socialMediaIcons left-column" aria-label="Social media icons">
         <ul class="my-icons-list">
           <li class="icon-item1 iconMedia">
-            <a href="https://github.com/Alejandroq12"><img src="./assets/images/main_section/github.png"
-                alt="github" /></a>
+            <a href="https://github.com/Alejandroq12" tabindex="0"><img src="./assets/images/main_section/github.png"
+                alt="Julio GitHub account" /></a>
           </li>
           <li class="icon-item2 iconMedia">
-            <a href="https://www.linkedin.com/in/quezadajulio/"><img src="./assets/images/main_section/linkedin.png"
-                alt="linkedin" /></a>
+            <a href="https://www.linkedin.com/in/quezadajulio/" tabindex="0"><img
+                src="./assets/images/main_section/linkedin.png" alt="Julio Linkedin account" /></a>
           </li>
           <li class="icon-item3 iconMedia">
-            <a href="https://angel.co/u/julio-alejandro-quezada-rodriguez"><img
-                src="./assets/images/main_section/angelist.png" alt="angelist" /></a>
+            <a href="https://angel.co/u/julio-alejandro-quezada-rodriguez" tabindex="0"><img
+                src="./assets/images/main_section/angelist.png" alt="Julio angelist account" /></a>
           </li>
-          <li class="icon-item4 iconMedia">
-            <a href="https://twitter.com/JulioAle54"><img src="./assets/images/main_section/twitter.png"
-                alt="twitter" /></a>
+          <li class="icon-item4 iconMedia" tabindex="0">
+            <a href="https://twitter.com/JulioAle54" tabindex="0"><img src="./assets/images/main_section/twitter.png"
+                alt="Julio Twitter account" /></a>
           </li>
           <li class="icon-item5 iconMedia">
-            <a href="https://medium.com/@julio.quezada"><img src="./assets/images/main_section/medium.png"
-                alt="medium" /></a>
+            <a href="https://medium.com/@julio.quezada" tabindex="0"><img src="./assets/images/main_section/medium.png"
+                alt="Julio medium account" /></a>
           </li>
         </ul>
       </div>
@@ -78,210 +84,231 @@
     </section>
   </main>
   <!-- My works area -->
-  <section class="work-section">
+  <section class="work-section" id="Portfolio" aria-label="Portfolio section">
     <div class="section-title-container">
-      <h2 class="second-title">My recent Works</h2>
+      <h3 class="second-title" tabindex="0">My recent Works</h3>
       <hr class="line_below_title" />
     </div>
     <div class="container-about-me">
       <div class="card-container">
         <div class="main_card">
-          <div class="image-container">
-            <img class="image_from_main_card" src="./assets/images/cardImages/mainCard.png" alt="Work 1" />
+          <div class="image-container" tabindex="0">
+            <img class="image_from_main_card" src="./assets/images/cardImages/mainCard.png" alt="My first project" />
           </div>
           <div class="text-container">
-            <h2 class="main-card-title">Multi-Post Stories</h2>
-            <p class="main-card-description">
+            <h4 class="main-card-title" tabindex="0">Multi-Post Stories</h4>
+            <p class="main-card-description" tabindex="0">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard dummy text ever
               since the 1500s, when an unknown printer took a standard dummy text.
             </p>
             <ul class="main-card-list-ul">
-              <li class="main-card-list-ul-li">css</li>
-              <li class="main-card-list-ul-li">html</li>
-              <li class="main-card-list-ul-li">bootstrap</li>
-              <li class="main-card-list-ul-li">Ruby</li>
+              <li class="main-card-list-ul-li" tabindex="0">css</li>
+              <li class="main-card-list-ul-li" tabindex="0">html</li>
+              <li class="main-card-list-ul-li" tabindex="0">bootstrap</li>
+              <li class="main-card-list-ul-li" tabindex="0">Ruby</li>
             </ul>
-            <button class="button-from-main-card" type="button">
+            <button class="button-from-main-card" type="submit" aria-label="See project button"
+              name="buttom from main card" tabindex="0">
               See project
             </button>
           </div>
         </div>
       </div>
-      <div class="works-container">
-        <div class="work-card">
-          <h2 class="work-cards-title">Profesional Art Printing Data</h2>
-          <p class="work-cards-description">
+      <div class="works-container" aria-label="Works container">
+        <div class="work-card" tabindex="0" aria-label="Projects card 1">
+          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
+          <p class="work-cards-description" tabindex="0">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
           </p>
           <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
+            <li tabindex="0">HTML</li>
+            <li tabindex="0">Bootstrap</li>
+            <li tabindex="0">Ruby</li>
           </ul>
-          <button class="button-card" type="button">See Project</button>
+          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
+            tabindex="0">See Project</button>
         </div>
-        <div class="work-card">
-          <h2 class="work-cards-title">Profesional Art Printing Data</h2>
-          <p class="work-cards-description">
+        <div class="work-card" tabindex="0" aria-label="Projects card 2">
+          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
+          <p class="work-cards-description" tabindex="0">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
           </p>
           <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
+            <li tabindex="0">HTML</li>
+            <li tabindex="0">Bootstrap</li>
+            <li tabindex="0">Ruby</li>
           </ul>
-          <button class="button-card" type="button">See Project</button>
+          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
+            tabindex="0">See Project</button>
         </div>
-        <div class="work-card">
-          <h2 class="work-cards-title">Profesional Art Printing Data</h2>
-          <p class="work-cards-description">
+        <div class="work-card" tabindex="0" aria-label="Projects card 3">
+          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
+          <p class="work-cards-description" tabindex="0">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
           </p>
           <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
+            <li tabindex="0">HTML</li>
+            <li tabindex="0">Bootstrap</li>
+            <li tabindex="0">Ruby</li>
           </ul>
-          <button class="button-card" type="button">See Project</button>
+          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
+            tabindex="0">See Project</button>
         </div>
-        <div class="work-card">
-          <h2 class="work-cards-title">Profesional Art Printing Data</h2>
-          <p class="work-cards-description">
+        <div class="work-card" tabindex="0" aria-label="Projects card 4">
+          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
+          <p class="work-cards-description" tabindex="0">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
           </p>
           <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
+            <li tabindex="0">HTML</li>
+            <li tabindex="0">Bootstrap</li>
+            <li tabindex="0">Ruby</li>
           </ul>
-          <button class="button-card" type="button">See Project</button>
+          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
+            tabindex="0">See Project</button>
         </div>
-        <div class="work-card">
-          <h2 class="work-cards-title">Profesional Art Printing Data</h2>
-          <p class="work-cards-description">
+        <div class="work-card" tabindex="0" aria-label="Projects card 5">
+          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
+          <p class="work-cards-description" tabindex="0">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
           </p>
           <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
+            <li tabindex="0">HTML</li>
+            <li tabindex="0">Bootstrap</li>
+            <li tabindex="0">Ruby</li>
           </ul>
-          <button class="button-card" type="button">See Project</button>
+          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
+            tabindex="0">See Project</button>
         </div>
-        <div class="work-card">
-          <h2 class="work-cards-title">Profesional Art Printing Data</h2>
-          <p class="work-cards-description">
+        <div class="work-card" tabindex="0" aria-label="Projects card 6">
+          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
+          <p class="work-cards-description" tabindex="0">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard.
           </p>
           <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
+            <li tabindex="0">HTML</li>
+            <li tabindex="0">Bootstrap</li>
+            <li tabindex="0">Ruby</li>
           </ul>
-          <button class="button-card" type="button">See Project</button>
+          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
+            tabindex="0">See Project</button>
         </div>
       </div>
     </div>
   </section>
   <!-- About me section -->
-  <section class="about-me-main-container">
+  <section class="about-me-main-container" id="About" aria-label="About me section">
     <header>
-      <h2 class="about-me-title">About me</h2>
+      <h3 class="about-me-title" tabindex="0">About me</h3>
     </header>
-    <div class="description-me-section">
-      <p>
-        Hello I’m a software developer! I can help you build a product ,
+    <div class="description-me-section" aria-label="About me description">
+      <p tabindex="0">
+        Hello I'm a software developer! I can help you build a product ,
         feature or website Look through some of my work and experience! If you
-        like what you see and have a project you need coded, don’t hestiate to
+        like what you see and have a project you need coded, don't hestiate to
         contact me.
       </p>
-      <button button="button" class="button-me-section">Get My Resume</button>
+      <button button="button" class="button-me-section" name="get my resume button" aria-label="Get my resume button"
+        type="submit" tabindex="0">Get My Resume</button>
     </div>
     <hr class="line-from-about-me" />
-    <ul class="ul-list-me-section">
+    <div class="ul-list-me-section">
       <div class="container">
         <div class="column">
-          <li class="main-li-list-me-section">
-            <h2 class="list-titles-one">Language</h2>
+          <div class="main-li-list-me-section">
+            <h4 class="list-titles-one" tabindex="0">Language</h4>
             <ul>
-              <li class="li-list-me-section">Javascript</li>
-              <li class="li-list-me-section">Ruby</li>
-              <li class="li-list-me-section">HTML</li>
-              <li class="li-list-me-section">CSS</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Javascript">Javascript</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Ruby">Ruby</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="HTML">HTML</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="CSS">CSS</li>
             </ul>
-          </li>
+          </div>
         </div>
 
         <div class="column">
-          <li>
-            <h2 class="list-titles-two">Frameworks</h2>
+          <div>
+            <h4 class="list-titles-two" tabindex="0">Frameworks</h4>
             <ul>
-              <li class="li-list-me-section">Bootstrap</li>
-              <li class="li-list-me-section">Ruby on Rails</li>
-              <li class="li-list-me-section">RSpec</li>
-              <li class="li-list-me-section">CapyBara</li>
-              <li class="li-list-me-section">Selenium</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Bootstrap">Bootstrap</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Ruby on Rails">Ruby on Rails</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="RSpec">RSpec</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="CapyBara">CapyBara</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Selenium">Selenium</li>
             </ul>
-          </li>
+          </div>
         </div>
 
         <div class="column">
-          <li>
-            <h2 class="list-titles-three">Skills</h2>
+          <div>
+            <h4 class="list-titles-three" tabindex="0">Skills</h4>
             <ul>
-              <li class="li-list-me-section">Codekit</li>
-              <li class="li-list-me-section">Github</li>
-              <li class="li-list-me-section">Codepen</li>
-              <li class="li-list-me-section">Gitlab</li>
-              <li class="li-list-me-section">Terminal</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Codekit">Codekit</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="GitHub">Github</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Codepen">Codepen</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Gitlab">Gitlab</li>
+              <li class="li-list-me-section" tabindex="0" aria-label="Terminal">Terminal</li>
             </ul>
-          </li>
+          </div>
         </div>
-    </ul>
-    </div>
+        </ul>
+      </div>
   </section>
 
   <!-- Form section -->
-  <section class="contact-form">
-    <h2 class="contact-form__heading">
+  <section class="contact-form" id="Contact" aria-label="Contact form section">
+    <h3 class="contact-form__heading" tabindex="0" aria-label="Contact form heading">
       I'm always interested in hearing about new projects, so if you'd like to
       chat please get in touch.
-    </h2>
-    <form class="contact-form__form" action="https://formspree.io/f/mgebknyd" method="POST">
-      <input type="hidden" name="_subject" value="New Form Submission!" />
-      <input class="hide_input" type="text" name="_gotcha" />
-      <div class="contact-form__group">
-        <input class="contact-form__input" type="text" id="name" name="name" placeholder="Full name" maxlength="30"
-          required />
+    </h3>
+    <form class="contact-form__form" id="form" name="form" action="https://formspree.io/f/mgebknyd" method="POST"
+      aria-label="Contact form">
+      <input type="hidden" name="_subject" value="New Form Submission!"
+        aria-label="Hidden input to receive normal emails" />
+      <input class="hide_input" type="text" name="_gotcha" aria-label="Hidden input to catch spam" />
+      <div class="contact-form__group" aria-label="Contact form name group">
+        <input class="contact-form__input" type="text" id="name" aria-label="name input" name="name"
+          placeholder="Full name" maxlength="30" required tabindex="0" />
       </div>
-      <div class="contact-form__group">
-        <input class="contact-form__input" type="email" id="email" name="email" placeholder="Email Address" required />
+      <div class="contact-form__group" aria-label="email input">
+        <input class="contact-form__input" type="email" aria-label="email input" id="email" name="email"
+          placeholder="Email Address" required tabindex="0" />
       </div>
-      <div class="contact-form__group">
+      <div class="contact-form__group" aria-label="Contact form message group">
         <textarea class="contact-form__input contact-form__textarea" id="message" name="message"
           placeholder="Hello Julio. I would like to get in touch with you..." maxlength="500" rows="5"
-          required></textarea>
+          aria-label="message input" required tabindex="0"></textarea>
       </div>
-      <button class="contact-form__button" type="submit">Get in touch</button>
+      <button class="contact-form__button" id="contact-form-button" name="get in touch button"
+        aria-label="submit button" type="submit" tabindex="0">Get in touch</button>
     </form>
   </section>
 
   <hr class="footer_top_line">
   <footer>
-    <div class="footer-container">
-      <div class="logo-container">
-        <img src="./assets/images/footer/github.png" alt="github">
-        <img src="./assets/images/footer/linkedin.png" alt="linkedin">
-        <img src="./assets/images/footer/angelist.png" alt="angelist">
-        <img src="./assets/images/footer/twitter.png" alt="twitter">
-        <img src="./assets/images/footer/medium.png" alt="medium">
+    <div class="footer-container" aria-label="Footer container">
+      <div class="logo-container" aria-label="Social media links">
+        <a href="https://github.com/Alejandroq12" aria-label="Julio Github account" tabindex="0"><img
+            src="./assets/images/footer/github.png" alt="Julio Github account"></a>
+
+        <a href="https://www.linkedin.com/in/quezadajulio/" aria-label="Julio LinkedIn account" tabindex="0"><img
+            src="./assets/images/footer/linkedin.png" alt=" Julio LinkedIn acount"></a>
+
+        <a href="https://angel.co/u/julio-alejandro-quezada-rodriguez" aria-label="Julio Angelist account"
+          tabindex="0"><img src="./assets/images/footer/angelist.png" alt="Julio Angelist acount"></a>
+
+        <a href="https://twitter.com/JulioAle54" aria-label="Julio Twitter account" tabindex="0"><img
+            src="./assets/images/footer/twitter.png" alt="Julio Twitter account"></a>
+
+        <a href="https://medium.com/@julio.quezada" aria-label="Julio Medium account" tabindex="0"><img
+            src="./assets/images/footer/medium.png" alt="Julio Medium account"></a>
       </div>
       <hr class="footer_bottom_line">
     </div>
