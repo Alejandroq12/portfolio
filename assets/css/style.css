@@ -25,6 +25,10 @@ html {
   box-shadow: 0.3vw 0.5vw 2.5vw black;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .main-logo {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
