@@ -73,17 +73,19 @@ html {
 .list-item:hover,
 button:hover {
   transform: translate(0.1vw, 0.1vw);
-  outline: none;
+  outline: #fff;
 }
 
-.list-item a:focus {
+.list-item:focus {
   background: #3e3c3c;
   color: #fff;
+  outline: #fff;
 }
 
 button:focus {
   background: #d14900;
   color: #fff;
+  outline: #fff;
 }
 
 .hamburger-icon {
