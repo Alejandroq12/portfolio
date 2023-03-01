@@ -74,6 +74,7 @@ html {
 button:hover {
   transform: translate(0.4vw, 0.2vw);
   box-shadow: 0 0 1vw #ff6b00;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .hamburger-icon {
@@ -256,7 +257,7 @@ button:hover {
   width: 129px;
   height: 48px;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 2px #000;
 }
 
 /* Main container CSS Grid */
@@ -362,7 +363,7 @@ button:hover {
   left: 0;
   top: 0;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px #000;
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -429,7 +430,7 @@ button:hover {
   max-width: 200px;
   height: 8vw;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px #000;
   color: #f4f5f7;
   border: none;
   cursor: pointer;
@@ -623,7 +624,7 @@ button:hover {
   width: 16.3541667vw;
   height: 4.6875vw;
   background: #ff6b00;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px #000;
   margin-bottom: 6.875vw;
   font-family: 'Inter', serif;
   font-style: normal;
