@@ -17,7 +17,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+    - [🚀 Live Demo](#live-demo)
+    - [🤓 Loom walkthrough](#loom-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -64,6 +65,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://alejandroq12.github.io/hello-world/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LOOM WALKTHROUGH -->
+
+## 🤓 Loom walkthrough <a name="loom-walkthrough"></a>
+
+- [Loom walkthrough Link](https://www.loom.com/share/bf2aa0949e1947eb9092f38800a1018e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
