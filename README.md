@@ -73,7 +73,7 @@
 
 <!-- LOOM WALKTHROUGH -->
 
-## 🤓 Loom walkthrough <a name="loom-walkthrough"></a>
+## 😎 Loom walkthrough <a name="loom-walkthrough"></a>
 
 - [Loom walkthrough Link](https://www.loom.com/share/bf2aa0949e1947eb9092f38800a1018e)
 
