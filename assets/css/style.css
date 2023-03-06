@@ -999,14 +999,12 @@ button:disabled {
   }
 
   .contact-form__button:hover {
-    font-weight: 2em;
     font-size: 4vw;
     line-height: 4.5vw;
     letter-spacing: 0.03em;
   }
 
   .contact-form__button:disabled {
-    font-weight: 2em;
     font-size: 4vw;
     line-height: 4.5vw;
     letter-spacing: 0.03em;
