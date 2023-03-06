@@ -203,14 +203,14 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 5rem;
 }
 
 .main_card {
   background-color: white;
   text-align: left;
   height: 568px;
-  padding: 0 24px;
+  padding: 1rem;
   gap: 24px;
 }
 
@@ -794,6 +794,10 @@ button:disabled {
     padding: 2vw 0;
   }
 
+  .mail-logo {
+    display: none;
+  }
+
   /* Mobile menu link */
   .mobile-menu a {
     color: #fff;
@@ -837,7 +841,7 @@ button:disabled {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: -12rem;
+    margin-top: -10rem;
     margin-left: -8rem;
   }
 
@@ -854,27 +858,27 @@ button:disabled {
   }
 
   /* Mobile menu separator */
-  .mobile-menu li::after {
+  .mobile-menu li:not(:last-child)::after {
     content: "";
     display: block;
     position: absolute;
     bottom: 0;
-    width: 250%;
+    width: 255%;
     height: 1px;
     background-color: #6f6c6b;
-    margin-left: -0.5rem;
+    margin-left: -0.7rem;
   }
 
   /* Close icon */
   .close-icon {
     position: absolute;
     top: 0.6rem;
-    right: 1.8rem;
+    right: 2.4rem;
     cursor: pointer;
     border: none;
     background: none;
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
   }
 
   /* Hamburger icon */
@@ -1162,21 +1166,19 @@ button:disabled {
     color: #fff;
     text-decoration: none;
   }
-    
+
   .list-item a:hover,
   button:hover {
     transform: none;
     box-shadow: none;
   }
 
-  .hamburger-icon {
-    display: block;
-    font-size: 5em;
-  }
-
   .hamburger-icon .bar {
     height: 0.6vw;
     width: 6vw;
+  }
+  .mail-logo {
+    display: none;
   }
 
   /* Mobile menu */
@@ -1199,16 +1201,16 @@ button:disabled {
   .mobile-menu.active {
     display: flex;
   }
-  
+
   /* Mobile menu list */
   .mobile-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: -12rem;
-    margin-left: -8rem;
+    margin-top: -18rem;
+    margin-left: -17rem;
   }
-  
+
   /* Mobile menu list item */
   .mobile-menu li {
     padding: 1rem 0;
@@ -1220,9 +1222,8 @@ button:disabled {
     position: relative;
     margin-bottom: 0.4rem;
   }
-  
-  /* Mobile menu separator */
-  .mobile-menu li::after {
+
+  .mobile-menu li:not(:last-child)::after {
     content: "";
     display: block;
     position: absolute;
@@ -1244,13 +1245,13 @@ button:disabled {
     width: 12px;
     height: 12px;
   }
-  
+
   /* Hamburger icon */
   .hamburger-icon {
     display: block;
     font-size: 2.5rem;
   }
-  
+
   /* Show navigation items when mobile menu is active */
   .mobile-menu.active .nav-items {
     display: block;
@@ -1343,8 +1344,6 @@ button:disabled {
 
   .main_card {
     height: auto;
-    padding: auto;
-    gap: 16px;
   }
 
   .image_from_main_card {
@@ -2184,7 +2183,7 @@ button:disabled {
     line-height: 3vw;
     padding: 0 1.5vw;
   }
-  
+
   /* Mobile button */
   .close-icon {
     display: none;
