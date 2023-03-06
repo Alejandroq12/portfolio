@@ -902,7 +902,6 @@ button:disabled {
     height: 14vw;
     font-size: 4vw;
     line-height: 4vw;
-    border-radius: none;
   }
 
   .line-from-about-me {
@@ -1000,14 +999,14 @@ button:disabled {
   }
 
   .contact-form__button:hover {
-    font-weight: 2vw;
+    font-weight: 2em;
     font-size: 4vw;
     line-height: 4.5vw;
     letter-spacing: 0.03em;
   }
 
   .contact-form__button:disabled {
-    font-weight: 4vw;
+    font-weight: 2em;
     font-size: 4vw;
     line-height: 4.5vw;
     letter-spacing: 0.03em;
@@ -1177,7 +1176,7 @@ button:disabled {
 
   .main_card {
     height: auto;
-    padding: 24px auto;
+    padding: 1.5em;
     gap: 16px;
   }
 
@@ -1822,7 +1821,6 @@ button:disabled {
 
   .container > div:nth-child(1) ul {
     margin-left: 2.5vw;
-    padding: 10;
   }
 
   .container > div:nth-child(1) ul li {
@@ -2355,7 +2353,6 @@ button:disabled {
 
   .container > div:nth-child(1) ul {
     margin-left: 2.5vw;
-    padding: 10;
   }
 
   .container > div:nth-child(1) ul li {
