@@ -11,3 +11,10 @@ closeButton.addEventListener('click', () => {
   hamburgerButton.style.display = 'block';
   mobileMenu.classList.remove('active');
 });
+
+mobileMenu.querySelectorAll('li a').forEach((link) => {
+  link.addEventListener('click', () => {
+    hamburgerButton.style.display = 'block';
+    mobileMenu.classList.remove('active');
+  });
+});
