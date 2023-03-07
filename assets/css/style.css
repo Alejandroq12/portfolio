@@ -277,7 +277,12 @@ button:hover {
   text-align: left;
 }
 
-.button-from-main-card a {
+.button-from-main-card a.source-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-from-main-card a.demo-link {
   text-decoration: none;
   color: inherit;
 }
