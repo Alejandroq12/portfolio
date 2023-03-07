@@ -834,6 +834,7 @@ button:disabled {
   /* Show mobile menu when active */
   .mobile-menu.active {
     display: flex;
+    position: fixed;
   }
 
   /* Mobile menu list */
@@ -1201,6 +1202,7 @@ button:disabled {
   /* Show mobile menu when active */
   .mobile-menu.active {
     display: flex;
+    position: fixed;
   }
 
   /* Mobile menu list */
@@ -1645,6 +1647,10 @@ button:disabled {
     display: none;
   }
 
+  .hamburger-icon {
+    display: none;
+  }
+
   /* main section */
   .main-area {
     background-image: url('../images/main_section/Illustration-header.png');
@@ -1752,7 +1758,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 1vw;
+    margin-bottom: 1.5rem;
     padding: 3vw;
   }
 
@@ -2298,7 +2304,7 @@ button:disabled {
     flex-direction: column;
     justify-content: center;
     padding: 3vw;
-    margin-bottom: 1vw;
+    margin-bottom: 1.6rem;
   }
 
   .main_card {
