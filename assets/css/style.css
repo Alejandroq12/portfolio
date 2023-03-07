@@ -216,7 +216,7 @@ button:hover {
 
 .image_from_main_card {
   margin: 0 auto 8%;
-  width: 14rem 0;
+  width: 14rem 1rem;
 }
 
 .main-card-title {
@@ -989,14 +989,14 @@ button:disabled {
   }
 
   .work-section {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 
   .second-title {
     font-size: 10.6vw;
     line-height: 23vw;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
   }
 
   .line_below_title {
@@ -1013,8 +1013,8 @@ button:disabled {
   }
 
   .image_from_main_card {
-    margin: 0 auto 0;
-    width: 1rem 0;
+    margin: 0.1rem auto 0;
+    width: 1rem 1rem;
   }
 
   .main-card-title {
