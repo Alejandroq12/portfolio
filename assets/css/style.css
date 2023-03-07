@@ -175,7 +175,7 @@ button:hover {
 
 /* My works section */
 .work-section {
-  margin-top: 16vw;
+  margin-top: 3rem;
 }
 
 .second-title {
@@ -216,6 +216,7 @@ button:hover {
 
 .image_from_main_card {
   margin: 0 auto 8%;
+  width: 14rem auto;
 }
 
 .main-card-title {
@@ -231,7 +232,6 @@ button:hover {
 }
 
 .main-card-description {
-  height: 147px;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
@@ -255,6 +255,11 @@ button:hover {
   margin-top: 20px;
 }
 
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
 .button-from-main-card {
   font-family: 'Inter', serif;
   font-style: normal;
@@ -265,10 +270,32 @@ button:hover {
   color: #fff;
   border: none;
   padding: 12px;
-  gap: 10px;
-  width: 129px;
+  width: 150px;
   height: 48px;
   background: #943400;
+  position: relative;
+  text-align: left;
+}
+
+.button-from-main-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-from-main-card a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-icon {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.8rem;
+  height: 0.8rem;
+}
+
+.button-from-main-card:hover .button-icon {
+  filter: invert(61%) sepia(96%) saturate(3260%) hue-rotate(15deg);
 }
 
 .button-from-main-card:focus {
@@ -956,6 +983,85 @@ button:disabled {
     padding: 5px;
   }
 
+  .work-section {
+    margin-top: 5rem;
+  }
+
+  .second-title {
+    font-size: 10.6vw;
+    line-height: 23vw;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .line_below_title {
+    margin-bottom: 5rem;
+  }
+
+
+  .card-container {
+    margin-bottom: 4rem;
+  }
+
+  .main_card {
+    height: 25rem;
+    padding: 1rem;
+  }
+
+  .image_from_main_card {
+    margin: 0 auto 0;
+    width: 1rem auto;
+  }
+
+  .main-card-title {
+    height: 36px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 0.1rem 0.3rem;
+  }
+
+  .main-card-description {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #091e42;
+    margin: 0.4rem 0.3rem;
+  }
+
+  .main_card ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.1rem 0.3rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .button-from-main-card {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 150px;
+    height: 48px;
+    background: #943400;
+    position: relative;
+    text-align: left;
+  }
+
   /* About me section */
   .about-me-main-container {
     background-image: url('../images/me_section/Frame.png');
@@ -1127,7 +1233,7 @@ button:disabled {
 }
 
 /* Media query for small screens */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 540px) and (max-width: 768px) {
   /* header and nav bar */
   .header-container {
     display: flex;
@@ -1350,7 +1456,7 @@ button:disabled {
   }
 
   .image_from_main_card {
-    width: 93vw;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1358,8 +1464,8 @@ button:disabled {
   }
 
   .main-card-title {
-    font-size: 8.5vw;
-    line-height: 9vw;
+    font-size: 2rem;
+    line-height: 9.5vw;
     height: auto;
   }
 
@@ -1394,13 +1500,18 @@ button:disabled {
   }
 
   .button-from-main-card {
-    font-size: 4vw;
+    font-size: 1rem;
     line-height: 0.5vw;
-    padding: 4.5vw;
-    width: 33vw;
+    padding: 1.4rem;
+    width: 9.9rem;
+    text-align: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+  }
+
+  .button-icon {
+    height: 1rem;
+    bottom: 0.9rem;
   }
 
   /* Main container with Flexbox */
@@ -1430,8 +1541,8 @@ button:disabled {
   }
 
   .work-cards-description {
-    font-size: 68%;
-    line-height: 3vw;
+    font-size: 69%;
+    line-height: 1rem;
     text-align: start;
     margin-left: 20px;
     width: 90%;
@@ -1555,7 +1666,7 @@ button:disabled {
   }
 
   .contact-form__input::placeholder {
-    font-size: 1.5vw;
+    font-size: 0.5rem;
     line-height: 2vw;
     height: 2vw;
     top: calc(26% - 2vw / 2);
@@ -1776,7 +1887,7 @@ button:disabled {
   }
 
   .image_from_main_card {
-    width: 44vw;
+    width: 14rem;
     margin: 0;
   }
 
@@ -1822,14 +1933,17 @@ button:disabled {
   }
 
   .button-from-main-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2vw;
-    line-height: 0.3vw;
-    padding: 0.1vw 0.4vw;
-    height: 3.8vw;
-    width: 8.5vw;
+    font-size: 0.5rem;
+    line-height: 0.5vw;
+    padding: 0.6rem;
+    width: 4.8rem;
+    height: 1.6rem;
+    text-align: left;
+  }
+
+  .button-icon {
+    height: 0.5rem;
+    bottom: 0.6rem;
   }
 
   .works-container {
@@ -2321,7 +2435,7 @@ button:disabled {
   }
 
   .image_from_main_card {
-    width: 44vw;
+    width: 15rem;
     margin: 0;
   }
 
@@ -2367,11 +2481,17 @@ button:disabled {
   }
 
   .button-from-main-card {
-    font-size: 1.2vw;
-    line-height: 0.3vw;
-    padding: 0.1vw 0.4vw;
-    height: 3.8vw;
-    width: 8.2vw;
+    font-size: 0.7rem;
+    line-height: 0.5vw;
+    padding: 0.8rem;
+    width: 6.4rem;
+    height: 1.9rem;
+    text-align: left;
+  }
+
+  .button-icon {
+    height: 0.6rem;
+    bottom: 0.7rem;
   }
 
   .works-container {
