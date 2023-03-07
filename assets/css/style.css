@@ -216,7 +216,7 @@ button:hover {
 
 .image_from_main_card {
   margin: 0 auto 8%;
-  width: 14rem 1rem;
+  width: calc(14rem + 1.5rem);
 }
 
 .main-card-title {
@@ -1014,7 +1014,7 @@ button:disabled {
 
   .image_from_main_card {
     margin: 0.1rem auto 0;
-    width: 1rem 1rem;
+    width: calc(14rem + 1.5rem);
   }
 
   .main-card-title {
