@@ -216,7 +216,7 @@ button:hover {
 
 .image_from_main_card {
   margin: 0 auto 8%;
-  width: 14rem auto;
+  width: 14rem 0;
 }
 
 .main-card-title {
@@ -998,7 +998,6 @@ button:disabled {
     margin-bottom: 5rem;
   }
 
-
   .card-container {
     margin-bottom: 4rem;
   }
@@ -1010,7 +1009,7 @@ button:disabled {
 
   .image_from_main_card {
     margin: 0 auto 0;
-    width: 1rem auto;
+    width: 1rem 0;
   }
 
   .main-card-title {
