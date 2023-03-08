@@ -1446,6 +1446,11 @@ ul.popup-technologies li {
     max-height: 90%;
   }
 
+  ul.popup-technologies li {
+    margin-bottom: 8px;
+    margin-top: 7px;
+  }
+
   .popup-button {
     font-size: 0.7rem;
     height: 1.8rem;
@@ -2668,6 +2673,11 @@ ul.popup-technologies li {
     width: 100%;
   }
 
+  ul.popup-technologies li {
+    margin-bottom: 25px;
+    margin-top: -16px;
+  }
+
   .popup.ul.popup.popup-technologies li {
     margin-bottom: 30px;
     margin-right: 10px;
@@ -3092,6 +3102,14 @@ ul.popup-technologies li {
     padding: 0;
   }
 
+  .popup-container .popup ul.popup-technologies li {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-top: -20px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+
   .container > div:nth-child(3) ul li {
     font-size: 2vw;
     line-height: 2vw;
@@ -3322,14 +3340,6 @@ ul.popup-technologies li {
     list-style: none;
     padding: 0;
     width: 100%;
-  }
-
-  .popup ul.popup-technologies li {
-    margin-bottom: 30px;
-    margin-right: 10px;
-    margin-top: -20px;
-    padding: 5px;
-    border: 1px solid black;
   }
 }
 
