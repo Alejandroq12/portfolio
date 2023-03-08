@@ -1970,7 +1970,7 @@ ul.popup-technologies li {
 
   .popup-header {
     font-size: 1.9rem;
-    margin-top: 0.1rem;   
+    margin-top: 0.1rem;
   }
 
   .popup-description {
@@ -3058,7 +3058,7 @@ ul.popup-technologies li {
     margin-left: 2.5vw;
   }
 
-  .container > div:nth-child(1) ul li {
+  .ul-list-me-section .container > div:nth-child(1) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -3075,7 +3075,7 @@ ul.popup-technologies li {
     padding: 0;
   }
 
-  .container > div:nth-child(2) ul li {
+  .ul-list-me-section .container > div:nth-child(2) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -3092,7 +3092,7 @@ ul.popup-technologies li {
     padding: 0;
   }
 
-  .container > div:nth-child(3) ul li {
+  .ul-list-me-section .container > div:nth-child(3) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -3937,7 +3937,6 @@ ul.popup-technologies li {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
   }
 
   .popup-image {
