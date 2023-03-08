@@ -97,3 +97,23 @@ function generatePopup(project) {
 
   popupContainer.appendChild(popup);
 }
+
+const seeProjectButtons = document.querySelectorAll('.button-card');
+seeProjectButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    generatePopup(projects[index]);
+  });
+});
+
+
+const navToggle = document.querySelector('.nav-toggle');
+
+
+navToggle.addEventListener('click', () => {
+  popupContainer.classList.toggle('hidden');
+});
+
+
+if (window.innerWidth < 768) {
+  popupContainer.classList.add('hidden');
+}
