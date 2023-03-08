@@ -2,7 +2,7 @@ const projects = [
   {
     name: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard du...",
-    image: '../assets/images/projects/test.svg',
+    image: './assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
@@ -10,7 +10,7 @@ const projects = [
   {
     name: 'Another Project',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '../assets/images/projects/test.svg',
+    image: './assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
@@ -18,7 +18,7 @@ const projects = [
   {
     name: 'Another Project',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '../assets/images/projects/test.svg',
+    image: './assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'Another Project',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '../assets/images/projects/test.svg',
+    image: './assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
@@ -34,7 +34,7 @@ const projects = [
   {
     name: 'Another Project5',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '../assets/images/projects/test.svg',
+    image: './assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
@@ -42,7 +42,7 @@ const projects = [
   {
     name: 'Another Project6',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '../assets/images/projects/test.svg',
+    image: './assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
