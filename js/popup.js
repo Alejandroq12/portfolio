@@ -46,7 +46,7 @@ function generatePopup(project) {
   liveLinkButton.textContent = 'Live Link';
 
   const liveLinkLogo = document.createElement('img');
-  liveLinkLogo.src = '/assets/images/icons/live3.png';
+  liveLinkLogo.src = 'assets/images/icons/live3.png';
   liveLinkLogo.alt = 'Live Link Logo';
   liveLinkLogo.classList.add('popup-link-logo');
 
@@ -56,7 +56,7 @@ function generatePopup(project) {
   sourceLinkButton.textContent = 'Source Link';
 
   const sourceLinkLogo = document.createElement('img');
-  sourceLinkLogo.src = '/assets/images/icons/github.png';
+  sourceLinkLogo.src = 'assets/images/icons/github.png';
   sourceLinkLogo.alt = 'Source Link Logo';
   sourceLinkLogo.classList.add('popup-link-logo');
 
