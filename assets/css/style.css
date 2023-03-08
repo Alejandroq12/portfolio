@@ -3058,7 +3058,7 @@ ul.popup-technologies li {
     margin-left: 2.5vw;
   }
 
-  .ul-list-me-section .container > div:nth-child(1) ul li {
+  .container > div:nth-child(1) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -3075,7 +3075,7 @@ ul.popup-technologies li {
     padding: 0;
   }
 
-  .ul-list-me-section .container > div:nth-child(2) ul li {
+  .container > div:nth-child(2) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -3092,7 +3092,7 @@ ul.popup-technologies li {
     padding: 0;
   }
 
-  .ul-list-me-section .container > div:nth-child(3) ul li {
+  .container > div:nth-child(3) ul li {
     font-size: 2vw;
     line-height: 2vw;
     display: flex;
@@ -3324,7 +3324,7 @@ ul.popup-technologies li {
     width: 100%;
   }
 
-  div ul.popup-technologies li {
+  .popup ul.popup-technologies li {
     margin-bottom: 30px;
     margin-right: 10px;
     margin-top: -20px;
