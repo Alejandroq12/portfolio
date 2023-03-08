@@ -826,7 +826,7 @@ body.popup-open::before {
 
 .popup .popup-image {
   width: 14.2rem;
-} 
+}
 
 button.popup-close {
   position: absolute;
@@ -974,6 +974,14 @@ ul.popup-technologies li {
   height: 0.8rem;
 }
 
+.popup > .popup-buttons > *:last-child > .popup-link-logo {
+  margin-left: 0.2rem;
+  position: absolute;
+  right: 0.3rem;
+  bottom: 0.8rem;
+  height: 0.8rem;
+}
+
 .popup > .popup-buttons > *:first-child:hover > .popup-link-logo {
   filter: invert(61%) sepia(96%) saturate(3260%) hue-rotate(15deg);
 }
@@ -981,14 +989,6 @@ ul.popup-technologies li {
 .popup > .popup-buttons > *:last-child {
   margin-left: 4%;
   text-decoration: none;
-}
-
-.popup > .popup-buttons > *:last-child > .popup-link-logo {
-  margin-left: 0.2rem;
-  position: absolute;
-  right: 0.3rem;
-  bottom: 0.8rem;
-  height: 0.8rem;
 }
 
 .popup > .popup-buttons > *:last-child:hover > .popup-link-logo {
@@ -3246,7 +3246,6 @@ ul.popup-technologies li {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
   }
 
   .popup-image {
@@ -3257,8 +3256,6 @@ ul.popup-technologies li {
   .popup > .popup-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 0.6rem;
     width: 50%;
     margin: 0.2rem -0.3rem 0 -1rem;
@@ -3269,7 +3266,6 @@ ul.popup-technologies li {
     flex-direction: row;
     justify-content: center;
     transform: translateX(6rem);
-
   }
 
   .popup-button {
@@ -3328,7 +3324,7 @@ ul.popup-technologies li {
     width: 100%;
   }
 
-  ul.popup-technologies li {
+  div ul.popup-technologies li {
     margin-bottom: 30px;
     margin-right: 10px;
     margin-top: -20px;
@@ -3401,7 +3397,6 @@ ul.popup-technologies li {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
   }
 
   .popup-image {
@@ -3412,8 +3407,6 @@ ul.popup-technologies li {
   .popup > .popup-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 0.6rem;
     width: 50%;
     margin: 0.2rem -0.3rem 0 -1rem;
@@ -3424,7 +3417,6 @@ ul.popup-technologies li {
     flex-direction: row;
     justify-content: center;
     transform: translateX(6rem);
-
   }
 
   .popup-button {
@@ -3613,7 +3605,6 @@ ul.popup-technologies li {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
   }
 
   .popup-image {
@@ -3624,8 +3615,6 @@ ul.popup-technologies li {
   .popup > .popup-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 0.6rem;
     width: 50%;
     margin: 0.2rem -0.9rem 0 -1rem;
@@ -3636,7 +3625,6 @@ ul.popup-technologies li {
     flex-direction: row;
     justify-content: center;
     transform: translateX(6rem);
-
   }
 
   .popup-button {
@@ -3783,7 +3771,6 @@ ul.popup-technologies li {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
   }
 
   .popup-image {
@@ -3794,8 +3781,6 @@ ul.popup-technologies li {
   .popup > .popup-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 0.6rem;
     width: 50%;
     margin: 0.2rem -0.3rem 0 -1rem;
@@ -3806,7 +3791,6 @@ ul.popup-technologies li {
     flex-direction: row;
     justify-content: center;
     transform: translateX(6rem);
-
   }
 
   .popup-button {
@@ -3964,8 +3948,6 @@ ul.popup-technologies li {
   .popup > .popup-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 0.6rem;
     width: 50%;
     margin: 0.2rem -0.3rem 0 -1rem;
