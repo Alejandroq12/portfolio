@@ -820,7 +820,11 @@ body.popup-open::before {
   align-items: center;
 }
 
- .popup .popup-image {
+.popup-image {
+  max-width: 100%;
+}
+
+.popup .popup-image {
   width: 14.2rem;
 } 
 
@@ -845,10 +849,6 @@ button.popup-close {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-}
-
-.popup-image {
-  max-width: 100%;
 }
 
 .popup-description {
@@ -896,7 +896,7 @@ ul.popup-technologies li {
 }
 
 .popup-button:hover {
-  background-color: #fff;
+  background-color: #000;
   cursor: pointer;
   border: solid 0.063rem #943b00;
   font-family: 'Inter', serif;
@@ -974,6 +974,10 @@ ul.popup-technologies li {
   height: 0.8rem;
 }
 
+.popup > .popup-buttons > *:first-child:hover > .popup-link-logo {
+  filter: invert(61%) sepia(96%) saturate(3260%) hue-rotate(15deg);
+}
+
 .popup > .popup-buttons > *:last-child {
   margin-left: 4%;
   text-decoration: none;
@@ -985,6 +989,10 @@ ul.popup-technologies li {
   right: 0.3rem;
   bottom: 0.8rem;
   height: 0.8rem;
+}
+
+.popup > .popup-buttons > *:last-child:hover > .popup-link-logo {
+  filter: invert(61%) sepia(96%) saturate(3260%) hue-rotate(15deg);
 }
 
 /* Media query for extra small screens */
@@ -1962,8 +1970,7 @@ ul.popup-technologies li {
 
   .popup-header {
     font-size: 1.9rem;
-    margin-top: 0.1rem;
-    
+    margin-top: 0.1rem;   
   }
 
   .popup-description {
@@ -1971,14 +1978,14 @@ ul.popup-technologies li {
     font-family: 'Inter', sans-serif;
     font-style: normal;
   }
-  
+
   .popup-technologies {
     list-style: none;
     padding: 0;
     display: flex;
     width: 100%;
   }
-  
+
   ul.popup-technologies li {
     margin-bottom: 10px;
     margin-right: 10px;
@@ -2567,7 +2574,7 @@ ul.popup-technologies li {
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
-}
+  }
 
   button.popup-close {
     position: absolute;
@@ -2583,7 +2590,6 @@ ul.popup-technologies li {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-
   }
 
   .popup-image {
@@ -2594,8 +2600,6 @@ ul.popup-technologies li {
   .popup > .popup-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 0.6rem;
     width: 50%;
     margin: 0.2rem 0 0 -1rem;
@@ -2606,7 +2610,6 @@ ul.popup-technologies li {
     flex-direction: row;
     justify-content: center;
     transform: translateX(6rem);
-
   }
 
   .popup-button {
@@ -2665,7 +2668,7 @@ ul.popup-technologies li {
     width: 100%;
   }
 
-  ul.popup-technologies li {
+  .popup.ul.popup.popup-technologies li {
     margin-bottom: 30px;
     margin-right: 10px;
     margin-top: -20px;
