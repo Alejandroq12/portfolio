@@ -42,7 +42,7 @@ const projects = [
   {
     name: 'Another Project6',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: './assets/images/projects/test.svg',
+    image: 'assets/images/projects/test.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://example.com',
     sourceLink: 'https://github.com/example',
