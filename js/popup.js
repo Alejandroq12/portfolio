@@ -2,7 +2,6 @@ import projects from './projects.js';
 
 const popupContainer = document.querySelector('#popup-container');
 const bodyEl = document.querySelector('body');
-const popupEl = document.querySelector('.popup');
 
 function generatePopup(project) {
   const popup = document.createElement('div');
