@@ -16,7 +16,6 @@ function generatePopup(project) {
   closeButton.addEventListener('click', () => {
     popup.remove();
     bodyEl.classList.remove('popup-open');
-    popupEl.style.display = 'none';
   });
 
   const header = document.createElement('h2');
@@ -85,12 +84,6 @@ seeProjectButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
     generatePopup(projects[index]);
   });
-});
-
-const navToggle = document.querySelector('.nav-toggle');
-
-navToggle.addEventListener('click', () => {
-  popupContainer.classList.toggle('hidden');
 });
 
 if (window.innerWidth < 768) {
