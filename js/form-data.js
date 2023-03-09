@@ -22,3 +22,9 @@ nameInput.addEventListener('input', () => {
     localStorage.setItem('form-data', JSON.stringify(formData));
   });
   
+  // Pre-fill the form fields with saved data on page load
+  if (savedData) {
+    nameInput.value = formData.name || '';
+    emailInput.value = formData.email || '';
+    messageInput.value = formData.message || '';
+  }
