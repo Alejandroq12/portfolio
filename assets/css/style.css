@@ -1443,7 +1443,7 @@ ul.popup-technologies li {
   /* popup */
   .popup {
     width: 70%;
-    max-height: 90%;
+    max-height: 100%;
   }
 
   ul.popup-technologies li {
@@ -1957,7 +1957,7 @@ ul.popup-technologies li {
   /* Popup */
   .popup {
     width: 70%;
-    max-height: 79%;
+    max-height: 100%;
   }
 
   .popup .popup-image {
@@ -2580,7 +2580,7 @@ ul.popup-technologies li {
     justify-content: space-between;
     min-width: 400px;
     width: 750px;
-    max-height: 60%;
+    max-height: 100%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
