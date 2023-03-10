@@ -1,11 +1,11 @@
 const projects = [
   {
-    name: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...",
-    image: 'assets/images/projects/test.svg',
-    technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://example.com',
-    sourceLink: 'https://github.com/example',
+    name: 'Robo Friends',
+    description: 'React web application that fetches data from a remote API.',
+    image: 'assets/images/projects/test2.svg',
+    technologies: ['JSX', 'JavaScript', 'React'],
+    liveLink: 'https://alejandroq12.github.io/react-app-robots/',
+    sourceLink: 'https://github.com/Alejandroq12/react-app-robots',
   },
   {
     name: 'Another Project',
