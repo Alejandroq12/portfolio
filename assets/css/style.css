@@ -337,6 +337,64 @@ button:hover {
   height: 386px;
 }
 
+.work-card:nth-child(1) {
+  background:
+  linear-gradient(
+    160.45deg,
+    rgba(38, 38, 38, 0.9) 99.75%,
+    rgba(38, 38, 38, 0.9) 99.94%
+  ),
+  url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(2) {
+  background:
+  linear-gradient(
+    160.45deg,
+    rgba(38, 38, 38, 0.9) 99.75%,
+    rgba(38, 38, 38, 0.9) 99.94%
+  ),
+  url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(3) {
+  background:
+  linear-gradient(
+    160.45deg,
+    rgba(38, 38, 38, 0.9) 99.75%,
+    rgba(38, 38, 38, 0.9) 99.94%
+  ),
+  url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(4) {
+  background:
+  linear-gradient(
+    160.45deg,
+    rgba(38, 38, 38, 0.9) 99.75%,
+    rgba(38, 38, 38, 0.9) 99.94%
+  ),
+  url(../images/projects/cardHover/1.png);}
+
+.work-card:nth-child(5) {
+  background:
+  linear-gradient(
+    160.45deg,
+    rgba(38, 38, 38, 0.9) 99.75%,
+    rgba(38, 38, 38, 0.9) 99.94%
+  ),
+  url(../images/projects/cardHover/1.png);}
+
+.work-card:nth-child(6) {
+  background:
+  linear-gradient(
+    160.45deg,
+    rgba(38, 38, 38, 0.9) 99.75%,
+    rgba(38, 38, 38, 0.9) 99.94%
+  ),
+  url(../images/projects/cardHover/1.png);
+}
+
 .work-cards-title {
   width: 295px;
   height: 81px;
@@ -2333,8 +2391,43 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:hover {
-    background-image: url('../images/cardImages/Placeholder.png');
+  .work-card:nth-child(1):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(2):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(3):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(4):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(5):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(6):hover {
+    background-image: url('../images/projects/cardHover/1.png');
     background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
@@ -2920,6 +3013,48 @@ ul.popup-technologies li {
     margin: 0;
   }
 
+  .work-card:nth-child(1):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(2):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(3):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(4):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(5):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(6):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
   .work-cards-title {
     font-size: 80%;
     line-height: 2vw;
@@ -3244,7 +3379,7 @@ ul.popup-technologies li {
     justify-content: space-between;
     min-width: 400px;
     width: 750px;
-    max-height: 60%;
+    max-height: 100%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -3373,12 +3508,48 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:hover {
-    background-image: url('../images/cardImages/Placeholder.png');
+  .work-card:nth-child(1):hover {
+    background-image: url('../images/projects/cardHover/1.png');
     background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
+
+  .work-card:nth-child(2):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(3):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(4):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(5):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(6):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
 
   /* popup */
   .popup {
@@ -3387,7 +3558,7 @@ ul.popup-technologies li {
     justify-content: space-between;
     min-width: 400px;
     width: 750px;
-    max-height: 60%;
+    max-height: 100%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -3581,8 +3752,43 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:hover {
-    background-image: url('../images/cardImages/Placeholder.png');
+  .work-card:nth-child(1):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(2):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(3):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(4):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(5):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(6):hover {
+    background-image: url('../images/projects/cardHover/1.png');
     background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
@@ -3595,7 +3801,7 @@ ul.popup-technologies li {
     justify-content: space-between;
     min-width: 400px;
     width: 750px;
-    max-height: 60%;
+    max-height: 100%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -3747,8 +3953,43 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:hover {
-    background-image: url('../images/cardImages/Placeholder.png');
+  .work-card:nth-child(1):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(2):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(3):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(4):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(5):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(6):hover {
+    background-image: url('../images/projects/cardHover/1.png');
     background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
@@ -3761,7 +4002,7 @@ ul.popup-technologies li {
     justify-content: space-between;
     min-width: 400px;
     width: 850px;
-    max-height: 60%;
+    max-height: 100%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -3913,8 +4154,43 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:hover {
-    background-image: url('../images/cardImages/Placeholder.png');
+  .work-card:nth-child(1):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(2):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(3):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(4):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(5):hover {
+    background-image: url('../images/projects/cardHover/1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px #000;
+  }
+
+  .work-card:nth-child(6):hover {
+    background-image: url('../images/projects/cardHover/1.png');
     background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
@@ -3927,7 +4203,7 @@ ul.popup-technologies li {
     justify-content: space-between;
     min-width: 400px;
     width: 850px;
-    max-height: 60%;
+    max-height: 100%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;

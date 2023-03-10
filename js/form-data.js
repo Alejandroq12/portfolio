@@ -9,7 +9,7 @@ const formData = savedData ? JSON.parse(savedData) : {};
 // Update the local storage object when the input fields change
 nameInput.addEventListener('input', () => {
   formData.name = nameInput.value;
-  localStorage.setItem('form-data', JSON.stringifi(formData));
+  localStorage.setItem('form-data', JSON.stringify(formData));
 });
 
 emailInput.addEventListener('input', () => {
