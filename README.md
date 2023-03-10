@@ -190,11 +190,9 @@ You can deploy this project using GitHub pages:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **I will add the desktop version**
-- [ ] **I will add media queries to make it responsive**
-- [ ] **I will use JavaScript to add interactivity**
+- [x] **I will add the desktop version**
+- [x] **I will add media queries to make it responsive**
+- [x] **I will use JavaScript to add interactivity**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

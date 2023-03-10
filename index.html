@@ -20,27 +20,28 @@
         <h1 class="main-logo" alt="Julio Quezada logo" aria-label="Julio Quezada logo">Julio Quezada</h1>
       </a>
     </div>
-    <nav class="navigation-bar" role="navigation">
-      <div class="hamburgerMenu">
-        <nav class="navigation-bar" role="navigation">
-          <ul class="nav-items">
-            <li class="list-item"><a href="#Portfolio" aria-current="page" tabindex="0">Portfolio</a></li>
-            <li class="list-item"><a href="#About" tabindex="0">About</a></li>
-            <li class="list-item"><a href="#Contact" tabindex="0">Contact</a></li>
-            <li class="list-item">
-              <a href="#Contact" title="Contact me" tabindex="0"><img src="./assets/images/main_section/mail.png"
-                  alt="mail logo" /></a>
-            </li>
-          </ul>
+    <nav id="navbar" class="navigation-bar" role="navigation">
+      <div id="mobile-menu" class="hamburgerMenu mobile-menu">
+        <button type="reset" class="close-icon">
+          <img src="./assets/images/icons/x.svg" alt="Close menu" />
+        </button>
+        <ul class="nav-items">
+          <li class="list-item"><a href="#Portfolio" aria-current="page" tabindex="0">Portfolio</a></li>
+          <li class="list-item"><a href="#About" tabindex="0">About</a></li>
+          <li class="list-item"><a href="#Contact" tabindex="0">Contact</a></li>
+          <li class="list-item">
+            <a class="mail-logo" href="#Contact" title="Contact me" tabindex="0"><img
+                src="./assets/images/main_section/mail.png" alt="mail logo" /></a>
+          </li>
+        </ul>
       </div>
-      <button type="button" class="hamburger-icon" aria-label="Open menu" name="hamburguer menu">
+      <button type="button" class="hamburger-icon" aria-label="Toggle menu" name="menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
     </nav>
   </header>
-
 
   <main class="main-area">
     <section class="main-section">
@@ -93,14 +94,13 @@
       <div class="card-container">
         <div class="main_card">
           <div class="image-container" tabindex="0">
-            <img class="image_from_main_card" src="./assets/images/cardImages/mainCard.png" alt="My first project" />
+            <img class="image_from_main_card" src="./assets/images/projects/youtube6.svg" alt="My first project" />
           </div>
           <div class="text-container">
-            <h4 class="main-card-title" tabindex="0">Multi-Post Stories</h4>
+            <h4 class="main-card-title" tabindex="0">YouTube clone</h4>
             <p class="main-card-description" tabindex="0">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a standard dummy text.
+              Thid is a responsive React JS application with video sections, custom categories, channel pages, and can
+              play videos directly from this YouTube Clone App.
             </p>
             <ul class="main-card-list-ul">
               <li class="main-card-list-ul-li" tabindex="0">css</li>
@@ -108,97 +108,38 @@
               <li class="main-card-list-ul-li" tabindex="0">bootstrap</li>
               <li class="main-card-list-ul-li" tabindex="0">Ruby</li>
             </ul>
-            <button class="button-from-main-card" type="submit" aria-label="See project button"
-              name="buttom from main card" tabindex="0">
-              See project
-            </button>
+            <div class="button-container">
+              <button class="button-from-main-card" type="submit" aria-label="See project button"
+                name="button from main card" tabindex="0">
+                <a href="https://github.com/Alejandroq12/youtube_clone" target="_blank" rel="noopener noreferrer"
+                  class="source-link">
+                  See Source
+                  <img src="./assets/images/icons/live3.png" alt="GitHub icon" class="button-icon">
+                </a>
+              </button>
+
+              <button class="button-from-main-card" type="submit" aria-label="See project button"
+                name="button from main card" tabindex="0">
+                <a href="https://precious-begonia-1dc25b.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="demo-link">
+                  Live Demo
+                  <img src="./assets/images/icons/github.png" alt="Live Demo icon" class="button-icon">
+                </a>
+              </button>
+
+            </div>
+
           </div>
         </div>
       </div>
-      <div class="works-container" aria-label="Works container">
-        <div class="work-card" tabindex="0" aria-label="Projects card 1">
-          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
-          <p class="work-cards-description" tabindex="0">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard.
-          </p>
-          <ul>
-            <li tabindex="0">HTML</li>
-            <li tabindex="0">Bootstrap</li>
-            <li tabindex="0">Ruby</li>
-          </ul>
-          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
-            tabindex="0">See Project</button>
+      <div class="works-section" aria-label="Works section">
+        <div class="works-container" aria-label="Works container">
+          <!-- Project cards will be added here dynamically -->
         </div>
-        <div class="work-card" tabindex="0" aria-label="Projects card 2">
-          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
-          <p class="work-cards-description" tabindex="0">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard.
-          </p>
-          <ul>
-            <li tabindex="0">HTML</li>
-            <li tabindex="0">Bootstrap</li>
-            <li tabindex="0">Ruby</li>
-          </ul>
-          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
-            tabindex="0">See Project</button>
-        </div>
-        <div class="work-card" tabindex="0" aria-label="Projects card 3">
-          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
-          <p class="work-cards-description" tabindex="0">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard.
-          </p>
-          <ul>
-            <li tabindex="0">HTML</li>
-            <li tabindex="0">Bootstrap</li>
-            <li tabindex="0">Ruby</li>
-          </ul>
-          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
-            tabindex="0">See Project</button>
-        </div>
-        <div class="work-card" tabindex="0" aria-label="Projects card 4">
-          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
-          <p class="work-cards-description" tabindex="0">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard.
-          </p>
-          <ul>
-            <li tabindex="0">HTML</li>
-            <li tabindex="0">Bootstrap</li>
-            <li tabindex="0">Ruby</li>
-          </ul>
-          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
-            tabindex="0">See Project</button>
-        </div>
-        <div class="work-card" tabindex="0" aria-label="Projects card 5">
-          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
-          <p class="work-cards-description" tabindex="0">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard.
-          </p>
-          <ul>
-            <li tabindex="0">HTML</li>
-            <li tabindex="0">Bootstrap</li>
-            <li tabindex="0">Ruby</li>
-          </ul>
-          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
-            tabindex="0">See Project</button>
-        </div>
-        <div class="work-card" tabindex="0" aria-label="Projects card 6">
-          <h4 class="work-cards-title" tabindex="0">Profesional Art Printing Data</h4>
-          <p class="work-cards-description" tabindex="0">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard.
-          </p>
-          <ul>
-            <li tabindex="0">HTML</li>
-            <li tabindex="0">Bootstrap</li>
-            <li tabindex="0">Ruby</li>
-          </ul>
-          <button class="button-card" type="submit" name="see project button" aria-label="see project button"
-            tabindex="0">See Project</button>
+        <div class="wrapper">
+          <div id="popup-container">
+            <!-- Contenido del popup -->
+          </div>
         </div>
       </div>
     </div>
@@ -313,6 +254,10 @@
       <hr class="footer_bottom_line">
     </div>
   </footer>
+  <script type="module" src="js/projects.js"></script>
+  <script type="module" src="js/popup.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/validation-form.js"></script>
+  <script type="module" src="js/form-data.js"></script>
 </body>
-
 </html>
