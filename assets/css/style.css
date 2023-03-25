@@ -3152,13 +3152,6 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:hover {
-    background-image: url('../images/cardImages/Placeholder.png');
-    background-size: cover;
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
   /* About me section */
   .about-me-main-container {
     background-image: url('../images/me_section/desktop-frame.png');
@@ -3560,7 +3553,6 @@ ul.popup-technologies li {
     cursor: pointer;
     border: solid 1px #000;
   }
-
 
   /* popup */
   .popup {
