@@ -319,13 +319,6 @@ button:hover {
 
 /* Individual card with Flexbox */
 .work-card {
-  background:
-    linear-gradient(
-      160.45deg,
-      rgba(38, 38, 38, 0.7) 75.75%,
-      rgba(38, 38, 38, 0.9) 99.94%
-    ),
-    url(../images/cardImages/projectCard.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,6 +386,66 @@ button:hover {
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(1):hover {
+  background:
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 99.75%,
+      rgba(38, 38, 38, 0) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(2):hover {
+  background:
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 99.75%,
+      rgba(38, 38, 38, 0) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(3):hover {
+  background:
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 99.75%,
+      rgba(38, 38, 38, 0) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(4):hover {
+  background:
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 99.75%,
+      rgba(38, 38, 38, 0) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(5):hover {
+  background:
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 99.75%,
+      rgba(38, 38, 38, 0) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(6):hover {
+  background:
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0) 99.75%,
+      rgba(38, 38, 38, 0) 99.94%
     ),
     url(../images/projects/cardHover/1.png);
 }
@@ -1270,6 +1323,66 @@ ul.popup-technologies li {
 
   .card-container {
     margin-bottom: 4rem;
+  }
+
+  .work-card:nth-child(1):hover {
+    background:
+      linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.png);
+  }
+
+  .work-card:nth-child(2):hover {
+    background:
+      linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.png);
+  }
+
+  .work-card:nth-child(3):hover {
+    background:
+      linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.png);
+  }
+
+  .work-card:nth-child(4):hover {
+    background:
+      linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.png);
+  }
+
+  .work-card:nth-child(5):hover {
+    background:
+      linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.png);
+  }
+
+  .work-card:nth-child(6):hover {
+    background:
+      linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.png);
   }
 
   .main_card {
@@ -2396,12 +2509,12 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
-    cursor: pointer;
-    border: solid 1px #000;
-  }
+
+
+
+
+
+
 
   .work-card:nth-child(2):hover {
     background-image: url('../images/projects/cardHover/1.png');
@@ -3018,36 +3131,6 @@ ul.popup-technologies li {
     margin: 0;
   }
 
-  .work-card:nth-child(1):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(2):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(3):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(4):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(5):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(6):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
   .work-cards-title {
     font-size: 80%;
     line-height: 2vw;
@@ -3494,36 +3577,6 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:nth-child(1):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(2):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(3):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(4):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(5):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(6):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
   /* popup */
   .popup {
     flex-direction: row;
@@ -3725,36 +3778,6 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:nth-child(1):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(2):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(3):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(4):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(5):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(6):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
   /* popup */
   .popup {
     flex-direction: row;
@@ -3914,36 +3937,6 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
-  .work-card:nth-child(1):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(2):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(3):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(4):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(5):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(6):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
   /* popup */
   .popup {
     flex-direction: row;
@@ -4101,36 +4094,6 @@ ul.popup-technologies li {
   .work-card:hover ul {
     display: none;
     cursor: pointer;
-  }
-
-  .work-card:nth-child(1):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(2):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(3):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(4):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(5):hover {
-    cursor: pointer;
-    border: solid 1px #000;
-  }
-
-  .work-card:nth-child(6):hover {
-    cursor: pointer;
-    border: solid 1px #000;
   }
 
   /* popup */
