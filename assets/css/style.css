@@ -25,12 +25,6 @@ html {
   box-shadow: 0.3vw 0.5vw 2.5vw black;
 }
 
-.under-construction {
-  color: red;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
-}
 .logo a {
   text-decoration: none;
 }
