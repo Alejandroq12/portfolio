@@ -340,59 +340,61 @@ button:hover {
 .work-card:nth-child(1) {
   background:
     linear-gradient(
-    160.45deg,
-    rgba(38, 38, 38, 0.9) 99.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
-  ),
-  url(../images/projects/cardHover/1.png);
+      160.45deg,
+      rgba(38, 38, 38, 0.9) 99.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
 }
 
 .work-card:nth-child(2) {
   background:
-  linear-gradient(
-    160.45deg,
-    rgba(38, 38, 38, 0.9) 99.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
-  ),
-  url(../images/projects/cardHover/1.png);
+    linear-gradient(
+      160.45deg,
+      rgba(38, 38, 38, 0.9) 99.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
 }
 
 .work-card:nth-child(3) {
   background:
-  linear-gradient(
-    160.45deg,
-    rgba(38, 38, 38, 0.9) 99.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
-  ),
-  url(../images/projects/cardHover/1.png);
+    linear-gradient(
+      160.45deg,
+     rgba(38, 38, 38, 0.9) 99.75%,
+     rgba(38, 38, 38, 0.9) 99.94%
+    ),
+    url(../images/projects/cardHover/1.png);
 }
 
 .work-card:nth-child(4) {
   background:
-  linear-gradient(
-    160.45deg,
+    linear-gradient(
+      160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
-  ),
-  url(../images/projects/cardHover/1.png);}
+    ),
+    url(../images/projects/cardHover/1.png);
+}
 
 .work-card:nth-child(5) {
   background:
-  linear-gradient(
-    160.45deg,
+    linear-gradient(
+      160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
-  ),
-  url(../images/projects/cardHover/1.png);}
+    ),
+    url(../images/projects/cardHover/1.png);
+}
 
 .work-card:nth-child(6) {
   background:
-  linear-gradient(
-    160.45deg,
+    linear-gradient(
+      160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
-  ),
-  url(../images/projects/cardHover/1.png);
+    ),
+    url(../images/projects/cardHover/1.png);
 }
 
 .work-card:nth-child(1):hover {
