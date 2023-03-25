@@ -1269,7 +1269,7 @@ ul.popup-technologies li {
   }
 
   .line_below_title {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 
   .card-container {
@@ -1282,8 +1282,11 @@ ul.popup-technologies li {
   }
 
   .image_from_main_card {
-    margin: 0.1rem auto 0;
-    width: calc(14rem + 1.5rem);
+    margin: 0.1rem auto 0.5rem;
+    width: calc(12rem + 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .main-card-title {
@@ -1750,7 +1753,7 @@ ul.popup-technologies li {
   }
 
   .image_from_main_card {
-    width: 15rem;
+    width: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2243,7 +2246,7 @@ ul.popup-technologies li {
   }
 
   .image_from_main_card {
-    width: 14rem;
+    width: 12rem;
     margin: 0;
   }
 
