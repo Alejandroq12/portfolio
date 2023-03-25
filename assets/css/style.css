@@ -339,7 +339,7 @@ button:hover {
 
 .work-card:nth-child(1) {
   background:
-  linear-gradient(
+    linear-gradient(
     160.45deg,
     rgba(38, 38, 38, 0.9) 99.75%,
     rgba(38, 38, 38, 0.9) 99.94%
@@ -371,8 +371,8 @@ button:hover {
   background:
   linear-gradient(
     160.45deg,
-    rgba(38, 38, 38, 0.9) 99.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
+      rgba(38, 38, 38, 0.9) 99.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
   ),
   url(../images/projects/cardHover/1.png);}
 
@@ -380,8 +380,8 @@ button:hover {
   background:
   linear-gradient(
     160.45deg,
-    rgba(38, 38, 38, 0.9) 99.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
+      rgba(38, 38, 38, 0.9) 99.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
   ),
   url(../images/projects/cardHover/1.png);}
 
@@ -389,10 +389,52 @@ button:hover {
   background:
   linear-gradient(
     160.45deg,
-    rgba(38, 38, 38, 0.9) 99.75%,
-    rgba(38, 38, 38, 0.9) 99.94%
+      rgba(38, 38, 38, 0.9) 99.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
   ),
   url(../images/projects/cardHover/1.png);
+}
+
+.work-card:nth-child(1):hover {
+  background-image: url('../images/projects/cardHover/1.png');
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+
+.work-card:nth-child(2):hover {
+  background-image: url('../images/projects/cardHover/1.png');
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+
+.work-card:nth-child(3):hover {
+  background-image: url('../images/projects/cardHover/1.png');
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+
+.work-card:nth-child(4):hover {
+  background-image: url('../images/projects/cardHover/1.png');
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+
+.work-card:nth-child(5):hover {
+  background-image: url('../images/projects/cardHover/1.png');
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+
+.work-card:nth-child(6):hover {
+  background-image: url('../images/projects/cardHover/1.png');
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px #000;
 }
 
 .work-cards-title {
@@ -2395,43 +2437,31 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(2):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(3):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(4):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(5):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(6):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
@@ -3017,43 +3047,31 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(2):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(3):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(4):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(5):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(6):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
@@ -3512,43 +3530,31 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(2):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(3):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(4):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(5):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(6):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
@@ -3756,43 +3762,31 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(2):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(3):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(4):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(5):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(6):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
@@ -3957,43 +3951,31 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(2):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(3):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(4):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(5):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(6):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
@@ -4158,43 +4140,31 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(2):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(3):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(4):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(5):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }
 
   .work-card:nth-child(6):hover {
-    background-image: url('../images/projects/cardHover/1.png');
-    background-size: cover;
     cursor: pointer;
     border: solid 1px #000;
   }

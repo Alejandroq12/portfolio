@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const projects = [
   {
     name: 'Robo Friends',
