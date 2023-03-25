@@ -347,7 +347,7 @@ button:hover {
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
     ),
-    url(../images/projects/cardHover/1.png);
+    url(../images/projects/cardHover/2.svg);
 }
 
 .work-card:nth-child(3) {
@@ -407,7 +407,7 @@ button:hover {
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
     ),
-    url(../images/projects/cardHover/1.png);
+    url(../images/projects/cardHover/2.svg);
 }
 
 .work-card:nth-child(3):hover {
@@ -1342,7 +1342,7 @@ ul.popup-technologies li {
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
-      url(../images/projects/cardHover/1.png);
+      url(../images/projects/cardHover/2.svg);
   }
 
   .work-card:nth-child(3):hover {

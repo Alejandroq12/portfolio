@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import projects from './projects.js';
 
 const popupContainer = document.querySelector('#popup-container');
