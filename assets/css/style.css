@@ -361,8 +361,8 @@ button:hover {
   background:
     linear-gradient(
       160.45deg,
-     rgba(38, 38, 38, 0.9) 99.75%,
-     rgba(38, 38, 38, 0.9) 99.94%
+      rgba(38, 38, 38, 0.9) 99.75%,
+      rgba(38, 38, 38, 0.9) 99.94%
     ),
     url(../images/projects/cardHover/1.png);
 }
