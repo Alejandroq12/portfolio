@@ -8,18 +8,19 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const closeButton = document.querySelector('.close-icon');
 
 hamburgerButton.addEventListener('click', () => {
-  hamburgerButton.style.display = 'none';
+  hamburgerButton.classList.add('hidden');
   mobileMenu.classList.add('active');
 });
 
 closeButton.addEventListener('click', () => {
-  hamburgerButton.style.display = 'block';
+  hamburgerButton.classList.remove('hidden');
   mobileMenu.classList.remove('active');
 });
 
 mobileMenu.querySelectorAll('li a').forEach((link) => {
   link.addEventListener('click', () => {
-    hamburgerButton.style.display = 'block';
+    hamburgerButton.classList.remove('hidden');
     mobileMenu.classList.remove('active');
   });
 });
+

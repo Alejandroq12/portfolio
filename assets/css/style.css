@@ -2304,7 +2304,7 @@ ul.popup-technologies li {
     display: none;
   }
 
-  .hamburger-icon {
+  .hamburger-icon.hidden {
     display: none;
   }
 
@@ -2967,6 +2967,10 @@ ul.popup-technologies li {
     display: none;
   }
 
+  .hamburger-icon.hidden {
+    display: none;
+  }
+
   /* main section */
   .main-area {
     background-image: url('../images/main_section/Illustration-header.png');
@@ -3585,6 +3589,10 @@ ul.popup-technologies li {
 
 /* Media query for large screens */
 @media only screen and (min-width: 1215px) {
+  .hamburger-icon.hidden {
+    display: none;
+  }
+
   .card-container {
     margin-bottom: 4rem;
   }
@@ -3729,6 +3737,10 @@ ul.popup-technologies li {
 
 /* Media query for large screens */
 @media only screen and (min-width: 1366px) {
+  .hamburger-icon.hidden {
+    display: none;
+  }
+
   .card-container {
     margin-bottom: 12rem;
   }
@@ -3930,6 +3942,10 @@ ul.popup-technologies li {
 
 /* Media query for large screens */
 @media only screen and (min-width: 1600px) {
+  .hamburger-icon.hidden {
+    display: none;
+  }
+
   .card-container {
     margin-bottom: 12rem;
   }
@@ -4089,6 +4105,10 @@ ul.popup-technologies li {
 
 /* Media query for large screens */
 @media only screen and (min-width: 1850px) {
+  .hamburger-icon.hidden {
+    display: none;
+  }
+
   .card-container {
     margin-bottom: 15rem;
   }
