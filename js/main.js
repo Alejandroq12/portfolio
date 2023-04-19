@@ -23,4 +23,3 @@ mobileMenu.querySelectorAll('li a').forEach((link) => {
     mobileMenu.classList.remove('active');
   });
 });
-
