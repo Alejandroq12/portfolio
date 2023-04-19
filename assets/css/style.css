@@ -910,8 +910,8 @@ body.popup-open::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/projects/9.svg");
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background */
+  backdrop-filter: blur(5px); /* Apply the blur effect */
   z-index: 998;
 }
 
