@@ -27,7 +27,7 @@ const projects = [
   {
     name: 'Portfolio',
     description: 'This a portfolio website that I built with HTML, CSS, and JavaScript.',
-    image: 'assets/images/projects/test.svg',
+    image: 'assets/images/projects/pop-up/2.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://alejandroq12.github.io/second-portfolio/',
     sourceLink: 'https://github.com/Alejandroq12/second-portfolio',
@@ -35,7 +35,7 @@ const projects = [
   {
     name: 'My Store',
     description: 'It is an online store. It is an online store built with Node.js on the backend and React.js on the front end.',
-    image: 'assets/images/projects/test.svg',
+    image: 'assets/images/projects/pop-up/2.svg',
     technologies: ['React.js', 'Node.js', 'Apollo'],
     liveLink: 'https://github.com/Alejandroq12/full-stack-application',
     sourceLink: 'https://github.com/Alejandroq12/full-stack-application',
@@ -43,7 +43,7 @@ const projects = [
   {
     name: 'Book artists',
     description: 'This is a web application that allows you to book artists. It is built with Python, Flask, and SQLAlchemy.',
-    image: 'assets/images/projects/test.svg',
+    image: 'assets/images/projects/pop-up/2.svg',
     technologies: ['Python', 'SQLAlchemy', 'Flask'],
     liveLink: 'https://github.com/Alejandroq12/App-to-book-artists',
     sourceLink: 'https://github.com/Alejandroq12/App-to-book-artists',
