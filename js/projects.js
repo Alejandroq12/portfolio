@@ -4,7 +4,7 @@ const projects = [
     name: 'Hall of champions',
     description: 'The website displays scores submitted by different players. All data is preserved thanks to API service.',
     image: 'assets/images/projects/pop-up/1.svg',
-    technologies: ['JSX', 'JavaScript', 'React'],
+    technologies: ['API', 'JavaScript', 'Webpack'],
     liveLink: 'https://alejandroq12.github.io/hallofchampions/dist/',
     sourceLink: 'https://github.com/Alejandroq12/hallofchampions',
   },
