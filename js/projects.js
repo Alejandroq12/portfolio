@@ -41,12 +41,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/full-stack-application',
   },
   {
-    name: 'Book artists',
-    description: 'This is a web application that allows you to book artists. It is built with Python, Flask, and SQLAlchemy.',
-    image: 'assets/images/projects/pop-up/2.svg',
-    technologies: ['Python', 'SQLAlchemy', 'Flask'],
-    liveLink: 'https://github.com/Alejandroq12/App-to-book-artists',
-    sourceLink: 'https://github.com/Alejandroq12/App-to-book-artists',
+    name: 'My Movies',
+    description: 'It is a web application that retrieves data from an API and displays it in a user-friendly way.',
+    image: 'assets/images/projects/pop-up/6.svg',
+    technologies: ['JavaScript', 'Jest', 'Webpack'],
+    liveLink: 'https://alejandroq12.github.io/group-capstone-js/dist/',
+    sourceLink: 'https://github.com/Alejandroq12/group-capstone-js',
   },
 ];
 
