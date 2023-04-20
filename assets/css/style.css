@@ -363,7 +363,7 @@ button:hover {
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
     ),
-    url(../images/projects/cardHover/1.png);
+    url(../images/projects/cardHover/4.svg);
 }
 
 .work-card:nth-child(5) {
@@ -417,7 +417,7 @@ button:hover {
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
     ),
-    url(../images/projects/cardHover/1.png);
+    url(../images/projects/cardHover/4.svg);
 }
 
 .work-card:nth-child(5):hover {
