@@ -1369,7 +1369,7 @@ ul.popup-technologies li {
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
-      url(../images/projects/cardHover/1.png);
+      url(../images/projects/cardHover/1.svg);
   }
 
   .work-card:nth-child(2):hover {
@@ -1387,7 +1387,7 @@ ul.popup-technologies li {
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
-      url(../images/projects/cardHover/1.png);
+      url(../images/projects/cardHover/3.svg);
   }
 
   .work-card:nth-child(4):hover {
@@ -1396,7 +1396,7 @@ ul.popup-technologies li {
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
-      url(../images/projects/cardHover/1.png);
+      url(../images/projects/cardHover/4.svg);
   }
 
   .work-card:nth-child(5):hover {
@@ -1405,7 +1405,7 @@ ul.popup-technologies li {
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
-      url(../images/projects/cardHover/1.png);
+      url(../images/projects/cardHover/5.svg);
   }
 
   .work-card:nth-child(6):hover {
@@ -1414,7 +1414,7 @@ ul.popup-technologies li {
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
-      url(../images/projects/cardHover/1.png);
+      url(../images/projects/cardHover/6.svg);
   }
 
   .main_card {
