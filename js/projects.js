@@ -20,7 +20,7 @@ const projects = [
     name: 'My Books',
     description: '"My books" is a website that displays a list of books and allows you to add and remove books from that list.',
     image: 'assets/images/projects/pop-up/3.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['CSS', 'SPA', 'ES6'],
     liveLink: 'https://alejandroq12.github.io/my-books/',
     sourceLink: 'https://github.com/Alejandroq12/my-books',
   },
