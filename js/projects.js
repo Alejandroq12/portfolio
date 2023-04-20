@@ -29,8 +29,8 @@ const projects = [
     description: 'It was designed to help users efficiently manage their tasks, using modern web development practices.',
     image: 'assets/images/projects/pop-up/4.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://alejandroq12.github.io/second-portfolio/',
-    sourceLink: 'https://github.com/Alejandroq12/second-portfolio',
+    liveLink: 'https://alejandroq12.github.io/to-do-list/',
+    sourceLink: 'https://github.com/Alejandroq12/to-do-list',
   },
   {
     name: 'My Store',
