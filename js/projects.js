@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
 const projects = [
   {
-    name: 'Robo Friends',
-    description: 'React web application that fetches data from a remote API.',
+    name: 'Hall of champions',
+    description: 'The website displays scores submitted by different players. All data is preserved thanks to API service.',
     image: 'assets/images/projects/pop-up/1.svg',
     technologies: ['JSX', 'JavaScript', 'React'],
     liveLink: 'https://alejandroq12.github.io/react-app-robots/',
