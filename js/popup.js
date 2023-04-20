@@ -47,6 +47,8 @@ function createLiveLinkButton() {
   const liveLinkButton = document.createElement('a');
   liveLinkButton.classList.add('button', 'popup-button');
   liveLinkButton.innerHTML = 'See Live <img src="assets/images/icons/live3.png" alt="Live Link Logo" class="popup-link-logo">';
+  liveLinkButton.target = '_blank';
+  liveLinkButton.rel = 'noopener noreferrer';
   return liveLinkButton;
 }
 
@@ -54,6 +56,8 @@ function createSourceLinkButton() {
   const sourceLinkButton = document.createElement('a');
   sourceLinkButton.classList.add('button', 'popup-button');
   sourceLinkButton.innerHTML = 'See Source <img src="assets/images/icons/github.png" alt="Source Link Logo" class="popup-link-logo">';
+  sourceLinkButton.target = '_blank';
+  sourceLinkButton.rel = 'noopener noreferrer';
   return sourceLinkButton;
 }
 
