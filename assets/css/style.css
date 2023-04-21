@@ -170,7 +170,7 @@ button:hover {
 }
 
 .iconMedia:hover {
-  transform: translate(0.06vw, 0.06vw);
+  transform: translate(0.08vw, 0.08vw);
 }
 
 /* My works section */
@@ -849,6 +849,10 @@ footer {
 .logo-container img {
   width: 1.5vw;
   margin: 1vw;
+}
+
+.logo-container img:hover {
+  transform: translate(0.08vw, 0.08vw);
 }
 
 .footer_bottom_line {
