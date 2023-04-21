@@ -33,12 +33,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/bookstore',
   },
   {
-    name: 'Run Tracker.',
-    description: 'This full-stack app tracks runners\' time and distance, offering an interface for progress review.',
+    name: 'Space Traveler\'s.',
+    description: 'Collaboratively developed Space Travelers\' Hub, an interactive space exploration platform, using SpaceX\' API.',
     image: 'assets/images/projects/pop-up/5.svg',
-    technologies: ['React.js', 'Node.js', 'Postgres'],
-    liveLink: 'https://running-track-acf8bf94dcd3.herokuapp.com',
-    sourceLink: 'https://github.com/Alejandroq12/runner-tracker',
+    technologies: ['React.js', 'Redux', 'API'],
+    liveLink: 'https://spacex-iq7v.onrender.com/rockets',
+    sourceLink: 'https://github.com/Alejandroq12/pocket-guardian',
   },
   {
     name: 'Air Checker.',
