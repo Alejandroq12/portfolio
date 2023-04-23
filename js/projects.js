@@ -45,8 +45,8 @@ const projects = [
     description: 'It is a web application that retrieves data from an API and displays it in a user-friendly way.',
     image: 'assets/images/projects/pop-up/6.svg',
     technologies: ['JavaScript', 'Jest', 'Webpack'],
-    liveLink: 'https://alejandroq12.github.io/group-capstone-js/dist/',
-    sourceLink: 'https://github.com/Alejandroq12/group-capstone-js',
+    liveLink: 'https://alejandroq12.github.io/my-movies/dist/',
+    sourceLink: 'https://github.com/Alejandroq12/my-movies',
   },
 ];
 
