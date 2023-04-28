@@ -1,112 +1,62 @@
-/* eslint-disable linebreak-style */
 import projects from './projects.js';
 
 const popupContainer = document.querySelector('#popup-container');
 const bodyEl = document.querySelector('body');
 
-function createCloseButton() {
-  const closeButton = document.createElement('button');
-  closeButton.classList.add('popup-close');
-  closeButton.innerHTML = '<img src="./assets/images/icons/x2.png" alt="Close">';
-  return closeButton;
-}
+const popupTemplate = `
+  <div class="popup">
+    <button class="popup-close">
+      <img src="./assets/images/icons/x2.png" alt="Close">
+    </button>
+    <h2 class="popup-header"></h2>
+    <img class="popup-image" alt="">
+    <p class="popup-description"></p>
+    <ul class="popup-technologies"></ul>
+    <div class="popup-buttons">
+      <a class="button popup-button live-link" target="_blank" rel="noopener noreferrer">
+        See Live <img src="assets/images/icons/live3.png" alt="Live Link Logo" class="popup-link-logo">
+      </a>
+      <a class="button popup-button source-link" target="_blank" rel="noopener noreferrer">
+        See Source <img src="assets/images/icons/github.png" alt="Source Link Logo" class="popup-link-logo">
+      </a>
+    </div>
+  </div>
+`;
 
-function createHeader() {
-  const header = document.createElement('h2');
-  header.classList.add('popup-header');
-  return header;
-}
+popupContainer.innerHTML = popupTemplate;
+popupContainer.style.display = 'none';
 
-function createImage() {
-  const image = document.createElement('img');
-  image.classList.add('popup-image');
-  return image;
-}
+const closeButton = document.querySelector('.popup-close');
+const header = document.querySelector('.popup-header');
+const image = document.querySelector('.popup-image');
+const description = document.querySelector('.popup-description');
+const technologiesList = document.querySelector('.popup-technologies');
+const liveLinkButton = document.querySelector('.live-link');
+const sourceLinkButton = document.querySelector('.source-link');
 
-function createDescription() {
-  const description = document.createElement('p');
-  description.classList.add('popup-description');
-  return description;
-}
+closeButton.addEventListener('click', () => {
+  popupContainer.style.display = 'none';
+  bodyEl.classList.remove('popup-open');
+});
 
-function createTechnologiesList() {
-  const technologiesList = document.createElement('ul');
-  technologiesList.classList.add('popup-technologies');
-  return technologiesList;
-}
-
-function createButtonsContainer(liveLinkButton, sourceLinkButton) {
-  const buttonsContainer = document.createElement('div');
-  buttonsContainer.classList.add('popup-buttons');
-  buttonsContainer.appendChild(liveLinkButton);
-  buttonsContainer.appendChild(sourceLinkButton);
-  return buttonsContainer;
-}
-
-function createLiveLinkButton() {
-  const liveLinkButton = document.createElement('a');
-  liveLinkButton.classList.add('button', 'popup-button');
-  liveLinkButton.innerHTML = 'See Live <img src="assets/images/icons/live3.png" alt="Live Link Logo" class="popup-link-logo">';
-  liveLinkButton.target = '_blank';
-  liveLinkButton.rel = 'noopener noreferrer';
-  return liveLinkButton;
-}
-
-function createSourceLinkButton() {
-  const sourceLinkButton = document.createElement('a');
-  sourceLinkButton.classList.add('button', 'popup-button');
-  sourceLinkButton.innerHTML = 'See Source <img src="assets/images/icons/github.png" alt="Source Link Logo" class="popup-link-logo">';
-  sourceLinkButton.target = '_blank';
-  sourceLinkButton.rel = 'noopener noreferrer';
-  return sourceLinkButton;
-}
-
-function createPopup() {
-  const popup = document.createElement('div');
-  popup.classList.add('popup');
-  return popup;
-}
-
-function generatePopup(project) {
-  const closeButton = createCloseButton();
-  const header = createHeader();
-  const image = createImage();
-  const description = createDescription();
-  const technologiesList = createTechnologiesList();
-  const liveLinkButton = createLiveLinkButton();
-  const sourceLinkButton = createSourceLinkButton();
-  const buttonsContainer = createButtonsContainer(liveLinkButton, sourceLinkButton);
-
+function updatePopup(project) {
   header.textContent = project.name;
   image.src = project.image;
   image.alt = project.name;
   description.textContent = project.description;
 
-  technologiesList.innerHTML = '';
-  project.technologies.forEach((tech) => {
-    const technology = document.createElement('li');
-    technology.textContent = tech;
-    technologiesList.appendChild(technology);
-  });
+  technologiesList.innerHTML = project.technologies.map((tech) => `<li>${tech}</li>`).join('');
 
   liveLinkButton.href = project.liveLink;
   sourceLinkButton.href = project.sourceLink;
 
-  const popup = createPopup();
-  popup.append(closeButton, header, image, description, technologiesList, buttonsContainer);
-
-  popupContainer.appendChild(popup);
+  popupContainer.style.display = 'block';
   bodyEl.classList.add('popup-open');
-
-  closeButton.addEventListener('click', () => {
-    popup.remove();
-    bodyEl.classList.remove('popup-open');
-  });
 }
 
 const seeProjectButtons = document.querySelectorAll('.button-card');
 seeProjectButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    generatePopup(projects[index]);
+    updatePopup(projects[index]);
   });
 });
