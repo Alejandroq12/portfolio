@@ -756,6 +756,7 @@ button:hover {
 .contact-form__textarea {
   background-color: #fbf8f7;
   height: 8.4375vw;
+  resize: none;
 }
 
 .contact-form__input:hover,

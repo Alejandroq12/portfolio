@@ -225,16 +225,20 @@
         aria-label="Hidden input to receive normal emails" />
       <input class="hide_input" type="text" name="_gotcha" aria-label="Hidden input to catch spam" />
       <div class="contact-form__group" aria-label="Contact form name group">
+
+
         <input class="contact-form__input" type="text" id="name" aria-label="name input" name="name"
-          placeholder="Full name" maxlength="30" required tabindex="0" />
+          placeholder="Full name. Only letters and spaces are allowed." maxlength="30" required required pattern="[a-zA-Z\s]*" tabindex="0" />
       </div>
       <div class="contact-form__group" aria-label="email input">
+
         <input class="contact-form__input" type="email" aria-label="email input" id="email" name="email"
-          placeholder="Email Address" required tabindex="0" />
+          placeholder="Please enter a valid lowercase email address." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="0" />
+
       </div>
       <div class="contact-form__group" aria-label="Contact form message group">
         <textarea class="contact-form__input contact-form__textarea" id="message" name="message"
-          placeholder="Hello Julio. I would like to get in touch with you..." maxlength="500" rows="5"
+          placeholder="Hello, Julio. I would like to get in touch with you..." maxlength="500" rows="5"
           aria-label="message input" required tabindex="0"></textarea>
       </div>
       <button class="contact-form__button" id="contact-form-button" name="get in touch button"
