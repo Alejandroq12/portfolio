@@ -1977,6 +1977,9 @@ ul.popup-technologies li {
 
   .main_card {
     height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .image_from_main_card {
@@ -1984,26 +1987,25 @@ ul.popup-technologies li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto 4vw;
   }
 
   .main-card-title {
     font-size: 2rem;
-    line-height: 9.5vw;
-    height: auto;
+    line-height: 2rem;
+    justify-content: center;
   }
 
   .main-card-description {
-    height: auto;
     font-size: 3.6vw;
     line-height: 7vw;
-    margin: 2vw 0;
+    margin: 0.4rem auto;
   }
 
   .main-card-list-ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -2023,18 +2025,26 @@ ul.popup-technologies li {
     cursor: pointer;
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .button-from-main-card {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 0.5vw;
     padding: 1.4rem;
-    width: 9.9rem;
+    width: 100%;
     text-align: left;
     display: flex;
     justify-content: left;
+    max-width: 190px;
   }
 
   .button-icon {
-    height: 1rem;
+    height: 0.9rem;
     bottom: 0.9rem;
   }
 
