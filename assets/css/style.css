@@ -1354,8 +1354,8 @@ ul.popup-technologies li {
   }
 
   .second-title {
-    font-size: 10.6vw;
-    line-height: 23vw;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
     height: auto;
     margin-bottom: 0.1rem;
   }
@@ -1365,7 +1365,7 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
   }
 
   .work-card:nth-child(1):hover {
@@ -1423,8 +1423,11 @@ ul.popup-technologies li {
   }
 
   .main_card {
-    height: 25rem;
-    padding: 1rem;
+    padding: 0;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .image_from_main_card {
@@ -1436,12 +1439,12 @@ ul.popup-technologies li {
   }
 
   .main-card-title {
-    height: 36px;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.4rem;
     line-height: 44px;
     margin: 0.1rem 0.3rem;
+    justify-content: center;
   }
 
   .main-card-description {
@@ -1450,14 +1453,16 @@ ul.popup-technologies li {
     font-size: 0.8rem;
     line-height: 1rem;
     color: #091e42;
-    margin: 0.4rem 0.3rem;
+    margin: 0.4rem auto;
+    width: 95%;
   }
 
   .main_card ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0.1rem 0.3rem;
+    justify-content: center;
+    margin: 0.1rem auto;
     padding: 0;
     list-style: none;
   }
@@ -1467,21 +1472,51 @@ ul.popup-technologies li {
     gap: 10px;
   }
 
+  .main-card-list-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main_card li {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    width: auto;
+  }
+
+  .main_card ul.main-card-list-ul li.main-card-list-ul-li {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    cursor: pointer;
+    margin: 0.1rem 0.3rem;
+  }
+
   .button-from-main-card {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 1000;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 0.5rem;
+    line-height: 0;
     letter-spacing: 0.03em;
     color: #fff;
     border: none;
     padding: 12px;
-    width: 150px;
+    width: 36%;
+    margin: 0 auto;
     height: 48px;
     background: #943400;
     position: relative;
     text-align: left;
+    max-width: 120px;
+  }
+
+  .button-icon {
+    height: 0.7rem;
+    bottom: 0.8rem;
   }
 
   /* About me section */
