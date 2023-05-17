@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 const projects = [
   {
-    name: 'Hall of champions',
+    name: 'Hall of champions.',
     description: 'The website displays scores submitted by different players. All data is preserved thanks to API service.',
     image: 'assets/images/projects/pop-up/1.svg',
     technologies: ['API', 'JavaScript', 'Webpack'],
@@ -9,7 +9,7 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/hallofchampions',
   },
   {
-    name: 'Polyglot Talk',
+    name: 'Polyglot Talk.',
     description: 'Polyglot Talk is a conference page built from zero with HTML, CSS, and JavaScript.',
     image: 'assets/images/projects/pop-up/2.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -17,7 +17,7 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/polyglot-talk',
   },
   {
-    name: 'My Books',
+    name: 'My Books.',
     description: '"My books" is a website that displays a list of books and allows you to add and remove books from that list.',
     image: 'assets/images/projects/pop-up/3.svg',
     technologies: ['CSS', 'SPA', 'ES6'],
@@ -25,7 +25,7 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/my-books',
   },
   {
-    name: 'Todo List',
+    name: 'Todo List.',
     description: 'It was designed to help users efficiently manage their tasks, using modern web development practices.',
     image: 'assets/images/projects/pop-up/4.svg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -33,7 +33,7 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/to-do-list',
   },
   {
-    name: 'My Store',
+    name: 'My Store.',
     description: 'It is an online store built with Node.js on the backend and React.js on the front end.',
     image: 'assets/images/projects/pop-up/5.svg',
     technologies: ['React.js', 'Node.js', 'Apollo'],
@@ -41,7 +41,7 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/full-stack-application',
   },
   {
-    name: 'My Movies',
+    name: 'My Movies.',
     description: 'It is a web application that retrieves data from an API and displays it in a user-friendly way.',
     image: 'assets/images/projects/pop-up/6.svg',
     technologies: ['JavaScript', 'Jest', 'Webpack'],
