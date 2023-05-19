@@ -1,12 +1,12 @@
 /* eslint-disable linebreak-style */
 const projects = [
   {
-    name: 'Hall of champions.',
-    description: 'The website displays scores submitted by different players. All data is preserved thanks to API service.',
+    name: 'Space Travelers\' Hub.',
+    description: 'Collaboratively developed Space Travelers\' Hub, an interactive space exploration platform, using SpaceX\' API.',
     image: 'assets/images/projects/pop-up/1.svg',
-    technologies: ['API', 'JavaScript', 'Webpack'],
-    liveLink: 'https://alejandroq12.github.io/hallofchampions/dist/',
-    sourceLink: 'https://github.com/Alejandroq12/hallofchampions',
+    technologies: ['React.js', 'Redux', 'API'],
+    liveLink: 'https://spacex-iq7v.onrender.com/rockets',
+    sourceLink: 'https://github.com/Alejandroq12/react-group-project',
   },
   {
     name: 'Polyglot Talk.',
