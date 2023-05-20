@@ -25,12 +25,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/my-books',
   },
   {
-    name: 'Todo List.',
-    description: 'It was designed to help users efficiently manage their tasks, using modern web development practices.',
+    name: 'Math Fans.',
+    description: 'Developed Math Fans, a SPA, enabling calculations and API-fetched quotes for math enthusiasts.',
     image: 'assets/images/projects/pop-up/4.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://alejandroq12.github.io/to-do-list/',
-    sourceLink: 'https://github.com/Alejandroq12/to-do-list',
+    technologies: ['React.js', 'Axios', 'JavaScript'],
+    liveLink: 'https://warm-nasturtium-2364c6.netlify.app/',
+    sourceLink: 'https://github.com/Alejandroq12/math-fans',
   },
   {
     name: 'My Store.',
