@@ -13,10 +13,10 @@ const popupTemplate = `
     <p class="popup-description"></p>
     <ul class="popup-technologies"></ul>
     <div class="popup-buttons">
-      <a class="button popup-button live-link" target="_blank" rel="noopener noreferrer">
+      <a class="button popup-button live-link" id="live-link" target="_blank" rel="noopener noreferrer">
         See Live <img src="assets/images/icons/live3.png" alt="Live Link Logo" class="popup-link-logo">
       </a>
-      <a class="button popup-button source-link" target="_blank" rel="noopener noreferrer">
+      <a class="button popup-button source-link" id="source-link" target="_blank" rel="noopener noreferrer">
         See Source <img src="assets/images/icons/github.png" alt="Source Link Logo" class="popup-link-logo">
       </a>
     </div>
@@ -31,8 +31,8 @@ const header = document.querySelector('.popup-header');
 const image = document.querySelector('.popup-image');
 const description = document.querySelector('.popup-description');
 const technologiesList = document.querySelector('.popup-technologies');
-const liveLinkButton = document.querySelector('.live-link');
-const sourceLinkButton = document.querySelector('.source-link');
+const liveLinkButton = document.getElementById('live-link');
+const sourceLinkButton = document.getElementById('source-link');
 
 closeButton.addEventListener('click', () => {
   popupContainer.style.display = 'none';
