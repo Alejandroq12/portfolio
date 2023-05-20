@@ -1975,6 +1975,59 @@ ul.popup-technologies li {
     margin-bottom: 10vw;
   }
 
+  .work-card:nth-child(1):hover {
+    background: linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/1.svg);
+  }
+
+  .work-card:nth-child(2):hover {
+    background: linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/2.svg);
+  }
+
+  .work-card:nth-child(3):hover {
+    background: linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/3.svg);
+  }
+
+  .work-card:nth-child(4):hover {
+    background: linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/4.svg);
+  }
+
+  .work-card:nth-child(5):hover {
+    background: linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/5.svg);
+  }
+
+  .work-card:nth-child(6):hover {
+    background: linear-gradient(
+        160.45deg,
+        rgba(38, 38, 38, 0.9) 99.75%,
+        rgba(38, 38, 38, 0.9) 99.94%
+      ),
+      url(../images/projects/cardHover/6.svg);
+  }
   .main_card {
     height: auto;
     justify-content: center;
