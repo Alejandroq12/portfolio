@@ -33,12 +33,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/math-fans',
   },
   {
-    name: 'My Store.',
-    description: 'It is an online store built with Node.js on the backend and React.js on the front end.',
+    name: 'Air Checker.',
+    description: 'This is a web application designed for real-time monitoring of air quality in El Salvador.',
     image: 'assets/images/projects/pop-up/5.svg',
-    technologies: ['React.js', 'Node.js', 'Apollo'],
-    liveLink: 'https://github.com/Alejandroq12/full-stack-application',
-    sourceLink: 'https://github.com/Alejandroq12/full-stack-application',
+    technologies: ['React.js', 'Redux', 'Jest'],
+    liveLink: 'https://airchecker.onrender.com/',
+    sourceLink: 'https://github.com/Alejandroq12/air-checker',
   },
   {
     name: 'My Movies.',
