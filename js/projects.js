@@ -18,7 +18,7 @@ const projects = [
   },
   {
     name: 'My Books.',
-    description: '"My books" is a website that displays a list of books and allows you to add and remove books from that list.',
+    description: 'My books is a website that displays a list of books and allows you to add and remove books from that list.',
     image: 'assets/images/projects/pop-up/3.svg',
     technologies: ['CSS', 'SPA', 'ES6'],
     liveLink: 'https://startling-pie-a26aa3.netlify.app/',
