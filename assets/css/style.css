@@ -331,7 +331,8 @@ button:hover {
 }
 
 .work-card:nth-child(1) {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -340,7 +341,8 @@ button:hover {
 }
 
 .work-card:nth-child(2) {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -349,7 +351,8 @@ button:hover {
 }
 
 .work-card:nth-child(3) {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -358,7 +361,8 @@ button:hover {
 }
 
 .work-card:nth-child(4) {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -367,7 +371,8 @@ button:hover {
 }
 
 .work-card:nth-child(5) {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -376,7 +381,8 @@ button:hover {
 }
 
 .work-card:nth-child(6) {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -385,7 +391,8 @@ button:hover {
 }
 
 .work-card:nth-child(1):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -394,7 +401,8 @@ button:hover {
 }
 
 .work-card:nth-child(2):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -403,7 +411,8 @@ button:hover {
 }
 
 .work-card:nth-child(3):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -412,7 +421,8 @@ button:hover {
 }
 
 .work-card:nth-child(4):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -421,7 +431,8 @@ button:hover {
 }
 
 .work-card:nth-child(5):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -430,7 +441,8 @@ button:hover {
 }
 
 .work-card:nth-child(6):hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -598,8 +610,61 @@ button:hover {
   width: 85%;
   height: 0;
   border: 1px solid gray;
-  margin-top: 14vw;
+  margin-top: 1rem;
   margin-left: 5%;
+}
+
+/* Experience section */
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 20px;
+  margin-top: 2.5rem;
+}
+
+.experience-container-image {
+  text-align: center;
+  position: relative;
+  width: 168px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-from-about-me-experience {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
 .ul-list-me-section {
@@ -903,12 +968,14 @@ body.popup-open::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Add a semi-transparent black background */
+  background-color:
+    rgba(
+      0,
+      0,
+      0,
+      0.7
+    ); /* Add a semi-transparent black background */
+
   backdrop-filter: blur(5px); /* Apply the blur effect */
   z-index: 998;
 }
@@ -1213,7 +1280,8 @@ ul.popup-technologies li {
     margin-bottom: 0.4rem;
     transform-origin: top;
     transform: rotateX(-90deg);
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    transition:
+      all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       background-color 0.15s ease;
   }
 
@@ -1226,15 +1294,19 @@ ul.popup-technologies li {
   .mobile-menu.active li:nth-child(1) {
     transition-delay: 0.2s;
   }
+
   .mobile-menu.active li:nth-child(2) {
     transition-delay: 0.3s;
   }
+
   .mobile-menu.active li:nth-child(3) {
     transition-delay: 0.4s;
   }
+
   .mobile-menu.active li:nth-child(4) {
     transition-delay: 0.5s;
   }
+
   /* Add more nth-child selectors for additional menu items */
 
   /* Show menu items when mobile menu is active */
@@ -1369,7 +1441,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1378,7 +1451,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(2):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1387,7 +1461,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(3):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1396,7 +1471,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(4):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1405,7 +1481,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(5):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1414,7 +1491,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(6):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1551,8 +1629,8 @@ ul.popup-technologies li {
   }
 
   .line-from-about-me {
-    margin-top: 60vw;
-    margin-left: 10%;
+    margin-top: 3.5rem;
+    margin-left: 6%;
     width: 80vw;
   }
 
@@ -1817,7 +1895,8 @@ ul.popup-technologies li {
     margin-bottom: 0.4rem;
     transform-origin: top;
     transform: rotateX(-90deg);
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    transition:
+      all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       background-color 0.15s ease;
   }
 
@@ -1830,15 +1909,19 @@ ul.popup-technologies li {
   .mobile-menu.active li:nth-child(1) {
     transition-delay: 0.2s;
   }
+
   .mobile-menu.active li:nth-child(2) {
     transition-delay: 0.3s;
   }
+
   .mobile-menu.active li:nth-child(3) {
     transition-delay: 0.4s;
   }
+
   .mobile-menu.active li:nth-child(4) {
     transition-delay: 0.5s;
   }
+
   /* Add more nth-child selectors for additional menu items */
 
   /* Show menu items when mobile menu is active */
@@ -1976,7 +2059,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1985,7 +2069,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(2):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1994,7 +2079,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(3):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2003,7 +2089,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(4):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2012,7 +2099,8 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(5):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2021,13 +2109,15 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(6):hover {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
       ),
       url(../images/projects/cardHover/6.svg);
   }
+
   .main_card {
     height: auto;
     justify-content: center;
@@ -2196,7 +2286,7 @@ ul.popup-technologies li {
   }
 
   .line-from-about-me {
-    margin-top: 44vw;
+    margin-top: 4.5rem;
     width: 86vw;
   }
 
@@ -2723,6 +2813,13 @@ ul.popup-technologies li {
   .line-from-about-me {
     margin-top: 7vw;
     width: 86vw;
+  }
+
+  /* Experience section */
+  .experience-container-image {
+    text-align: center;
+    position: relative;
+    width: 200px;
   }
 
   .ul-list-me-section {
@@ -3383,6 +3480,13 @@ ul.popup-technologies li {
     width: 86vw;
   }
 
+  /* Experience section */
+  .experience-container-image {
+    text-align: center;
+    position: relative;
+    width: 250px;
+  }
+
   .ul-list-me-section {
     margin-top: 7vw;
     margin-bottom: 12vw;
@@ -4040,6 +4144,13 @@ ul.popup-technologies li {
     margin-top: -20px;
     padding: 5px;
     border: 1px solid black;
+  }
+
+  /* Experience section */
+  .experience-container-image {
+    text-align: center;
+    position: relative;
+    width: 300px;
   }
 }
 
