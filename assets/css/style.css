@@ -598,8 +598,61 @@ button:hover {
   width: 85%;
   height: 0;
   border: 1px solid gray;
-  margin-top: 14vw;
+  margin-top: 1rem;
   margin-left: 5%;
+}
+
+/* Experience section */
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 20px;
+  margin-top: 2.5rem;
+}
+
+.experience-container-image {
+  text-align: center;
+  position: relative;
+  width: 168px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-from-about-me-experience {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
 .ul-list-me-section {
@@ -1551,8 +1604,8 @@ ul.popup-technologies li {
   }
 
   .line-from-about-me {
-    margin-top: 60vw;
-    margin-left: 10%;
+    margin-top: 3.5rem;
+    margin-left: 6%;
     width: 80vw;
   }
 
@@ -2196,7 +2249,7 @@ ul.popup-technologies li {
   }
 
   .line-from-about-me {
-    margin-top: 44vw;
+    margin-top: 4.5rem;
     width: 86vw;
   }
 
@@ -2723,6 +2776,13 @@ ul.popup-technologies li {
   .line-from-about-me {
     margin-top: 7vw;
     width: 86vw;
+  }
+
+  /* Experience section */
+  .experience-container-image {
+    text-align: center;
+    position: relative;
+    width: 200px;
   }
 
   .ul-list-me-section {
@@ -3383,6 +3443,13 @@ ul.popup-technologies li {
     width: 86vw;
   }
 
+  /* Experience section */
+  .experience-container-image {
+    text-align: center;
+    position: relative;
+    width: 250px;
+  }
+
   .ul-list-me-section {
     margin-top: 7vw;
     margin-bottom: 12vw;
@@ -4040,6 +4107,13 @@ ul.popup-technologies li {
     margin-top: -20px;
     padding: 5px;
     border: 1px solid black;
+  }
+
+  /* Experience section */
+  .experience-container-image {
+    text-align: center;
+    position: relative;
+    width: 300px;
   }
 }
 
