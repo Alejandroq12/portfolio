@@ -17,12 +17,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/polyglot-talk',
   },
   {
-    name: 'My Books.',
-    description: 'My books is a website that displays a list of books and allows you to add and remove books from that list.',
+    name: 'My Catalog.',
+    description: 'This is a Ruby app developed to create a catalog of personal things, music albums, books, and more.',
     image: 'assets/images/projects/pop-up/3.svg',
-    technologies: ['CSS', 'SPA', 'ES6'],
-    liveLink: 'https://startling-pie-a26aa3.netlify.app/',
-    sourceLink: 'https://github.com/Alejandroq12/my-books',
+    technologies: ['Ruby', 'RSpec', 'Rubocop'],
+    liveLink: 'https://youtu.be/9LO_0zhpoC4',
+    sourceLink: 'https://github.com/Alejandroq12/catalog-my-things',
   },
   {
     name: 'Math Fans.',
@@ -41,12 +41,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/air-checker',
   },
   {
-    name: 'My Movies.',
-    description: 'It is a web application that retrieves data from an API and displays it in a user-friendly way.',
+    name: 'University Books.',
+    description: 'This is an app developed to simulate the operations of a real-world library using Object Oriented Programming.',
     image: 'assets/images/projects/pop-up/6.svg',
-    technologies: ['JavaScript', 'Jest', 'Webpack'],
-    liveLink: 'https://alejandroq12.github.io/my-movies/dist/',
-    sourceLink: 'https://github.com/Alejandroq12/my-movies',
+    technologies: ['Ruby', 'RSpec', 'Rubocop'],
+    liveLink: 'https://github.com/Alejandroq12/university-books',
+    sourceLink: 'https://github.com/Alejandroq12/university-books',
   },
 ];
 
