@@ -25,12 +25,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/catalog-my-things',
   },
   {
-    name: 'Math Fans.',
-    description: 'Developed Math Fans, a SPA, enabling calculations and API-fetched quotes for math enthusiasts.',
+    name: 'The Bookstore.',
+    description: 'This app allows users to add and remove books, showcasing efficient state management and real-time data handling.',
     image: 'assets/images/projects/pop-up/4.svg',
-    technologies: ['React.js', 'Axios', 'JavaScript'],
-    liveLink: 'https://warm-nasturtium-2364c6.netlify.app/',
-    sourceLink: 'https://github.com/Alejandroq12/math-fans',
+    technologies: ['React.js', 'Redux', 'JavaScript'],
+    liveLink: 'https://candid-quokka-8e7e31.netlify.app/',
+    sourceLink: 'https://github.com/Alejandroq12/bookstore',
   },
   {
     name: 'Air Checker.',
