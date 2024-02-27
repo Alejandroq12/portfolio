@@ -2608,8 +2608,8 @@ ul.popup-technologies li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    padding: 3vw;
+    margin-bottom: 4.2rem;
+    padding: 1.5vw;
   }
 
   .main_card {
@@ -3279,7 +3279,7 @@ ul.popup-technologies li {
     flex-direction: column;
     justify-content: center;
     padding: 3vw;
-    margin-bottom: 1.6rem;
+    margin-bottom: 4.2rem;
   }
 
   .main_card {
@@ -3801,7 +3801,7 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 
   .work-card:hover .button-card button {
@@ -3949,7 +3949,7 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
   }
 
   .work-card {
