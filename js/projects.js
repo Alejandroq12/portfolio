@@ -1,12 +1,12 @@
 /* eslint-disable linebreak-style */
 const projects = [
   {
-    name: 'Space Travelers\' Hub.',
-    description: 'Collaboratively developed Space Travelers\' Hub, an interactive space exploration platform, using SpaceX\' API.',
+    name: 'The Pocket Guardian.',
+    description: 'Full-stack application created to let each user manage their budget by categories and transactions.',
     image: 'assets/images/projects/pop-up/1.svg',
-    technologies: ['React.js', 'Redux', 'API'],
-    liveLink: 'https://spacex-iq7v.onrender.com/rockets',
-    sourceLink: 'https://github.com/Alejandroq12/react-group-project',
+    technologies: ['Ruby', 'Rails', 'Postgres'],
+    liveLink: 'https://pocket-guardian-fec21289dfe6.herokuapp.com/',
+    sourceLink: 'https://github.com/Alejandroq12/pocket-guardian',
   },
   {
     name: 'Polyglot Talk.',
