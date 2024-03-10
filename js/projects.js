@@ -33,12 +33,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/bookstore',
   },
   {
-    name: 'Air Checker.',
-    description: 'This is a web application designed for real-time monitoring of air quality in El Salvador.',
+    name: 'Run Tracker.',
+    description: 'This full-stack app tracks runners\' time and distance, offering an interface for progress review.',
     image: 'assets/images/projects/pop-up/5.svg',
-    technologies: ['React.js', 'Redux', 'Jest'],
-    liveLink: 'https://airchecker.onrender.com/',
-    sourceLink: 'https://github.com/Alejandroq12/air-checker',
+    technologies: ['React.js', 'Node.js', 'Postgres'],
+    liveLink: 'https://running-track-acf8bf94dcd3.herokuapp.com',
+    sourceLink: 'https://github.com/Alejandroq12/runner-tracker',
   },
   {
     name: 'University Books.',
