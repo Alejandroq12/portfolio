@@ -17,12 +17,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/polyglot-talk',
   },
   {
-    name: 'My Catalog.',
-    description: 'This is a Ruby app developed to create a catalog of personal things, music albums, books, and more.',
+    name: 'The Recipes',
+    description: 'This is a full-stack web application built with Ruby on Rails for managing and tracking recipes and ingredients.',
     image: 'assets/images/projects/pop-up/3.svg',
-    technologies: ['Ruby', 'RSpec', 'Rubocop'],
-    liveLink: 'https://youtu.be/9LO_0zhpoC4',
-    sourceLink: 'https://github.com/Alejandroq12/catalog-my-things',
+    technologies: ['Rails', 'Postgres', 'Devise'],
+    liveLink: 'https://rails-recipes-app-5174969e2b0d.herokuapp.com',
+    sourceLink: 'https://github.com/Alejandroq12/recipe-app',
   },
   {
     name: 'The Bookstore.',
@@ -41,12 +41,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/runner-tracker',
   },
   {
-    name: 'University Books.',
-    description: 'This is an app developed to simulate the operations of a real-world library using Object Oriented Programming.',
+    name: 'My Catalog.',
+    description: 'This is a Ruby app developed to create a catalog of personal things, music albums, books, and more.',
     image: 'assets/images/projects/pop-up/6.svg',
     technologies: ['Ruby', 'RSpec', 'Rubocop'],
-    liveLink: 'https://github.com/Alejandroq12/university-books',
-    sourceLink: 'https://github.com/Alejandroq12/university-books',
+    liveLink: 'https://youtu.be/9LO_0zhpoC4',
+    sourceLink: 'https://github.com/Alejandroq12/catalog-my-things',
   },
 ];
 
