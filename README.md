@@ -50,6 +50,7 @@
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Learn/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
