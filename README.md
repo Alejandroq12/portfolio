@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://alejandroq12.github.io/portfolio/)
+- [Live Demo Link](https://quezadajulio.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
