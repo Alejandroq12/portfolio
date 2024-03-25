@@ -214,6 +214,7 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project please give a star.
 Thanks in advance.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -229,7 +230,7 @@ I would like to thank Wes Bos because I learned how to implement flexbox with hi
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **Are you goin to use React in the future?**
+- **Are you going to use React in the future?**
 
   - Yes! I will transform this portfolio into a React App.
 
