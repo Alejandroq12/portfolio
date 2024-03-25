@@ -109,7 +109,7 @@ button:hover {
 
 /* main section */
 .main-area {
-  background-image: url('../images/main_section/Illustration-header.png');
+  background-image: url('../images/main_section/illustration-mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1360,14 +1360,14 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/illustration-mobile.png');
+    background-image: url('../images/main_section/illustration-mobile.svg');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 88vh;
     background-size: 33%;
-    background-position: 98% 115%;
+    background-position: 100% 115%;
   }
 
   .main-section {
@@ -1975,7 +1975,7 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/illustration-mobile.png');
+    background-image: url('../images/main_section/illustration-mobile.svg');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -2503,7 +2503,7 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/Illustration-header.png');
+    background-image: url('../images/main_section/Illustration-header.svg');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
