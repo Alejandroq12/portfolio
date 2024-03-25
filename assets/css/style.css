@@ -3173,7 +3173,7 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/Illustration-header.png');
+    background-image: url('../images/main_section/Illustration-header.svg');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
