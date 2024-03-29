@@ -23,6 +23,11 @@ html {
   padding: 1.8vw;
   background-color: #3e3c3c;
   box-shadow: 0.3vw 0.5vw 2.5vw black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
 .logo a {
