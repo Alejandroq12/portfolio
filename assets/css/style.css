@@ -39,7 +39,34 @@ html {
   font-weight: 700;
   font-size: 1.9vw;
   line-height: 2vw;
-  color: #fff;
+  background: -webkit-linear-gradient(45deg, #ffffff, #f0f0f0, #ff6b00);
+  background: -webkit-linear-gradient(45deg, #ffffff, #f0f0f0, #ff6b00);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: subtleGradientShift 2s infinite ease-in-out, continuousGentleSwing 10s infinite alternate ease-in-out;
+  display: inline-block;
+}
+
+@keyframes subtleGradientShift {
+  0%, 100% {
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.2);
+  }
+  50% {
+    color: #ff6b00;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.5);
+  }
+}
+
+@keyframes continuousGentleSwing {
+  0%, 100% {
+    transform: rotateY(-21deg);
+  }
+  50% {
+    transform: rotateY(21deg);
+  }
 }
 
 .logo {
