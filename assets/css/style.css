@@ -537,7 +537,7 @@ button:hover {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 3.8vw;
   line-height: 24px;
   color: #fff;
   margin-left: 29px;
@@ -684,18 +684,17 @@ button:hover {
 /* Experience section */
 .experience-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 18px;
   padding: 20px;
-  margin-top: 2.5rem;
 }
 
 .experience-container-image {
-  text-align: center;
   position: relative;
-  width: 168px;
+  width: 150px;
 }
 
 /* Tooltip Styles */
@@ -737,12 +736,14 @@ button:hover {
 .ul-list-me-section {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 1.5vw;
   line-height: 2.25vw;
   color: #f4f5f7;
   text-align: center;
   margin-top: 10vw;
+  width: 100%;
 }
 
 .list-titles-one::before {
@@ -756,7 +757,7 @@ button:hover {
 .list-titles-two::before {
   content: '\25A0';
   color: #ff6b00;
-  font-size: 6.3vw;
+  font-size: 6vw;
   margin-right: 3.6vw;
   vertical-align: 10%;
 }
@@ -764,21 +765,10 @@ button:hover {
 .list-titles-three::before {
   content: '\25CF';
   color: #ff6b00;
-  font-size: 6.3vw;
-  margin-right: 2.1vw;
+  font-size: 6vw;
 }
 
-.list-titles-one {
-  margin-right: 1.389em;
-  margin-left: -0.778em;
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.667rem;
-  line-height: 1.375;
-  color: #fff;
-}
-
+.list-titles-one,
 .list-titles-two,
 .list-titles-three {
   margin-right: 1.556em;
