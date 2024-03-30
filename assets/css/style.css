@@ -171,6 +171,8 @@ button:hover {
   margin-top: 10vw;
   text-align: start;
   padding: 0 6vw;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+
 }
 
 .second-header {
@@ -183,6 +185,10 @@ button:hover {
   margin-bottom: 0.6vw;
   text-align: start;
   padding: 0 6vw;
+  text-shadow: 10px 10px 25px rgb(218, 111, 18),
+  -10px 10px 25px rgb(218,111,18),
+  -10px -10px 25px rgb(218,111,18),
+  10px -10px 25px rgb(218,111,18);
 }
 
 .subtitle {
@@ -200,6 +206,10 @@ button:hover {
   text-align: start;
   margin-top: 0.6vw;
   padding: 0 6vw;
+  text-shadow: 5px 5px 15px rgba(218, 111, 18, 0.5),
+               -5px 5px 15px rgba(218, 111, 18, 0.5),
+               -5px -5px 15px rgba(218, 111, 18, 0.5),
+               5px -5px 15px rgba(218, 111, 18, 0.5);
 }
 
 @keyframes ColorShift {
@@ -253,6 +263,7 @@ button:hover {
   height: auto;
   margin: 0 auto 4%;
   text-align: center;
+  text-shadow: 3px 4px 7px rgba(255, 111, 0, 0.8);
 }
 
 .line_below_title {
@@ -634,6 +645,7 @@ button:hover {
   align-self: center;
   margin-top: 22vw;
   margin-left: 5%;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 }
 
 .description-me-section {
@@ -695,6 +707,10 @@ button:hover {
 .experience-container-image {
   position: relative;
   width: 150px;
+}
+
+.about-me-title-experience {
+  margin-bottom: 9vw;
 }
 
 /* Tooltip Styles */
@@ -779,6 +795,7 @@ button:hover {
   font-size: 2.667rem;
   line-height: 1.375;
   color: #fff;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 }
 
 .li-list-me-section {
@@ -1595,7 +1612,7 @@ ul.popup-technologies li {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 1000;
-    font-size: 0.5rem;
+    font-size: 3vw;
     line-height: 0;
     letter-spacing: 0.03em;
     color: #fff;
@@ -1632,7 +1649,7 @@ ul.popup-technologies li {
     padding: 4vw;
     width: 45vw;
     height: 14vw;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 4vw;
   }
 
@@ -1710,7 +1727,7 @@ ul.popup-technologies li {
   .contact-form__button {
     width: 33vw;
     height: 11vw;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 4.5vw;
     margin-top: 2vw;
     display: flex;
@@ -2169,7 +2186,7 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-size: 0.8rem;
+    font-size: 3.1vw;
     line-height: 0.5vw;
     padding: 1.4rem;
     width: 100%;
@@ -2275,7 +2292,7 @@ ul.popup-technologies li {
   .button-me-section {
     margin-top: 6vw;
     padding: 1vw;
-    font-size: 2.8vw;
+    font-size: 3.1vw;
     line-height: 3vw;
   }
 
@@ -2358,7 +2375,7 @@ ul.popup-technologies li {
     width: 26vw;
     height: 9.5vw;
     padding: 1vw;
-    font-size: 3.2vw;
+    font-size: 3.1vw;
     line-height: 3vw;
     margin-bottom: 21vw;
   }
@@ -2668,7 +2685,7 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-size: 0.5rem;
+    font-size: 1.2vw;
     line-height: 0.5vw;
     padding: 0.6rem;
     width: 4.8rem;
@@ -2805,7 +2822,7 @@ ul.popup-technologies li {
   .button-me-section {
     margin-top: 2.5vw;
     padding: 0.1vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 2vw;
     height: 3.2vw;
     width: 11vw;
@@ -2866,7 +2883,7 @@ ul.popup-technologies li {
 
   .container > div:nth-child(1) h4 {
     font-size: 2.8vw;
-    margin-left: 2vw;
+    margin-left: -0.1vw;
   }
 
   .container > div:nth-child(1) ul {
@@ -2881,8 +2898,8 @@ ul.popup-technologies li {
   }
 
   .container > div:nth-child(2) h4 {
-    font-size: 2.5vw;
-    margin-left: 0.1vw;
+    font-size: 2.8vw;
+    margin-left: -3vw;
   }
 
   .container > div:nth-child(2) ul {
@@ -2898,8 +2915,8 @@ ul.popup-technologies li {
   }
 
   .container > div:nth-child(3) h4 {
-    font-size: 2.5vw;
-    margin-left: 0.1vw;
+    font-size: 2.8vw;
+    margin-left: -2.6vw;
   }
 
   .container > div:nth-child(3) ul {
@@ -2916,13 +2933,15 @@ ul.popup-technologies li {
 
   .list-titles-one::before {
     font-size: 3.4vw;
-    margin-right: 10px;
+    margin-right: 3px;
     vertical-align: middle;
+    position: relative;
+    bottom: 0.5vw;
   }
 
   .list-titles-two::before {
     font-size: 3.4vw;
-    margin-right: 17px;
+    margin-right: 5px;
     vertical-align: middle;
     position: relative;
     top: -0.6vw;
@@ -2930,7 +2949,7 @@ ul.popup-technologies li {
 
   .list-titles-three::before {
     font-size: 3.4vw;
-    margin-right: 12px;
+    margin-right: 3px;
     vertical-align: middle;
     position: relative;
     top: -0.4vw;
@@ -2985,7 +3004,7 @@ ul.popup-technologies li {
     margin-top: 2vw;
     margin-bottom: 10vw;
     width: 13vw;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-left: 2.5vw;
   }
 
@@ -3490,7 +3509,7 @@ ul.popup-technologies li {
   .button-me-section {
     margin-top: 2.5vw;
     padding: 0.1vw;
-    font-size: 1vw;
+    font-size: 0.7rem;
     line-height: 2vw;
     height: 3.2vw;
     width: 11vw;
@@ -3499,6 +3518,16 @@ ul.popup-technologies li {
   .line-from-about-me {
     margin-top: 7vw;
     width: 86vw;
+  }
+
+  .experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+    margin: 4% 0 0 -1%;
   }
 
   /* Experience section */
@@ -3587,15 +3616,82 @@ ul.popup-technologies li {
     border: 1px solid black;
   }
 
+  .container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container > div h4 {
+    margin-top: 0;
+  }
+
+  ul.popup-technologies li {
+    margin-bottom: 25px;
+    margin-top: -16px;
+  }
+
+  .container > div:nth-child(1) h4 {
+    font-size: 2.8vw;
+    margin-left: -0.9vw;
+  }
+
+  .container > div:nth-child(1) ul {
+    margin-left: 2.5vw;
+  }
+
+  .container > div:nth-child(1) ul li {
+    font-size: 2vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .container > div:nth-child(2) h4 {
+    font-size: 2.8vw;
+    margin-left: -2.5vw;
+  }
+
+  .container > div:nth-child(2) ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container > div:nth-child(2) ul li {
+    font-size: 2vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .container > div:nth-child(3) h4 {
+    font-size: 2.8vw;
+    margin-left: -2.2vw;
+  }
+
+  .container > div:nth-child(3) ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container > div:nth-child(3) ul li {
+    font-size: 2vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+  }
+
   .list-titles-one::before {
     font-size: 3.4vw;
-    margin-right: 10px;
+    margin-right: 9px;
     vertical-align: middle;
+    position: relative;
+    bottom: 0.5vw;
   }
 
   .list-titles-two::before {
     font-size: 3.4vw;
-    margin-right: 17px;
+    margin-right: 5px;
     vertical-align: middle;
     position: relative;
     top: -0.6vw;
@@ -3603,7 +3699,7 @@ ul.popup-technologies li {
 
   .list-titles-three::before {
     font-size: 3.4vw;
-    margin-right: 12px;
+    margin-right: 3px;
     vertical-align: middle;
     position: relative;
     top: -0.4vw;
@@ -3658,7 +3754,7 @@ ul.popup-technologies li {
     margin-top: 2vw;
     margin-bottom: 10vw;
     width: 13vw;
-    font-size: 1.5vw;
+    font-size: 0.7rem;
     margin-left: 2.5vw;
   }
 
@@ -3958,6 +4054,10 @@ ul.popup-technologies li {
     margin-top: -20px;
     padding: 5px;
     border: 1px solid black;
+  }
+
+  .experience-container {
+    margin: 4% 0 0 -0.9%;
   }
 }
 
@@ -4338,6 +4438,19 @@ ul.popup-technologies li {
 
 /* Media query for large screens */
 @media only screen and (min-width: 1850px) {
+  .main-area {
+    background-image: url('../images/main_section/Illustration-header.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 115vh;
+    background-color: #000;
+    background-size: 46%;
+    background-position: 110% 80%;
+    position: relative;
+  }
+
   .hamburger-icon.hidden {
     display: none;
   }
@@ -4496,5 +4609,9 @@ ul.popup-technologies li {
     margin-top: -20px;
     padding: 5px;
     border: 1px solid black;
+  }
+
+  .experience-container {
+    margin: 4% 0 0 -0.3%;
   }
 }
