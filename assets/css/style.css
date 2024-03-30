@@ -1650,6 +1650,13 @@ ul.popup-technologies li {
     list-style: none;
   }
 
+  .list-titles-one,
+  .list-titles-two,
+  .list-titles-three {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
   .list-titles-one::before {
     font-size: 5vw;
     margin-right: 2vw;
@@ -1663,17 +1670,6 @@ ul.popup-technologies li {
   .list-titles-three::before {
     font-size: 6vw;
     margin-right: 2vw;
-  }
-
-  .list-titles-one {
-    font-size: 5vw;
-    line-height: 6vw;
-  }
-
-  .list-titles-two,
-  .list-titles-three {
-    font-size: 5vw;
-    line-height: 6vw;
   }
 
   .li-list-me-section {
