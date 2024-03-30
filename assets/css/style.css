@@ -1996,7 +1996,7 @@ ul.popup-technologies li {
   }
 
   .second-header {
-    font-size: 6vw;
+    font-size: 7vw;
     line-height: 12vw;
     text-align: start;
     padding: 0 6vw;
@@ -2034,7 +2034,7 @@ ul.popup-technologies li {
   }
 
   .second-title {
-    font-size: 10.6vw;
+    font-size: 7vw;
     line-height: 23vw;
     height: auto;
     margin-bottom: 3vw;
@@ -2126,13 +2126,13 @@ ul.popup-technologies li {
   }
 
   .main-card-title {
-    font-size: 2rem;
+    font-size: 7vw;
     line-height: 2rem;
     justify-content: center;
   }
 
   .main-card-description {
-    font-size: 3.6vw;
+    font-size: 4vw;
     line-height: 7vw;
     margin: 0.4rem auto;
   }
@@ -2211,7 +2211,7 @@ ul.popup-technologies li {
   }
 
   .work-cards-description {
-    font-size: 69%;
+    font-size: 2.5vw;
     line-height: 1rem;
     text-align: start;
     margin-left: 20px;
@@ -2268,7 +2268,7 @@ ul.popup-technologies li {
   }
 
   .description-me-section {
-    font-size: 3.8vw;
+    font-size: 4vw;
     line-height: 5.5vw;
   }
 
