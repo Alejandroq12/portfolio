@@ -967,14 +967,15 @@ button:hover {
 /* footer section */
 footer {
   padding: 0.5vw;
+  background-color: #3e3c3c;
+  box-shadow: 0.3vw 0.5vw 2.5vw black;
 }
 
 .footer_top_line {
   width: 100%;
   height: 0.1vw;
   border-color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1vw;
-  margin-bottom: 1.3vw;
+  margin-bottom: 0;
 }
 
 .logo-container {
