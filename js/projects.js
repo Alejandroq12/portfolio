@@ -41,12 +41,12 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/runner-tracker',
   },
   {
-    name: 'My Catalog.',
-    description: 'This is a Ruby app developed to create a catalog of personal things, music albums, books, and more.',
+    name: 'Air Checker.',
+    description: 'This web application monitors on real-time the air quality in various locations across El Salvador.',
     image: 'assets/images/projects/pop-up/6.svg',
-    technologies: ['Ruby', 'RSpec', 'Rubocop'],
-    liveLink: 'https://youtu.be/9LO_0zhpoC4',
-    sourceLink: 'https://github.com/Alejandroq12/catalog-my-things',
+    technologies: ['React.js', 'Jest', 'Redux'],
+    liveLink: 'https://airchecker.onrender.com',
+    sourceLink: 'https://github.com/Alejandroq12/air-checker',
   },
 ];
 
