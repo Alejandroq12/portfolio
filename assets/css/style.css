@@ -195,6 +195,19 @@ button:hover {
   margin-top: 0.6vw;
 }
 
+@keyframes ColorShift {
+  0% { color: #ff6b00; }
+  20% { color: #fff; }
+  40% { color: #ff6b00; }
+  60% { color: #fff; }
+  80% { color: #ff6b00; }
+  100% { color: #fff; }
+}
+
+.salute .color-shift {
+  animation: ColorShift 14s linear infinite;
+}
+
 .socialMediaIcons {
   display: flex;
   flex-wrap: wrap;
