@@ -2517,7 +2517,7 @@ ul.popup-technologies li {
   }
 
   .main-header {
-    font-size: 4.6vw;
+    font-size: 6vw;
     line-height: 5.5vw;
     text-align: start;
     padding: 0 7vw;
@@ -2525,18 +2525,18 @@ ul.popup-technologies li {
   }
 
   .second-header {
-    font-size: 2.1vw;
+    font-size: 3.5vw;
     line-height: 4vw;
     text-align: start;
     padding: 0 7vw;
   }
 
   .main-description {
-    font-size: 1.9vw;
+    font-size: 2.5vw;
     line-height: 3vw;
     text-align: start;
     padding: 0 7vw;
-    width: 58%;
+    width: 75%;
   }
 
   .socialMediaIcons {
@@ -2632,15 +2632,15 @@ ul.popup-technologies li {
   }
 
   .main-card-title {
-    font-size: 2.6vw;
+    font-size: 3.5vw;
     margin: 0;
     justify-content: start;
   }
 
   .main-card-description {
     height: auto;
-    font-size: 1.5vw;
-    line-height: 2.1vw;
+    font-size: 2.5vw;
+    line-height: 2.6vw;
     margin: 16px 0;
   }
 
@@ -2785,9 +2785,9 @@ ul.popup-technologies li {
   }
 
   .about-me-title {
-    margin-top: 5.5vw;
+    margin-top: 6vw;
     margin-bottom: -8vw;
-    font-size: 5.2vw;
+    font-size: 4.7vw;
     line-height: 7vw;
     margin-left: 0.5vw;
   }
@@ -2797,9 +2797,9 @@ ul.popup-technologies li {
   }
 
   .description-me-section {
-    font-size: 1.3vw;
+    font-size: 2.5vw;
     line-height: 3.1vw;
-    width: 42vw;
+    width: 65%;
   }
 
   .button-me-section {
@@ -2817,6 +2817,20 @@ ul.popup-technologies li {
   }
 
   /* Experience section */
+  .experience {
+    width: 100%;
+  }
+
+  .experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+    margin: 4% -2% 0 -2%;
+  }
+  
   .experience-container-image {
     text-align: center;
     position: relative;
@@ -2829,14 +2843,13 @@ ul.popup-technologies li {
     list-style: none;
   }
 
-  .container {
+  .skills-container {
     display: flex;
-    justify-content: space-around;
-    margin-left: -40px;
+    justify-content: space-between;
+    margin: 4% -2% 0 -2%;
   }
 
   .container > div {
-    flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
