@@ -204,6 +204,16 @@ button:hover {
   100% { color: #fff; }
 }
 
+@keyframes Float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.salute .main-header, .salute .second-header, .salute .main-description {
+  animation: Float 7s ease-in-out infinite;
+}
+
 .salute .color-shift {
   animation: ColorShift 14s linear infinite;
 }
