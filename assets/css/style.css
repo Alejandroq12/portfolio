@@ -1230,6 +1230,23 @@ ul.popup-technologies li {
   filter: invert(61%) sepia(96%) saturate(3260%) hue-rotate(15deg);
 }
 
+@media only screen and (min-width: 600px) {
+  .experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    margin: 8% -2% 0 -2%;
+  }
+  
+  .experience-container-image {
+    position: relative;
+    width: 160px;
+  }
+}
+
 /* Media query for extra small screens */
 @media only screen and (max-width: 600px) {
   /* header and nav bar */
