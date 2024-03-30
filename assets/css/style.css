@@ -3517,7 +3517,6 @@ ul.popup-technologies li {
   .skills-container {
     display: flex;
     justify-content: space-between;
-    margin: 4% -9% 0 -2%;
   }
 
   .container > div {
