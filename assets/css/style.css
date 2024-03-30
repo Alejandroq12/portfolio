@@ -199,6 +199,8 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 2vw;
+  margin-left: -45vw;
 }
 
 .iconMedia:hover {
@@ -1430,14 +1432,6 @@ ul.popup-technologies li {
     padding: 0 6vw;
   }
 
-  .socialMediaIcons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2vw;
-    margin-left: -30vw;
-  }
-
   .my-icons-list {
     display: flex;
     flex-wrap: wrap;
@@ -2045,11 +2039,7 @@ ul.popup-technologies li {
   }
 
   .socialMediaIcons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2vw;
-    margin-right: 54vw;
+    margin-left: -55vw;
   }
 
   .my-icons-list {
