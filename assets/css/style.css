@@ -3207,16 +3207,16 @@ ul.popup-technologies li {
   }
 
   .main-header {
-    font-size: 4.6vw;
-    line-height: 5.5vw;
+    font-size: 8.6vw;
+    line-height: 8vw;
     text-align: start;
     padding: 0 7vw;
     margin-top: 4vw;
   }
 
   .second-header {
-    font-size: 2.1vw;
-    line-height: 4vw;
+    font-size: 4vw;
+    line-height: 6vw;
     text-align: start;
     padding: 0 7vw;
   }
@@ -3272,7 +3272,7 @@ ul.popup-technologies li {
   }
 
   .second-title {
-    font-size: 3.5vw;
+    font-size: 4vw;
     line-height: 23vw;
     height: auto;
     margin-right: 2vw;
@@ -3285,7 +3285,7 @@ ul.popup-technologies li {
     background-color: #000;
     margin: 0;
     margin-right: 2vw;
-    transform: translateY(-1rem);
+    transform: translateY(-0.6rem);
   }
 
   .card-container {
@@ -3322,7 +3322,7 @@ ul.popup-technologies li {
   }
 
   .main-card-title {
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin: 0;
     justify-content: start;
   }
@@ -3470,10 +3470,10 @@ ul.popup-technologies li {
   }
 
   .about-me-title {
-    margin-top: 5.5vw;
+    margin-top: 8.6vw;
     margin-bottom: -8vw;
     font-size: 5.2vw;
-    line-height: 7vw;
+    line-height: 8vw;
     margin-left: 0.5vw;
   }
 
@@ -3514,14 +3514,13 @@ ul.popup-technologies li {
     list-style: none;
   }
 
-  .container {
+  .skills-container {
     display: flex;
-    justify-content: space-around;
-    margin-left: -40px;
+    justify-content: space-between;
+    margin: 4% -9% 0 -2%;
   }
 
   .container > div {
-    flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
