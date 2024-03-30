@@ -165,19 +165,24 @@ button:hover {
   font-style: normal;
   font-weight: 400;
   color: #ff6b00;
-  font-size: 4.67vw;
-  line-height: 6.4vw;
+  font-size: 15vw;
+  line-height: 18vw;
   margin-bottom: 0.8vw;
+  margin-top: 10vw;
+  text-align: start;
+  padding: 0 6vw;
 }
 
 .second-header {
   font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.67vw;
-  line-height: 3.2vw;
+  font-size: 6.5vw;
+  line-height: 12vw;
   color: #fff5e1;
   margin-bottom: 0.6vw;
+  text-align: start;
+  padding: 0 6vw;
 }
 
 .subtitle {
@@ -189,10 +194,12 @@ button:hover {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.07vw;
-  line-height: 1.6vw;
+  font-size: 4.2vw;
+  line-height: 7vw;
   color: #fff;
+  text-align: start;
   margin-top: 0.6vw;
+  padding: 0 6vw;
 }
 
 @keyframes ColorShift {
@@ -239,11 +246,11 @@ button:hover {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 6.5vw;
+  line-height: 12vw;
   align-items: center;
   color: #1c1a19;
-  height: 83px;
+  height: auto;
   margin: 0 auto 4%;
   text-align: center;
 }
@@ -281,21 +288,24 @@ button:hover {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 6.5vw;
   line-height: 44px;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #091e42;
+  margin: 0.1rem 0.3rem;
 }
 
 .main-card-description {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 4.2vw;
+  line-height: 1rem;
   color: #091e42;
-  margin: 16px 0;
+  margin: 0.4rem auto;
+  width: 95%;
 }
 
 .main_card ul {
@@ -616,25 +626,25 @@ button:hover {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 6vw;
-  line-height: 8vw;
+  font-size: 15vw;
+  line-height: 12vw;
   letter-spacing: 0.37vw;
   color: #ff6b00;
   justify-self: center;
   align-self: center;
-  margin-top: 8vw;
+  margin-top: 22vw;
   margin-left: 5%;
 }
 
 .description-me-section {
-  margin-top: 0.5rem;
+  margin-top: 6vw;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5vw;
-  line-height: 2.25vw;
+  font-size: 4.2vw;
+  line-height: 6.4vw;
   color: #f4f5f7;
-  margin-left: 5%;
+  margin-left: 0.5vw;
   margin-right: 5%;
 }
 
@@ -808,16 +818,16 @@ button:hover {
 }
 
 .contact-form__heading {
-  width: 30vw;
+  width: 92vw;
   height: 18.75vw;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 4.8vw;
-  line-height: 5.5vw;
+  font-size: 8vw;
+  line-height: 9vw;
   text-align: center;
   color: #172b4d;
-  margin-bottom: 30.1vw;
+  margin-bottom: 25vw;
 }
 
 .contact-form__form {
@@ -1433,28 +1443,6 @@ ul.popup-technologies li {
     margin-top: 3vw;
   }
 
-  .main-header {
-    font-size: 15vw;
-    line-height: 18vw;
-    margin-top: 10vw;
-    text-align: start;
-    padding: 0 6vw;
-  }
-
-  .second-header {
-    font-size: 6.5vw;
-    line-height: 12vw;
-    text-align: start;
-    padding: 0 6vw;
-  }
-
-  .main-description {
-    font-size: 4.2vw;
-    line-height: 7vw;
-    text-align: start;
-    padding: 0 6vw;
-  }
-
   .my-icons-list {
     display: flex;
     flex-wrap: wrap;
@@ -1472,13 +1460,6 @@ ul.popup-technologies li {
 
   .work-section {
     margin-top: 4rem;
-  }
-
-  .second-title {
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    height: auto;
-    margin-bottom: 0.1rem;
   }
 
   .line_below_title {
@@ -1565,25 +1546,6 @@ ul.popup-technologies li {
     align-items: center;
   }
 
-  .main-card-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 44px;
-    margin: 0.1rem 0.3rem;
-    justify-content: center;
-  }
-
-  .main-card-description {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    color: #091e42;
-    margin: 0.4rem auto;
-    width: 95%;
-  }
-
   .main_card ul {
     display: flex;
     flex-direction: row;
@@ -1655,17 +1617,7 @@ ul.popup-technologies li {
   }
 
   .about-me-title {
-    font-size: 15vw;
-    line-height: 12vw;
-    margin-top: 22vw;
     margin-left: 0.5vw;
-  }
-
-  .description-me-section {
-    font-size: 3.9vw;
-    line-height: 6.4vw;
-    margin-left: 0.5vw;
-    margin-top: 6vw;
   }
 
   .button-me-section {
@@ -1731,13 +1683,6 @@ ul.popup-technologies li {
 
   .contact-form {
     margin-top: 20vw;
-  }
-
-  .contact-form__heading {
-    width: 92vw;
-    font-size: 8vw;
-    line-height: 9.5vw;
-    margin-bottom: 25vw;
   }
 
   .contact-form__input::placeholder,
@@ -2316,6 +2261,7 @@ ul.popup-technologies li {
     margin-bottom: 2vw;
     font-size: 15vw;
     line-height: 8vw;
+    margin-left: 0.5vw;
   }
 
   .description-me-section {
@@ -2637,6 +2583,7 @@ ul.popup-technologies li {
     line-height: 23vw;
     height: auto;
     margin-right: 2vw;
+    margin-left: -2vw;
   }
 
   .line_below_title {
@@ -2684,13 +2631,14 @@ ul.popup-technologies li {
   .main-card-title {
     font-size: 2.6vw;
     margin: 0;
+    justify-content: start;
   }
 
   .main-card-description {
-    margin-top: 0.5vw;
     height: auto;
     font-size: 1.5vw;
     line-height: 2.1vw;
+    margin: 16px 0;
   }
 
   .main-card-list-ul {
@@ -2835,9 +2783,14 @@ ul.popup-technologies li {
 
   .about-me-title {
     margin-top: 5.5vw;
-    margin-bottom: -3vw;
+    margin-bottom: -8vw;
     font-size: 5.2vw;
     line-height: 7vw;
+    margin-left: 0.5vw;
+  }
+
+  .about-me-title-experience {
+    margin-bottom: -3vw;
   }
 
   .description-me-section {
@@ -3307,6 +3260,7 @@ ul.popup-technologies li {
     line-height: 23vw;
     height: auto;
     margin-right: 2vw;
+    margin-left: -2vw;
   }
 
   .line_below_title {
@@ -3354,13 +3308,14 @@ ul.popup-technologies li {
   .main-card-title {
     font-size: 3.5vw;
     margin: 0;
+    justify-content: start;
   }
 
   .main-card-description {
-    margin-top: 0.8vw;
     height: auto;
     font-size: 1.7vw;
     line-height: 2.8vw;
+    margin: 16px 0;
   }
 
   .main-card-list-ul {
@@ -3500,9 +3455,14 @@ ul.popup-technologies li {
 
   .about-me-title {
     margin-top: 5.5vw;
-    margin-bottom: -3vw;
+    margin-bottom: -8vw;
     font-size: 5.2vw;
     line-height: 7vw;
+    margin-left: 0.5vw;
+  }
+
+  .about-me-title-experience {
+    margin-bottom: -3vw;
   }
 
   .description-me-section {
