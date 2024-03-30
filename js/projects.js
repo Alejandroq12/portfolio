@@ -42,7 +42,7 @@ const projects = [
   },
   {
     name: 'Air Checker.',
-    description: 'This web application monitors on real-time the air quality in various locations across El Salvador.',
+    description: 'This web application monitors the air quality in real-time across various locations in El Salvador.',
     image: 'assets/images/projects/pop-up/6.svg',
     technologies: ['React.js', 'Jest', 'Redux'],
     liveLink: 'https://airchecker.onrender.com',
