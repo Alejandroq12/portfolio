@@ -1434,11 +1434,6 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/illustration-mobile.svg');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     min-height: 88vh;
     background-size: 33%;
     background-position: 100% 115%;
@@ -1775,10 +1770,6 @@ ul.popup-technologies li {
 @media only screen and (min-width: 540px) and (max-width: 768px) {
   /* header and nav bar */
   .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 3.5vw 0;
   }
 
@@ -1953,11 +1944,6 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/illustration-mobile.svg');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     min-height: 115vh;
     background-size: 33%;
     background-position: 100% 109%;
@@ -2440,10 +2426,6 @@ ul.popup-technologies li {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* header and nav bar */
   .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 3.5vw 0;
     height: 6vw;
   }
@@ -2476,12 +2458,7 @@ ul.popup-technologies li {
   /* main section */
   .main-area {
     background-image: url('../images/main_section/Illustration-header.svg');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     min-height: 110vh;
-    background-color: #000;
     background-size: 45%;
     background-position: 101% 80%;
     position: relative;
@@ -3133,10 +3110,6 @@ ul.popup-technologies li {
 @media only screen and (min-width: 1025px) {
   /* header and nav bar */
   .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 3.5vw 0;
     height: 6vw;
   }
@@ -3169,12 +3142,7 @@ ul.popup-technologies li {
   /* main section */
   .main-area {
     background-image: url('../images/main_section/Illustration-header.svg');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     min-height: 115vh;
-    background-color: #000;
     background-size: 46%;
     background-position: 100% 80%;
     position: relative;
@@ -4453,16 +4421,7 @@ ul.popup-technologies li {
 /* Media query for large screens */
 @media only screen and (min-width: 1850px) {
   .main-area {
-    background-image: url('../images/main_section/Illustration-header.svg');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 115vh;
-    background-color: #000;
-    background-size: 46%;
     background-position: 110% 80%;
-    position: relative;
   }
 
   .hamburger-icon.hidden {
