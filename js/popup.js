@@ -6,7 +6,7 @@ const bodyEl = document.querySelector('body');
 const popupTemplate = `
   <div class="popup">
     <button class="popup-close">
-      <img src="./assets/images/icons/x2.png" alt="Close">
+      <img src="./assets/images/icons/x.svg" alt="Close">
     </button>
     <h2 class="popup-header"></h2>
     <img class="popup-image" alt="">
