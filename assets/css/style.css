@@ -1052,7 +1052,7 @@ body.popup-open::before {
     ); /* Add a semi-transparent black background */
 
   backdrop-filter: blur(5px); /* Apply the blur effect */
-  z-index: 998;
+  z-index: 3004;
 }
 
 .popup {
