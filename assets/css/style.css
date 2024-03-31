@@ -17,6 +17,7 @@ html {
 /* header and nav bar */
 .header-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1.8vw;
@@ -36,9 +37,8 @@ html {
 .main-logo {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 1.9vw;
-  line-height: 2vw;
-  background: -webkit-linear-gradient(45deg, #ffffff, #f0f0f0, #ff6b00);
+  font-size: 4.5vw;
+  line-height: 6vw;
   background: -webkit-linear-gradient(45deg, #ffffff, #f0f0f0, #ff6b00);
   -webkit-background-clip: text;
   background-clip: text; 
@@ -46,6 +46,11 @@ html {
   color: transparent;
   animation: subtleGradientShift 2s infinite ease-in-out, continuousGentleSwing 10s infinite alternate ease-in-out;
   display: inline-block;
+}
+
+.logo {
+  margin-left: 4vw;
+  margin-bottom: 2vw;
 }
 
 @keyframes subtleGradientShift {
@@ -66,10 +71,6 @@ html {
   50% {
     transform: rotateY(21deg);
   }
-}
-
-.logo {
-  margin-left: 3%;
 }
 
 .hamburgerMenu {
@@ -1267,25 +1268,6 @@ ul.popup-technologies li {
 
 /* Media query for extra small screens */
 @media only screen and (max-width: 600px) {
-  /* header and nav bar */
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3.5vw 0;
-  }
-
-  .main-logo {
-    font-size: 4.5vw;
-    line-height: 6vw;
-  }
-
-  .logo {
-    margin-left: 4vw;
-    margin-bottom: 2vw;
-  }
-
   .hamburgerMenu {
     align-items: flex-start;
     margin-right: 4vw;
@@ -1611,21 +1593,11 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 1000;
     font-size: 3vw;
     line-height: 0;
-    letter-spacing: 0.03em;
-    color: #fff;
-    border: none;
-    padding: 12px;
     width: 36%;
     margin: 15px auto;
     height: 48px;
-    background: #943400;
-    position: relative;
-    text-align: left;
     max-width: 120px;
   }
 
@@ -1813,11 +1785,6 @@ ul.popup-technologies li {
   .main-logo {
     font-size: 4.5vw;
     line-height: 6vw;
-  }
-
-  .logo {
-    margin-left: 4vw;
-    margin-bottom: 2vw;
   }
 
   .hamburgerMenu {
