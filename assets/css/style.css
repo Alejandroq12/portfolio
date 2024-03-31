@@ -1603,9 +1603,6 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/Frame.svg');
-    background-repeat: no-repeat;
-    background-size: 40%;
     background-position: 100% 13%;
   }
 
@@ -1699,19 +1696,10 @@ ul.popup-technologies li {
     font-size: 3vw;
     line-height: 4.5vw;
     margin-top: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 22vw;
   }
 
   .contact-form__button:hover {
-    font-size: 4vw;
-    line-height: 4.5vw;
-    letter-spacing: 0.03em;
-  }
-
-  .contact-form__button:disabled {
     font-size: 4vw;
     line-height: 4.5vw;
     letter-spacing: 0.03em;
@@ -1732,9 +1720,6 @@ ul.popup-technologies li {
   }
 
   .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 100%;
   }
 
@@ -2222,8 +2207,6 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/Frame.svg');
-    background-repeat: no-repeat;
     background-size: 30%;
     background-position: 100% 13%;
   }
@@ -2347,9 +2330,6 @@ ul.popup-technologies li {
   }
 
   .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 100%;
   }
 
@@ -2422,9 +2402,7 @@ ul.popup-technologies li {
   }
 }
 
-/* Media query for medium screens */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* header and nav bar */
   .header-container {
     padding: 3.5vw 0;
     height: 6vw;
@@ -2735,7 +2713,6 @@ ul.popup-technologies li {
   /* About me section */
   .about-me-main-container {
     background-image: url('../images/me_section/desktop-frame.svg');
-    background-repeat: no-repeat;
     background-size: 39%;
     background-position: 100% 8%;
   }
@@ -3416,7 +3393,6 @@ ul.popup-technologies li {
   /* About me section */
   .about-me-main-container {
     background-image: url('../images/me_section/desktop-frame.svg');
-    background-repeat: no-repeat;
     background-size: 39%;
     background-position: 100% 8%;
   }
@@ -4052,16 +4028,6 @@ ul.popup-technologies li {
     width: 90%;
     margin-top: -22px;
     margin-bottom: 2px;
-  }
-
-  /* List items */
-  .work-card li {
-    font-size: 40%;
-    line-height: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 21%;
   }
 
   .work-card ul {
