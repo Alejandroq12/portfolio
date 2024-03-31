@@ -206,10 +206,10 @@ button:hover {
   text-align: start;
   margin-top: 0.6vw;
   padding: 0 6vw;
-  text-shadow: 5px 5px 15px rgba(218, 111, 18, 0.2),
-               -5px 5px 15px rgba(218, 111, 18, 0.2),
-               -5px -5px 15px rgba(218, 111, 18, 0.2),
-               5px -5px 15px rgba(218, 111, 18, 0.2);
+  text-shadow: 5px 5px 15px rgba(218, 111, 18, 0.5),
+               -5px 5px 15px rgba(218, 111, 18, 0.5),
+               -5px -5px 15px rgba(218, 111, 18, 0.5),
+               5px -5px 15px rgba(218, 111, 18, 0.5);
 }
 
 @keyframes ColorShift {
