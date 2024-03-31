@@ -1071,6 +1071,7 @@ body.popup-open::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 3005;
 }
 
 .popup-image {
@@ -1091,8 +1092,8 @@ button.popup-close {
 }
 
 .popup-close img {
-  width: 29px;
-  height: 29px;
+  width: 48px;
+  height: 48px;
   border: none;
   background: none;
 }
