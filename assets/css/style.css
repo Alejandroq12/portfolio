@@ -1084,7 +1084,7 @@ body.popup-open::before {
 
 button.popup-close {
   position: absolute;
-  top: 23px;
+  top: 0;
   right: -7rem;
   border: none;
   background: none;
@@ -2426,7 +2426,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -9.9rem;
     border: none;
     background: none;
@@ -3070,7 +3070,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -15rem;
     border: none;
     background: none;
@@ -3820,7 +3820,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -14rem;
     border: none;
     background: none;
@@ -3960,7 +3960,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -14rem;
     border: none;
     background: none;
@@ -4169,7 +4169,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -13.5rem;
     border: none;
     background: none;
@@ -4339,7 +4339,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -15rem;
     border: none;
     background: none;
@@ -4515,7 +4515,7 @@ ul.popup-technologies li {
 
   button.popup-close {
     position: absolute;
-    top: 23px;
+    top: 0;
     right: -14rem;
     border: none;
     background: none;
