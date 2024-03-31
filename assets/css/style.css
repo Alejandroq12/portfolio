@@ -621,7 +621,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url('../images/me_section/Frame.png');
+  background-image: url('../images/me_section/Frame.svg');
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: 100% 21%;
@@ -1635,10 +1635,10 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/Frame.png');
+    background-image: url('../images/me_section/Frame.svg');
     background-repeat: no-repeat;
     background-size: 40%;
-    background-position: 100% 26%;
+    background-position: 100% 13%;
   }
 
   .about-me-title {
@@ -1655,7 +1655,7 @@ ul.popup-technologies li {
   }
 
   .line-from-about-me {
-    margin-top: 3.5rem;
+    margin-top: 7.5rem;
     margin-left: 6%;
     width: 80vw;
   }
@@ -2271,10 +2271,10 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/Frame.png');
+    background-image: url('../images/me_section/Frame.svg');
     background-repeat: no-repeat;
     background-size: 30%;
-    background-position: 100% 20%;
+    background-position: 100% 13%;
   }
 
   .about-me-title {
@@ -2298,7 +2298,7 @@ ul.popup-technologies li {
   }
 
   .line-from-about-me {
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
     width: 86vw;
   }
 
@@ -2796,7 +2796,7 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/desktop-frame.png');
+    background-image: url('../images/me_section/desktop-frame.svg');
     background-repeat: no-repeat;
     background-size: 39%;
     background-position: 100% 8%;
@@ -3483,7 +3483,7 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/desktop-frame.png');
+    background-image: url('../images/me_section/desktop-frame.svg');
     background-repeat: no-repeat;
     background-size: 39%;
     background-position: 100% 8%;
