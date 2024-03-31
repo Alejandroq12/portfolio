@@ -290,9 +290,9 @@ button:hover {
 .main_card {
   background-color: white;
   text-align: left;
-  height: 568px;
   padding: 1rem;
   gap: 24px;
+  box-shadow: rgba(207,126,4,0.67) 5px 5px, rgba(207,126,4,0.67) 10px 10px, rgba(207,126,4,0.67) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .image_from_main_card {
@@ -412,6 +412,7 @@ button:hover {
   transition: all 0.3s ease;
   width: 327px;
   height: 386px;
+  box-shadow: rgba(207,126,4,0.67) 5px 5px, rgba(207,126,4,0.67) 10px 10px, rgba(207,126,4,0.67) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .work-card:nth-child(1) {
@@ -2612,7 +2613,7 @@ ul.popup-technologies li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 4.2rem;
+    margin-bottom: 10.2rem;
     padding: 1.5vw;
   }
 
@@ -2621,7 +2622,7 @@ ul.popup-technologies li {
     flex-direction: row;
     align-items: flex-start;
     gap: 20px;
-    margin-bottom: -283px;
+    margin-bottom: -150px;
   }
 
   .image-container {
@@ -3306,6 +3307,7 @@ ul.popup-technologies li {
     justify-content: center;
     padding: 3vw;
     margin-bottom: 4.2rem;
+    margin-bottom: 9rem;
   }
 
   .main_card {
@@ -3313,7 +3315,7 @@ ul.popup-technologies li {
     flex-direction: row;
     align-items: flex-start;
     gap: 20px;
-    margin-bottom: -19vw;
+    margin-bottom: -150px;
   }
 
   .image-container {
@@ -3908,7 +3910,11 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 6rem;
+    margin-bottom: 9.5rem;
+  }
+
+  .main_card {
+    margin-bottom: -200px;
   }
 
   .work-card:hover .button-card button {
@@ -4064,7 +4070,11 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
+  }
+
+  .main_card {
+    margin-bottom: -220px;
   }
 
   .work-card {
@@ -4290,7 +4300,11 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
+  }
+
+  .main_card {
+    margin-bottom: -220px;
   }
 
   .work-cards-title {
@@ -4466,7 +4480,11 @@ ul.popup-technologies li {
   }
 
   .card-container {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+  }
+
+  .main_card {
+    margin-bottom: -220px;
   }
 
   .work-cards-title {
