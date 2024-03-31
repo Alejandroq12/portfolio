@@ -637,8 +637,7 @@ button:hover {
 }
 
 .about-me-title {
-  width: 90%;
-  max-width: 700px;
+  width: 100%;
   height: 8vw;
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -749,8 +748,8 @@ button:hover {
 }
 
 .image-from-about-me-experience {
-  width: 100%;
-  height: auto;
+  width: 160px;
+  height: 160px;
   border-radius: 10px;
   border: 1px solid #ddd;
 }
@@ -2847,6 +2846,11 @@ ul.popup-technologies li {
     width: 200px;
   }
 
+  .image-from-about-me-experience {
+    width: 195px;
+    height: 195px;
+  }
+
   .ul-list-me-section {
     margin-top: 7vw;
     margin-bottom: 12vw;
@@ -3523,6 +3527,11 @@ ul.popup-technologies li {
     text-align: center;
     position: relative;
     width: 250px;
+  }
+
+  .image-from-about-me-experience {
+    width: 250px;
+    height: 250px;
   }
 
   .ul-list-me-section {
@@ -4257,6 +4266,11 @@ ul.popup-technologies li {
     text-align: center;
     position: relative;
     width: 300px;
+  }
+
+  .image-from-about-me-experience {
+    width: 290px;
+    height: 290px;
   }
 
   .socialMediaIcons {
