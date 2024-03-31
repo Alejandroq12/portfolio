@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -197,7 +196,7 @@ button:hover {
 }
 
 .main-description {
-  font-family: 'Poppins', serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4.2vw;
@@ -206,10 +205,10 @@ button:hover {
   text-align: start;
   margin-top: 0.6vw;
   padding: 0 6vw;
-  text-shadow: 5px 5px 15px rgba(218, 111, 18, 0.5),
-               -5px 5px 15px rgba(218, 111, 18, 0.5),
-               -5px -5px 15px rgba(218, 111, 18, 0.5),
-               5px -5px 15px rgba(218, 111, 18, 0.5);
+  text-shadow: 5px 5px 15px rgba(218, 111, 18, 0.2),
+               -5px 5px 15px rgba(218, 111, 18, 0.2),
+               -5px -5px 15px rgba(218, 111, 18, 0.2),
+               5px -5px 15px rgba(218, 111, 18, 0.2);
 }
 
 @keyframes ColorShift {
