@@ -240,7 +240,13 @@ button:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 2vw;
-  margin-left: -45vw;
+  margin-left: -13vw;
+}
+
+.social-media-icons {
+  width: 48px;
+  height: 48px;
+  padding: 14px;
 }
 
 .iconMedia:hover {
@@ -985,11 +991,6 @@ footer {
   flex-wrap: wrap;
   max-width: 24vw;
   margin: 0 auto;
-}
-
-.logo-container img {
-  width: 1.5vw;
-  margin: 1vw;
 }
 
 .logo-container img:hover {
@@ -1771,11 +1772,6 @@ ul.popup-technologies li {
     max-width: 100%;
   }
 
-  .logo-container img {
-    width: 3.5vw;
-    margin: 1.5vw;
-  }
-
   .footer_bottom_line {
     width: 24vw;
     height: 1vw;
@@ -2029,7 +2025,7 @@ ul.popup-technologies li {
   }
 
   .socialMediaIcons {
-    margin-left: -55vw;
+    margin-left: -34vw;
   }
 
   .my-icons-list {
@@ -2403,11 +2399,6 @@ ul.popup-technologies li {
     max-width: 100%;
   }
 
-  .logo-container img {
-    width: 3.5vw;
-    margin: 1.5vw;
-  }
-
   .footer_bottom_line {
     width: 22vw;
     height: 1vw;
@@ -2565,7 +2556,7 @@ ul.popup-technologies li {
     justify-content: center;
     position: absolute;
     left: 0;
-    margin: 8vw -1.6vw;
+    margin: 2.5vw -5vw;
   }
 
   .my-icons-list {
@@ -3043,11 +3034,6 @@ ul.popup-technologies li {
     max-width: 100%;
   }
 
-  .logo-container img {
-    width: 1.9vw;
-    margin: 1.5vw;
-  }
-
   .footer_bottom_line {
     width: 22vw;
     height: 1vw;
@@ -3257,7 +3243,7 @@ ul.popup-technologies li {
     justify-content: center;
     position: absolute;
     left: 0;
-    margin: 11vw 0.2vw;
+    margin: 3.4vw -3.6vw;
   }
 
   .my-icons-list {
@@ -3793,11 +3779,6 @@ ul.popup-technologies li {
     max-width: 100%;
   }
 
-  .logo-container img {
-    width: 1.5vw;
-    margin: 1.5vw;
-  }
-
   .footer_bottom_line {
     width: 22vw;
     height: 1vw;
@@ -4061,6 +4042,10 @@ ul.popup-technologies li {
   .experience-container {
     margin: 4% 0 0 -0.9%;
   }
+
+  .socialMediaIcons {
+    margin: 3.4vw -2.3vw;
+  }
 }
 
 /* Media query for large screens */
@@ -4272,6 +4257,15 @@ ul.popup-technologies li {
     text-align: center;
     position: relative;
     width: 300px;
+  }
+
+  .socialMediaIcons {
+    margin: 4vw -1.5vw;
+  }
+
+  .social-media-icons {
+    width: 55px;
+    height: 55px;
   }
 }
 
