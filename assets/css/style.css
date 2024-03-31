@@ -297,7 +297,6 @@ button:hover {
 
 .image_from_main_card {
   margin: 0 auto 8%;
-  width: calc(14rem + 1.5rem);
 }
 
 .main-card-title {
@@ -1567,7 +1566,8 @@ ul.popup-technologies li {
 
   .image_from_main_card {
     margin: 0.1rem auto 0.5rem;
-    width: calc(12rem + 1.5rem);
+    width: 270px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1622,7 +1622,7 @@ ul.popup-technologies li {
     border: none;
     padding: 12px;
     width: 36%;
-    margin: 0 auto;
+    margin: 15px auto;
     height: 48px;
     background: #943400;
     position: relative;
@@ -2127,6 +2127,7 @@ ul.popup-technologies li {
   }
 
   .main_card {
+    width: 90%;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -2134,7 +2135,8 @@ ul.popup-technologies li {
   }
 
   .image_from_main_card {
-    width: 16rem;
+    width: 350px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2171,7 +2173,7 @@ ul.popup-technologies li {
 
   .main_card ul.main-card-list-ul li.main-card-list-ul-li {
     padding: 2vw 3vw;
-    font-size: 3.5vw;
+    font-size: 3vw;
     line-height: 3vw;
     cursor: pointer;
   }
@@ -2184,7 +2186,7 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-size: 3.1vw;
+    font-size: 2.7vw;
     line-height: 0.5vw;
     padding: 1.4rem;
     width: 100%;
@@ -2631,7 +2633,8 @@ ul.popup-technologies li {
   }
 
   .image_from_main_card {
-    width: 12rem;
+    width: 350px;
+    height: 420px;
     margin: 0;
   }
 
@@ -3324,9 +3327,11 @@ ul.popup-technologies li {
   }
 
   .image_from_main_card {
-    width: 15rem;
+    width: 360px;
+    height: 425px;
     margin: 0;
   }
+
 
   .text-container {
     display: flex;
@@ -3909,6 +3914,12 @@ ul.popup-technologies li {
     display: none;
   }
 
+  .image_from_main_card {
+    width: 415px;
+    height: 465px;
+    margin-top: -5px;
+  }
+
   .card-container {
     margin-bottom: 9.5rem;
   }
@@ -4071,6 +4082,12 @@ ul.popup-technologies li {
 
   .card-container {
     margin-bottom: 10rem;
+  }
+
+  .image_from_main_card {
+    width: 520px;
+    height: 530px;
+    margin-top: -6px;
   }
 
   .main_card {
@@ -4303,6 +4320,13 @@ ul.popup-technologies li {
     margin-bottom: 10rem;
   }
 
+  .image_from_main_card {
+    width: 600px;
+    height: 750px;
+    margin-top: -35px;
+  }
+
+
   .main_card {
     margin-bottom: -220px;
   }
@@ -4481,6 +4505,12 @@ ul.popup-technologies li {
 
   .card-container {
     margin-bottom: 10rem;
+  }
+
+  .image_from_main_card {
+    width: 625px;
+    height: 775px;
+    margin-top: -35px;
   }
 
   .main_card {
