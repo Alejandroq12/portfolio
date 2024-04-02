@@ -141,7 +141,7 @@ button:hover {
 
 /* main section */
 .main-area {
-  background-image: url('../images/main_section/illustration-mobile.svg');
+  background-image: url('../images/main_section/Illustration-header2.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1435,8 +1435,8 @@ ul.popup-technologies li {
   /* main section */
   .main-area {
     min-height: 88vh;
-    background-size: 33%;
-    background-position: 100% 115%;
+    background-size: 60%;
+    background-position: 100% 100%;
   }
 
   .main-section {
@@ -1930,8 +1930,8 @@ ul.popup-technologies li {
   /* main section */
   .main-area {
     min-height: 115vh;
-    background-size: 33%;
-    background-position: 100% 109%;
+    background-size: 60%;
+    background-position: 100% 100%;
   }
 
   .main-section {
@@ -2435,10 +2435,10 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/Illustration-header.svg');
+    background-image: url('../images/main_section/Illustration-header2.svg');
     min-height: 110vh;
-    background-size: 45%;
-    background-position: 101% 80%;
+    background-size: 75%;
+    background-position: 101% 100%;
     position: relative;
   }
 
@@ -3118,10 +3118,10 @@ ul.popup-technologies li {
 
   /* main section */
   .main-area {
-    background-image: url('../images/main_section/Illustration-header.svg');
+    background-image: url('../images/main_section/Illustration-header2.svg');
     min-height: 115vh;
-    background-size: 46%;
-    background-position: 100% 80%;
+    background-size: 60%;
+    background-position: 100% 100%;
     position: relative;
   }
 
@@ -4387,7 +4387,8 @@ ul.popup-technologies li {
 /* Media query for large screens */
 @media only screen and (min-width: 1850px) {
   .main-area {
-    background-position: 110% 80%;
+    background-size: 60%;
+    background-position: 110% 100%;
   }
 
   .hamburger-icon.hidden {
