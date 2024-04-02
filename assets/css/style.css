@@ -627,9 +627,9 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url('../images/me_section/Frame.svg');
+  background-image: url('../images/me_section/Frame2.svg');
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 80%;
   background-position: 100% 21%;
   padding: 20px;
   margin: 0 auto;
@@ -1603,7 +1603,7 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-position: 100% 13%;
+    background-position: 100% 15%;
   }
 
   .about-me-title {
@@ -2207,8 +2207,8 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-size: 30%;
-    background-position: 100% 13%;
+    background-size: 60%;
+    background-position: 100% 15%;
   }
 
   .about-me-title {
@@ -2712,9 +2712,9 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/desktop-frame.svg');
-    background-size: 39%;
-    background-position: 100% 8%;
+    background-image: url('../images/me_section/Frame2.svg');
+    background-size: 50%;
+    background-position: 125% 8%;
   }
 
   .about-me-title {
@@ -3392,9 +3392,9 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-image: url('../images/me_section/desktop-frame.svg');
-    background-size: 39%;
-    background-position: 100% 8%;
+    background-image: url('../images/me_section/Frame2.svg');
+    background-size: 58%;
+    background-position: 100% 7%;
   }
 
   .about-me-title {
