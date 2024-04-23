@@ -53,13 +53,11 @@ const projects = [
 const projectsContainer = document.querySelector('.works-container');
 
 projects.forEach((project) => {
-  // Create a new card element
   const card = document.createElement('div');
   card.classList.add('work-card');
   card.setAttribute('tabindex', '0');
   card.setAttribute('aria-label', project.name);
 
-  // Fill in the card's HTML with the project's information
   card.innerHTML = `
     <h4 class="work-cards-title" tabindex="0">${project.name}</h4>
     <p class="work-cards-description" tabindex="0">${project.description}</p>
@@ -71,7 +69,6 @@ projects.forEach((project) => {
     </button>
   `;
 
-  // Append the card to the container
   projectsContainer.appendChild(card);
 });
 
