@@ -4,9 +4,7 @@
 <div align="center">
   <img src="./assets/images/logo/logo.png" alt="logo" width="800"  height="auto" />
   <br/>
-
   <h3><b>My Portfolio</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -195,6 +193,7 @@ You can deploy this project using GitHub pages:
 - [x] **I will add the desktop version**
 - [x] **I will add media queries to make it responsive**
 - [x] **I will use JavaScript to add interactivity**
+- [ ] **I will add a blog section.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -232,7 +231,7 @@ I would like to thank Wes Bos because I learned how to implement flexbox with hi
 
 - **Are you going to use React in the future?**
 
-  - Yes! I will transform this portfolio into a React App.
+  - Yes! I will transform this portfolio into a React.js App.
 
 - **Did you create this porfolio from scratch?**
 
