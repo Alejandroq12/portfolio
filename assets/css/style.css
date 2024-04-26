@@ -41,10 +41,11 @@ html {
   line-height: 6vw;
   background: -webkit-linear-gradient(45deg, #ffffff, #f0f0f0, #ff6b00);
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: subtleGradientShift 2s infinite ease-in-out, continuousGentleSwing 10s infinite alternate ease-in-out;
+  animation: subtleGradientShift 2s infinite ease-in-out,
+    continuousGentleSwing 10s infinite alternate ease-in-out;
   display: inline-block;
 }
 
@@ -54,7 +55,8 @@ html {
 }
 
 @keyframes subtleGradientShift {
-  0%, 100% {
+  0%,
+  100% {
     color: #fff;
     text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.2);
   }
@@ -65,7 +67,8 @@ html {
 }
 
 @keyframes continuousGentleSwing {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotateY(-21deg);
   }
   50% {
@@ -171,8 +174,7 @@ button:hover {
   margin-top: 10vw;
   text-align: start;
   padding: 0 6vw;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
-
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 
 .second-header {
@@ -186,9 +188,8 @@ button:hover {
   text-align: start;
   padding: 0 6vw;
   text-shadow: 10px 10px 25px rgb(218, 111, 18),
-  -10px 10px 25px rgb(218,111,18),
-  -10px -10px 25px rgb(218,111,18),
-  10px -10px 25px rgb(218,111,18);
+    -10px 10px 25px rgb(218, 111, 18), -10px -10px 25px rgb(218, 111, 18),
+    10px -10px 25px rgb(218, 111, 18);
 }
 
 .subtitle {
@@ -207,27 +208,47 @@ button:hover {
   margin-top: 0.6vw;
   padding: 0 6vw;
   text-shadow: 5px 5px 15px rgba(218, 111, 18, 0.5),
-               -5px 5px 15px rgba(218, 111, 18, 0.5),
-               -5px -5px 15px rgba(218, 111, 18, 0.5),
-               5px -5px 15px rgba(218, 111, 18, 0.5);
+    -5px 5px 15px rgba(218, 111, 18, 0.5),
+    -5px -5px 15px rgba(218, 111, 18, 0.5),
+    5px -5px 15px rgba(218, 111, 18, 0.5);
 }
 
 @keyframes ColorShift {
-  0% { color: #ff6b00; }
-  20% { color: #fff; }
-  40% { color: #ff6b00; }
-  60% { color: #fff; }
-  80% { color: #ff6b00; }
-  100% { color: #fff; }
+  0% {
+    color: #ff6b00;
+  }
+  20% {
+    color: #fff;
+  }
+  40% {
+    color: #ff6b00;
+  }
+  60% {
+    color: #fff;
+  }
+  80% {
+    color: #ff6b00;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 @keyframes Float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-.salute .main-header, .salute .second-header, .salute .main-description {
+.salute .main-header,
+.salute .second-header,
+.salute .main-description {
   animation: Float 7s ease-in-out infinite;
 }
 
@@ -292,7 +313,9 @@ button:hover {
   text-align: left;
   padding: 1rem;
   gap: 24px;
-  box-shadow: rgba(207,126,4,0.67) 5px 5px, rgba(207,126,4,0.67) 10px 10px, rgba(207,126,4,0.67) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(207, 126, 4, 0.67) 5px 5px, rgba(207, 126, 4, 0.67) 10px 10px,
+    rgba(207, 126, 4, 0.67) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .image_from_main_card {
@@ -411,12 +434,13 @@ button:hover {
   transition: all 0.3s ease;
   width: 327px;
   height: 386px;
-  box-shadow: rgba(207,126,4,0.67) 5px 5px, rgba(207,126,4,0.67) 10px 10px, rgba(207,126,4,0.67) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(207, 126, 4, 0.67) 5px 5px, rgba(207, 126, 4, 0.67) 10px 10px,
+    rgba(207, 126, 4, 0.67) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .work-card:nth-child(1) {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -425,8 +449,7 @@ button:hover {
 }
 
 .work-card:nth-child(2) {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -435,8 +458,7 @@ button:hover {
 }
 
 .work-card:nth-child(3) {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -445,8 +467,7 @@ button:hover {
 }
 
 .work-card:nth-child(4) {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -455,8 +476,7 @@ button:hover {
 }
 
 .work-card:nth-child(5) {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -465,8 +485,7 @@ button:hover {
 }
 
 .work-card:nth-child(6) {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0.9) 99.75%,
       rgba(38, 38, 38, 0.9) 99.94%
@@ -475,8 +494,7 @@ button:hover {
 }
 
 .work-card:nth-child(1):hover {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -485,8 +503,7 @@ button:hover {
 }
 
 .work-card:nth-child(2):hover {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -495,8 +512,7 @@ button:hover {
 }
 
 .work-card:nth-child(3):hover {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -505,8 +521,7 @@ button:hover {
 }
 
 .work-card:nth-child(4):hover {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -515,8 +530,7 @@ button:hover {
 }
 
 .work-card:nth-child(5):hover {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -525,8 +539,7 @@ button:hover {
 }
 
 .work-card:nth-child(6):hover {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       160.45deg,
       rgba(38, 38, 38, 0) 99.75%,
       rgba(38, 38, 38, 0) 99.94%
@@ -650,7 +663,7 @@ button:hover {
   align-self: center;
   margin-top: 22vw;
   margin-left: 5%;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 
 .description-me-section {
@@ -800,7 +813,7 @@ button:hover {
   font-size: 2.667rem;
   line-height: 1.375;
   color: #fff;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 
 .li-list-me-section {
@@ -1043,13 +1056,12 @@ body.popup-open::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:
-    rgba(
-      0,
-      0,
-      0,
-      0.7
-    ); /* Add a semi-transparent black background */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Add a semi-transparent black background */
 
   backdrop-filter: blur(5px); /* Apply the blur effect */
   z-index: 3004;
@@ -1259,7 +1271,7 @@ ul.popup-technologies li {
     width: 100%;
     margin: 8% -2% 0 -2%;
   }
-  
+
   .experience-container-image {
     position: relative;
     width: 160px;
@@ -1354,8 +1366,7 @@ ul.popup-technologies li {
     margin-bottom: 0.4rem;
     transform-origin: top;
     transform: rotateX(-90deg);
-    transition:
-      all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       background-color 0.15s ease;
   }
 
@@ -1473,8 +1484,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1483,8 +1493,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(2):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1493,8 +1502,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(3):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1503,8 +1511,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(4):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1513,8 +1520,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(5):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1523,8 +1529,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(6):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -1849,8 +1854,7 @@ ul.popup-technologies li {
     margin-bottom: 0.4rem;
     transform-origin: top;
     transform: rotateX(-90deg);
-    transition:
-      all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       background-color 0.15s ease;
   }
 
@@ -2004,8 +2008,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(1):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2014,8 +2017,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(2):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2024,8 +2026,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(3):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2034,8 +2035,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(4):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2044,8 +2044,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(5):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2054,8 +2053,7 @@ ul.popup-technologies li {
   }
 
   .work-card:nth-child(6):hover {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         160.45deg,
         rgba(38, 38, 38, 0.9) 99.75%,
         rgba(38, 38, 38, 0.9) 99.94%
@@ -2757,13 +2755,13 @@ ul.popup-technologies li {
   .experience-container {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 18px;
     padding: 20px;
     margin: 4% -2% 0 -2%;
   }
-  
+
   .experience-container-image {
     text-align: center;
     position: relative;
@@ -3243,7 +3241,6 @@ ul.popup-technologies li {
     margin: 0;
   }
 
-
   .text-container {
     display: flex;
     flex-direction: column;
@@ -3432,7 +3429,7 @@ ul.popup-technologies li {
   .experience-container {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 18px;
     padding: 20px;
@@ -4225,7 +4222,6 @@ ul.popup-technologies li {
     height: 750px;
     margin-top: -35px;
   }
-
 
   .main_card {
     margin-bottom: -220px;
