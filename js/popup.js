@@ -45,7 +45,9 @@ function updatePopup(project) {
   image.alt = project.name;
   description.textContent = project.description;
 
-  technologiesList.innerHTML = project.technologies.map((tech) => `<li>${tech}</li>`).join('');
+  technologiesList.innerHTML = project.technologies
+    .map((tech) => `<li>${tech}</li>`)
+    .join('');
 
   liveLinkButton.href = project.liveLink;
   sourceLinkButton.href = project.sourceLink;

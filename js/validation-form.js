@@ -10,13 +10,16 @@ const debounce = (func, wait) => {
 };
 
 function escapeHTML(unsafe) {
-  return unsafe.replace(/[&<"']/g, (m) => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;',
-  })[m]);
+  return unsafe.replace(
+    /[&<"']/g,
+    (m) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#039;',
+    }[m]),
+  );
 }
 
 function createCustomValidity(input, message) {
@@ -33,24 +36,27 @@ function createCustomValidity(input, message) {
   });
 }
 
-form.addEventListener('submit', debounce((event) => {
-  event.preventDefault();
+form.addEventListener(
+  'submit',
+  debounce((event) => {
+    event.preventDefault();
 
-  const nameInput = document.getElementById('name');
-  const emailInput = document.getElementById('email');
-  const emailValue = escapeHTML(emailInput.value); // Escape HTML characters
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const emailValue = escapeHTML(emailInput.value);
 
-  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+    const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 
-  if (!nameInput.validity.valid) {
-    createCustomValidity(nameInput, nameInput.title);
-  }
+    if (!nameInput.validity.valid) {
+      createCustomValidity(nameInput, nameInput.title);
+    }
 
-  if (!emailRegex.test(emailValue)) {
-    createCustomValidity(emailInput, emailInput.title);
-  }
+    if (!emailRegex.test(emailValue)) {
+      createCustomValidity(emailInput, emailInput.title);
+    }
 
-  if (form.checkValidity()) {
-    // Process the form submission.
-  }
-}, 500));
+    if (form.checkValidity()) {
+      // Process the form submission.
+    }
+  }, 500),
+);
