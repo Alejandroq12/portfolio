@@ -224,9 +224,9 @@ button:hover {
 }
 
 .main-description {
-  font-family: 'Crete Round', serif;
+  font-family: Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 4.2vw;
   line-height: 7vw;
   color: #fff;
