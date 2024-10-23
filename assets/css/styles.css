@@ -37,6 +37,10 @@ html {
   font-size: calc(20px + 0.390625vw);
 }
 
+body {
+  background: linear-gradient(to bottom, #c0c0c0, rgb(255, 255, 255));
+}
+
 /* header and nav bar */
 .header-container {
   display: flex;
@@ -44,8 +48,8 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1.8vw;
-  background-color: #3e3c3c;
-  box-shadow: 0.3vw 0.5vw 2.5vw black;
+  background: linear-gradient(to bottom, #c0c0c0, rgb(255, 255, 255));
+  box-shadow: 0.3vw 0.5vw 2.5vw #ff6b00;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -62,7 +66,7 @@ html {
   font-weight: 700;
   font-size: 4.5vw;
   line-height: 6vw;
-  background: -webkit-linear-gradient(45deg, #ffffff, #f0f0f0, #ff6b00);
+  background: -webkit-linear-gradient(45deg, #000000, #000000, #ff6b00);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -119,7 +123,7 @@ html {
 .list-item {
   list-style: none;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8vw;
   line-height: 2vw;
   margin: 0;
@@ -128,7 +132,7 @@ html {
 
 .list-item a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
 
 .list-item:hover,
@@ -137,11 +141,11 @@ button:hover {
 }
 
 .list-item:focus {
-  outline: 2px solid #fff;
+  outline: 2px solid #ff6b00;
 }
 
 .nav-items > li.list-item:focus {
-  outline: 2px solid #fff;
+  outline: 2px solid #ff6b00;
 }
 
 .list-item:focus a {
@@ -161,7 +165,7 @@ button:hover {
   width: 2.5vw;
   height: 0.3vw;
   margin: 1.3vw auto;
-  background-color: #e5e5e5;
+  background-color: black;
   border-radius: 0.2vw;
 }
 
@@ -173,7 +177,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #000;
+  background: radial-gradient(ellipse, rgb(125, 125, 125), rgb(61, 61, 61));
 }
 
 .main-section {
@@ -292,6 +296,11 @@ button:hover {
   padding: 14px;
 }
 
+.socialMediaIcons img {
+  background-color: black;
+  border-radius: 30%;
+}
+
 .iconMedia:hover {
   transform: translate(0.08vw, 0.08vw);
 }
@@ -354,7 +363,6 @@ button:hover {
 }
 
 .main_card {
-  background-color: white;
   text-align: left;
   padding: 1rem;
   gap: 24px;
@@ -678,7 +686,7 @@ button:hover {
 /* About me section */
 .about-me-main-container {
   width: 100%;
-  background-color: #000;
+  background: radial-gradient(ellipse, rgb(125, 125, 125), rgb(61, 61, 61));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -686,7 +694,6 @@ button:hover {
   align-items: center;
   gap: 1rem;
   background-repeat: no-repeat;
-  background-size: 80%;
   background-position: 100% 21%;
   padding: 20px;
   margin: 0 auto;
@@ -1029,8 +1036,14 @@ button:hover {
 /* footer section */
 footer {
   padding: 0.5vw;
-  background-color: #3e3c3c;
+  background: linear-gradient(to bottom, #c0c0c0, rgb(255, 255, 255));
   box-shadow: 0.3vw 0.5vw 2.5vw black;
+}
+
+footer img {
+  background-color: black;
+  border-radius: 30%;
+  margin: 4px;
 }
 
 .footer_top_line {
@@ -2248,7 +2261,6 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-size: 50%;
     background-position: 100% 15%;
   }
 
@@ -2758,7 +2770,6 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-size: 48%;
     background-position: 125% 8%;
   }
 
@@ -3441,7 +3452,6 @@ ul.popup-technologies li {
 
   /* About me section */
   .about-me-main-container {
-    background-size: 55%;
     background-position: 100% 7%;
   }
 
