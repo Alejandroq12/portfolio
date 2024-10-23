@@ -9,7 +9,7 @@ const popupTemplate = `
       <img src="./assets/images/icons/x.svg" alt="Close">
     </button>
     <h2 class="popup-header"></h2>
-    <img class="popup-image" alt="">
+    <img class="popup-image" alt="" loading="lazy">
     <p class="popup-description"></p>
     <ul class="popup-technologies"></ul>
     <div class="popup-buttons">
