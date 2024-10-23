@@ -454,9 +454,9 @@ button:hover {
 .button-icon {
   position: absolute;
   right: 0.5rem;
-  bottom: 0.8rem;
-  height: 18px;
-  width: 18px;
+  bottom: 0.6rem;
+  height: 27px;
+  width: 27px;
 }
 
 .button-from-main-card:hover .button-icon {
@@ -1647,7 +1647,7 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-size: 2.4vw;
+    font-size: 2.3vw;
     line-height: 0;
     width: 36%;
     margin: 15px auto;
@@ -1656,9 +1656,10 @@ ul.popup-technologies li {
   }
 
   .button-icon {
-    height: 18px;
-    width: 18px;
-    bottom: 0.8rem;
+    height: 27px;
+    width: 27px;
+    bottom: 0.6rem;
+    padding: 7px;
   }
 
   /* About me section */
@@ -2179,7 +2180,7 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-size: 2.7vw;
+    font-size: 2.6vw;
     line-height: 0.5vw;
     padding: 1.4rem;
     width: 100%;
@@ -2190,9 +2191,10 @@ ul.popup-technologies li {
   }
 
   .button-icon {
-    height: 18px;
-    width: 18px;
-    bottom: 0.9rem;
+    height: 27px;
+    width: 27px;
+    bottom: 0.8rem;
+    padding: 4px;
   }
 
   /* Main container with Flexbox */
@@ -2663,7 +2665,7 @@ ul.popup-technologies li {
   }
 
   .button-from-main-card {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     line-height: 0.5vw;
     padding: 0.6rem;
     width: 5rem;
@@ -2672,9 +2674,10 @@ ul.popup-technologies li {
   }
 
   .button-icon {
-    height: 18px;
-    width: 18px;
-    bottom: 0.6rem;
+    height: 27px;
+    width: 27px;
+    bottom: 0.3rem;
+    padding: 4px;
   }
 
   .works-container {
@@ -3360,9 +3363,10 @@ ul.popup-technologies li {
   }
 
   .button-icon {
-    height: 18px;
-    width: 18px;
-    bottom: 0.8rem;
+    height: 27px;
+    width: 27px;
+    bottom: 0.6rem;
+    padding: 3px;
   }
 
   .works-container {
