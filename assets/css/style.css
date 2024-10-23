@@ -276,7 +276,31 @@ button:hover {
 
 /* My works section */
 .work-section {
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.section-info-container {
+  padding: 0.5rem;
+  line-height: 1.6rem;
+  font-size: 16px;
+  color: #2a2a2a;
+  font-weight: 500;
+  background: linear-gradient(135deg, #f7f9fc, #e9eef3); 
+  border: 2px solid rgba(243, 29, 29, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 
+              0 6px 6px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 0 4%;
+}
+
+.section-info-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 
+              0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .second-title {
@@ -288,7 +312,7 @@ button:hover {
   align-items: center;
   color: #1c1a19;
   height: auto;
-  margin: 0 auto 4%;
+  margin: 8% auto 4%;
   text-align: center;
   text-shadow: 3px 4px 7px rgba(255, 111, 0, 0.8);
 }
@@ -1471,10 +1495,6 @@ ul.popup-technologies li {
     padding: 5px;
   }
 
-  .work-section {
-    margin-top: 4rem;
-  }
-
   .line_below_title {
     margin-bottom: 1rem;
   }
@@ -1985,15 +2005,18 @@ ul.popup-technologies li {
   }
 
   /* My works section */
-  .work-section {
-    margin-top: 15vh;
+  .section-info-container {
+    padding: 0.5rem;
+    line-height: 1.6rem;
+    font-size: 18px;
+    margin: 0 4%;
   }
 
   .second-title {
     font-size: 7vw;
     line-height: 23vw;
     height: auto;
-    margin-bottom: 3vw;
+    margin: 2% auto 2%;
   }
 
   .line_below_title {
@@ -2512,12 +2535,18 @@ ul.popup-technologies li {
     margin-left: 6vw;
   }
 
+  .section-info-container {
+    padding: 0.5rem;
+    line-height: 1.7rem;
+    font-size: 19px;
+    margin: 2% 4%;
+  }
+
   .second-title {
     font-size: 3.5vw;
     line-height: 23vw;
     height: auto;
-    margin-right: 2vw;
-    margin-left: -2vw;
+    margin: -3vw 2vw -2vw -2vw;
   }
 
   .line_below_title {
@@ -2526,7 +2555,7 @@ ul.popup-technologies li {
     background-color: #000;
     margin: 0;
     margin-right: 2vw;
-    transform: translateY(-0.5rem);
+    transform: translateY(0rem);
   }
 
   .card-container {
@@ -3195,12 +3224,18 @@ ul.popup-technologies li {
     margin-left: 6vw;
   }
 
+  .section-info-container {
+    padding: 0.5rem;
+    line-height: 1.6rem;
+    font-size: 18px;
+    margin: 1% 5%;
+  }
+
   .second-title {
     font-size: 4vw;
     line-height: 23vw;
     height: auto;
-    margin-right: 2vw;
-    margin-left: -2vw;
+    margin: -5vw 2vw -2vw -1vw;
   }
 
   .line_below_title {
@@ -3208,7 +3243,7 @@ ul.popup-technologies li {
     height: 1px;
     background-color: #000;
     margin: 0;
-    margin-right: 2vw;
+    margin-right: 0.5vw;
     transform: translateY(-0.6rem);
   }
 
@@ -3827,6 +3862,22 @@ ul.popup-technologies li {
     margin-top: -5px;
   }
 
+  .section-info-container {
+    font-size: 22px;
+    margin: 1% 5%;
+  }
+
+  .second-title {
+    font-size: 4vw;
+    line-height: 23vw;
+    height: auto;
+    margin: -6vw 2vw -2vw -1vw;
+  }
+
+  .line_below_title {
+    transform: translateY(-0.7rem);
+  }
+
   .card-container {
     margin-bottom: 9.5rem;
   }
@@ -3985,6 +4036,19 @@ ul.popup-technologies li {
 @media only screen and (min-width: 1366px) {
   .hamburger-icon.hidden {
     display: none;
+  }
+
+  .section-info-container {
+    font-size: 24px;
+    margin: 1% 5%;
+  }
+
+  .second-title {
+    margin: -6vw 2vw -2vw -1vw;
+  }
+
+  .line_below_title {
+    transform: translateY(-1.1em);
   }
 
   .card-container {
