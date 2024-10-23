@@ -122,7 +122,7 @@ body {
 
 .list-item {
   list-style: none;
-  font-family: 'Inter', sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 600;
   font-size: 1.8vw;
   line-height: 2vw;
@@ -190,9 +190,9 @@ button:hover {
 }
 
 .main-header {
-  font-family: 'Crete Round', serif;
+  font-family: Arial, serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   color: #ff6b00;
   font-size: 15vw;
   line-height: 18vw;
@@ -204,7 +204,7 @@ button:hover {
 }
 
 .second-header {
-  font-family: 'Roboto', serif;
+  font-family: Arial, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 6.5vw;
