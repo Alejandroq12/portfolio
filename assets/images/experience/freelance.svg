@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" viewBox="0 0 300 300" height="400" version="1.0">
+  <path fill="#fff" d="M-30-30h360v360H-30z"/>
+  <path fill="#001c42" d="M-30-30h360v360H-30z"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="50" fill="#ff914d" text-anchor="middle" dy=".35em">Freelancer</text>
+</svg>
