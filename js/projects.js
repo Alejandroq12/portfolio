@@ -19,6 +19,15 @@ const projects = [
     sourceLink: 'https://github.com/Alejandroq12/polyglot-talk',
   },
   {
+    name: 'The Recipes',
+    description:
+      'Not available! This project is being improved!',
+    image: 'assets/images/projects/pop-up/3.svg',
+    technologies: ['Rails', 'Postgres', 'Devise'],
+    liveLink: 'https://rails-recipes-app-5174969e2b0d.herokuapp.com',
+    sourceLink: 'https://github.com/Alejandroq12/recipe-app',
+  },
+  {
     name: 'The Bookstore.',
     description:
       'This app allows users to add and remove books, showcasing efficient state management and real-time data handling.',
