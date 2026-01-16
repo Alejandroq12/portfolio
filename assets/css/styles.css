@@ -225,19 +225,18 @@ body {
   display: block;
   width: 28px;
   height: 3px;
-  margin: 5px 0;
-  background: var(--dark);
+  margin: 4px 0;
+  background-color: var(--charcoal);
   border-radius: 3px;
   transition: all 0.4s var(--transition-smooth);
 }
 
 .hamburger-icon:hover .bar {
-  background: linear-gradient(90deg, var(--primary), var(--neon-orange));
   box-shadow: 0 0 10px var(--primary-glow);
 }
 
 .hamburger-icon:hover .bar:nth-child(1) { transform: translateX(4px); }
-.hamburger-icon:hover .bar:nth-child(3) { transform: translateX(-4px); }
+.hamburger-icon:hover .bar:nth-child(3) { transform: translateX(2px); }
 
 .hamburger-icon.hidden {
   display: none !important;
