@@ -368,62 +368,134 @@ body {
   border-radius: 50px;
 }
 
-.mail-logo {
+.contact-cta {
+  margin-left: 0.75rem;
+}
+
+.contact-cta a.mail-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  gap: 0.6rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
   background: linear-gradient(
     135deg,
-    rgba(255, 107, 0, 0.05) 0%,
-    rgba(255, 69, 0, 0.1) 100%
+    #ff5500 0%,
+    #ff3d00 25%,
+    #ff6b00 50%,
+    #ff8c00 75%,
+    #ff5500 100%
   );
-  border: 1px solid rgba(255, 107, 0, 0.15);
+  background-size: 300% 300%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   transition: all 0.4s var(--transition-elastic);
   position: relative;
   overflow: hidden;
+  box-shadow:
+    0 4px 20px rgba(255, 61, 0, 0.5),
+    0 2px 8px rgba(255, 107, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  animation: ctaPulse 2s ease-in-out infinite, ctaGradient 4s ease infinite;
 }
 
-.mail-logo::before {
+@keyframes ctaGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes ctaPulse {
+  0%, 100% {
+    box-shadow:
+      0 4px 20px rgba(255, 61, 0, 0.5),
+      0 2px 8px rgba(255, 107, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 6px 30px rgba(255, 61, 0, 0.7),
+      0 4px 15px rgba(255, 107, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      0 0 20px rgba(255, 107, 0, 0.4);
+  }
+}
+
+.contact-cta a.mail-logo::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
-    135deg,
-    var(--primary) 0%,
-    var(--neon-orange) 100%
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
   );
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  border-radius: 50%;
+  transition: left 0.5s ease;
 }
 
-.mail-logo img {
+.contact-cta a.mail-logo::after {
+  display: none;
+}
+
+.contact-cta a.mail-logo .mail-icon {
   width: 22px;
-  height: auto;
+  height: 22px;
+  color: var(--white);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
   transition: all 0.4s var(--transition-elastic);
-  filter: grayscale(80%) brightness(0.6);
   position: relative;
   z-index: 1;
+  flex-shrink: 0;
 }
 
-.mail-logo:hover {
-  transform: translateY(-3px) scale(1.1);
-  border-color: var(--primary);
+.contact-cta a.mail-logo img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+  transition: all 0.4s var(--transition-elastic);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.contact-cta a.mail-logo span {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-cta a.mail-logo:hover {
+  transform: translateY(-4px) scale(1.08);
+  border-color: rgba(255, 255, 255, 0.4);
   box-shadow:
-    0 8px 25px rgba(255, 107, 0, 0.25),
-    0 0 0 4px rgba(255, 107, 0, 0.1);
+    0 10px 40px rgba(255, 61, 0, 0.6),
+    0 6px 20px rgba(255, 107, 0, 0.4),
+    0 0 30px rgba(255, 107, 0, 0.5),
+    0 0 0 4px rgba(255, 107, 0, 0.2);
+  animation: ctaGradient 1.5s ease infinite;
 }
 
-.mail-logo:hover::before {
-  opacity: 1;
+.contact-cta a.mail-logo:hover::before {
+  left: 100%;
 }
 
-.mail-logo:hover img {
-  transform: rotate(10deg) scale(1.1);
-  filter: brightness(0) invert(1);
+.contact-cta a.mail-logo:hover .mail-icon,
+.contact-cta a.mail-logo:hover img {
+  transform: rotate(-10deg) scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
+}
+
+.contact-cta a.mail-logo:active {
+  transform: translateY(-2px) scale(1.04);
 }
 
 .hamburger-icon {
