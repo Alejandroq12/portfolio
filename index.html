@@ -225,62 +225,190 @@
       <div class="main-image"></div>
     </section>
   </main>
-  <!-- My works area -->
-  <section class="work-section" id="Portfolio" aria-label="Portfolio section">
-    <div class="section-info-container">
-      <p>All of the projects in my portfolio are built from scratch *no step-by step* tutorials, no copy and paste code. Instead of quick front-end demos, you’ll find console applications, SQL solutions, and full-stack systems that highlight rigorous problem-solving and architectural thinking. They may not be flashy if you’re only hunting for UI showcases, but they demonstrate the depth and versatility of my engineering skills.</p>
-
-      <!-- Backend portfolio note  -->
-      <p aria-label="Backend portfolio note" style="margin:12px 0 0; font-size:0.95rem; color:#334155;">
-        <span style="font-weight:700;">Backend Portfolio:</span>
-        <a href="https://www.boot.dev/u/bitterwood67" target="_blank" rel="noopener noreferrer" style="font-weight:700; text-decoration:underline; text-underline-offset:2px;">Boot.dev profile</a>
-        <span style="opacity:0.9;">— hands-on backend exercises and systems work.</span>
-      </p>
-      <!-- End backend portfolio note -->
+  <!-- Section Divider - Terminal Style -->
+  <div class="terminal-section-divider">
+    <div class="divider-ascii">
+<pre>
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║    ██████╗ ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗     ║
+║    ██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗    ║
+║    ██████╔╝██║  ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║    ║
+║    ██╔═══╝ ██║  ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║    ║
+║    ██║     ██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝    ║
+║    ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝     ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+</pre>
     </div>
+  </div>
 
-    <div class="section-title-container">
-      <h3 class="second-title" tabindex="0">My recent works.</h3>
-      <hr class="line_below_title" />
-    </div>
+  <!-- My works area - Full Terminal Experience -->
+  <section class="work-section terminal-portfolio" id="Portfolio" aria-label="Portfolio section">
+    <!-- Scanlines overlay -->
+    <div class="portfolio-scanlines"></div>
 
-    <div class="container-about-me">
-      <div class="card-container">
-        <div class="main_card">
-          <div class="image-container" tabindex="0">
-            <img class="image_from_main_card" src="./assets/images/projects/smart-city2.PNG" alt="My first project" loading="lazy"/>
+    <!-- Terminal Window -->
+    <div class="term-window">
+      <!-- Terminal Header Bar -->
+      <div class="term-header">
+        <div class="term-buttons">
+          <span class="term-btn term-close" title="exit"></span>
+          <span class="term-btn term-min" title="minimize"></span>
+          <span class="term-btn term-max" title="maximize"></span>
+        </div>
+        <div class="term-title">
+          <span class="term-title-icon">🐉</span>
+          julio@kali:~/projects — zsh — 180×45
+        </div>
+        <div class="term-tabs">
+          <span class="term-tab active">1:projects</span>
+          <span class="term-tab">2:vim</span>
+          <span class="term-tab">3:htop</span>
+        </div>
+      </div>
+
+      <!-- Visual Guide for Non-Technical Users -->
+      <div class="portfolio-visual-guide">
+        <div class="guide-badge">
+          <span class="guide-icon">📂</span>
+          <span class="guide-text">My Projects</span>
+        </div>
+        <p class="guide-subtitle">Click any project to see details</p>
+      </div>
+
+      <!-- Terminal Body -->
+      <div class="term-body">
+        <!-- System Info (neofetch style - Kali Linux) -->
+        <div class="term-neofetch">
+          <pre class="neofetch-ascii">
+<span class="kali-blue">..............                    </span><span class="nf-label">julio</span>@<span class="nf-value">kali</span>
+<span class="kali-blue">            ..,;:ccc,.            </span><span class="nf-separator">─────────────</span>
+<span class="kali-blue">          ......''';lxO.          </span><span class="nf-label">OS:</span> <span class="nf-value">Kali Linux x86_64</span>
+<span class="kali-blue">.....''''..googls'  ....;oOOX.   </span><span class="nf-label">Shell:</span> <span class="nf-value">zsh 5.9</span>
+<span class="kali-blue">       .gooo'  .c:;k..  .'ggg.    </span><span class="nf-label">Terminal:</span> <span class="nf-value">portfolio-term</span>
+<span class="kali-blue">        ....    ...     .....     </span><span class="nf-label">Projects:</span> <span class="nf-value">8 repositories</span>
+<span class="kali-blue">       .                          </span><span class="nf-label">Commits:</span> <span class="nf-value">1000+</span>
+<span class="kali-blue">                                  </span><span class="nf-label">Experience:</span> <span class="nf-value">5+ years</span>
+          </pre>
+        </div>
+
+        <!-- Command: Show projects -->
+        <div class="term-cmd-block">
+          <div class="term-prompt-line">
+            <span class="term-user">julio</span><span class="term-at">@</span><span class="term-host">kali</span>
+            <span class="term-separator">:</span><span class="term-path">~/projects</span>
+            <span class="term-git">(main)</span><span class="term-symbol">$</span>
+            <span class="term-command">cat README.md | head -n 5</span>
           </div>
-          <div class="text-container">
-            <h4 class="main-card-title" tabindex="0">Smart City Challenge</h4>
-               <p class="main-card-description" tabindex="0">
-                Built for students in partnership with Microsoft and Minecraft, this platform processed 1,000+ submissions using real-time scoring dashboards and end-to-end traceability, accelerating decision-making, boosting civic engagement, and showcasing El Salvador’s digital innovation.
-              </p>
-            <ul class="main-card-list-ul">
-              <li class="main-card-list-ul-li" tabindex="0">Nest.js</li>
-              <li class="main-card-list-ul-li" tabindex="0">Vue.js</li>
-              <li class="main-card-list-ul-li" tabindex="0">PostgreSQL</li>
-            </ul>
-            <div class="button-container">
-              <button class="button-from-main-card" type="button" aria-label="Not available" name="button from main card" tabindex="0">
-                Not available
-            </button>
-            <button class="button-from-main-card" type="button" aria-label="See project button" name="button from main card" tabindex="0" onclick="window.open('https://smartcity.innovacion.gob.sv/homepage', '_blank', 'noopener,noreferrer')">
-                Live Demo
-                <img src="./assets/images/icons/live3.png" alt="Live Demo icon" class="button-icon" loading="lazy">
-            </button>
+          <div class="term-output readme-output">
+            <p class="readme-line"><span class="md-h1"># Portfolio</span></p>
+            <p class="readme-line"><span class="md-text">All projects built from scratch — no tutorials, no copy-paste.</span></p>
+            <p class="readme-line"><span class="md-text">Console apps, SQL solutions, and full-stack systems.</span></p>
+            <p class="readme-line"><span class="md-link">[Backend Portfolio](https://boot.dev/u/bitterwood67)</span> → hands-on backend exercises</p>
+          </div>
+        </div>
+
+        <!-- Command: ls -la -->
+        <div class="term-cmd-block">
+          <div class="term-prompt-line">
+            <span class="term-user">julio</span><span class="term-at">@</span><span class="term-host">kali</span>
+            <span class="term-separator">:</span><span class="term-path">~/projects</span>
+            <span class="term-git">(main)</span><span class="term-symbol">$</span>
+            <span class="term-command">ls -la --color=auto</span>
+          </div>
+          <div class="term-output ls-output">
+            <p class="ls-line"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-user">julio</span> <span class="ls-size">4.0K</span> <span class="ls-date">Jan 16</span> <span class="ls-dir">.</span></p>
+            <p class="ls-line"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-user">julio</span> <span class="ls-size">4.0K</span> <span class="ls-date">Jan 16</span> <span class="ls-dir">..</span></p>
+            <p class="ls-line"><span class="ls-perm">-rw-r--r--</span> <span class="ls-user">julio</span> <span class="ls-size">2.1K</span> <span class="ls-date">Jan 16</span> <span class="ls-file">README.md</span></p>
+            <p class="ls-line"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-user">julio</span> <span class="ls-size">4.0K</span> <span class="ls-date">Jan 15</span> <span class="ls-featured">smart-city/</span> <span class="ls-tag">★ FEATURED</span></p>
+            <p class="ls-line"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-user">julio</span> <span class="ls-size">4.0K</span> <span class="ls-date">Jan 14</span> <span class="ls-dir">other-projects/</span></p>
+          </div>
+        </div>
+
+        <!-- Featured Project Section -->
+        <div class="term-cmd-block featured-block">
+          <div class="term-prompt-line">
+            <span class="term-user">julio</span><span class="term-at">@</span><span class="term-host">kali</span>
+            <span class="term-separator">:</span><span class="term-path">~/projects</span>
+            <span class="term-git">(main)</span><span class="term-symbol">$</span>
+            <span class="term-command">cd smart-city && cat package.json | jq '.project'</span>
+          </div>
+
+          <div class="term-project-card">
+            <div class="project-json-view">
+              <pre class="json-content">
+{
+  <span class="json-key">"name"</span>: <span class="json-string">"Smart City Challenge"</span>,
+  <span class="json-key">"type"</span>: <span class="json-string">"Full-Stack Platform"</span>,
+  <span class="json-key">"description"</span>: <span class="json-string">"Built for students in partnership with Microsoft
+                   and Minecraft. Processed 1,000+ submissions with
+                   real-time scoring and end-to-end traceability."</span>,
+  <span class="json-key">"tech_stack"</span>: [
+    <span class="json-tech">"Nest.js"</span>,
+    <span class="json-tech">"Vue.js"</span>,
+    <span class="json-tech">"PostgreSQL"</span>
+  ],
+  <span class="json-key">"status"</span>: <span class="json-success">"production"</span>,
+  <span class="json-key">"links"</span>: {
+    <span class="json-key">"live"</span>: <span class="json-url">"https://smartcity.innovacion.gob.sv"</span>,
+    <span class="json-key">"source"</span>: <span class="json-null">null</span> <span class="json-comment">// private repository</span>
+  }
+}</pre>
+            </div>
+            <div class="project-preview">
+              <div class="preview-header">
+                <span class="preview-icon">🖼</span> preview.png
+              </div>
+              <img class="preview-image" src="./assets/images/projects/smart-city2.PNG" alt="Smart City Challenge" loading="lazy"/>
+            </div>
+          </div>
+
+          <div class="term-actions">
+            <div class="term-prompt-line action-line">
+              <span class="term-symbol">$</span>
+              <button class="term-action-btn disabled" disabled>
+                <span class="btn-icon">⊘</span> git clone <span class="btn-muted"># private</span>
+              </button>
+              <button class="term-action-btn primary" onclick="window.open('https://smartcity.innovacion.gob.sv/homepage', '_blank', 'noopener,noreferrer')">
+                <span class="btn-icon">→</span> xdg-open $LIVE_URL
+              </button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="works-section" aria-label="Works section">
-        <div class="works-container" aria-label="Works container">
-          <!-- Project cards will be added here dynamically -->
-        </div>
-        <div class="wrapper">
-          <div id="popup-container">
-            <!-- Contenido del popup -->
+
+        <!-- More Projects -->
+        <div class="term-cmd-block">
+          <div class="term-prompt-line">
+            <span class="term-user">julio</span><span class="term-at">@</span><span class="term-host">kali</span>
+            <span class="term-separator">:</span><span class="term-path">~/projects</span>
+            <span class="term-git">(main)</span><span class="term-symbol">$</span>
+            <span class="term-command">find ./other-projects -type d -maxdepth 1 | xargs -I {} sh -c 'echo "=== {} ===" && cat {}/info.json 2>/dev/null'</span>
           </div>
         </div>
+
+        <!-- Projects Grid -->
+        <div class="term-projects-grid">
+          <div class="works-container" aria-label="Works container">
+            <!-- Project cards will be added here dynamically -->
+          </div>
+        </div>
+
+        <!-- Status line -->
+        <div class="term-status-bar">
+          <span class="status-mode">-- NORMAL --</span>
+          <span class="status-file">~/projects</span>
+          <span class="status-git">⎇ main</span>
+          <span class="status-position">8 projects | 1000+ commits</span>
+          <span class="status-time" id="terminal-time">00:00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Container -->
+    <div class="popup-wrapper">
+      <div id="popup-container">
+        <!-- Contenido del popup -->
       </div>
     </div>
   </section>
