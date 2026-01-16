@@ -972,7 +972,7 @@ body {
 
 .ul-list-me-section {
   list-style: none;
-  padding: 2.5rem;
+  padding: 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -983,63 +983,67 @@ body {
 .list-titles-two,
 .list-titles-three {
   font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  font-size: 1.25rem;
   color: var(--white);
-  text-shadow: 0 0 30px rgba(255, 107, 0, 0.3);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  letter-spacing: -0.02em;
+  gap: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
-.list-titles-one::before {
-  content: '\25C6';
-  color: var(--primary);
-  font-size: 1.2em;
-  filter: drop-shadow(0 0 10px var(--primary-glow));
-}
-
-.list-titles-two::before {
-  content: '\25A0';
-  color: var(--primary);
-  font-size: 1em;
-  filter: drop-shadow(0 0 10px var(--primary-glow));
-}
-
+.list-titles-one::before,
+.list-titles-two::before,
 .list-titles-three::before {
-  content: '\25CF';
-  color: var(--primary);
-  font-size: 1.2em;
-  filter: drop-shadow(0 0 10px var(--primary-glow));
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, var(--primary), var(--neon-orange));
+  border-radius: 2px;
+  box-shadow: 0 0 12px var(--primary-glow);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.column ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .li-list-me-section {
   font-family: var(--font-primary);
-  font-size: 1.1rem;
-  line-height: 2.2;
-  color: rgba(255, 255, 255, 0.85);
-  margin-left: 2.5rem;
-  position: relative;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.15) 0%, rgba(255, 69, 0, 0.08) 100%);
+  border: 1px solid rgba(255, 107, 0, 0.25);
+  border-radius: 25px;
+  margin: 0;
   transition: all 0.3s var(--transition-smooth);
-}
-
-.li-list-me-section::before {
-  content: '\2192';
-  position: absolute;
-  left: -1.5rem;
-  color: var(--primary);
-  transition: transform 0.3s var(--transition-elastic);
+  cursor: default;
 }
 
 .li-list-me-section:hover {
+  transform: translateY(-3px) scale(1.05);
+  border-color: var(--primary);
+  box-shadow: 0 8px 20px rgba(255, 107, 0, 0.3);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--neon-orange) 100%);
   color: var(--white);
-  transform: translateX(5px);
-}
-
-.li-list-me-section:hover::before {
-  transform: translateX(3px);
 }
 
 .about-me-section {
@@ -1076,26 +1080,62 @@ body {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .column {
-  background: var(--glass-white);
-  border-radius: 16px;
-  padding: 2rem;
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-radius: 20px;
+  padding: 1.75rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 107, 0, 0.15);
   transition: all 0.4s var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--neon-orange), var(--accent-gold));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.column::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
 .column:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 107, 0, 0.3);
-  transform: translateY(-5px);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border-color: var(--primary);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 107, 0, 0.15);
+}
+
+.column:hover::before {
+  opacity: 1;
+}
+
+.column:hover::after {
+  opacity: 1;
 }
 
 .contact-form {
@@ -1428,49 +1468,29 @@ button.popup-close:hover img {
   justify-content: center;
   gap: 0.6rem;
   padding: 0.875rem 1.75rem;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--neon-orange) 100%);
   border: none;
   border-radius: 12px;
   font-family: var(--font-primary);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.4s var(--transition-smooth);
-  position: relative;
-  overflow: hidden;
-}
-
-.popup-button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--dark) 0%, var(--charcoal) 100%);
-  opacity: 0;
-  transition: opacity 0.4s var(--transition-smooth);
-}
-
-.popup-button:hover::before {
-  opacity: 1;
+  transition: all 0.3s var(--transition-smooth);
 }
 
 .popup-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.popup-button span {
-  position: relative;
-  z-index: 1;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 0, 0.4);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--charcoal) 100%);
+  color: var(--white);
 }
 
 .popup-link-logo {
   width: 18px;
   height: 18px;
   filter: brightness(0) invert(1);
-  position: relative;
-  z-index: 1;
 }
 
 button {
@@ -1687,12 +1707,21 @@ button:disabled {
   .list-titles-one,
   .list-titles-two,
   .list-titles-three {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .li-list-me-section {
-    font-size: 0.95rem;
-    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .skills-container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .column {
+    padding: 1.25rem;
   }
 
   .contact-form {
