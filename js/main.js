@@ -2,6 +2,7 @@ import './projects.js';
 import './popup.js';
 import './validation-form.js';
 import './form-data.js';
+import './matrix.js';
 
 const hamburgerButton = document.querySelector('.hamburger-icon');
 const mobileMenu = document.querySelector('#mobile-menu');

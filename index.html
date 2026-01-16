@@ -144,6 +144,7 @@
   <main class="main-area">
     <section class="main-section">
       <div class="terminal-container">
+        <canvas id="matrix-rain" class="matrix-canvas"></canvas>
         <div class="terminal-header">
           <div class="terminal-buttons">
             <span class="terminal-btn close"></span>
@@ -158,21 +159,21 @@
         <div class="terminal-body">
           <div class="terminal-line terminal-info">
             <span class="terminal-prompt">$</span>
-            <span class="terminal-command">cat welcome.txt</span>
+            <span class="terminal-command typing" data-text="cat welcome.txt">cat welcome.txt</span>
           </div>
           <div class="salute">
             <h2 class="main-header" tabindex="0">
               <span class="code-comment">// greeting</span>
-              Hello!<span class="subtitle">I'm <span class="color-shift">J</span><span class="color-shift">u</span><span class="color-shift">l</span><span class="color-shift">i</span><span class="color-shift">o</span>.</span>
+              Hello!<span class="subtitle">I'm <span class="color-shift glitch" data-text="J">J</span><span class="color-shift glitch" data-text="u">u</span><span class="color-shift glitch" data-text="l">l</span><span class="color-shift glitch" data-text="i">i</span><span class="color-shift glitch" data-text="o">o</span>.</span>
             </h2>
             <div class="terminal-line">
               <span class="terminal-prompt">$</span>
-              <span class="terminal-command">echo $ROLE</span>
+              <span class="terminal-command typing" data-text="echo $ROLE">echo $ROLE</span>
             </div>
             <h3 class="second-header" tabindex="0">I'm a Full-Stack Web Developer.</h3>
             <div class="terminal-line">
               <span class="terminal-prompt">$</span>
-              <span class="terminal-command">cat about.md</span>
+              <span class="terminal-command typing" data-text="cat about.md">cat about.md</span>
             </div>
             <p class="main-description" tabindex="0">
               Excited to solve coding challenges with a blend of creativity
@@ -182,7 +183,7 @@
           </div>
           <div class="terminal-line connect-line">
             <span class="terminal-prompt">$</span>
-            <span class="terminal-command">./connect.sh --social</span>
+            <span class="terminal-command typing" data-text="./connect.sh --social">./connect.sh --social</span>
           </div>
           <div class="socialMediaIcons left-column" aria-label="Social media icons">
             <ul class="my-icons-list">
@@ -214,6 +215,12 @@
           </div>
         </div>
         <div class="terminal-scanlines"></div>
+        <div class="terminal-status-bar">
+          <span class="status-item"><span class="status-icon">⚡</span> zsh</span>
+          <span class="status-item"><span class="status-icon">📁</span> ~/portfolio</span>
+          <span class="status-item"><span class="status-icon">🌿</span> main</span>
+          <span class="status-item status-right"><span class="status-icon">✓</span> <span class="status-text">ready</span></span>
+        </div>
       </div>
       <div class="main-image"></div>
     </section>
