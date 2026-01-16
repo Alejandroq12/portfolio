@@ -465,94 +465,123 @@
   </section>
   <!-- About me section -->
   <section class="about-me-main-container" id="About" aria-label="About me section">
-    <header>
-      <h3 class="about-me-title" tabindex="0">About me.</h3>
-    </header>
-    <div class="description-me-section" aria-label="About me description">
-      <p tabindex="0">
-        Merging tech skills with entrepreneurial insight, I've navigated
-        diverse sectors, emphasizing continuous learning and innovation.
-        Committed to excellence, I aim to transform ideas into successful realities.
-      </p>
-      <a href="https://www.linkedin.com/in/jqdeveloper/" target="_blank"
-        rel="noopener noreferrer">
-        <button button="button" class="button-me-section" name="Go to my LinkedIn" aria-label="Go to my LinkedIn"
-          type="submit" tabindex="0">
-          My LinkedIn
-        </button>
-      </a>
+    <div class="about-section-header">
+      <span class="about-section-number">02</span>
+      <div class="about-header-line"></div>
+      <h2 class="about-section-title">About Me</h2>
+      <div class="about-header-line"></div>
     </div>
-    <hr class="line-from-about-me" />
-    <div class="experience">
-      <h3 class="about-me-title about-me-title-experience" tabindex="0">Experience.</h3>
-      <div class="experience-container" aria-label="Experience container">
-        <div class="experience-container-image">
+
+    <!-- Main Content Card -->
+    <div class="about-content-wrapper">
+      <div class="about-intro-card">
+        <div class="intro-accent"></div>
+        <div class="intro-content">
+          <p class="intro-text" tabindex="0">
+            Merging tech skills with entrepreneurial insight, I've navigated
+            diverse sectors, emphasizing continuous learning and innovation.
+            Committed to excellence, I aim to transform ideas into successful realities.
+          </p>
+          <a href="https://www.linkedin.com/in/jqdeveloper/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+            <span class="btn-icon-linkedin">in</span>
+            <span class="btn-text">Connect on LinkedIn</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="about-experience-section">
+      <h3 class="about-subtitle" tabindex="0">
+        <span class="subtitle-icon">💼</span>
+        Experience
+      </h3>
+      <div class="experience-cards" aria-label="Experience container">
+        <div class="exp-card">
           <a href="https://www.microverse.org/" aria-label="Microverse inc" tabindex="0"
-             class="tooltip" data-tooltip="Microverse" target="_blank" rel="noopener noreferrer">
-            <img class="image-from-about-me-experience" src="./assets/images/experience/microverse.svg"
-                 alt="Job experience icon at Microverse" loading="lazy"/>
+             target="_blank" rel="noopener noreferrer">
+            <div class="exp-card-inner">
+              <img class="exp-logo" src="./assets/images/experience/microverse.svg"
+                   alt="Job experience icon at Microverse" loading="lazy"/>
+              <span class="exp-name">Microverse</span>
+              <span class="exp-role">Code Reviewer</span>
+            </div>
           </a>
         </div>
-        <div class="experience-container-image">
+        <div class="exp-card">
           <a href="https://www.innovacion.gob.sv/" aria-label="Secretaria de innovacion" tabindex="0"
-             class="tooltip" data-tooltip="Government of El Salvador" target="_blank" rel="noopener noreferrer">
-            <img class="image-from-about-me-experience" src="./assets/images/experience/secre.svg"
-                 alt="Job experience icon at the Government of El Salvador" loading="lazy"/>
+             target="_blank" rel="noopener noreferrer">
+            <div class="exp-card-inner">
+              <img class="exp-logo" src="./assets/images/experience/secre.svg"
+                   alt="Job experience icon at the Government of El Salvador" loading="lazy"/>
+              <span class="exp-name">Government of El Salvador</span>
+              <span class="exp-role">Full-Stack Developer</span>
+            </div>
           </a>
         </div>
-        <div class="experience-container-image">
-          <a href="#Portfolio" aria-label="Freelance" tabindex="0"
-             class="tooltip" data-tooltip="Freelance" target="_blank" rel="noopener noreferrer">
-            <img class="image-from-about-me-experience" src="./assets/images/experience/freelance.svg" 
-                 alt="Job experience icon as Frelancer" loading="lazy"/>
+        <div class="exp-card">
+          <a href="#Portfolio" aria-label="Freelance" tabindex="0">
+            <div class="exp-card-inner">
+              <img class="exp-logo" src="./assets/images/experience/freelance.svg"
+                   alt="Job experience icon as Frelancer" loading="lazy"/>
+              <span class="exp-name">Freelance</span>
+              <span class="exp-role">Independent Developer</span>
+            </div>
           </a>
         </div>
       </div>
     </div>
-    </div>
-    <hr class="line-from-about-me" />
-    <div class="ul-list-me-section">
-      <div class="container skills-container">
-        <div class="column">
-          <div class="main-li-list-me-section">
-            <h4 class="list-titles-one" tabindex="0">Languages</h4>
-            <ul>
-              <li class="li-list-me-section" tabindex="0" aria-label="HTML">C#</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="JavaScript">JavaScript</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="Ruby">Ruby</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="SQL">SQL</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="Python">Python</li>
-            </ul>
+
+    <!-- Skills Section -->
+    <div class="about-skills-section">
+      <h3 class="about-subtitle" tabindex="0">
+        <span class="subtitle-icon">⚡</span>
+        Tech Stack
+      </h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="skill-icon">💻</span>
+            <h4 class="skill-category-title" tabindex="0">Languages</h4>
           </div>
+          <ul class="skill-tags">
+            <li class="skill-tag" tabindex="0">C#</li>
+            <li class="skill-tag" tabindex="0">JavaScript</li>
+            <li class="skill-tag" tabindex="0">Ruby</li>
+            <li class="skill-tag" tabindex="0">SQL</li>
+            <li class="skill-tag" tabindex="0">Python</li>
+          </ul>
         </div>
-        <div class="column">
-          <div>
-            <h4 class="list-titles-two" tabindex="0">Frameworks</h4>
-            <ul>
-              <li class="li-list-me-section" tabindex="0" aria-label="Bootstrap">.NET</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="React.js">React.js</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="Ruby on Rails">Ruby on Rails</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="RSpec">RSpec</li>
-            </ul>
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="skill-icon">🚀</span>
+            <h4 class="skill-category-title" tabindex="0">Frameworks</h4>
           </div>
+          <ul class="skill-tags">
+            <li class="skill-tag" tabindex="0">.NET</li>
+            <li class="skill-tag" tabindex="0">React.js</li>
+            <li class="skill-tag" tabindex="0">Ruby on Rails</li>
+            <li class="skill-tag" tabindex="0">RSpec</li>
+          </ul>
         </div>
-        <div class="column">
-          <div>
-            <h4 class="list-titles-three" tabindex="0">Skills</h4>
-            <ul>
-              <li class="li-list-me-section" tabindex="0" aria-label="CodeKit">CodeKit</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="GitHub">GitHub</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="CodePen">CodePen</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="GitLab">GitLab</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="Terminal">Terminal</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="GIT">GIT</li>
-              <li class="li-list-me-section" tabindex="0" aria-label="webpack">webpack</li>
-            </ul>
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="skill-icon">🛠</span>
+            <h4 class="skill-category-title" tabindex="0">Tools</h4>
           </div>
+          <ul class="skill-tags">
+            <li class="skill-tag" tabindex="0">GitHub</li>
+            <li class="skill-tag" tabindex="0">GitLab</li>
+            <li class="skill-tag" tabindex="0">Terminal</li>
+            <li class="skill-tag" tabindex="0">GIT</li>
+            <li class="skill-tag" tabindex="0">webpack</li>
+            <li class="skill-tag" tabindex="0">Docker</li>
+          </ul>
         </div>
-        </ul>
       </div>
-      <p>***The lowercase 'w' in 'webpack' is intentional and aligns with the official naming convention.***</p>
+      <p class="skills-note">*The lowercase 'w' in 'webpack' is intentional and aligns with the official naming convention.</p>
+    </div>
   </section>
   <!-- Form section -->
   <section class="contact-form" id="Contact" aria-label="Contact form section">
