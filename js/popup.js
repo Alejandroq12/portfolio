@@ -56,9 +56,18 @@ function updatePopup(project) {
   bodyEl.classList.add('popup-open');
 }
 
+const workCards = document.querySelectorAll('.work-card');
+workCards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    updatePopup(projects[index]);
+  });
+});
+
+
 const seeProjectButtons = document.querySelectorAll('.button-card');
 seeProjectButtons.forEach((button, index) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (e) => {
+    e.stopPropagation();
     updatePopup(projects[index]);
   });
 });
