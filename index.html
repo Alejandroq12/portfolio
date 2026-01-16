@@ -463,124 +463,286 @@
       </div>
     </div>
   </section>
-  <!-- About me section -->
-  <section class="about-me-main-container" id="About" aria-label="About me section">
-    <div class="about-section-header">
-      <span class="about-section-number">02</span>
-      <div class="about-header-line"></div>
-      <h2 class="about-section-title">About Me</h2>
-      <div class="about-header-line"></div>
-    </div>
+  <!-- About me section - Terminal Theme -->
+  <section class="about-terminal-section" id="About" aria-label="About me section">
+    <!-- Scanlines overlay -->
+    <div class="about-scanlines"></div>
 
-    <!-- Main Content Card -->
-    <div class="about-content-wrapper">
-      <div class="about-intro-card">
-        <div class="intro-accent"></div>
-        <div class="intro-content">
-          <p class="intro-text" tabindex="0">
-            Merging tech skills with entrepreneurial insight, I've navigated
-            diverse sectors, emphasizing continuous learning and innovation.
-            Committed to excellence, I aim to transform ideas into successful realities.
-          </p>
-          <a href="https://www.linkedin.com/in/jqdeveloper/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-            <span class="btn-icon-linkedin">in</span>
-            <span class="btn-text">Connect on LinkedIn</span>
-            <span class="btn-arrow">→</span>
-          </a>
+    <!-- Visual Guide Header -->
+    <div class="about-visual-guide">
+      <div class="guide-header">
+        <span class="guide-number">02</span>
+        <div class="guide-content">
+          <h2 class="guide-title">About Me</h2>
+          <p class="guide-subtitle">Developer profile — scroll to discover</p>
         </div>
+      </div>
+      <div class="guide-badges">
+        <span class="guide-badge">👨‍💻 Developer</span>
+        <span class="guide-badge">🌎 Remote</span>
+        <span class="guide-badge">💼 Available</span>
       </div>
     </div>
 
-    <!-- Experience Section -->
-    <div class="about-experience-section">
-      <h3 class="about-subtitle" tabindex="0">
-        <span class="subtitle-icon">💼</span>
-        Experience
-      </h3>
-      <div class="experience-cards" aria-label="Experience container">
-        <div class="exp-card">
-          <a href="https://www.microverse.org/" aria-label="Microverse inc" tabindex="0"
-             target="_blank" rel="noopener noreferrer">
-            <div class="exp-card-inner">
-              <img class="exp-logo" src="./assets/images/experience/microverse.svg"
-                   alt="Job experience icon at Microverse" loading="lazy"/>
-              <span class="exp-name">Microverse</span>
-              <span class="exp-role">Code Reviewer</span>
-            </div>
-          </a>
+    <!-- Terminal Window -->
+    <div class="about-term-window">
+      <!-- Terminal Header -->
+      <div class="about-term-header">
+        <div class="about-term-buttons">
+          <span class="about-term-btn close"></span>
+          <span class="about-term-btn minimize"></span>
+          <span class="about-term-btn maximize"></span>
         </div>
-        <div class="exp-card">
-          <a href="https://www.innovacion.gob.sv/" aria-label="Secretaria de innovacion" tabindex="0"
-             target="_blank" rel="noopener noreferrer">
-            <div class="exp-card-inner">
-              <img class="exp-logo" src="./assets/images/experience/secre.svg"
-                   alt="Job experience icon at the Government of El Salvador" loading="lazy"/>
-              <span class="exp-name">Government of El Salvador</span>
-              <span class="exp-role">Full-Stack Developer</span>
-            </div>
-          </a>
+        <div class="about-term-title">
+          <span class="about-term-icon">🐉</span>
+          julio@kali:~/about — zsh — 180×45
         </div>
-        <div class="exp-card">
-          <a href="#Portfolio" aria-label="Freelance" tabindex="0">
-            <div class="exp-card-inner">
-              <img class="exp-logo" src="./assets/images/experience/freelance.svg"
-                   alt="Job experience icon as Frelancer" loading="lazy"/>
-              <span class="exp-name">Freelance</span>
-              <span class="exp-role">Independent Developer</span>
-            </div>
-          </a>
+        <div class="about-term-tabs">
+          <span class="about-term-tab active">1:profile</span>
+          <span class="about-term-tab">2:skills</span>
         </div>
       </div>
-    </div>
 
-    <!-- Skills Section -->
-    <div class="about-skills-section">
-      <h3 class="about-subtitle" tabindex="0">
-        <span class="subtitle-icon">⚡</span>
-        Tech Stack
-      </h3>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-icon">💻</span>
-            <h4 class="skill-category-title" tabindex="0">Languages</h4>
+      <!-- Terminal Body -->
+      <div class="about-term-body">
+        <!-- Neofetch Command -->
+        <div class="about-cmd-block">
+          <div class="about-prompt-line">
+            <span class="about-user">julio</span><span class="about-at">@</span><span class="about-host">kali</span>
+            <span class="about-sep">:</span><span class="about-path">~/about</span>
+            <span class="about-git">(main)</span><span class="about-symbol">$</span>
+            <span class="about-command">neofetch --developer</span>
           </div>
-          <ul class="skill-tags">
-            <li class="skill-tag" tabindex="0">C#</li>
-            <li class="skill-tag" tabindex="0">JavaScript</li>
-            <li class="skill-tag" tabindex="0">Ruby</li>
-            <li class="skill-tag" tabindex="0">SQL</li>
-            <li class="skill-tag" tabindex="0">Python</li>
-          </ul>
         </div>
-        <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-icon">🚀</span>
-            <h4 class="skill-category-title" tabindex="0">Frameworks</h4>
+
+        <!-- Neofetch Output with ASCII Art -->
+        <div class="about-neofetch-output">
+          <div class="neofetch-container">
+            <pre class="ascii-art">
+<span class="ascii-orange"> ██╗██╗   ██╗██╗     ██╗ ██████╗ </span>
+<span class="ascii-orange"> ██║██║   ██║██║     ██║██╔═══██╗</span>
+<span class="ascii-orange"> ██║██║   ██║██║     ██║██║   ██║</span>
+<span class="ascii-orange"> ██║██║   ██║██║     ██║██║   ██║</span>
+<span class="ascii-orange"> ██║╚██████╔╝███████╗██║╚██████╔╝</span>
+<span class="ascii-orange"> ╚═╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ </span></pre>
+            <div class="neofetch-info">
+              <p class="nf-title"><span class="nf-user">julio</span>@<span class="nf-hostname">developer</span></p>
+              <p class="nf-separator">─────────────────────</p>
+              <p class="nf-row"><span class="nf-label">Role:</span> <span class="nf-value">Full-Stack Developer</span></p>
+              <p class="nf-row"><span class="nf-label">Experience:</span> <span class="nf-value">5+ years</span></p>
+              <p class="nf-row"><span class="nf-label">Location:</span> <span class="nf-value">El Salvador 🇸🇻</span></p>
+              <p class="nf-row"><span class="nf-label">Languages:</span> <span class="nf-value">EN / ES / FR</span></p>
+              <p class="nf-row"><span class="nf-label">Status:</span> <span class="nf-status">● Available for hire</span></p>
+              <p class="nf-row"><span class="nf-label">Commits:</span> <span class="nf-value">1000+</span></p>
+              <p class="nf-row"><span class="nf-label">Shell:</span> <span class="nf-value">zsh 5.9</span></p>
+              <div class="nf-colors">
+                <span class="color-block c1"></span>
+                <span class="color-block c2"></span>
+                <span class="color-block c3"></span>
+                <span class="color-block c4"></span>
+                <span class="color-block c5"></span>
+                <span class="color-block c6"></span>
+                <span class="color-block c7"></span>
+                <span class="color-block c8"></span>
+              </div>
+            </div>
           </div>
-          <ul class="skill-tags">
-            <li class="skill-tag" tabindex="0">.NET</li>
-            <li class="skill-tag" tabindex="0">React.js</li>
-            <li class="skill-tag" tabindex="0">Ruby on Rails</li>
-            <li class="skill-tag" tabindex="0">RSpec</li>
-          </ul>
         </div>
-        <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-icon">🛠</span>
-            <h4 class="skill-category-title" tabindex="0">Tools</h4>
+
+        <!-- Visual Section Label - Bio -->
+        <div class="about-section-label">
+          <div class="section-label-icon">📝</div>
+          <div class="section-label-content">
+            <span class="section-label-title">Bio</span>
+            <span class="section-label-desc">Who I am</span>
           </div>
-          <ul class="skill-tags">
-            <li class="skill-tag" tabindex="0">GitHub</li>
-            <li class="skill-tag" tabindex="0">GitLab</li>
-            <li class="skill-tag" tabindex="0">Terminal</li>
-            <li class="skill-tag" tabindex="0">GIT</li>
-            <li class="skill-tag" tabindex="0">webpack</li>
-            <li class="skill-tag" tabindex="0">Docker</li>
-          </ul>
+        </div>
+
+        <!-- Cat Bio Command -->
+        <div class="about-cmd-block">
+          <div class="about-prompt-line">
+            <span class="about-user">julio</span><span class="about-at">@</span><span class="about-host">kali</span>
+            <span class="about-sep">:</span><span class="about-path">~/about</span>
+            <span class="about-git">(main)</span><span class="about-symbol">$</span>
+            <span class="about-command">cat bio.md</span>
+          </div>
+          <div class="about-output bio-output">
+            <div class="bio-card">
+              <p class="bio-text">
+                <span class="bio-quote">"</span>Merging tech skills with entrepreneurial insight, I've navigated
+                diverse sectors, emphasizing continuous learning and innovation.
+                Committed to excellence, I aim to transform ideas into successful realities.<span class="bio-quote">"</span>
+              </p>
+              <div class="bio-actions">
+                <a href="https://www.linkedin.com/in/jqdeveloper/" target="_blank" rel="noopener noreferrer" class="bio-link linkedin">
+                  <span class="link-icon">in</span>
+                  <span class="link-text">LinkedIn</span>
+                </a>
+                <a href="https://github.com/Alejandroq12" target="_blank" rel="noopener noreferrer" class="bio-link github">
+                  <span class="link-icon">⌘</span>
+                  <span class="link-text">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Section Label - Experience -->
+        <div class="about-section-label">
+          <div class="section-label-icon">💼</div>
+          <div class="section-label-content">
+            <span class="section-label-title">Experience</span>
+            <span class="section-label-desc">Where I've worked</span>
+          </div>
+          <div class="section-label-badge">
+            <span class="badge-text">👆 Click to visit</span>
+          </div>
+        </div>
+
+        <!-- LS Experience Command -->
+        <div class="about-cmd-block">
+          <div class="about-prompt-line">
+            <span class="about-user">julio</span><span class="about-at">@</span><span class="about-host">kali</span>
+            <span class="about-sep">:</span><span class="about-path">~/about</span>
+            <span class="about-git">(main)</span><span class="about-symbol">$</span>
+            <span class="about-command">ls -la ./experience/</span>
+          </div>
+          <div class="about-output exp-output">
+            <div class="exp-grid">
+              <a href="https://www.microverse.org/" target="_blank" rel="noopener noreferrer" class="exp-item">
+                <div class="exp-item-inner">
+                  <img class="exp-item-logo" src="./assets/images/experience/microverse.svg" alt="Microverse" loading="lazy"/>
+                  <div class="exp-item-info">
+                    <span class="exp-item-dir">📁 microverse/</span>
+                    <span class="exp-item-name">Microverse</span>
+                    <span class="exp-item-role">Code Reviewer</span>
+                  </div>
+                  <span class="exp-item-arrow">→</span>
+                </div>
+              </a>
+              <a href="https://www.innovacion.gob.sv/" target="_blank" rel="noopener noreferrer" class="exp-item">
+                <div class="exp-item-inner">
+                  <img class="exp-item-logo" src="./assets/images/experience/secre.svg" alt="Government of El Salvador" loading="lazy"/>
+                  <div class="exp-item-info">
+                    <span class="exp-item-dir">📁 gobierno-sv/</span>
+                    <span class="exp-item-name">Government of El Salvador</span>
+                    <span class="exp-item-role">Full-Stack Developer</span>
+                  </div>
+                  <span class="exp-item-arrow">→</span>
+                </div>
+              </a>
+              <a href="#Portfolio" class="exp-item">
+                <div class="exp-item-inner">
+                  <img class="exp-item-logo" src="./assets/images/experience/freelance.svg" alt="Freelance" loading="lazy"/>
+                  <div class="exp-item-info">
+                    <span class="exp-item-dir">📁 freelance/</span>
+                    <span class="exp-item-name">Freelance</span>
+                    <span class="exp-item-role">Independent Developer</span>
+                  </div>
+                  <span class="exp-item-arrow">→</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Section Label - Skills -->
+        <div class="about-section-label">
+          <div class="section-label-icon">⚡</div>
+          <div class="section-label-content">
+            <span class="section-label-title">Tech Stack</span>
+            <span class="section-label-desc">My tools & technologies</span>
+          </div>
+        </div>
+
+        <!-- Cat Skills Command -->
+        <div class="about-cmd-block">
+          <div class="about-prompt-line">
+            <span class="about-user">julio</span><span class="about-at">@</span><span class="about-host">kali</span>
+            <span class="about-sep">:</span><span class="about-path">~/about</span>
+            <span class="about-git">(main)</span><span class="about-symbol">$</span>
+            <span class="about-command">cat skills.json | jq</span>
+          </div>
+          <div class="about-output skills-output">
+            <div class="skills-json">
+              <pre class="json-content">{
+  <span class="json-key">"languages"</span>: [
+    <span class="json-string">"C#"</span>, <span class="json-string">"JavaScript"</span>, <span class="json-string">"TypeScript"</span>,
+    <span class="json-string">"Ruby"</span>, <span class="json-string">"SQL"</span>, <span class="json-string">"Python"</span>
+  ],
+  <span class="json-key">"frameworks"</span>: [
+    <span class="json-string">".NET"</span>, <span class="json-string">"React.js"</span>, <span class="json-string">"Vue.js"</span>,
+    <span class="json-string">"Ruby on Rails"</span>, <span class="json-string">"Nest.js"</span>
+  ],
+  <span class="json-key">"databases"</span>: [
+    <span class="json-string">"PostgreSQL"</span>, <span class="json-string">"MySQL"</span>, <span class="json-string">"MongoDB"</span>
+  ],
+  <span class="json-key">"tools"</span>: [
+    <span class="json-string">"Git"</span>, <span class="json-string">"Docker"</span>, <span class="json-string">"Linux"</span>,
+    <span class="json-string">"CI/CD"</span>, <span class="json-string">"AWS"</span>
+  ],
+  <span class="json-key">"soft_skills"</span>: [
+    <span class="json-string">"Problem Solving"</span>, <span class="json-string">"Team Leadership"</span>,
+    <span class="json-string">"Remote Collaboration"</span>
+  ]
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Visual Tags -->
+        <div class="skills-visual">
+          <div class="skills-category">
+            <span class="skills-cat-title">💻 Languages</span>
+            <div class="skills-tags">
+              <span class="skill-tag-term">C#</span>
+              <span class="skill-tag-term">JavaScript</span>
+              <span class="skill-tag-term">TypeScript</span>
+              <span class="skill-tag-term">Ruby</span>
+              <span class="skill-tag-term">SQL</span>
+              <span class="skill-tag-term">Python</span>
+            </div>
+          </div>
+          <div class="skills-category">
+            <span class="skills-cat-title">🚀 Frameworks</span>
+            <div class="skills-tags">
+              <span class="skill-tag-term">.NET</span>
+              <span class="skill-tag-term">React.js</span>
+              <span class="skill-tag-term">Vue.js</span>
+              <span class="skill-tag-term">Rails</span>
+              <span class="skill-tag-term">Nest.js</span>
+            </div>
+          </div>
+          <div class="skills-category">
+            <span class="skills-cat-title">🛠 Tools</span>
+            <div class="skills-tags">
+              <span class="skill-tag-term">Git</span>
+              <span class="skill-tag-term">Docker</span>
+              <span class="skill-tag-term">Linux</span>
+              <span class="skill-tag-term">CI/CD</span>
+              <span class="skill-tag-term">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal Input Line -->
+        <div class="about-cmd-block">
+          <div class="about-prompt-line">
+            <span class="about-user">julio</span><span class="about-at">@</span><span class="about-host">kali</span>
+            <span class="about-sep">:</span><span class="about-path">~/about</span>
+            <span class="about-git">(main)</span><span class="about-symbol">$</span>
+            <span class="about-cursor">_</span>
+          </div>
         </div>
       </div>
-      <p class="skills-note">*The lowercase 'w' in 'webpack' is intentional and aligns with the official naming convention.</p>
+
+      <!-- Terminal Status Bar -->
+      <div class="about-term-status">
+        <span class="status-mode">-- NORMAL --</span>
+        <span class="status-file">~/about</span>
+        <span class="status-git">⎇ main</span>
+        <span class="status-info">5+ years | 3 languages | 1000+ commits</span>
+      </div>
     </div>
   </section>
   <!-- Form section -->

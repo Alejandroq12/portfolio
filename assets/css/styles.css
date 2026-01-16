@@ -2288,332 +2288,597 @@ body {
 }
 
 /* ========================================
-   ABOUT ME SECTION 
+   ABOUT ME SECTION - Terminal Theme
    ======================================== */
 
-.about-me-main-container {
+.about-terminal-section {
   width: 100%;
-  background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);
-  padding: 5rem 5%;
+  background: #0a0a0f;
+  padding: 2rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about-me-main-container::before {
-  content: '';
+.about-scanlines {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle 800px at 20% 20%, rgba(255, 107, 0, 0.08) 0%, transparent 50%),
-    radial-gradient(circle 600px at 80% 80%, rgba(255, 69, 0, 0.05) 0%, transparent 50%);
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
   pointer-events: none;
+  z-index: 100;
+  opacity: 0.3;
 }
 
-/* Elegant Section Header */
-.about-section-header {
+/* Visual Guide Header */
+.about-visual-guide {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.15) 0%, rgba(80, 250, 123, 0.08) 100%);
+  border-radius: 16px 16px 0 0;
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.about-visual-guide .guide-header {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 4rem;
-  position: relative;
-  z-index: 1;
 }
 
-.about-section-number {
-  font-family: var(--font-primary);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--primary);
-  letter-spacing: 0.1em;
-  opacity: 0.6;
+.about-visual-guide .guide-number {
+  font-family: 'Fira Code', monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(255, 107, 0, 0.3);
+  line-height: 1;
 }
 
-.about-header-line {
-  width: 60px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--primary), transparent);
-}
-
-.about-section-title {
+.about-visual-guide .guide-title {
   font-family: var(--font-primary);
   font-weight: 800;
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--white);
-  letter-spacing: -0.02em;
+  font-size: 1.75rem;
+  color: #fff;
   margin: 0;
+}
+
+.about-visual-guide .guide-subtitle {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin: 0;
+}
+
+.guide-badges {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.guide-badge {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  border-radius: 20px;
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Terminal Window */
+.about-term-window {
+  width: 100%;
+  max-width: 1200px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  box-shadow:
+    0 50px 100px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 107, 0, 0.1);
+}
+
+/* Terminal Header */
+.about-term-header {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+  border-bottom: 1px solid #30363d;
+  gap: 1rem;
+}
+
+.about-term-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.about-term-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.about-term-btn.close { background: #ff5f56; }
+.about-term-btn.minimize { background: #ffbd2e; }
+.about-term-btn.maximize { background: #27c93f; }
+
+.about-term-title {
+  flex: 1;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: #8b949e;
   text-align: center;
 }
 
-/* Intro Card */
-.about-content-wrapper {
-  max-width: 800px;
-  margin: 0 auto 4rem;
-  position: relative;
-  z-index: 1;
+.about-term-icon {
+  margin-right: 0.5rem;
 }
 
-.about-intro-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 24px;
-  padding: 2.5rem;
-  position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-}
-
-.intro-accent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, var(--primary) 0%, var(--neon-orange) 50%, var(--primary) 100%);
-  border-radius: 4px 0 0 4px;
-}
-
-.intro-content {
+.about-term-tabs {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
-.intro-text {
-  font-family: var(--font-primary);
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  line-height: 1.9;
-  color: rgba(255, 255, 255, 0.85);
+.about-term-tab {
+  padding: 0.25rem 0.75rem;
+  background: transparent;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.7rem;
+  color: #6272a4;
+}
+
+.about-term-tab.active {
+  background: rgba(255, 107, 0, 0.2);
+  color: #ff6b00;
+}
+
+/* Terminal Body */
+.about-term-body {
+  padding: 1.5rem;
+  min-height: 400px;
+}
+
+/* Command Block */
+.about-cmd-block {
+  margin-bottom: 1rem;
+}
+
+.about-prompt-line {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+}
+
+.about-user { color: #50fa7b; font-weight: bold; }
+.about-at { color: #8b949e; }
+.about-host { color: #557ebf; font-weight: bold; }
+.about-sep { color: #8b949e; }
+.about-path { color: #8be9fd; }
+.about-git { color: #ff79c6; margin-left: 0.5rem; }
+.about-symbol { color: #50fa7b; margin: 0 0.5rem; }
+.about-command { color: #f8f8f2; }
+.about-cursor {
+  color: #50fa7b;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Neofetch Output */
+.about-neofetch-output {
+  margin: 1rem 0 2rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.neofetch-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ascii-art {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.7rem;
+  line-height: 1.2;
   margin: 0;
 }
 
-/* LinkedIn Button */
-.linkedin-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 1.5rem;
-  background: linear-gradient(135deg, #0077b5 0%, #0a66c2 100%);
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.4s var(--transition-smooth);
-  width: fit-content;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.ascii-orange {
+  color: #ff6b00;
+  text-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
 }
 
-.btn-icon-linkedin {
-  font-family: var(--font-primary);
-  font-weight: 800;
-  font-size: 1rem;
-  color: var(--white);
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0.25rem 0.5rem;
+.neofetch-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.nf-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+}
+
+.nf-user { color: #50fa7b; font-weight: bold; }
+.nf-hostname { color: #ff6b00; font-weight: bold; }
+
+.nf-separator {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: #30363d;
+  margin: 0 0 0.75rem;
+}
+
+.nf-row {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  margin: 0.35rem 0;
+  color: #f8f8f2;
+}
+
+.nf-label {
+  color: #ff6b00;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.nf-value { color: #f8f8f2; }
+
+.nf-status {
+  color: #50fa7b;
+  font-weight: bold;
+}
+
+.nf-colors {
+  display: flex;
+  gap: 4px;
+  margin-top: 1rem;
+}
+
+.color-block {
+  width: 20px;
+  height: 20px;
   border-radius: 4px;
 }
 
-.btn-text {
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--white);
+.c1 { background: #282a36; }
+.c2 { background: #ff5555; }
+.c3 { background: #50fa7b; }
+.c4 { background: #f1fa8c; }
+.c5 { background: #bd93f9; }
+.c6 { background: #ff79c6; }
+.c7 { background: #8be9fd; }
+.c8 { background: #ff6b00; }
+
+/* Section Labels */
+.about-section-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.12) 0%, rgba(80, 250, 123, 0.06) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  margin: 2rem 0 1rem;
 }
 
-.btn-arrow {
-  font-size: 1.1rem;
-  color: var(--white);
-  transition: transform 0.3s ease;
-}
-
-.linkedin-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 119, 181, 0.4);
-}
-
-.linkedin-btn:hover .btn-arrow {
-  transform: translateX(4px);
-}
-
-/* Experience Section */
-.about-experience-section {
-  max-width: 900px;
-  margin: 0 auto 4rem;
-  position: relative;
-  z-index: 1;
-}
-
-.about-subtitle {
+.about-section-label .section-label-icon {
+  font-size: 1.75rem;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.about-section-label .section-label-content {
+  flex: 1;
+}
+
+.about-section-label .section-label-title {
   font-family: var(--font-primary);
   font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--white);
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 1.1rem;
+  color: #fff;
+  display: block;
 }
 
-.subtitle-icon {
-  font-size: 1.25rem;
+.about-section-label .section-label-desc {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  color: #8b949e;
+  display: block;
 }
 
-/* Experience Cards */
-.experience-cards {
+.about-section-label .section-label-badge {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
+  border-radius: 20px;
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+
+.about-section-label .badge-text {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+/* Bio Card */
+.bio-output {
+  margin-top: 1rem;
+}
+
+.bio-card {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.08) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border-radius: 12px;
+  border-left: 4px solid #ff6b00;
+}
+
+.bio-text {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 1.5rem;
+}
+
+.bio-quote {
+  color: #ff6b00;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bio-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.bio-link.linkedin {
+  background: linear-gradient(135deg, #0077b5 0%, #0a66c2 100%);
+  color: #fff;
+}
+
+.bio-link.github {
+  background: linear-gradient(135deg, #333 0%, #24292e 100%);
+  color: #fff;
+  border: 1px solid #30363d;
+}
+
+.bio-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.link-icon {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+/* Experience Grid */
+.exp-output {
+  margin-top: 1rem;
+}
+
+.exp-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
 
-.exp-card {
-  position: relative;
-}
-
-.exp-card a {
+.exp-item {
   text-decoration: none;
   display: block;
 }
 
-.exp-card-inner {
+.exp-item-inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2rem 1.5rem;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
-  transition: all 0.4s var(--transition-smooth);
-  text-align: center;
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  transition: all 0.4s ease;
 }
 
-.exp-card-inner:hover {
-  transform: translateY(-8px);
-  border-color: rgba(255, 107, 0, 0.3);
-  box-shadow: 0 20px 50px rgba(255, 107, 0, 0.15);
-  background: linear-gradient(145deg, rgba(255, 107, 0, 0.08) 0%, rgba(255, 107, 0, 0.02) 100%);
+.exp-item-inner:hover {
+  border-color: #ff6b00;
+  background: rgba(255, 107, 0, 0.1);
+  transform: translateX(8px);
 }
 
-.exp-logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 16px;
+.exp-item-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
   object-fit: contain;
-  padding: 0.5rem;
+  padding: 0.25rem;
   background: rgba(255, 255, 255, 0.05);
-  transition: all 0.3s ease;
 }
 
-.exp-card-inner:hover .exp-logo {
-  transform: scale(1.1);
+.exp-item-info {
+  flex: 1;
 }
 
-.exp-name {
+.exp-item-dir {
+  display: block;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.7rem;
+  color: #8be9fd;
+  margin-bottom: 0.25rem;
+}
+
+.exp-item-name {
+  display: block;
   font-family: var(--font-primary);
   font-weight: 700;
-  font-size: 1rem;
-  color: var(--white);
+  font-size: 0.95rem;
+  color: #fff;
 }
 
-.exp-role {
+.exp-item-role {
+  display: block;
   font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 0.85rem;
-  color: var(--primary);
-  opacity: 0.9;
+  font-size: 0.8rem;
+  color: #ff6b00;
 }
 
-/* Skills Section */
-.about-skills-section {
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+.exp-item-arrow {
+  font-size: 1.25rem;
+  color: #50fa7b;
+  transition: transform 0.3s ease;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+.exp-item-inner:hover .exp-item-arrow {
+  transform: translateX(5px);
 }
 
-.skill-category {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
-  padding: 1.75rem;
-  transition: all 0.4s var(--transition-smooth);
+/* Skills JSON */
+.skills-output {
+  margin-top: 1rem;
 }
 
-.skill-category:hover {
-  border-color: rgba(255, 107, 0, 0.2);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+.skills-json {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  overflow-x: auto;
 }
 
-.skill-category-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.skill-icon {
-  font-size: 1.5rem;
-}
-
-.skill-category-title {
-  font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--white);
+.skills-json .json-content {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: #f8f8f2;
 }
 
-.skill-tags {
+.skills-json .json-key { color: #8be9fd; }
+.skills-json .json-string { color: #50fa7b; }
+
+/* Skills Visual Tags */
+.skills-visual {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid #30363d;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skills-cat-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.skills-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-.skill-tag {
-  font-family: var(--font-primary);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, rgba(255, 107, 0, 0.12) 0%, rgba(255, 69, 0, 0.06) 100%);
-  border: 1px solid rgba(255, 107, 0, 0.15);
-  border-radius: 20px;
-  transition: all 0.3s var(--transition-smooth);
-  cursor: default;
-}
-
-.skill-tag:hover {
-  transform: translateY(-2px) scale(1.05);
-  border-color: var(--primary);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--neon-orange) 100%);
-  color: var(--white);
-  box-shadow: 0 8px 20px rgba(255, 107, 0, 0.3);
-}
-
-.skills-note {
-  font-family: var(--font-primary);
+.skill-tag-term {
+  font-family: 'Fira Code', monospace;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-  margin-top: 2rem;
-  font-style: italic;
+  font-weight: 500;
+  color: #50fa7b;
+  padding: 0.4rem 0.8rem;
+  background: rgba(80, 250, 123, 0.1);
+  border: 1px solid rgba(80, 250, 123, 0.3);
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-/* Legacy styles kept for compatibility */
+.skill-tag-term:hover {
+  background: rgba(255, 107, 0, 0.2);
+  border-color: #ff6b00;
+  color: #ff6b00;
+  transform: translateY(-2px);
+}
+
+/* Terminal Status Bar */
+.about-term-status {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+  border-top: 1px solid #30363d;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.7rem;
+  gap: 2rem;
+}
+
+.about-term-status .status-mode {
+  color: #50fa7b;
+  font-weight: bold;
+}
+
+.about-term-status .status-file { color: #8b949e; }
+.about-term-status .status-git { color: #ff79c6; }
+.about-term-status .status-info {
+  color: #8be9fd;
+  margin-left: auto;
+}
+
+/* Legacy compatibility */
 .about-me-section {
   margin: 2rem 0;
 }
@@ -3876,102 +4141,183 @@ button:disabled {
     font-size: 1.2rem;
   }
 
-  /* About Me Section Responsive */
-  .about-me-main-container {
-    padding: 3rem 4%;
+  /* About Me Terminal Section Responsive */
+  .about-terminal-section {
+    padding: 1rem;
   }
 
-  .about-section-header {
+  .about-visual-guide {
+    padding: 1.25rem;
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
   }
 
-  .about-header-line {
-    width: 40px;
+  .about-visual-guide .guide-header {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 
-  .about-section-title {
-    font-size: 1.75rem;
+  .about-visual-guide .guide-number {
+    font-size: 2rem;
   }
 
-  .about-intro-card {
-    padding: 1.5rem;
+  .about-visual-guide .guide-title {
+    font-size: 1.5rem;
   }
 
-  .intro-text {
-    font-size: 0.95rem;
-  }
-
-  .linkedin-btn {
-    width: 100%;
+  .guide-badges {
     justify-content: center;
   }
 
-  .about-experience-section {
-    margin-bottom: 3rem;
+  .guide-badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.75rem;
   }
 
-  .about-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+  .about-term-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
-  .experience-cards {
-    grid-template-columns: 1fr;
+  .about-term-title {
+    font-size: 0.65rem;
+    order: 3;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .about-term-tabs {
+    display: none;
+  }
+
+  .about-term-body {
+    padding: 1rem;
+  }
+
+  .about-prompt-line {
+    font-size: 0.7rem;
+  }
+
+  .neofetch-container {
+    flex-direction: column;
     gap: 1rem;
   }
 
-  .exp-card-inner {
-    flex-direction: row;
-    padding: 1.25rem;
-    gap: 1rem;
-    text-align: left;
+  .ascii-art {
+    font-size: 0.45rem;
+    text-align: center;
   }
 
-  .exp-logo {
-    width: 50px;
-    height: 50px;
+  .neofetch-info {
+    min-width: auto;
   }
 
-  .exp-name {
-    font-size: 0.9rem;
+  .nf-row {
+    font-size: 0.7rem;
   }
 
-  .exp-role {
-    font-size: 0.75rem;
+  .nf-colors {
+    justify-content: center;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .color-block {
+    width: 16px;
+    height: 16px;
   }
 
-  .skill-category {
-    padding: 1.25rem;
+  .about-section-label {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
   }
 
-  .skill-category-header {
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .skill-icon {
+  .about-section-label .section-label-icon {
+    width: 38px;
+    height: 38px;
     font-size: 1.25rem;
   }
 
-  .skill-category-title {
+  .about-section-label .section-label-title {
+    font-size: 1rem;
+  }
+
+  .about-section-label .section-label-badge {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bio-card {
+    padding: 1rem;
+  }
+
+  .bio-text {
     font-size: 0.9rem;
   }
 
-  .skill-tag {
-    font-size: 0.75rem;
-    padding: 0.4rem 0.8rem;
+  .bio-actions {
+    flex-direction: column;
   }
 
-  .skills-note {
+  .bio-link {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .exp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-item-inner {
+    padding: 1rem;
+  }
+
+  .exp-item-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .exp-item-name {
+    font-size: 0.85rem;
+  }
+
+  .exp-item-role {
+    font-size: 0.7rem;
+  }
+
+  .skills-json {
+    padding: 1rem;
+  }
+
+  .skills-json .json-content {
     font-size: 0.65rem;
-    margin-top: 1.5rem;
+  }
+
+  .skills-visual {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .skills-cat-title {
+    font-size: 0.8rem;
+  }
+
+  .skill-tag-term {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .about-term-status {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.6rem;
+  }
+
+  .about-term-status .status-info {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
   }
 
   .contact-form {
