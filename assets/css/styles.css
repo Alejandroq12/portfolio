@@ -1287,41 +1287,290 @@ body {
 
 /* Visual Guide for Non-Technical Users */
 .portfolio-visual-guide {
-  text-align: center;
-  padding: 1.5rem 2rem;
-  background: linear-gradient(135deg, rgba(85, 126, 191, 0.15) 0%, rgba(80, 250, 123, 0.1) 100%);
-  border-bottom: 1px solid rgba(80, 250, 123, 0.2);
-}
-
-.guide-badge {
-  display: inline-flex;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, rgba(85, 126, 191, 0.2) 0%, rgba(80, 250, 123, 0.1) 100%);
+  border-bottom: 2px solid rgba(80, 250, 123, 0.3);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #557ebf 0%, #367bf5 100%);
-  border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(85, 126, 191, 0.4);
-  margin-bottom: 0.75rem;
 }
 
-.guide-icon {
-  font-size: 1.5rem;
+.guide-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.guide-text {
+.guide-number {
+  font-family: 'Fira Code', monospace;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(85, 126, 191, 0.3);
+  line-height: 1;
+}
+
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.guide-title {
   font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-weight: 800;
+  font-size: 2rem;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin: 0;
+  letter-spacing: -0.02em;
 }
 
 .guide-subtitle {
   font-family: var(--font-primary);
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #8b949e;
   margin: 0;
+}
+
+.guide-scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  animation: bounceDown 2s ease-in-out infinite;
+}
+
+.scroll-arrow {
+  font-size: 1.5rem;
+  color: #50fa7b;
+}
+
+.scroll-text {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  color: #6272a4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Visual Section Labels */
+.visual-section-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(85, 126, 191, 0.15) 0%, rgba(80, 250, 123, 0.08) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(80, 250, 123, 0.2);
+  margin: 2rem 0 1rem;
+}
+
+.section-label-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(80, 250, 123, 0.3);
+}
+
+.section-label-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.section-label-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.section-label-desc {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.section-label-badge {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #50fa7b 0%, #3fb950 100%);
+  border-radius: 20px;
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+
+.badge-click {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #0d1117;
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(80, 250, 123, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px rgba(80, 250, 123, 0.3);
+  }
+}
+
+/* Live Badge for Featured Project */
+.live-badge {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+}
+
+.badge-live {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Navigation Steps Guide */
+.nav-steps-guide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(80, 250, 123, 0.15);
+}
+
+.nav-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: rgba(80, 250, 123, 0.1);
+  border-radius: 30px;
+  border: 1px solid rgba(80, 250, 123, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-step:hover {
+  background: rgba(80, 250, 123, 0.2);
+  border-color: rgba(80, 250, 123, 0.4);
+  transform: translateY(-2px);
+}
+
+.step-number {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #50fa7b 0%, #3fb950 100%);
+  border-radius: 50%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #0d1117;
+}
+
+.step-icon {
+  font-size: 1.1rem;
+}
+
+.step-text {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.step-connector {
+  font-size: 1.2rem;
+  color: #50fa7b;
+  animation: arrowPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+}
+
+/* Enhanced Work Card Hover Tooltip */
+.work-card::after {
+  content: '👆 Click to see details';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  padding: 0.75rem 1.25rem;
+  background: rgba(80, 250, 123, 0.95);
+  color: #0d1117;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.work-card:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Attention Indicator for Cards */
+.works-container::before {
+  content: '↓ Click any card below ↓';
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(85, 126, 191, 0.3) 0%, rgba(80, 250, 123, 0.2) 100%);
+  border: 1px dashed rgba(80, 250, 123, 0.4);
+  border-radius: 20px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #8be9fd;
+  animation: floatHint 2s ease-in-out infinite;
+}
+
+@keyframes floatHint {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Hide terminal commands for cleaner look */
+.term-cmd-hidden {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+
+.term-cmd-hidden .term-prompt-line {
+  font-size: 0.7rem;
 }
 
 /* Kali Linux color for neofetch */
@@ -1638,6 +1887,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 0;
+  padding-top: 2.5rem;
+  position: relative;
 }
 
 .section-info-container {
@@ -1738,13 +1989,14 @@ body {
   display: flex;
   flex-direction: column;
   background: #161b22;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #30363d;
   position: relative;
   height: auto;
   min-height: 280px;
+  cursor: pointer;
 }
 
 /* Terminal-style header for each card */
@@ -1764,9 +2016,17 @@ body {
 }
 
 .work-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
   border-color: #50fa7b;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(80, 250, 123, 0.1);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(80, 250, 123, 0.15),
+    inset 0 0 0 1px rgba(80, 250, 123, 0.1);
+}
+
+.work-card:hover::before {
+  background: rgba(80, 250, 123, 0.15);
+  color: #50fa7b;
 }
 
 /* Card image as preview */
@@ -1876,27 +2136,42 @@ body {
 
 .button-card {
   width: 100%;
-  padding: 0.75rem 1rem;
-  background: transparent;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(80, 250, 123, 0.1) 0%, rgba(85, 126, 191, 0.1) 100%);
   border: none;
   border-top: 1px solid #30363d;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.8rem;
-  color: #50fa7b;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   text-align: left;
   margin-top: auto;
 }
 
 .button-card::before {
-  content: '$ ';
-  color: #ff79c6;
+  content: '👆';
+  font-size: 1rem;
+}
+
+.button-card::after {
+  content: '→';
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
 .button-card:hover {
-  background: rgba(80, 250, 123, 0.1);
-  color: #6dff98;
+  background: linear-gradient(135deg, #50fa7b 0%, #3fb950 100%);
+  color: #0d1117;
+}
+
+.button-card:hover::after {
+  transform: translateX(5px);
 }
 
 .card-container {
@@ -2915,24 +3190,101 @@ button:disabled {
 
   /* Visual Guide responsive */
   .portfolio-visual-guide {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
   }
 
-  .guide-badge {
-    padding: 0.6rem 1.2rem;
+  .guide-header {
+    flex-direction: column;
     gap: 0.5rem;
   }
 
-  .guide-icon {
-    font-size: 1.2rem;
+  .guide-number {
+    font-size: 2rem;
   }
 
-  .guide-text {
-    font-size: 1rem;
+  .guide-title {
+    font-size: 1.5rem;
   }
 
   .guide-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .guide-scroll-hint {
+    display: none;
+  }
+
+  /* Navigation Steps Guide responsive */
+  .nav-steps-guide {
+    gap: 0.4rem;
+    padding: 0.75rem 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-step {
+    padding: 0.4rem 0.7rem;
+    gap: 0.3rem;
+  }
+
+  .step-number {
+    width: 18px;
+    height: 18px;
+    font-size: 0.65rem;
+  }
+
+  .step-icon {
+    font-size: 0.9rem;
+  }
+
+  .step-text {
+    font-size: 0.7rem;
+  }
+
+  .step-connector {
+    font-size: 0.9rem;
+  }
+
+  /* Hide hover tooltip on mobile - use button instead */
+  .work-card::after {
+    display: none;
+  }
+
+  /* Adjust attention indicator for mobile */
+  .works-container::before {
+    font-size: 0.65rem;
+    padding: 0.4rem 0.8rem;
+    top: -2rem;
+  }
+
+  /* Visual Section Labels responsive */
+  .visual-section-label {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .section-label-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .section-label-title {
+    font-size: 1rem;
+  }
+
+  .section-label-desc {
+    font-size: 0.75rem;
+  }
+
+  .section-label-badge {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
   }
 
   /* Terminal Portfolio responsive */

@@ -270,11 +270,38 @@
 
       <!-- Visual Guide for Non-Technical Users -->
       <div class="portfolio-visual-guide">
-        <div class="guide-badge">
-          <span class="guide-icon">📂</span>
-          <span class="guide-text">My Projects</span>
+        <div class="guide-header">
+          <span class="guide-number">01</span>
+          <div class="guide-content">
+            <h2 class="guide-title">My Projects</h2>
+            <p class="guide-subtitle">Real work, real impact — click any card to explore</p>
+          </div>
         </div>
-        <p class="guide-subtitle">Click any project to see details</p>
+        <div class="guide-scroll-hint">
+          <span class="scroll-arrow">↓</span>
+          <span class="scroll-text">Scroll to explore</span>
+        </div>
+      </div>
+
+      <!-- Interactive Navigation Steps -->
+      <div class="nav-steps-guide">
+        <div class="nav-step">
+          <span class="step-number">1</span>
+          <span class="step-icon">👀</span>
+          <span class="step-text">Browse</span>
+        </div>
+        <span class="step-connector">→</span>
+        <div class="nav-step">
+          <span class="step-number">2</span>
+          <span class="step-icon">👆</span>
+          <span class="step-text">Click Card</span>
+        </div>
+        <span class="step-connector">→</span>
+        <div class="nav-step">
+          <span class="step-number">3</span>
+          <span class="step-icon">🔍</span>
+          <span class="step-text">View Details</span>
+        </div>
       </div>
 
       <!-- Terminal Body -->
@@ -323,6 +350,18 @@
             <p class="ls-line"><span class="ls-perm">-rw-r--r--</span> <span class="ls-user">julio</span> <span class="ls-size">2.1K</span> <span class="ls-date">Jan 16</span> <span class="ls-file">README.md</span></p>
             <p class="ls-line"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-user">julio</span> <span class="ls-size">4.0K</span> <span class="ls-date">Jan 15</span> <span class="ls-featured">smart-city/</span> <span class="ls-tag">★ FEATURED</span></p>
             <p class="ls-line"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-user">julio</span> <span class="ls-size">4.0K</span> <span class="ls-date">Jan 14</span> <span class="ls-dir">other-projects/</span></p>
+          </div>
+        </div>
+
+        <!-- Visual Section Label - Featured -->
+        <div class="visual-section-label featured-label">
+          <div class="section-label-icon">⭐</div>
+          <div class="section-label-content">
+            <span class="section-label-title">Featured Project</span>
+            <span class="section-label-desc">My most impactful work</span>
+          </div>
+          <div class="section-label-badge live-badge">
+            <span class="badge-live">🔴 Live</span>
           </div>
         </div>
 
@@ -377,13 +416,25 @@
           </div>
         </div>
 
+        <!-- Visual Section Label - More Projects -->
+        <div class="visual-section-label">
+          <div class="section-label-icon">📁</div>
+          <div class="section-label-content">
+            <span class="section-label-title">More Projects</span>
+            <span class="section-label-desc">Click any card to see details</span>
+          </div>
+          <div class="section-label-badge">
+            <span class="badge-click">👆 Click to view</span>
+          </div>
+        </div>
+
         <!-- More Projects -->
-        <div class="term-cmd-block">
+        <div class="term-cmd-block term-cmd-hidden">
           <div class="term-prompt-line">
             <span class="term-user">julio</span><span class="term-at">@</span><span class="term-host">kali</span>
             <span class="term-separator">:</span><span class="term-path">~/projects</span>
             <span class="term-git">(main)</span><span class="term-symbol">$</span>
-            <span class="term-command">find ./other-projects -type d -maxdepth 1 | xargs -I {} sh -c 'echo "=== {} ===" && cat {}/info.json 2>/dev/null'</span>
+            <span class="term-command">ls ./other-projects</span>
           </div>
         </div>
 
