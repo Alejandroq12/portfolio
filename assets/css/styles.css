@@ -2894,14 +2894,14 @@ button:disabled {
 
 .glitch::before {
   left: 2px;
-  text-shadow: -2px 0 #ff00c1;
+  text-shadow: -2px 0 #ff4136;
   clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
   animation: glitch-anim-1 2s infinite linear alternate-reverse;
 }
 
 .glitch::after {
   left: -2px;
-  text-shadow: 2px 0 #00fff9;
+  text-shadow: 2px 0 #50fa7b;
   clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
   animation: glitch-anim-2 3s infinite linear alternate-reverse;
 }
