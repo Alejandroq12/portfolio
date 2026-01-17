@@ -843,9 +843,9 @@
     </div>
   </div>
 
-  <!-- Form section -->
-  <section class="contact-form" id="Contact" aria-label="Contact form section">
-    <!-- Visual Guide Header for Contact -->
+  <section class="contact-terminal-section" id="Contact" aria-label="Contact form section">
+    <div class="contact-scanlines"></div>
+
     <div class="contact-visual-guide">
       <div class="guide-header">
         <span class="guide-number">03</span>
@@ -855,37 +855,183 @@
         </div>
       </div>
       <div class="contact-badges">
-        <span class="contact-badge">📧 Email</span>
-        <span class="contact-badge">⚡ Fast Response</span>
+        <span class="contact-badge"><span class="badge-icon">📧</span> Email</span>
+        <span class="contact-badge"><span class="badge-icon">⚡</span> Fast Response</span>
+        <span class="contact-badge"><span class="badge-icon">🌍</span> Remote Ready</span>
       </div>
     </div>
 
-    <h3 class="contact-form__heading" tabindex="0" aria-label="Contact form heading">
-      Open to innovative ideas and collaborations; let's talk if you have a project in mind.
-    </h3>
-    <form class="contact-form__form" id="form" name="form" action="https://formspree.io/f/mgebknyd" method="POST"
-      aria-label="Contact form">
-      <input type="hidden" name="_subject" value="New Form Submission!"
-        aria-label="Hidden input to receive normal emails" />
-      <input class="hide_input" type="text" name="_gotcha" aria-label="Hidden input to catch spam" />
-      <div class="contact-form__group" aria-label="Contact form name group">
-        <input class="contact-form__input" type="text" id="name" aria-label="name input" name="name"
-          placeholder="Full name. Only letters and spaces are allowed." maxlength="30" required required
-          pattern="[a-zA-Z\s]*" tabindex="0" />
+    <div class="contact-terminal-window">
+      <div class="contact-term-header">
+        <div class="contact-term-buttons">
+          <span class="contact-term-btn close"></span>
+          <span class="contact-term-btn minimize"></span>
+          <span class="contact-term-btn maximize"></span>
+        </div>
+        <div class="contact-term-title">
+          <span class="term-icon">📨</span>
+          julio@portfolio:~/contact — send-message.sh
+        </div>
+        <div class="contact-term-tabs">
+          <span class="contact-tab active">compose</span>
+          <span class="contact-tab">history</span>
+        </div>
       </div>
-      <div class="contact-form__group" aria-label="email input">
-        <input class="contact-form__input" type="email" aria-label="email input" id="email" name="email"
-          placeholder="Please enter a valid lowercase email address." required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="0" />
+
+      <div class="contact-term-body">
+        <div class="contact-intro-command">
+          <span class="ct-user">visitor</span><span class="ct-at">@</span><span class="ct-host">portfolio</span><span class="ct-colon">:</span><span class="ct-path">~/contact</span><span class="ct-dollar">$</span>
+          <span class="ct-cmd">./compose-message.sh --interactive</span>
+        </div>
+
+        <div class="contact-output-box">
+          <pre class="contact-ascii-mail">
+   _____ ____  _   _ _____  _    ____ _____
+  / ____/ __ \| \ | |_   _|/ \  / ___|_   _|
+ | |   | |  | |  \| | | | / _ \| |     | |
+ | |___| |__| | |\  | | |/ ___ | |___  | |
+  \_____\____/|_| \_| |_/_/   \_\____| |_|
+          </pre>
+          <p class="contact-welcome-text">
+            <span class="text-success">✓</span> Connection established. Ready to receive your message.
+          </p>
+        </div>
+
+        <form class="contact-terminal-form" id="form" name="form" action="https://formspree.io/f/mgebknyd" method="POST" aria-label="Contact form">
+          <input type="hidden" name="_subject" value="New Portfolio Contact!" />
+          <input class="hide_input" type="text" name="_gotcha" tabindex="-1" />
+
+          <div class="form-field-group">
+            <div class="field-header">
+              <span class="field-prompt">
+                <span class="ct-user">visitor</span><span class="ct-at">@</span><span class="ct-host">portfolio</span><span class="ct-dollar">$</span>
+              </span>
+              <span class="field-command">echo $NAME</span>
+            </div>
+            <div class="field-input-wrapper">
+              <span class="input-prefix">→</span>
+              <input type="text" id="name" name="name" class="terminal-input" placeholder="Your full name..." maxlength="30" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*" autocomplete="name" />
+              <div class="field-status">
+                <span class="status-icon"></span>
+              </div>
+            </div>
+            <div class="field-info">
+              <span class="char-count"><span id="name-count">0</span>/30</span>
+              <span class="field-hint">Letters and spaces only</span>
+            </div>
+            <div class="field-error" id="name-error"></div>
+          </div>
+
+          <div class="form-field-group">
+            <div class="field-header">
+              <span class="field-prompt">
+                <span class="ct-user">visitor</span><span class="ct-at">@</span><span class="ct-host">portfolio</span><span class="ct-dollar">$</span>
+              </span>
+              <span class="field-command">echo $EMAIL</span>
+            </div>
+            <div class="field-input-wrapper">
+              <span class="input-prefix">→</span>
+              <input type="email" id="email" name="email" class="terminal-input" placeholder="your.email@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="email" />
+              <div class="field-status">
+                <span class="status-icon"></span>
+              </div>
+            </div>
+            <div class="field-info">
+              <span class="field-hint">Valid email format required</span>
+            </div>
+            <div class="field-error" id="email-error"></div>
+          </div>
+
+          <div class="form-field-group message-group">
+            <div class="field-header">
+              <span class="field-prompt">
+                <span class="ct-user">visitor</span><span class="ct-at">@</span><span class="ct-host">portfolio</span><span class="ct-dollar">$</span>
+              </span>
+              <span class="field-command">cat > message.txt << EOF</span>
+            </div>
+            <div class="field-textarea-wrapper">
+              <textarea id="message" name="message" class="terminal-textarea" placeholder="Hello Julio! I'd love to discuss..." maxlength="500" rows="6" required></textarea>
+              <div class="textarea-status">
+                <span class="status-icon"></span>
+              </div>
+            </div>
+            <div class="field-info">
+              <span class="char-count"><span id="message-count">0</span>/500</span>
+              <span class="field-hint">Tell me about your project</span>
+            </div>
+            <div class="field-error" id="message-error"></div>
+            <div class="field-eof">EOF</div>
+          </div>
+
+          <div class="form-submit-area">
+            <div class="submit-command">
+              <span class="field-prompt">
+                <span class="ct-user">visitor</span><span class="ct-at">@</span><span class="ct-host">portfolio</span><span class="ct-dollar">$</span>
+              </span>
+              <span class="field-command blink-cursor">_</span>
+            </div>
+            <button type="submit" class="terminal-submit-btn" id="contact-form-button">
+              <span class="btn-icon">🚀</span>
+              <span class="btn-text">./send-message.sh</span>
+              <span class="btn-loader">
+                <span class="loader-dot"></span>
+                <span class="loader-dot"></span>
+                <span class="loader-dot"></span>
+              </span>
+            </button>
+            <div class="submit-hint">
+              <span class="hint-key">Enter</span> to send • <span class="hint-key">Tab</span> to navigate
+            </div>
+          </div>
+        </form>
+
+        <div class="form-success-message" id="success-message">
+          <div class="success-content">
+            <pre class="success-ascii">
+  ___ _   _  ___ ___ ___  ___ ___
+ / __| | | |/ __/ __/ _ \/ __/ __|
+ \__ | |_| | (_| (_|  __/\__ \__ \
+ |___/\__,_|\___\___\___||___/___/
+            </pre>
+            <p class="success-text"><span class="text-success">✓</span> Message transmitted successfully!</p>
+            <p class="success-subtext">I'll get back to you within 24-48 hours.</p>
+            <div class="success-animation">
+              <span class="success-particle">✨</span>
+              <span class="success-particle">🎉</span>
+              <span class="success-particle">✨</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="contact-form__group" aria-label="Contact form message group">
-        <textarea class="contact-form__input contact-form__textarea" id="message" name="message"
-          placeholder="Hello, Julio. I would like to get in touch with you..." maxlength="500" rows="5"
-          aria-label="message input" required tabindex="0"></textarea>
+
+      <div class="contact-term-status">
+        <span class="status-item"><span class="status-dot online"></span> Online</span>
+        <span class="status-item">📍 El Salvador</span>
+        <span class="status-item">🕐 <span id="contact-time">--:--</span> local</span>
+        <span class="status-item status-right"><span class="status-text">Ready to connect</span></span>
       </div>
-      <button class="contact-form__button" id="contact-form-button" name="get in touch button"
-        aria-label="submit button" type="submit" tabindex="0">Get in touch</button>
-    </form>
+    </div>
+
+    <div class="contact-quick-links">
+      <p class="quick-links-title">Or reach me directly:</p>
+      <div class="quick-links-grid">
+        <a href="mailto:julio.quezada@example.com" class="quick-link-card">
+          <span class="ql-icon">📧</span>
+          <span class="ql-label">Email</span>
+          <span class="ql-action">Click to send</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jqdeveloper/" target="_blank" rel="noopener noreferrer" class="quick-link-card">
+          <span class="ql-icon">💼</span>
+          <span class="ql-label">LinkedIn</span>
+          <span class="ql-action">Let's connect</span>
+        </a>
+        <a href="https://github.com/Alejandroq12" target="_blank" rel="noopener noreferrer" class="quick-link-card">
+          <span class="ql-icon">🐙</span>
+          <span class="ql-label">GitHub</span>
+          <span class="ql-action">See my code</span>
+        </a>
+      </div>
+    </div>
   </section>
   <hr class="footer_top_line">
   <footer>
