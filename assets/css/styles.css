@@ -904,7 +904,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.terminal-input {
+.terminal-body .terminal-input {
   color: var(--primary);
   font-size: 1.1rem;
   font-weight: 700;
@@ -2910,7 +2910,6 @@ body {
 .form-field-group.focused .field-input-wrapper,
 .form-field-group.focused .field-textarea-wrapper {
   border-color: #8be9fd;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .form-field-group.valid .field-input-wrapper,
@@ -2970,15 +2969,26 @@ body {
 .terminal-input,
 .terminal-textarea {
   flex: 1;
-  background: transparent;
+  background: transparent !important;
   border: none;
   font-family: 'Fira Code', monospace;
   font-size: 1rem;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 0.9rem 0;
   outline: none;
   caret-color: #50fa7b;
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Prevent autofill background flash */
+.terminal-input:-webkit-autofill,
+.terminal-input:-webkit-autofill:hover,
+.terminal-input:-webkit-autofill:focus,
+.terminal-input:-webkit-autofill:active,
+.terminal-textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.35) inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .terminal-textarea {
@@ -3020,8 +3030,8 @@ body {
   color: #6272a4;
 }
 
-.char-count.warning { color: #f1fa8c; }
-.char-count.danger { color: #ff5555; }
+.field-info.warning .char-count { color: #f1fa8c; }
+.field-info.danger .char-count { color: #ff5555; }
 
 .field-error {
   color: #ff5555;

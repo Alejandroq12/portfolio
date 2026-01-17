@@ -28,9 +28,9 @@ const validators = {
 };
 
 const fieldStates = {
-  name: { lastState: null },
+  name: { lastState: null, lastCount: null, lastCountState: null },
   email: { lastState: null },
-  message: { lastState: null }
+  message: { lastState: null, lastCount: null, lastCountState: null }
 };
 
 const updateFieldStatus = (input, isValid) => {
@@ -78,16 +78,34 @@ const validateField = (input) => {
 };
 
 const updateCharCount = (input, countEl, max) => {
+  const fieldId = input.id;
   const count = input.value.length;
-  countEl.textContent = count;
 
-  const parent = countEl.parentElement;
-  parent.classList.remove('warning', 'danger');
+  // Only update count text if it changed
+  if (fieldStates[fieldId].lastCount !== count) {
+    fieldStates[fieldId].lastCount = count;
+    countEl.textContent = count;
+  }
 
+  // Determine the new state
+  let newCountState = 'normal';
   if (count >= max) {
-    parent.classList.add('danger');
+    newCountState = 'danger';
   } else if (count > max * 0.8) {
-    parent.classList.add('warning');
+    newCountState = 'warning';
+  }
+
+  // Only update classes if state changed
+  if (fieldStates[fieldId].lastCountState !== newCountState) {
+    fieldStates[fieldId].lastCountState = newCountState;
+    // Target the .field-info element (grandparent of countEl)
+    const fieldInfo = countEl.closest('.field-info');
+    if (fieldInfo) {
+      fieldInfo.classList.remove('warning', 'danger');
+      if (newCountState !== 'normal') {
+        fieldInfo.classList.add(newCountState);
+      }
+    }
   }
 };
 
@@ -108,7 +126,7 @@ const handleInput = (input, countEl = null, max = null) => {
 
   inputTimeouts[fieldId] = setTimeout(() => {
     validateField(input);
-  }, 400);
+  }, 500);
 };
 
 nameInput.addEventListener('input', () => handleInput(nameInput, nameCount, 30));
