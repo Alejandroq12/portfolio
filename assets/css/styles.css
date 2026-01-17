@@ -1260,9 +1260,9 @@ body {
 
 /* Visual Guide for Non-Technical Users */
 .portfolio-visual-guide {
-  padding: 2.5rem 2rem;
-  background: linear-gradient(135deg, rgba(85, 126, 191, 0.2) 0%, rgba(80, 250, 123, 0.1) 100%);
-  border-bottom: 2px solid rgba(80, 250, 123, 0.3);
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 107, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1271,15 +1271,16 @@ body {
 .guide-header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .guide-number {
   font-family: 'Fira Code', monospace;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(85, 126, 191, 0.3);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b00;
   line-height: 1;
+  opacity: 0.6;
 }
 
 .guide-content {
@@ -1290,125 +1291,98 @@ body {
 
 .guide-title {
   font-family: var(--font-primary);
-  font-weight: 800;
-  font-size: 2rem;
-  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #f8f8f2;
   margin: 0;
-  letter-spacing: -0.02em;
 }
 
 .guide-subtitle {
   font-family: var(--font-primary);
-  font-size: 1rem;
-  color: #8b949e;
+  font-size: 0.9rem;
+  color: #6272a4;
   margin: 0;
 }
 
 .guide-scroll-hint {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  animation: bounceDown 2s ease-in-out infinite;
 }
 
 .scroll-arrow {
-  font-size: 1.5rem;
-  color: #50fa7b;
+  font-size: 1.2rem;
+  color: #ff6b00;
+  opacity: 0.7;
 }
 
 .scroll-text {
-  font-family: var(--font-primary);
+  font-family: 'Fira Code', monospace;
   font-size: 0.75rem;
   color: #6272a4;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-@keyframes bounceDown {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
 }
 
 /* Visual Section Labels */
 .visual-section-label {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
-  background: linear-gradient(135deg, rgba(85, 126, 191, 0.15) 0%, rgba(80, 250, 123, 0.08) 100%);
-  border-radius: 12px;
-  border: 1px solid rgba(80, 250, 123, 0.2);
-  margin: 2rem 0 1rem;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-left: 3px solid #ff6b00;
+  margin: 1.5rem 0 1rem;
 }
 
 .section-label-icon {
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  border: 1px solid rgba(80, 250, 123, 0.3);
+  font-size: 1.25rem;
 }
 
 .section-label-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 .section-label-title {
   font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #f8f8f2;
 }
 
 .section-label-desc {
   font-family: var(--font-primary);
-  font-size: 0.85rem;
-  color: #8b949e;
+  font-size: 0.8rem;
+  color: #6272a4;
 }
 
 .section-label-badge {
-  padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, #50fa7b 0%, #3fb950 100%);
-  border-radius: 20px;
-  animation: pulse-badge 2s ease-in-out infinite;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 107, 0, 0.2);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  border-radius: 4px;
 }
 
 .badge-click {
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 0.75rem;
-  color: #0d1117;
-}
-
-@keyframes pulse-badge {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(80, 250, 123, 0.4);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px 5px rgba(80, 250, 123, 0.3);
-  }
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: #ff6b00;
 }
 
 /* Live Badge for Featured Project */
 .live-badge {
-  background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+  background: rgba(80, 250, 123, 0.15);
+  border-color: rgba(80, 250, 123, 0.3);
 }
 
 .badge-live {
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 0.75rem;
-  color: #fff;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: #50fa7b;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -1419,7 +1393,7 @@ body {
 .interaction-hint {
   padding: 0.75rem 1.5rem;
   background: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(80, 250, 123, 0.15);
+  border-bottom: 1px solid rgba(255, 107, 0, 0.15);
   text-align: center;
 }
 
@@ -1431,52 +1405,32 @@ body {
 
 /* Enhanced Work Card Hover Tooltip */
 .work-card::after {
-  content: '👆 Click to see details';
+  content: 'Click to view';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  padding: 0.75rem 1.25rem;
-  background: rgba(80, 250, 123, 0.95);
-  color: #0d1117;
-  font-family: var(--font-primary);
+  transform: translate(-50%, -50%) scale(0.9);
+  padding: 0.6rem 1rem;
+  background: rgba(255, 107, 0, 0.95);
+  color: #fff;
+  font-family: 'Fira Code', monospace;
   font-weight: 600;
-  font-size: 0.85rem;
-  border-radius: 8px;
+  font-size: 0.8rem;
+  border-radius: 6px;
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: opacity 0.2s ease;
   z-index: 10;
   pointer-events: none;
   white-space: nowrap;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .work-card:hover::after {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
 }
 
-/* Attention Indicator for Cards */
-.works-container::before {
-  content: '↓ Click any card below ↓';
-  position: absolute;
-  top: -2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, rgba(85, 126, 191, 0.3) 0%, rgba(80, 250, 123, 0.2) 100%);
-  border: 1px dashed rgba(80, 250, 123, 0.4);
-  border-radius: 20px;
-  font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 0.75rem;
-  color: #8be9fd;
-  animation: floatHint 2s ease-in-out infinite;
-}
-
-@keyframes floatHint {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-5px); }
+/* Works container */
+.works-container {
+  position: relative;
 }
 
 /* Hide terminal commands for cleaner look */
@@ -1500,13 +1454,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background: #0d1117;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(255, 107, 0, 0.2);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow:
-    0 50px 100px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(80, 250, 123, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 /* Terminal Header */
@@ -2237,45 +2188,43 @@ body {
 .about-visual-guide {
   width: 100%;
   max-width: 1200px;
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(255, 107, 0, 0.15) 0%, rgba(80, 250, 123, 0.08) 100%);
-  border-radius: 16px 16px 0 0;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 107, 0, 0.2);
   border-bottom: none;
+  border-radius: 12px 12px 0 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
   margin-bottom: 0;
 }
 
 .about-visual-guide .guide-header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .about-visual-guide .guide-number {
   font-family: 'Fira Code', monospace;
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: rgba(255, 107, 0, 0.3);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b00;
+  opacity: 0.6;
   line-height: 1;
 }
 
 .about-visual-guide .guide-title {
   font-family: var(--font-primary);
-  font-weight: 800;
-  font-size: 1.75rem;
-  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #f8f8f2;
   margin: 0;
 }
 
 .about-visual-guide .guide-subtitle {
   font-family: var(--font-primary);
   font-size: 0.9rem;
-  color: #8b949e;
+  color: #6272a4;
   margin: 0;
 }
 
@@ -2301,12 +2250,10 @@ body {
   width: 100%;
   max-width: 1200px;
   background: #0d1117;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(255, 107, 0, 0.2);
   border-radius: 0 0 12px 12px;
   overflow: hidden;
-  box-shadow:
-    0 50px 100px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(255, 107, 0, 0.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 /* Terminal Header */
@@ -2498,57 +2445,52 @@ body {
 .about-section-label {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
-  background: linear-gradient(135deg, rgba(255, 107, 0, 0.12) 0%, rgba(80, 250, 123, 0.06) 100%);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 107, 0, 0.2);
-  margin: 2rem 0 1rem;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-left: 3px solid #ff6b00;
+  margin: 1.5rem 0 1rem;
 }
 
 .about-section-label .section-label-icon {
-  font-size: 1.75rem;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 107, 0, 0.3);
+  font-size: 1.25rem;
 }
 
 .about-section-label .section-label-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .about-section-label .section-label-title {
   font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #f8f8f2;
   display: block;
 }
 
 .about-section-label .section-label-desc {
   font-family: var(--font-primary);
   font-size: 0.8rem;
-  color: #8b949e;
+  color: #6272a4;
   display: block;
 }
 
 .about-section-label .section-label-badge {
-  padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
-  border-radius: 20px;
-  animation: pulse-badge 2s ease-in-out infinite;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 107, 0, 0.2);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  border-radius: 4px;
 }
 
 .about-section-label .badge-text {
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 0.75rem;
-  color: #fff;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: #ff6b00;
 }
 
 /* Bio Card */
@@ -2901,7 +2843,7 @@ body {
   max-width: 560px;
   background: #12121f;
   border-radius: 12px;
-  border: 1px solid rgba(80, 250, 123, 0.15);
+  border: 1px solid rgba(255, 107, 0, 0.2);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
@@ -3727,38 +3669,21 @@ button:disabled {
     display: none;
   }
 
-  /* Adjust attention indicator for mobile */
-  .works-container::before {
-    font-size: 0.65rem;
-    padding: 0.4rem 0.8rem;
-    top: -2rem;
-  }
-
   /* Visual Section Labels responsive */
   .visual-section-label {
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 0.75rem;
   }
 
   .section-label-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-  }
-
-  .section-label-title {
     font-size: 1rem;
   }
 
-  .section-label-desc {
-    font-size: 0.75rem;
+  .section-label-title {
+    font-size: 0.85rem;
   }
 
-  .section-label-badge {
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5rem;
+  .section-label-desc {
+    font-size: 0.7rem;
   }
 
   /* Terminal Portfolio responsive */
@@ -4358,24 +4283,15 @@ button:disabled {
   }
 
   .about-section-label {
-    flex-wrap: wrap;
-    padding: 0.75rem 1rem;
-    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
   }
 
   .about-section-label .section-label-icon {
-    width: 38px;
-    height: 38px;
-    font-size: 1.25rem;
-  }
-
-  .about-section-label .section-label-title {
     font-size: 1rem;
   }
 
-  .about-section-label .section-label-badge {
-    width: 100%;
-    text-align: center;
+  .about-section-label .section-label-title {
+    font-size: 0.85rem;
   }
 
   .bio-card {
@@ -5360,39 +5276,26 @@ button:disabled {
 /* ===== CONTACT VISUAL GUIDE ===== */
 .contact-visual-guide {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(255, 107, 0, 0.05) 0%, rgba(80, 250, 123, 0.03) 100%);
-  border: 1px solid rgba(255, 107, 0, 0.2);
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  position: relative;
-}
-
-.contact-visual-guide::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #ff6b00 0%, #50fa7b 50%, #8be9fd 100%);
-  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid rgba(255, 107, 0, 0.2);
 }
 
 .contact-visual-guide .guide-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .contact-visual-guide .guide-number {
-  font-family: 'Fira Code', 'Consolas', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #ff6b00;
-  text-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+  opacity: 0.6;
   line-height: 1;
 }
 
@@ -5403,16 +5306,16 @@ button:disabled {
 }
 
 .contact-visual-guide .guide-title {
-  font-family: 'Fira Code', 'Consolas', monospace;
+  font-family: var(--font-primary);
   font-size: 1.5rem;
   color: #f8f8f2;
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .contact-visual-guide .guide-subtitle {
-  font-family: 'Fira Code', 'Consolas', monospace;
-  font-size: 0.85rem;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
   color: #6272a4;
   margin: 0;
 }
