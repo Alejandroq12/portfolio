@@ -15,75 +15,100 @@ const escapeHTML = (str) => str.replace(/[&<>"']/g, (m) => ({
 const validators = {
   name: {
     validate: (value) => /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(value) && value.trim().length >= 2,
-    message: 'Please enter a valid name (letters only, min 2 characters)'
+    message: 'Name: letters only, min 2 characters'
   },
   email: {
     validate: (value) => /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(value.toLowerCase()),
-    message: 'Please enter a valid email address'
+    message: 'Please enter a valid email'
   },
   message: {
     validate: (value) => value.trim().length >= 10,
-    message: 'Message must be at least 10 characters'
+    message: 'Min 10 characters required'
   }
 };
 
-const updateFieldStatus = (input, isValid, errorMsg = '') => {
+const fieldStates = {
+  name: { lastState: null },
+  email: { lastState: null },
+  message: { lastState: null }
+};
+
+const updateFieldStatus = (input, isValid) => {
   const group = input.closest('.form-field-group');
   const errorEl = group.querySelector('.field-error');
   const statusIcon = group.querySelector('.status-icon');
+  const fieldId = input.id;
 
-  group.classList.remove('valid', 'invalid', 'typing');
-
+  let newState;
   if (input.value.length === 0) {
-    statusIcon.textContent = '';
-    errorEl.textContent = '';
+    newState = 'empty';
+  } else if (isValid) {
+    newState = 'valid';
+  } else {
+    newState = 'invalid';
+  }
+
+  if (fieldStates[fieldId].lastState === newState) {
     return;
   }
 
-  if (isValid) {
+  fieldStates[fieldId].lastState = newState;
+
+  group.classList.remove('valid', 'invalid');
+
+  if (newState === 'empty') {
+    statusIcon.textContent = '';
+    errorEl.textContent = '';
+  } else if (newState === 'valid') {
     group.classList.add('valid');
     statusIcon.textContent = '✓';
     errorEl.textContent = '';
   } else {
     group.classList.add('invalid');
     statusIcon.textContent = '✗';
-    errorEl.textContent = errorMsg;
+    errorEl.textContent = validators[fieldId].message;
   }
 };
 
-const validateField = (input, showError = true) => {
+const validateField = (input) => {
   const validator = validators[input.id];
   const isValid = validator.validate(input.value);
-  if (showError || input.value.length > 0) {
-    updateFieldStatus(input, isValid, validator.message);
-  }
+  updateFieldStatus(input, isValid);
   return isValid;
 };
 
 const updateCharCount = (input, countEl, max) => {
   const count = input.value.length;
   countEl.textContent = count;
-  countEl.parentElement.classList.toggle('warning', count > max * 0.8);
-  countEl.parentElement.classList.toggle('danger', count >= max);
+
+  const parent = countEl.parentElement;
+  parent.classList.remove('warning', 'danger');
+
+  if (count >= max) {
+    parent.classList.add('danger');
+  } else if (count > max * 0.8) {
+    parent.classList.add('warning');
+  }
 };
 
-const showTypingState = (input) => {
-  const group = input.closest('.form-field-group');
-  group.classList.add('typing');
+const inputTimeouts = {
+  name: null,
+  email: null,
+  message: null
 };
 
-let typingTimeout;
 const handleInput = (input, countEl = null, max = null) => {
-  showTypingState(input);
-  clearTimeout(typingTimeout);
+  const fieldId = input.id;
 
   if (countEl && max) {
     updateCharCount(input, countEl, max);
   }
 
-  typingTimeout = setTimeout(() => {
-    validateField(input, false);
-  }, 500);
+  clearTimeout(inputTimeouts[fieldId]);
+
+  inputTimeouts[fieldId] = setTimeout(() => {
+    validateField(input);
+  }, 400);
 };
 
 nameInput.addEventListener('input', () => handleInput(nameInput, nameCount, 30));
@@ -91,14 +116,15 @@ emailInput.addEventListener('input', () => handleInput(emailInput));
 messageInput.addEventListener('input', () => handleInput(messageInput, messageCount, 500));
 
 [nameInput, emailInput, messageInput].forEach(input => {
-  input.addEventListener('blur', () => validateField(input, true));
   input.addEventListener('focus', () => {
-    const group = input.closest('.form-field-group');
-    group.classList.add('focused');
+    input.closest('.form-field-group').classList.add('focused');
   });
+
   input.addEventListener('blur', () => {
-    const group = input.closest('.form-field-group');
-    group.classList.remove('focused');
+    input.closest('.form-field-group').classList.remove('focused');
+    if (input.value.length > 0) {
+      validateField(input);
+    }
   });
 });
 
@@ -110,11 +136,6 @@ const setLoadingState = (loading) => {
 const showSuccess = () => {
   form.style.display = 'none';
   successMessage.classList.add('show');
-
-  const particles = successMessage.querySelectorAll('.success-particle');
-  particles.forEach((p, i) => {
-    p.style.animationDelay = `${i * 0.2}s`;
-  });
 };
 
 form.addEventListener('submit', async (e) => {
@@ -128,10 +149,9 @@ form.addEventListener('submit', async (e) => {
     const firstInvalid = form.querySelector('.form-field-group.invalid input, .form-field-group.invalid textarea');
     if (firstInvalid) {
       firstInvalid.focus();
-      firstInvalid.closest('.form-field-group').classList.add('shake');
-      setTimeout(() => {
-        firstInvalid.closest('.form-field-group').classList.remove('shake');
-      }, 500);
+      const group = firstInvalid.closest('.form-field-group');
+      group.classList.add('shake');
+      setTimeout(() => group.classList.remove('shake'), 600);
     }
     return;
   }
@@ -154,42 +174,54 @@ form.addEventListener('submit', async (e) => {
       showSuccess();
       localStorage.removeItem('contactFormData');
     } else {
-      throw new Error('Submission failed');
+      throw new Error('Failed');
     }
   } catch (error) {
     setLoadingState(false);
-    const submitArea = form.querySelector('.form-submit-area');
+    const existing = form.querySelector('.submit-error');
+    if (existing) existing.remove();
+
     const errorDiv = document.createElement('div');
     errorDiv.className = 'submit-error';
-    errorDiv.textContent = 'Failed to send. Please try again or email directly.';
-    submitArea.appendChild(errorDiv);
-    setTimeout(() => errorDiv.remove(), 5000);
+    errorDiv.textContent = 'Failed to send. Please try again.';
+    form.querySelector('.form-submit-area').appendChild(errorDiv);
+    setTimeout(() => errorDiv.remove(), 4000);
   }
 });
 
 const saveFormData = () => {
-  const data = {
+  localStorage.setItem('contactFormData', JSON.stringify({
     name: nameInput.value,
     email: emailInput.value,
     message: messageInput.value
-  };
-  localStorage.setItem('contactFormData', JSON.stringify(data));
+  }));
 };
 
 const loadFormData = () => {
-  const saved = localStorage.getItem('contactFormData');
-  if (saved) {
-    const data = JSON.parse(saved);
-    nameInput.value = data.name || '';
-    emailInput.value = data.email || '';
-    messageInput.value = data.message || '';
+  try {
+    const saved = localStorage.getItem('contactFormData');
+    if (saved) {
+      const data = JSON.parse(saved);
+      if (data.name) nameInput.value = data.name;
+      if (data.email) emailInput.value = data.email;
+      if (data.message) messageInput.value = data.message;
 
-    if (data.name) updateCharCount(nameInput, nameCount, 30);
-    if (data.message) updateCharCount(messageInput, messageCount, 500);
-
-    [nameInput, emailInput, messageInput].forEach(input => {
-      if (input.value) validateField(input, false);
-    });
+      if (data.name) {
+        updateCharCount(nameInput, nameCount, 30);
+        validateField(nameInput);
+      }
+      if (data.message) {
+        updateCharCount(messageInput, messageCount, 500);
+      }
+      if (data.email) {
+        validateField(emailInput);
+      }
+      if (data.message) {
+        validateField(messageInput);
+      }
+    }
+  } catch (e) {
+    localStorage.removeItem('contactFormData');
   }
 };
 
@@ -200,8 +232,12 @@ const loadFormData = () => {
 const updateContactTime = () => {
   if (contactTime) {
     const now = new Date();
-    const options = { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/El_Salvador' };
-    contactTime.textContent = now.toLocaleTimeString('en-US', options);
+    contactTime.textContent = now.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: 'America/El_Salvador'
+    });
   }
 };
 
@@ -213,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 form.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && e.ctrlKey) {
-    form.dispatchEvent(new Event('submit'));
+    e.preventDefault();
+    form.requestSubmit();
   }
 });
