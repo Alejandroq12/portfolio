@@ -928,12 +928,12 @@ body {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.1) 2px,
-    rgba(0, 0, 0, 0.1) 4px
+    rgba(0, 0, 0, 0.05) 2px,
+    rgba(0, 0, 0, 0.05) 4px
   );
   pointer-events: none;
   z-index: 3;
-  opacity: 0.3;
+  opacity: 0.15;
 }
 
 /* CRT Glow Effect */
@@ -1250,12 +1250,12 @@ body {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.1) 2px,
-    rgba(0, 0, 0, 0.1) 4px
+    rgba(0, 0, 0, 0.05) 2px,
+    rgba(0, 0, 0, 0.05) 4px
   );
   pointer-events: none;
   z-index: 100;
-  opacity: 0.3;
+  opacity: 0.15;
 }
 
 /* Visual Guide for Non-Technical Users */
@@ -1415,75 +1415,18 @@ body {
 }
 
 /* Navigation Steps Guide */
-.nav-steps-guide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 1.25rem 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
+/* Simple Interaction Hint */
+.interaction-hint {
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(80, 250, 123, 0.15);
+  text-align: center;
 }
 
-.nav-step {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1rem;
-  background: rgba(80, 250, 123, 0.1);
-  border-radius: 30px;
-  border: 1px solid rgba(80, 250, 123, 0.2);
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-step:hover {
-  background: rgba(80, 250, 123, 0.2);
-  border-color: rgba(80, 250, 123, 0.4);
-  transform: translateY(-2px);
-}
-
-.step-number {
-  width: 22px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #50fa7b 0%, #3fb950 100%);
-  border-radius: 50%;
-  font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: #0d1117;
-}
-
-.step-icon {
-  font-size: 1.1rem;
-}
-
-.step-text {
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 0.8rem;
-  color: #fff;
-  white-space: nowrap;
-}
-
-.step-connector {
-  font-size: 1.2rem;
-  color: #50fa7b;
-  animation: arrowPulse 1.5s ease-in-out infinite;
-}
-
-@keyframes arrowPulse {
-  0%, 100% {
-    opacity: 0.5;
-    transform: translateX(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(3px);
-  }
+.hint-text {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  color: #6272a4;
 }
 
 /* Enhanced Work Card Hover Tooltip */
@@ -2282,12 +2225,12 @@ body {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.1) 2px,
-    rgba(0, 0, 0, 0.1) 4px
+    rgba(0, 0, 0, 0.05) 2px,
+    rgba(0, 0, 0, 0.05) 4px
   );
   pointer-events: none;
   z-index: 100;
-  opacity: 0.3;
+  opacity: 0.15;
 }
 
 /* Visual Guide Header */
@@ -3025,7 +2968,7 @@ body {
 .form-field-group.focused .field-input-wrapper,
 .form-field-group.focused .field-textarea-wrapper {
   border-color: #8be9fd;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .form-field-group.valid .field-input-wrapper,
@@ -3059,21 +3002,21 @@ body {
 .field-label {
   display: block;
   font-family: 'Fira Code', monospace;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   color: #f8f8f2;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
 }
 
 .field-input-wrapper,
 .field-textarea-wrapper {
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(98, 114, 164, 0.3);
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(98, 114, 164, 0.4);
   border-radius: 8px;
   padding: 0 1rem;
-  transition: border-color 0.15s ease;
 }
 
 .field-textarea-wrapper {
@@ -3088,11 +3031,12 @@ body {
   background: transparent;
   border: none;
   font-family: 'Fira Code', monospace;
-  font-size: 0.95rem;
-  color: #f8f8f2;
-  padding: 0.85rem 0;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0.9rem 0;
   outline: none;
   caret-color: #50fa7b;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .terminal-textarea {
@@ -3769,35 +3713,13 @@ button:disabled {
     display: none;
   }
 
-  /* Navigation Steps Guide responsive */
-  .nav-steps-guide {
-    gap: 0.4rem;
-    padding: 0.75rem 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  /* Interaction hint responsive */
+  .interaction-hint {
+    padding: 0.5rem 1rem;
   }
 
-  .nav-step {
-    padding: 0.4rem 0.7rem;
-    gap: 0.3rem;
-  }
-
-  .step-number {
-    width: 18px;
-    height: 18px;
-    font-size: 0.65rem;
-  }
-
-  .step-icon {
-    font-size: 0.9rem;
-  }
-
-  .step-text {
-    font-size: 0.7rem;
-  }
-
-  .step-connector {
-    font-size: 0.9rem;
+  .hint-text {
+    font-size: 0.75rem;
   }
 
   /* Hide hover tooltip on mobile - use button instead */
@@ -5379,6 +5301,59 @@ button:disabled {
   75% {
     transform: translateY(-15px) rotate(270deg);
     opacity: 0.3;
+  }
+}
+
+/* ===== CLEAN DIVIDERS - SIMPLIFIED ===== */
+.clean-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(180deg, #0a0a14 0%, #0f0f1a 50%, #0a0a14 100%);
+}
+
+.clean-divider::before,
+.clean-divider::after {
+  display: none;
+}
+
+.divider-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.divider-line-simple {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 107, 0, 0.4) 50%, transparent 100%);
+}
+
+.divider-label-simple {
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f8f8f2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .clean-divider {
+    padding: 2rem 1rem;
+  }
+
+  .divider-content {
+    gap: 1rem;
+  }
+
+  .divider-label-simple {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
   }
 }
 
