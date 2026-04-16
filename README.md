@@ -1,248 +1,135 @@
-<a name="readme-top">My porfolio</a>
+# quezadajulio.com
 
+> The source code behind my personal portfolio. A fast, mobile first site that serves as my public landing page for work, writing, and contact.
+
+<p>
+  <img src="https://img.shields.io/badge/status-live-brightgreen" alt="status">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
+</p>
 
 <div align="center">
-  <img src="./assets/images/logo/logo.png" alt="logo" width="800"  height="auto" />
-  <br/>
-  <h3><b>My Portfolio</b></h3>
+  <img src="./assets/images/logo/logo.png" alt="Portfolio logo" width="600" />
 </div>
 
-<!-- TABLE OF CONTENTS -->
+**Live site:** [quezadajulio.com](https://quezadajulio.com)
 
-# 📗 Table of Contents
+---
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 My Portfolio ](#-my-portfolio-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [😎 Loom walkthrough ](#-loom-walkthrough-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
-  - [📝 License ](#-license-)
+## About
 
-<!-- PROJECT DESCRIPTION -->
+My portfolio is where you can explore my work, get to know me as an engineer, and reach out to start a conversation. The site showcases real projects across backend and full stack development, with enough detail for recruiters and engineering managers to evaluate fit quickly. If you are hiring for a remote backend role or considering a collaboration, this is the best place to start.
 
-# 📖 My Portfolio <a name="about-project"></a>
+---
 
-- **Welcome to My Porfolio where you can explore my projects, get to know me, and find a way to contact me. Take a look at my various projects and discover the range of my technical skills. Whether you are interested in web development, software engineering, or data science, you'll find a variety of projects here to pique your interest. So feel free to browse, learn more about me and my work, and get in touch if you have any questions or opportunities to collaborate.**
+## The Problem
 
-## 🛠 Built With <a name="built-with"></a>
+Every backend developer targeting international remote roles needs a single URL that works as their public anchor. A place that loads fast, looks professional on any device, lists real projects, and gives people a way to reach out. I wanted full control over that surface. The wording, the structure, the performance. Without being locked into a template platform or a framework I did not need for a static site.
 
-### Tech Stack <a name="tech-stack"></a>
+## The Approach
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/es/docs/Learn/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
-  </ul>
-</details>
+A hand written static site. Semantic HTML, plain CSS with flexbox and media queries, and vanilla JavaScript for the contact form and small interactions. No framework, no build step, no runtime. The whole site is served from GitHub Pages with a custom domain managed through Namecheap DNS. That choice keeps the page fast, keeps the source readable to anyone who clones it, and removes every moving part that could break between deploys.
 
+The project has evolved across nearly 500 commits over three years, which reflects how a personal site should be treated. A living surface that gets maintained and improved, not a snapshot frozen at launch.
 
-<!-- Features -->
+---
 
-### Key Features <a name="key-features"></a>
+## Key Decisions
 
-- **A fully functional contact form.**
-- **Mobile first porfolio.**
-- **Only using semantic HTML.**
+### Why no framework
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The site is under a dozen pages of content and has no dynamic data. Pulling in React or a static site generator would have added build tooling, bundle size, and ongoing maintenance for zero user facing benefit. Plain HTML and CSS render instantly and will still work in ten years without a toolchain update. If the site grows into something with real dynamic content like a blog or a project dashboard, I will migrate then, not preemptively.
 
-<!-- LIVE DEMO -->
+### Why mobile first
 
-## 🚀 Live Demo <a name="live-demo"></a>
+Most first time visitors land here from a LinkedIn message or a recruiter search on their phone. Designing for small screens first and scaling up kept the layout disciplined and prevented the common failure mode of a desktop design that collapses awkwardly on mobile.
 
-- [Live Demo Link](https://quezadajulio.com/)
+### Why semantic HTML strictly
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Screen readers, SEO, and maintainability all benefit from using the right tag for the right job. The cost is zero. The payoff is a site that is accessible by default and easier to read when I come back to edit it six months later.
 
-<!-- LOOM WALKTHROUGH -->
+### Why GitHub Pages plus Namecheap DNS
 
-## 😎 Loom walkthrough <a name="loom-walkthrough"></a>
+Free hosting, global CDN, automatic HTTPS through GitHub, and full control of the domain. The CNAME file in this repo is the only configuration required. Deployment is a git push. There is no cheaper or simpler stack for a static personal site, and no reason to pay for managed hosting at this scale.
 
-- [Loom walkthrough Link](https://www.loom.com/share/bf2aa0949e1947eb9092f38800a1018e)
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Tech Stack
 
-<!-- GETTING STARTED -->
+| Layer | Technology |
+|-------|-----------|
+| Markup | HTML5, semantic |
+| Styling | CSS3 with flexbox, grid, media queries |
+| Behavior | Vanilla JavaScript |
+| Linting | webhint, stylelint, eslint |
+| CI | GitHub Actions |
+| Hosting | GitHub Pages |
+| DNS | Namecheap with custom domain |
 
-## 💻 Getting Started <a name="getting-started"></a>
+---
 
-To get a local copy up and running, follow these steps:
+## Running Locally
 
-### Prerequisites
-
-In order to run this project you need:
-
-1. A web browser to see the website/porfolio.
-
-2. And a code editor if you want to edit the code. For example, Vs Code.
-
-### Setup
-
-Clone this repository to your desired folder:
-
-1. Clone it using your terminal:
-```
-git clone https://github.com/Alejandroq12/portfolio.git
+```bash
+git clone https://github.com/Alejandroq12/quezadajulio.com.git
+cd quezadajulio.com
 ```
 
-2. If the previous method does not work you may also download the repo as a .zip file and once you decompress the .zip file you are ready to use it.
+Open `index.html` directly in a browser, or serve it with any static server:
 
-Important: do not forget to clone the repo in the correct folder, probably you will use the following commands to achieve that in your terminal:
-
-1. To navigate a certain folder:
-
-```
-cd <folder name>
-```
-2. To navigate to the previous folder: 
-
-```
-cd ..
+```bash
+npx serve .
 ```
 
-### Install
+### Optional: run the linters
 
-Install this project with:
-
-1. To see this project you will not need to install something else.
-
-2. But in case you want to test the linter that I configured to check errors you will have to complete the following steps:
-
-```
-npm init -y
-npm install --save-dev hint@7.x
-```
-
-3. If you run npm install do not forget to create a .gitignore file to prevent the node_modules to be uploaded to GitHub:
-
-```
-.gitignore
-node_modules/
-```
-
-### Usage
-
-To see this project you will only need to:
-
-1. Open the index.html file with a web browser.
-
-### Run tests
-
-To run tests, run the following command:
-
-```
+```bash
+npm install
 npx hint .
-
+npx stylelint "**/*.css"
+npx eslint js/
 ```
 
-### Deployment
+---
 
-You can deploy this project using GitHub pages:
+## Project Structure
 
-1. Log in to your GitHub account and navigate to the repository that contains your website files.
-2. Make sure that your website files are located in the main branch and in the root directory of the repository.
-3. If your website is not already live, make sure that the index.html file is the main page of your website.
-4. Click on the "Settings" tab in your repository.
-5. Scroll down to the "GitHub Pages" section.
-6. In the "Source" dropdown menu, select the branch where your website files are located. For a simple website with only HTML and CSS, this is typically the main branch.
-7. In the "Path" field, make sure that the root directory is specified (i.e., "/").
-8. Click "Save" to generate your website.
-9. Wait a few minutes for GitHub to build and deploy your website.
-10. Once the website is deployed, visit the GitHub Pages URL to view your site.
+```
+assets/         Images, icons, logo, and static media
+js/             JavaScript modules for form handling and interactions
+index.html      Entry point
+CNAME           Custom domain configuration for GitHub Pages
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-<!-- AUTHORS -->
+## What I Learned
 
-## 👥 Authors <a name="authors"></a>
+Building this site taught me to stop reaching for tools before the problem justifies them. An earlier draft of the portfolio used a bundler and a framework. The final version works better, loads faster, and takes less time to change, because the tooling was removed rather than added. That lesson shapes how I evaluate architectural decisions in backend work now. Start with the simplest thing that solves the problem, and add complexity only when the problem actually demands it.
 
-👤 **Julio Quezada**
+---
 
-- GitHub: [Alejandroq12](https://github.com/Alejandroq12)
-- Twitter: [@JulioAle54](https://twitter.com/JulioAle54)
-- LinkedIn: [Julio Quezada](https://www.linkedin.com/in/quezadajulio/)
+## Roadmap
 
-👤 **Juan Sanchez**
+* Add a writing section with technical posts from my Medium archive
+* Integrate a simple view counter using a serverless function
+* Audit and improve Lighthouse scores across all pages
+* Add an open source contributions section once my first external PR is merged
 
-- GitHub: [J-C-S-V](https://github.com/J-C-S-V)
-- Twitter: [@juansan0](https://twitter.com/juansan0)
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## About Me
 
-<!-- FUTURE FEATURES -->
+I am Julio Quezada, a backend .NET developer from El Salvador with experience building production systems at national scale. I specialize in C#, ASP.NET Core, and PostgreSQL.
 
-## 🔭 Future Features <a name="future-features"></a>
+**Open to remote backend roles** across US, EU, and LATAM time zones.
 
-- [x] **I will add the desktop version**
-- [x] **I will add media queries to make it responsive**
-- [x] **I will use JavaScript to add interactivity**
-- [ ] **I will add a blog section.**
+[Portfolio](https://www.quezadajulio.com) · [LinkedIn](https://www.linkedin.com/in/jqdeveloper) · qjuliodev@gmail.com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-<!-- CONTRIBUTING -->
+## License
 
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project please give a star.
-Thanks in advance.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Wes Bos because I learned how to implement flexbox with his free tutorial:
-- Wes Bos: [Wes Bos](https://flexbox.io/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **Are you going to use React in the future?**
-
-  - Yes! I will transform this portfolio into a React.js App.
-
-- **Did you create this porfolio from scratch?**
-
-  - Yes! From zero, and I will improve it a lot.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./MIT.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+MIT. See [MIT.md](./MIT.md) for details.
