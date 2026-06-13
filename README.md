@@ -126,7 +126,7 @@ I am Julio Quezada, a backend .NET developer from El Salvador with experience bu
 
 **Open to remote backend roles** across US, EU, and LATAM time zones.
 
-[Portfolio](https://www.quezadajulio.com) · [LinkedIn](https://www.linkedin.com/in/jqdeveloper) · qjuliodev@gmail.com
+[Portfolio](https://www.quezadajulio.com) · [LinkedIn](https://www.linkedin.com/in/jqdeveloper) · julioquezada.dev@proton.me
 
 ---
 
